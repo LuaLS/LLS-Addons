@@ -1,0 +1,15 @@
+{
+  "$schema": "../schemas/schema.json",
+  "name": "Example Definition Project",
+  "description": "An example LuaCats project configuration file",
+  "settings": {
+    "Lua.completion.callSnippet": {
+      "action": "set",
+      "value": "Replace"
+    },
+    "Lua.completion.workspaceWord": {
+      "action": "set",
+      "value": true
+    }
+  }
+}
