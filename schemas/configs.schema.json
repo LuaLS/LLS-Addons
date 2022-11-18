@@ -1,7 +1,7 @@
 {
   "type": "object",
   "properties": {
-    "Lua.completion.autoRequire": {
+    "completion.autoRequire": {
       "markdownDescription": "When the input looks like a file name, automatically `require` it.\n\n[View in Wiki](https://github.com/sumneko/lua-language-server/wiki/Settings#completionautorequire)",
       "properties": {
         "action": {
@@ -13,7 +13,7 @@
         }
       }
     },
-    "Lua.completion.callSnippet": {
+    "completion.callSnippet": {
       "markdownDescription": "Shows function call snippets.\n\n[View in Wiki](https://github.com/sumneko/lua-language-server/wiki/Settings#completioncallsnippet)",
       "properties": {
         "action": {
@@ -30,7 +30,7 @@
         }
       }
     },
-    "Lua.completion.displayContext": {
+    "completion.displayContext": {
       "markdownDescription": "Previewing the relevant code snippet of the suggestion may help you understand the usage of the suggestion. The number set indicates the number of intercepted lines in the code fragment. If it is set to `0`, this feature can be disabled.\n\n[View in Wiki](https://github.com/sumneko/lua-language-server/wiki/Settings#completiondisplaycontext)",
       "properties": {
         "action": {
@@ -43,7 +43,7 @@
         }
       }
     },
-    "Lua.completion.enable": {
+    "completion.enable": {
       "markdownDescription": "Enable completion.\n\n[View in Wiki](https://github.com/sumneko/lua-language-server/wiki/Settings#completionenable)",
       "properties": {
         "action": {
@@ -55,7 +55,7 @@
         }
       }
     },
-    "Lua.completion.keywordSnippet": {
+    "completion.keywordSnippet": {
       "markdownDescription": "Shows keyword call snippets.\n\n[View in Wiki](https://github.com/sumneko/lua-language-server/wiki/Settings#completionkeywordsnippet)",
       "properties": {
         "action": {
@@ -72,7 +72,7 @@
         }
       }
     },
-    "Lua.completion.postfix": {
+    "completion.postfix": {
       "markdownDescription": "Choose the symbol used to trigger a \"postfix\" suggestion.\n\n[View in Wiki](https://github.com/sumneko/lua-language-server/wiki/Settings#completionpostfix)",
       "properties": {
         "action": {
@@ -84,7 +84,7 @@
         }
       }
     },
-    "Lua.completion.requireSeparator": {
+    "completion.requireSeparator": {
       "markdownDescription": "The separator used by `require`.\n\n[View in Wiki](https://github.com/sumneko/lua-language-server/wiki/Settings#completionrequireseparator)",
       "properties": {
         "action": {
@@ -96,7 +96,7 @@
         }
       }
     },
-    "Lua.completion.showParams": {
+    "completion.showParams": {
       "markdownDescription": "Display parameters in completion list. When the function has multiple definitions, they will be displayed separately.\n\n[View in Wiki](https://github.com/sumneko/lua-language-server/wiki/Settings#completionshowparams)",
       "properties": {
         "action": {
@@ -108,7 +108,7 @@
         }
       }
     },
-    "Lua.completion.showWord": {
+    "completion.showWord": {
       "markdownDescription": "Show context-based word suggestions.\n\n[View in Wiki](https://github.com/sumneko/lua-language-server/wiki/Settings#completionshowword)",
       "properties": {
         "action": {
@@ -125,7 +125,7 @@
         }
       }
     },
-    "Lua.completion.workspaceWord": {
+    "completion.workspaceWord": {
       "markdownDescription": "Whether context-based word suggestions should include words from other files in the workspace\n\n[View in Wiki](https://github.com/sumneko/lua-language-server/wiki/Settings#completionworkspaceword)",
       "properties": {
         "action": {

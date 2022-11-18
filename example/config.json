@@ -3,11 +3,11 @@
   "name": "Example Definition Project",
   "description": "An example LuaCats project configuration file",
   "settings": {
-    "Lua.completion.callSnippet": {
+    "completion.callSnippet": {
       "action": "set",
       "value": "Replace"
     },
-    "Lua.completion.workspaceWord": {
+    "completion.workspaceWord": {
       "action": "set",
       "value": true
     }
