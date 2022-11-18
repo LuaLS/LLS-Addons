@@ -5,7 +5,7 @@
       "markdownDescription": "When the input looks like a file name, automatically `require` it.\n\n[View in Wiki](https://github.com/sumneko/lua-language-server/wiki/Settings#completionautorequire)",
       "properties": {
         "action": {
-          "enum": ["set"]
+          "const": "set"
         },
         "value": {
           "type": "boolean",
@@ -17,7 +17,7 @@
       "markdownDescription": "Shows function call snippets.\n\n[View in Wiki](https://github.com/sumneko/lua-language-server/wiki/Settings#completioncallsnippet)",
       "properties": {
         "action": {
-          "enum": ["set"]
+          "const": "set"
         },
         "value": {
           "enum": ["Disable", "Both", "Replace"],
@@ -34,7 +34,7 @@
       "markdownDescription": "Previewing the relevant code snippet of the suggestion may help you understand the usage of the suggestion. The number set indicates the number of intercepted lines in the code fragment. If it is set to `0`, this feature can be disabled.\n\n[View in Wiki](https://github.com/sumneko/lua-language-server/wiki/Settings#completiondisplaycontext)",
       "properties": {
         "action": {
-          "enum": ["set"]
+          "const": "set"
         },
         "value": {
           "type": "integer",
@@ -47,7 +47,7 @@
       "markdownDescription": "Enable completion.\n\n[View in Wiki](https://github.com/sumneko/lua-language-server/wiki/Settings#completionenable)",
       "properties": {
         "action": {
-          "enum": ["set"]
+          "const": "set"
         },
         "value": {
           "type": "boolean",
@@ -59,7 +59,7 @@
       "markdownDescription": "Shows keyword call snippets.\n\n[View in Wiki](https://github.com/sumneko/lua-language-server/wiki/Settings#completionkeywordsnippet)",
       "properties": {
         "action": {
-          "enum": ["set"]
+          "const": "set"
         },
         "value": {
           "enum": ["Disable", "Both", "Replace"],
@@ -76,7 +76,7 @@
       "markdownDescription": "Choose the symbol used to trigger a \"postfix\" suggestion.\n\n[View in Wiki](https://github.com/sumneko/lua-language-server/wiki/Settings#completionpostfix)",
       "properties": {
         "action": {
-          "enum": ["set"]
+          "const": "set"
         },
         "value": {
           "type": "string",
@@ -88,7 +88,7 @@
       "markdownDescription": "The separator used by `require`.\n\n[View in Wiki](https://github.com/sumneko/lua-language-server/wiki/Settings#completionrequireseparator)",
       "properties": {
         "action": {
-          "enum": ["set"]
+          "const": "set"
         },
         "value": {
           "type": "string",
@@ -100,7 +100,7 @@
       "markdownDescription": "Display parameters in completion list. When the function has multiple definitions, they will be displayed separately.\n\n[View in Wiki](https://github.com/sumneko/lua-language-server/wiki/Settings#completionshowparams)",
       "properties": {
         "action": {
-          "enum": ["set"]
+          "const": "set"
         },
         "value": {
           "type": "boolean",
@@ -112,7 +112,7 @@
       "markdownDescription": "Show context-based word suggestions.\n\n[View in Wiki](https://github.com/sumneko/lua-language-server/wiki/Settings#completionshowword)",
       "properties": {
         "action": {
-          "enum": ["set"]
+          "const": "set"
         },
         "value": {
           "enum": ["Enable", "Fallback", "Disable"],
@@ -129,7 +129,7 @@
       "markdownDescription": "Whether context-based word suggestions should include words from other files in the workspace\n\n[View in Wiki](https://github.com/sumneko/lua-language-server/wiki/Settings#completionworkspaceword)",
       "properties": {
         "action": {
-          "enum": ["set"]
+          "const": "set"
         },
         "value": {
           "type": "boolean",
