@@ -1,0 +1,39 @@
+{
+  "title": "LuaCats Configuration",
+  "description": "Configuration for definition project",
+  "properties": {
+    "name": {
+      "description": "The name of the definition project",
+      "type": "string"
+    },
+    "description": {
+      "description": "A description of the definition project. Should explain what the purpose is and why others should use it.",
+      "type": "string",
+      "maxLength": 350,
+      "minLength": 30
+    },
+    "text_pattern": {
+      "description": "Lua string patterns that, if matched in the content of a file, will recommend this defintion project get applied. These should be as unique as possible to prevent this project from being recommended too often and annoying users.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "filename_pattern": {
+      "description": "Lua string patterns that, if matched to a filename, will recommend this definition project get applied. These should be as unique as possible to prevent this project from being recommended too often and annoying users.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "settings": {
+      "markdownDescription": "Configurations to insert/overwrite in the user's local config file when this definition project is applied.",
+      "$ref": "./configs.schema.json"
+    }
+  },
+  "required": ["name", "description"]
+}
