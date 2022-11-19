@@ -1,15 +1,40 @@
 {
-  "$schema": "../schemas/schema.json",
+  "$schema": "../schemas/addon.schema.json",
   "name": "Example Definition Project",
   "description": "An example LuaCats project configuration file",
   "settings": {
-    "completion.callSnippet": {
-      "action": "set",
-      "value": "Replace"
+    "completion": {
+      "enable": {
+        "action": "set",
+        "value": true
+      },
+      "callSnippet": {
+        "action": "set",
+        "value": "Replace"
+      }
     },
-    "completion.workspaceWord": {
-      "action": "set",
-      "value": true
+    "diagnostics": {
+      "disable": {
+        "action": "add",
+        "value": ["trailing-space"]
+      },
+      "disableScheme": {
+        "action": "add",
+        "value": ["LUA_IGNORE"]
+      },
+      "globals": {
+        "action": "add",
+        "value": "myGlobal"
+      },
+      "groupSeverity": {
+        "action": "prop",
+        "key": "strict",
+        "value": "Error"
+      },
+      "unusedLocalExclude": {
+        "action": "add",
+        "value": ["notUnused"]
+      }
     }
   }
 }

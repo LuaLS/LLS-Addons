@@ -1,0 +1,386 @@
+{
+  "type": "object",
+  "properties": {
+    "completion": {
+      "markdownDescription": "Settings that adjust how autocompletions are provided while typing.",
+      "properties": {
+        "autoRequire": {
+          "markdownDescription": "When the input looks like a file name, automatically `require` it.\n\n[View in Wiki](https://github.com/sumneko/lua-language-server/wiki/Settings#completionautorequire)",
+          "properties": {
+            "action": {
+              "const": "set"
+            },
+            "value": {
+              "type": "boolean",
+              "default": true
+            }
+          }
+        },
+        "callSnippet": {
+          "markdownDescription": "Shows function call snippets.\n\n[View in Wiki](https://github.com/sumneko/lua-language-server/wiki/Settings#completioncallsnippet)",
+          "properties": {
+            "action": {
+              "const": "set"
+            },
+            "value": {
+              "enum": ["Disable", "Both", "Replace"],
+              "markdownEnumDescriptions": [
+                "Only show the function name.",
+                "Show both the function name and an autocomplete snippet.",
+                "Show only the autocomplete snippet."
+              ],
+              "default": "Disable"
+            }
+          }
+        },
+        "displayContext": {
+          "markdownDescription": "Previewing the relevant code snippet of the suggestion may help you understand the usage of the suggestion. The number set indicates the number of intercepted lines in the code fragment. If it is set to `0`, this feature can be disabled.\n\n[View in Wiki](https://github.com/sumneko/lua-language-server/wiki/Settings#completiondisplaycontext)",
+          "properties": {
+            "action": {
+              "const": "set"
+            },
+            "value": {
+              "type": "integer",
+              "minimum": 0,
+              "default": 0
+            }
+          }
+        },
+        "enable": {
+          "markdownDescription": "Enable completion.\n\n[View in Wiki](https://github.com/sumneko/lua-language-server/wiki/Settings#completionenable)",
+          "properties": {
+            "action": {
+              "const": "set"
+            },
+            "value": {
+              "type": "boolean",
+              "default": true
+            }
+          }
+        },
+        "keywordSnippet": {
+          "markdownDescription": "Shows keyword call snippets.\n\n[View in Wiki](https://github.com/sumneko/lua-language-server/wiki/Settings#completionkeywordsnippet)",
+          "properties": {
+            "action": {
+              "const": "set"
+            },
+            "value": {
+              "enum": ["Disable", "Both", "Replace"],
+              "markdownEnumDescriptions": [
+                "Only show keyword.",
+                "Show both the keyword and an autocomplete snippet.",
+                "Show only the autocomplete snippet."
+              ],
+              "default": "Replace"
+            }
+          }
+        },
+        "postfix": {
+          "markdownDescription": "Choose the symbol used to trigger a \"postfix\" suggestion.\n\n[View in Wiki](https://github.com/sumneko/lua-language-server/wiki/Settings#completionpostfix)",
+          "properties": {
+            "action": {
+              "const": "set"
+            },
+            "value": {
+              "type": "string",
+              "default": "@"
+            }
+          }
+        },
+        "requireSeparator": {
+          "markdownDescription": "The separator used by `require`.\n\n[View in Wiki](https://github.com/sumneko/lua-language-server/wiki/Settings#completionrequireseparator)",
+          "properties": {
+            "action": {
+              "const": "set"
+            },
+            "value": {
+              "type": "string",
+              "default": "."
+            }
+          }
+        },
+        "showParams": {
+          "markdownDescription": "Display parameters in completion list. When the function has multiple definitions, they will be displayed separately.\n\n[View in Wiki](https://github.com/sumneko/lua-language-server/wiki/Settings#completionshowparams)",
+          "properties": {
+            "action": {
+              "const": "set"
+            },
+            "value": {
+              "type": "boolean",
+              "default": true
+            }
+          }
+        },
+        "showWord": {
+          "markdownDescription": "Show context-based word suggestions.\n\n[View in Wiki](https://github.com/sumneko/lua-language-server/wiki/Settings#completionshowword)",
+          "properties": {
+            "action": {
+              "const": "set"
+            },
+            "value": {
+              "enum": ["Enable", "Fallback", "Disable"],
+              "markdownEnumDescriptions": [
+                "Always show context-based word suggestions.",
+                "Only show context-based word suggestions when semantic-based suggestions are not available.",
+                "Never show context-based word suggestions."
+              ],
+              "default": "Fallback"
+            }
+          }
+        },
+        "workspaceWord": {
+          "markdownDescription": "Whether context-based word suggestions should include words from other files in the workspace\n\n[View in Wiki](https://github.com/sumneko/lua-language-server/wiki/Settings#completionworkspaceword)",
+          "properties": {
+            "action": {
+              "const": "set"
+            },
+            "value": {
+              "type": "boolean",
+              "default": true
+            }
+          }
+        }
+      }
+    },
+    "diagnostics": {
+      "markdownDescription": "Settings to adjust the diagnostics for `Info`, `Warning`, and `Error`.",
+      "properties": {
+        "disable": {
+          "markdownDescription": "Disable certain diagnostics globally. For example, if you want all warnings for `lowercase-global` to be disabled, the value for diagnostics.disable would be `[\"lowercase-global\"]`.",
+          "properties": {
+            "action": {
+              "const": "add"
+            },
+            "value": {
+              "type": "array",
+              "items": {
+                "$ref": "diagnostics.schema.json"
+              },
+              "minItems": 1
+            }
+          }
+        },
+        "disableScheme": {
+          "markdownDescription": "Disable diagnosis of Lua files that have the set schemes.",
+          "properties": {
+            "action": {
+              "const": "add"
+            },
+            "value": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 1
+            }
+          }
+        },
+        "enable": {
+          "markdownDescription": "Whether all diagnostics should be enabled or not.",
+          "properties": {
+            "action": {
+              "const": "add"
+            },
+            "value": {
+              "type": "boolean"
+            }
+          }
+        },
+        "globals": {
+          "markdownDescription": "An array of variable names that will be declared as global.",
+          "properties": {
+            "action": {
+              "const": "add"
+            },
+            "value": {
+              "type": "string"
+            }
+          }
+        },
+        "groupFileStatus": {
+          "markdownDescription": "Set the file status required for each diagnostic group. This setting is an `Object` of `key`-`value` pairs where the `key` is the name of the diagnostic group and the `value` is the state that a file must be in in order for the diagnostic group to apply.",
+          "properties": {
+            "action": {
+              "const": "prop"
+            },
+            "key": {
+              "$ref": "diagnostics_groups.schema.json"
+            },
+            "value": {
+              "enum": ["Any", "Opened", "None", "Fallback"],
+              "markdownEnumDescriptions": [
+                "Any loaded file (workspace, library, etc.) will use this diagnostic group",
+                "Only opened files will use this diagnostic group",
+                "This diagnostic group will be disabled",
+                "The diagnostics in this group are controlled individually by [`diagnostics.neededFileStatus`](https://github.com/sumneko/lua-language-server/wiki/Settings#diagnosticsneededfilestatus)"
+              ]
+            }
+          }
+        },
+        "groupSeverity": {
+          "markdownDescription": "Set the reported severity for each diagnostic group.",
+          "properties": {
+            "action": {
+              "const": "prop"
+            },
+            "key": {
+              "$ref": "diagnostics_groups.schema.json"
+            },
+            "value": {
+              "enum": ["Error", "Warning", "Information", "Hint", "Fallback"],
+              "markdownEnumDescriptions": [
+                "This diagnostic group is reported as an error",
+                "This diagnostic group raises a warning",
+                "This diagnostic group will provide an info diagnostic",
+                "This diagnostic group will provide a hint diagnostic",
+                "The diagnostics in this group will be controlled individually by [`diagnostics.severity`](https://github.com/sumneko/lua-language-server/wiki/Settings#diagnosticsseverity)"
+              ]
+            }
+          }
+        },
+        "ignoredFiles": {
+          "markdownDescription": "Set how files that have been ignored should be diagnosed.",
+          "properties": {
+            "action": {
+              "const": "set"
+            },
+            "value": {
+              "enum": ["Enable", "Opened", "Disable"],
+              "markdownEnumDescriptions": [
+                "Always diagnose ignored files... kind of defeats the purpose of ignoring them",
+                "Only diagnose ignored files when they are open",
+                "Ignored files are fully ignored"
+              ]
+            }
+          }
+        },
+        "libraryFiles": {
+          "markdownDescription": "Set how files loaded with [`workspace.library`](https://github.com/sumneko/lua-language-server/wiki/Settings#workspacelibrary) are diagnosed.",
+          "properties": {
+            "action": {
+              "const": "set"
+            },
+            "value": {
+              "enum": ["Enable", "Opened", "Disable"],
+              "markdownEnumDescriptions": [
+                "Always diagnose library files",
+                "Only diagnose library files when they are open",
+                "Never diagnose library files"
+              ]
+            }
+          }
+        },
+        "neededFileStatus": {
+          "markdownDescription": "Set the file status required for each diagnostic. This setting is an `Object` of `key`-`value` pairs where the `key` is the name of the diagnostic and the `value` is the state that a file must be in in order for the diagnostic to apply.",
+          "properties": {
+            "action": {
+              "const": "prop"
+            },
+            "key": {
+              "$ref": "diagnostics.schema.json"
+            },
+            "value": {
+              "enum": ["Any", "Opened", "None", "Any!", "Opened!", "None!"],
+              "markdownEnumDescriptions": [
+                "Any loaded file (workspace, library, etc.) will use this diagnostic group",
+                "Only opened files will use this diagnostic group",
+                "This diagnostic group will be disabled",
+                "Like \"Any\" but overrides `diagnostics.groupFileStatus`",
+                "Like \"Opened\" but overrides `diagnostics.groupFileStatus`",
+                "Like \"None\" but overrides `diagnostics.groupFileStatus`"
+              ]
+            }
+          }
+        },
+        "severity": {
+          "markdownDescription": "Set the reported severity for each diagnostic.",
+          "properties": {
+            "action": {
+              "const": "prop"
+            },
+            "key": {
+              "$ref": "diagnostics.schema.json"
+            },
+            "value": {
+              "enum": [
+                "Error",
+                "Warning",
+                "Information",
+                "Hint",
+                "Error!",
+                "Warning!",
+                "Information!",
+                "Hint!"
+              ],
+              "markdownEnumDescriptions": [
+                "This diagnostic is reported as an error",
+                "This diagnostic raises a warning",
+                "This diagnostic will provide an info diagnostic",
+                "This diagnostic will provide a hint diagnostic",
+                "Like \"Error\" but overrides `diagnostics.groupSeverity`",
+                "Like \"Warning\" but overrides `diagnostics.groupSeverity`",
+                "Like \"Information\" but overrides `diagnostics.groupSeverity`",
+                "Like \"Hint\" but overrides `diagnostics.groupSeverity`"
+              ]
+            }
+          }
+        },
+        "unusedLocalExclude": {
+          "markdownDescription": "Define variable names that will not be reported as an unused local by `unused-local`.",
+          "properties": {
+            "action": {
+              "const": "add"
+            },
+            "value": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 1
+            }
+          }
+        },
+        "workspaceDelay": {
+          "markdownDescription": "Define the delay between diagnoses of the workspace in milliseconds. Every time a file is edited, created, deleted, etc. the workspace will be re-diagnosed in the background after this delay. Setting to a negative number will disable workspace diagnostics.",
+          "properties": {
+            "action": {
+              "const": "set"
+            },
+            "value": {
+              "type": "integer"
+            }
+          }
+        },
+        "workspaceEvent": {
+          "markdownDescription": "Set when the workspace diagnostics should be analyzed. It can be performed after each change, after a save, or never automatically triggered.",
+          "properties": {
+            "action": {
+              "const": "set"
+            },
+            "value": {
+              "enum": ["OnChange", "OnSave", "None"],
+              "markdownEnumDescriptions": [
+                "Diagnose on file change",
+                "Diagnose on file save",
+                "Never automatically diagnose"
+              ]
+            }
+          }
+        },
+        "workspaceRate": {
+          "markdownDescription": "Define the rate at which the workspace will be diagnosed as a percentage. `100` is 100% speed so the workspace will be diagnosed as fast as possible. The rate can be lowered to reduce CPU usage, but the diagnosis speed will also become slower. The currently opened file will always be diagnosed at 100% speed, regardless of this setting.",
+          "properties": {
+            "action": {
+              "const": "set"
+            },
+            "value": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100
+            }
+          }
+        }
+      }
+    }
+  }
+}

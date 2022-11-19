@@ -1,0 +1,31 @@
+{
+  "type": "string",
+  "enum": [
+    "ambiguity",
+    "await",
+    "codestyle",
+    "duplicate",
+    "global",
+    "luadoc",
+    "redefined",
+    "strict",
+    "strong",
+    "type-check",
+    "unbalanced",
+    "unused"
+  ],
+  "markdownEnumDescriptions": [
+    "**Ambiguity**\n\n- ambiguity-1\n\n- count-down-loop\n\n- different-requires\n\n- newfield-call\n\n- newline-call",
+    "**Await**\n\n- await-in-sync\n\n- not-yieldable",
+    "**Codestyle**\n\n- codestyle-check\n\n- spell-check",
+    "**Duplicate**\n\n- duplicate-index\n\n- duplicate-set-field",
+    "**Global**\n\n- global-in-nil-env\n\n- lowercase-global\n\n- undefined-env-child\n\n- undefined-global",
+    "**Luadoc**\n\n- cast-type-mismatch\n\n- circle-doc-class\n\n- doc-field-no-class\n\n- duplicate-doc-alias\n\n- duplicate-doc-field\n\n- duplicate-doc-param\n\n- undefined-doc-class\n\n- undefined-doc-name\n\n- undefined-doc-param\n\n- unknown-cast-variable\n\n- unknown-diag-code\n\n- unknown-operator",
+    "**Redefined**\n\n- redefined-local",
+    "**Strict**\n\n- close-non-object\n\n- deprecated\n\n- discard-returns",
+    "**Strong**\n\n- no-unknown",
+    "**Type Check**\n\n- assign-type-mismatch\n\n- cast-local-type\n\n- cast-type-mismatch\n\n- need-check-nil\n\n- param-type-mismatch\n\n- return-type-mismatch\n\n- undefined-field",
+    "**Unbalanced**\n\n- missing-parameter\n\n- missing-return\n\n- missing-return-value\n\n- redundant-parameter\n\n- redundant-return-value\n\n- redundant-value\n\n- unbalanced-assignments",
+    "**Unused**\n\n- code-after-break\n\n- empty-block\n\n- redundant-return\n\n- trailing-space\n\n- unreachable-code\n\n- unused-function\n\n- unused-label\n\n- unused-local\n\n- unused-vararg "
+  ]
+}

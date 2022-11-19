@@ -32,7 +32,7 @@
     },
     "settings": {
       "markdownDescription": "Configurations to insert/overwrite in the user's local config file when this definition project is applied.",
-      "$ref": "./configs.schema.json"
+      "$ref": "./settings_config.schema.json"
     }
   },
   "required": ["name", "description"]
