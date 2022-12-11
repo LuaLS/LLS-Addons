@@ -1,40 +1,14 @@
 {
   "$schema": "../schemas/addon.schema.json",
   "name": "Example Definition Project",
-  "description": "An example LuaCats project configuration file",
+  "description": "An example configuration file for an addon",
+  "filename_pattern": ["example_trigger%.lua"],
+  "text_pattern": ["trigger_activation"],
   "settings": {
-    "completion": {
-      "enable": {
-        "action": "set",
-        "value": true
-      },
-      "callSnippet": {
-        "action": "set",
-        "value": "Replace"
-      }
-    },
     "diagnostics": {
-      "disable": {
-        "action": "add",
-        "value": ["trailing-space"]
-      },
-      "disableScheme": {
-        "action": "add",
-        "value": ["LUA_IGNORE"]
-      },
-      "globals": {
-        "action": "add",
-        "value": "myGlobal"
-      },
-      "groupSeverity": {
-        "action": "prop",
-        "key": "strict",
-        "value": "Error"
-      },
-      "unusedLocalExclude": {
-        "action": "add",
-        "value": ["notUnused"]
-      }
-    }
+      "globals": ["myGlobalOne", "myOtherGlobal"],
+      "disable": ["different-requires"]
+    },
+    "workspace.preloadFileSize": 1000
   }
 }
