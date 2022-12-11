@@ -1,0 +1,6 @@
+{
+  "$schema": "https://raw.githubusercontent.com/carsakiller/LLS-Addons/main/schemas/addon.schema.json",
+  "name": "Luassert",
+  "description": "Definitions for the Luassert assertions library",
+  "text_pattern": ["require[%s%(\"']+luassert[%)\"']"]
+}
