@@ -1,6 +1,5 @@
 {
   "$schema": "../schemas/addon.schema.json",
-  "name": "Example Definition Project",
   "description": "An example configuration file for an addon",
   "filename_pattern": ["example_trigger%.lua"],
   "text_pattern": ["trigger_activation"],

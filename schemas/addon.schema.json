@@ -35,5 +35,5 @@
       "$ref": "https://raw.githubusercontent.com/sumneko/vscode-lua/master/setting/schema.json"
     }
   },
-  "required": ["name", "description"]
+  "required": ["description"]
 }
