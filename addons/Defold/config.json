@@ -1,0 +1,23 @@
+{
+  "$schema": "https://raw.githubusercontent.com/carsakiller/LLS-Addons/main/schemas/addon.schema.json",
+  "name": "Defold",
+  "filename_pattern": ["game.project", "*%.script", "*%.gui_script"],
+  "settings": {
+    "runtime.version": "Lua 5.1",
+    "workspace.library": [".internal"],
+    "workspace.ignoreDir": [".internal"],
+    "diagnostics.globals": [
+      "on_input",
+      "on_message",
+      "init",
+      "update",
+      "final"
+    ],
+    "files.associations": {
+      "*.script": "lua",
+      "*.gui_script": "lua",
+      "*.render_script": "lua",
+      "*.editor_script": "lua"
+    }
+  }
+}
