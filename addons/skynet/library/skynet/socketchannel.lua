@@ -25,15 +25,11 @@ local socket_channel = {}
 ---* }
 ---@param desc table {host, port, backup, auth, response, nodelay, overload}
 ---@return socketchannel
-function socket_channel.channel(desc)
-
-end
+function socket_channel.channel(desc) end
 
 ---连接频道
 ---@param once boolean tryConnectOnceOrMulti
-function socket_channel:connect(once)
-
-end
+function socket_channel:connect(once) end
 
 ---返回值 true 表示协议解析成功，如果为 false 表示协议出错，这会导致连接断开且让 request 的调用者也获得一个 error
 ---在 response 函数内的任何异常以及 sock:read 或 sock:readline 读取出错，都会以 error 的形式抛给 request 的调用者。
@@ -44,26 +40,19 @@ end
 ---@param response? ResponseFunction 返回值 true 表示协议解析成功，如果为 false 表示协议出错，这会导致连接断开且让 request 的调用者也获得一个 error
 ---@param padding? table
 ---@return string # 是由 response 函数返回的回应包的内容（可以是任意类型）
-function socket_channel:request(request, response, padding)
-end
+function socket_channel:request(request, response, padding) end
 
 ---用来单向接收一个包。
 ---`local resp = channel:response(dispatch)` 与 `local resp = channel:request(req, dispatch)` 等价
 ---@param dispatch any
-function socket_channel:response(dispatch)
-end
+function socket_channel:response(dispatch) end
 ---关闭频道
-function socket_channel:close()
-
-end
+function socket_channel:close() end
 ---改变目标主机[端口]，打开状态会关闭
 ---@param host string
 ---@param port? number
-function socket_channel:changehost(host, port)
-end
+function socket_channel:changehost(host, port) end
 ---改变备用
 ---@param backup table
-function socket_channel:changebackup(backup)
-end
+function socket_channel:changebackup(backup) end
 return socket_channel
-

@@ -1,27 +1,24 @@
 ---@meta
 
 ---@class ccs.ActionTimelineData :cc.Ref
-local ActionTimelineData={ }
-ccs.ActionTimelineData=ActionTimelineData
+local ActionTimelineData = {}
+ccs.ActionTimelineData = ActionTimelineData
 
-
-
-
----* 
+---*
 ---@param actionTag int
 ---@return self
-function ActionTimelineData:setActionTag (actionTag) end
----* 
+function ActionTimelineData:setActionTag(actionTag) end
+---*
 ---@param actionTag int
 ---@return boolean
-function ActionTimelineData:init (actionTag) end
----* 
+function ActionTimelineData:init(actionTag) end
+---*
 ---@return int
-function ActionTimelineData:getActionTag () end
----* 
+function ActionTimelineData:getActionTag() end
+---*
 ---@param actionTag int
 ---@return self
-function ActionTimelineData:create (actionTag) end
----* 
+function ActionTimelineData:create(actionTag) end
+---*
 ---@return self
-function ActionTimelineData:ActionTimelineData () end
+function ActionTimelineData:ActionTimelineData() end

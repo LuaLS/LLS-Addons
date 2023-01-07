@@ -12,7 +12,4 @@ http = {}
 ---@param options table? # optional table with request parameters. Supported entries:
 function http.request(url, method, callback, headers, post_data, options) end
 
-
-
-
 return http

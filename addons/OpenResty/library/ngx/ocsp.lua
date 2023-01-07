@@ -1,6 +1,6 @@
 ---@meta
 local ocsp = {
-  version = require("resty.core.base").version,
+	version = require("resty.core.base").version,
 }
 
 --- Extracts the OCSP responder URL (like "http://test.com/ocsp/") from the SSL server certificate chain in the DER format.
@@ -43,7 +43,6 @@ function ocsp.validate_ocsp_response(ocsp_resp, der_cert_chain, max_err_msg_len)
 ---@return string?        ocsp_req
 ---@return string?        error
 function ocsp.create_ocsp_request(der_cert_chain, max_len) end
-
 
 --- Sets the OCSP response as the OCSP stapling for the current SSL connection.
 ---

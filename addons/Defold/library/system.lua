@@ -155,7 +155,4 @@ function sys.set_update_frequency(frequency) end
 ---@param swap_interval number # target swap interval.
 function sys.set_vsync_swap_interval(swap_interval) end
 
-
-
-
 return sys

@@ -29,28 +29,28 @@
 ngx = {}
 
 ---@class ngx.OK
-ngx.OK       = 0
+ngx.OK = 0
 ---@class ngx.ERROR
-ngx.ERROR    = -1
-ngx.AGAIN    = -2
-ngx.DONE     = -4
+ngx.ERROR = -1
+ngx.AGAIN = -2
+ngx.DONE = -4
 ngx.DECLINED = -5
 
-ngx.HTTP_GET       = 2
-ngx.HTTP_HEAD      = 4
-ngx.HTTP_POST      = 8
-ngx.HTTP_PUT       = 16
-ngx.HTTP_DELETE    = 32
-ngx.HTTP_MKCOL     = 64
-ngx.HTTP_COPY      = 128
-ngx.HTTP_MOVE      = 256
-ngx.HTTP_OPTIONS   = 512
-ngx.HTTP_PROPFIND  = 1024
+ngx.HTTP_GET = 2
+ngx.HTTP_HEAD = 4
+ngx.HTTP_POST = 8
+ngx.HTTP_PUT = 16
+ngx.HTTP_DELETE = 32
+ngx.HTTP_MKCOL = 64
+ngx.HTTP_COPY = 128
+ngx.HTTP_MOVE = 256
+ngx.HTTP_OPTIONS = 512
+ngx.HTTP_PROPFIND = 1024
 ngx.HTTP_PROPPATCH = 2048
-ngx.HTTP_LOCK      = 4096
-ngx.HTTP_UNLOCK    = 8192
-ngx.HTTP_PATCH     = 16384
-ngx.HTTP_TRACE     = 32768
+ngx.HTTP_LOCK = 4096
+ngx.HTTP_UNLOCK = 8192
+ngx.HTTP_PATCH = 16384
+ngx.HTTP_TRACE = 32768
 
 ---@alias ngx.http.method
 ---| `ngx.HTTP_GET`
@@ -69,41 +69,41 @@ ngx.HTTP_TRACE     = 32768
 ---| `ngx.HTTP_PATCH`
 ---| `ngx.HTTP_TRACE`
 
-ngx.HTTP_CONTINUE               = 100
-ngx.HTTP_SWITCHING_PROTOCOLS    = 101
-ngx.HTTP_OK                     = 200
-ngx.HTTP_CREATED                = 201
-ngx.HTTP_ACCEPTED               = 202
-ngx.HTTP_NO_CONTENT             = 204
-ngx.HTTP_PARTIAL_CONTENT        = 206
-ngx.HTTP_SPECIAL_RESPONSE       = 300
-ngx.HTTP_MOVED_PERMANENTLY      = 301
-ngx.HTTP_MOVED_TEMPORARILY      = 302
-ngx.HTTP_SEE_OTHER              = 303
-ngx.HTTP_NOT_MODIFIED           = 304
-ngx.HTTP_TEMPORARY_REDIRECT     = 307
-ngx.HTTP_PERMANENT_REDIRECT     = 308
-ngx.HTTP_BAD_REQUEST            = 400
-ngx.HTTP_UNAUTHORIZED           = 401
-ngx.HTTP_PAYMENT_REQUIRED       = 402
-ngx.HTTP_FORBIDDEN              = 403
-ngx.HTTP_NOT_FOUND              = 404
-ngx.HTTP_NOT_ALLOWED            = 405
-ngx.HTTP_NOT_ACCEPTABLE         = 406
-ngx.HTTP_REQUEST_TIMEOUT        = 408
-ngx.HTTP_CONFLICT               = 409
-ngx.HTTP_GONE                   = 410
-ngx.HTTP_UPGRADE_REQUIRED       = 426
-ngx.HTTP_TOO_MANY_REQUESTS      = 429
-ngx.HTTP_CLOSE                  = 444
-ngx.HTTP_ILLEGAL                = 451
-ngx.HTTP_INTERNAL_SERVER_ERROR  = 500
+ngx.HTTP_CONTINUE = 100
+ngx.HTTP_SWITCHING_PROTOCOLS = 101
+ngx.HTTP_OK = 200
+ngx.HTTP_CREATED = 201
+ngx.HTTP_ACCEPTED = 202
+ngx.HTTP_NO_CONTENT = 204
+ngx.HTTP_PARTIAL_CONTENT = 206
+ngx.HTTP_SPECIAL_RESPONSE = 300
+ngx.HTTP_MOVED_PERMANENTLY = 301
+ngx.HTTP_MOVED_TEMPORARILY = 302
+ngx.HTTP_SEE_OTHER = 303
+ngx.HTTP_NOT_MODIFIED = 304
+ngx.HTTP_TEMPORARY_REDIRECT = 307
+ngx.HTTP_PERMANENT_REDIRECT = 308
+ngx.HTTP_BAD_REQUEST = 400
+ngx.HTTP_UNAUTHORIZED = 401
+ngx.HTTP_PAYMENT_REQUIRED = 402
+ngx.HTTP_FORBIDDEN = 403
+ngx.HTTP_NOT_FOUND = 404
+ngx.HTTP_NOT_ALLOWED = 405
+ngx.HTTP_NOT_ACCEPTABLE = 406
+ngx.HTTP_REQUEST_TIMEOUT = 408
+ngx.HTTP_CONFLICT = 409
+ngx.HTTP_GONE = 410
+ngx.HTTP_UPGRADE_REQUIRED = 426
+ngx.HTTP_TOO_MANY_REQUESTS = 429
+ngx.HTTP_CLOSE = 444
+ngx.HTTP_ILLEGAL = 451
+ngx.HTTP_INTERNAL_SERVER_ERROR = 500
 ngx.HTTP_METHOD_NOT_IMPLEMENTED = 501
-ngx.HTTP_BAD_GATEWAY            = 502
-ngx.HTTP_SERVICE_UNAVAILABLE    = 503
-ngx.HTTP_GATEWAY_TIMEOUT        = 504
-ngx.HTTP_VERSION_NOT_SUPPORTED  = 505
-ngx.HTTP_INSUFFICIENT_STORAGE   = 507
+ngx.HTTP_BAD_GATEWAY = 502
+ngx.HTTP_SERVICE_UNAVAILABLE = 503
+ngx.HTTP_GATEWAY_TIMEOUT = 504
+ngx.HTTP_VERSION_NOT_SUPPORTED = 505
+ngx.HTTP_INSUFFICIENT_STORAGE = 507
 
 ---@alias ngx.http.status_code
 ---| integer
@@ -143,15 +143,14 @@ ngx.HTTP_INSUFFICIENT_STORAGE   = 507
 ---| `ngx.HTTP_VERSION_NOT_SUPPORTED`
 ---| `ngx.HTTP_INSUFFICIENT_STORAGE`
 
-
-ngx.DEBUG  = 8
-ngx.INFO   = 7
+ngx.DEBUG = 8
+ngx.INFO = 7
 ngx.NOTICE = 6
-ngx.WARN   = 5
-ngx.ERR    = 4
-ngx.CRIT   = 3
-ngx.ALERT  = 2
-ngx.EMERG  = 1
+ngx.WARN = 5
+ngx.ERR = 4
+ngx.CRIT = 3
+ngx.ALERT = 2
+ngx.EMERG = 1
 ngx.STDERR = 0
 
 --- NGINX log level constants
@@ -166,7 +165,6 @@ ngx.STDERR = 0
 ---| `ngx.CRIT`   # critical
 ---| `ngx.EMERG`  # emergency
 ---| `ngx.STDERR` # standard error
-
 
 --- ngx.ctx table
 ---
@@ -586,7 +584,6 @@ function ngx.worker.pid() end
 ---
 ngx.config = {}
 
-
 --- Returns the NGINX server "prefix" path, as determined by the `-p` command-line option when running the NGINX executable, or the path specified by the `--prefix` command-line option when building NGINX with the `./configure` script.
 ---
 ---@return string
@@ -751,7 +748,6 @@ function ngx.timer.every(delay, callback, ...) end
 ---@return string?  error
 function ngx.timer.at(delay, callback, ...) end
 
-
 --- Unescape `str` as an escaped URI component.
 ---
 --- For example,
@@ -860,7 +856,6 @@ function ngx.quote_sql_str(raw_value) end
 
 ngx.re = {}
 
-
 --- PCRE regex options string
 ---
 --- This is a string made up of single-letter PCRE option names, usable in all `ngx.re.*` functions.
@@ -896,7 +891,6 @@ ngx.re = {}
 --- The `o` option is useful for performance tuning, because the regex pattern in question will only be compiled once, cached in the worker-process level, and shared among all requests in the current NGINX worker process. The upper limit of the regex cache can be tuned via the `lua_regex_cache_max_entries` directive.
 ---
 ---@alias ngx.re.options string
-
 
 --- ngx.re.match capture table
 ---
@@ -971,7 +965,6 @@ ngx.re = {}
 ---@class ngx.re.ctx : table
 ---@field pos? integer
 
-
 --- Similar to `ngx.re.match` but only returns the beginning index (`from`) and end index (`to`) of the matched substring. The returned indexes are 1-based and can be fed directly into the `string.sub` API function to obtain the matched substring.
 ---
 --- In case of errors (like bad regexes or any PCRE runtime errors), this API function returns two `nil` values followed by a string describing the error.
@@ -1023,7 +1016,6 @@ ngx.re = {}
 ---@return integer? to
 ---@return string?  error
 function ngx.re.find(subject, regex, options, ctx, nth) end
-
 
 --- Similar to `ngx.re.match`, but returns a Lua iterator instead, so as to let the user programmer iterate all the matches over the `<subject>` string argument with the PCRE `regex`.
 ---
@@ -1095,7 +1087,6 @@ function ngx.re.find(subject, regex, options, ctx, nth) end
 ---@return ngx.re.gmatch.iterator? iterator
 ---@return string?                 error
 function ngx.re.gmatch(subject, regex, options) end
-
 
 --- Matches the `subject` string using the Perl compatible regular expression `regex` with the optional `options`.
 ---
@@ -1229,7 +1220,6 @@ function ngx.re.gsub(subject, regex, replace, options) end
 ---@return string?  error
 function ngx.re.sub(subject, regex, replace, options) end
 
-
 --- Decodes the `str` argument as a base64 digest to the raw form. Returns `nil` if `str` is not well formed.
 ---
 ---@param str string
@@ -1283,7 +1273,6 @@ local DICT = {}
 ---@return ngx.shared.DICT.value? value
 ---@return ngx.shared.DICT.flags|string|nil flags_or_error
 function DICT:get(key) end
-
 
 --- Similar to the `get` method but returns the value even if the key has already expired.
 ---
@@ -1374,7 +1363,6 @@ function DICT:add(key, value, exptime, flags) end
 ---@return boolean  forcible # indicates whether other valid items have been removed forcibly when out of storage in the shared memory zone.
 function DICT:safe_add(key, value, exptime, flags) end
 
-
 --- Just like the `set` method, but only stores the key-value pair if the key *does* exist.
 ---
 --- If the `key` argument does *not* exist in the dictionary (or expired already), the `success` return value will be `false` and the `err` return value will be `"not found"`.
@@ -1394,7 +1382,6 @@ function DICT:replace(key, value, exptime, flags) end
 ---
 ---@param key string
 function DICT:delete(key) end
-
 
 --- Increments the (numerical) value for `key` by the step value `value`. Returns the new resulting number if the operation is successfully completed or `nil` and an error message otherwise.
 ---
@@ -1454,7 +1441,6 @@ function DICT:incr(key, value, init, init_ttl) end
 ---@return ngx.shared.DICT.error? error
 function DICT:lpush(key, value) end
 
-
 --- Similar to the `lpush` method, but inserts the specified (numerical or string) `value` at the tail of the list named `key`.
 ---
 ---@param  key     string
@@ -1462,7 +1448,6 @@ function DICT:lpush(key, value) end
 ---@return number? len    # number of elements in the list after the push operation
 ---@return ngx.shared.DICT.error? error
 function DICT:rpush(key, value) end
-
 
 --- Removes and returns the first element of the list named `key`.
 ---
@@ -1472,7 +1457,6 @@ function DICT:rpush(key, value) end
 ---@return ngx.shared.DICT.list_value? item
 ---@return ngx.shared.DICT.error? error
 function DICT:lpop(key) end
-
 
 --- Removes and returns the last element of the list named `key`.
 ---
@@ -1491,7 +1475,6 @@ function DICT:rpop(key) end
 ---@return number? len
 ---@return ngx.shared.DICT.error? error
 function DICT:llen(key) end
-
 
 --- Retrieves the remaining TTL (time-to-live in seconds) of a key-value pair.
 ---
@@ -1517,7 +1500,6 @@ function DICT:llen(key) end
 ---@return ngx.shared.DICT.error? error
 function DICT:ttl(key) end
 
-
 --- Updates the `exptime` (in second) of a key-value pair.
 ---
 --- Returns a boolean indicating success if the operation completes or `nil` and an error message otherwise.
@@ -1542,11 +1524,9 @@ function DICT:ttl(key) end
 ---@return ngx.shared.DICT.error? error
 function DICT:expire(key, exptime) end
 
-
 --- Flushes out all the items in the dictionary. This method does not actuall free up all the memory blocks in the dictionary but just marks all the existing items as expired.
 ---
 function DICT:flush_all() end
-
 
 --- Flushes out the expired items in the dictionary, up to the maximal number specified by the optional `max_count` argument. When the `max_count` argument is given `0` or not given at all, then it means unlimited. Returns the number of items that have actually been flushed.
 ---
@@ -1555,7 +1535,6 @@ function DICT:flush_all() end
 ---@param max_count? number
 ---@return number flushed
 function DICT:flush_expired(max_count) end
-
 
 --- Fetch a list of the keys from the dictionary, up to `<max_count>`.
 ---
@@ -1567,7 +1546,6 @@ function DICT:flush_expired(max_count) end
 ---@return string[]  keys
 function DICT:get_keys(max_count) end
 
-
 --- Retrieves the capacity in bytes for the shm-based dictionary.
 ---
 --- ```lua
@@ -1577,7 +1555,6 @@ function DICT:get_keys(max_count) end
 ---
 ---@return number
 function DICT:capacity() end
-
 
 --- Retrieves the free page size in bytes for the shm-based dictionary.
 ---
@@ -1936,7 +1913,6 @@ ngx.var.upstream_response_time = nil
 --- If a server cannot be selected, the variable keeps the 502 (Bad Gateway) status code.
 ---@type string
 ngx.var.upstream_status = nil
-
 
 ngx.req = {}
 
@@ -2747,7 +2723,6 @@ function udpsock:send(data) end
 ---@return string? error
 function udpsock:receive(size) end
 
-
 --- Closes the current UDP or datagram unix domain socket. It returns the `1` in case of success and returns `nil` with a string describing the error otherwise.
 ---
 --- Socket objects that have not invoked this method (and associated connections) will be closed when the socket object is released by the Lua GC (Garbage Collector) or the current client HTTP request finishes processing.
@@ -2882,7 +2857,6 @@ function tcpsock:connect(host, port, opts) end
 --- Limits the total number of opened connections for this pool. No more connections than `pool_size` can be opened for this pool at any time. If the connection pool is full, subsequent connect operations will be queued into a queue equal to this option's value (the "backlog" queue). If the number of queued connect operations is equal to `backlog`, subsequent connect operations will fail and return `nil` plus the error string `"too many waiting connect operations"`. The queued connect operations will be resumed once the number of connections in the pool is less than `pool_size`. The queued connect operation will abort once they have been queued for more than `connect_timeout`, controlled by `settimeouts`, and will return `nil` plus the error string `"timeout"`.
 ---@field backlog number
 
-
 --- Does SSL/TLS handshake on the currently established connection.
 ---
 --- The optional `reused_session` argument can take a former SSL
@@ -2938,7 +2912,6 @@ function tcpsock:sslhandshake(reused_session, server_name, ssl_verify, send_stat
 ---@return string? error
 function tcpsock:setclientcert(cert, key) end
 
-
 --- Sends data without blocking on the current TCP or Unix Domain Socket connection.
 ---
 --- This method is a synchronous operation that will not return until *all* the data has been flushed into the system socket send buffer or an error occurs.
@@ -2962,7 +2935,6 @@ function tcpsock:setclientcert(cert, key) end
 ---@return number? bytes
 ---@return string? error
 function tcpsock:send(data) end
-
 
 --- Receives data from the connected socket according to the reading pattern or size.
 ---
@@ -3031,7 +3003,6 @@ function tcpsock:receive(pattern) end
 ---@return string? data
 ---@return string? error
 function tcpsock:receiveany(max) end
-
 
 --- This method returns an iterator Lua function that can be called to read the data stream until it sees the specified pattern or an error occurs.
 ---
@@ -3125,7 +3096,6 @@ function tcpsock:receiveany(max) end
 ---@return ngx.socket.tcpsock.iterator
 function tcpsock:receiveuntil(pattern, options) end
 
-
 --- Closes the current TCP or stream unix domain socket. It returns the `1` in case of success and returns `nil` with a string describing the error otherwise.
 ---
 --- Note that there is no need to call this method on socket objects that have invoked the `setkeepalive` method because the socket object is already closed (and the current connection is saved into the built-in connection pool).
@@ -3136,7 +3106,6 @@ function tcpsock:receiveuntil(pattern, options) end
 ---@return string? error
 function tcpsock:close() end
 
-
 --- Set the timeout value in milliseconds for subsequent socket operations (`connect`, `receive`, and iterators returned from `receiveuntil`).
 ---
 --- Settings done by this method take priority over those specified via config directives (i.e. `lua_socket_connect_timeout`, `lua_socket_send_timeout`, and `lua_socket_read_timeout`).
@@ -3145,7 +3114,6 @@ function tcpsock:close() end
 ---
 ---@param time number
 function tcpsock:settimeout(time) end
-
 
 --- Respectively sets the connect, send, and read timeout thresholds (in milliseconds) for subsequent socket
 --- operations (`connect`, `send`, `receive`, and iterators returned from `receiveuntil`).
@@ -3160,7 +3128,6 @@ function tcpsock:settimeout(time) end
 ---@param send_timeout number|nil
 ---@param read_timeout number|nil
 function tcpsock:settimeouts(connect_timeout, send_timeout, read_timeout) end
-
 
 --- This function is added for `LuaSocket` API compatibility and does nothing for now.
 ---
@@ -3259,8 +3226,6 @@ function tcpsock:setoption(option, value) end
 ---| '"sndbuf"'      # max send buffer size (in bytes)
 ---| '"rcvbuf"'      # max receive bufer size (in bytes)
 
-
-
 --- Puts the current socket's connection immediately into the cosocket built-in connection pool and keep it alive until other `connect` method calls request it or the associated maximal idle timeout is expired.
 ---
 --- The first optional argument, `timeout`, can be used to specify the maximal idle timeout (in milliseconds) for the current connection. If omitted, the default setting in the `lua_socket_keepalive_timeout` config directive will be used. If the `0` value is given, then the timeout interval is unlimited.
@@ -3285,7 +3250,6 @@ function tcpsock:setoption(option, value) end
 ---@return boolean ok
 ---@return string? error
 function tcpsock:setkeepalive(timeout, size) end
-
 
 --- This method returns the (successfully) reused times for the current connection. In case of error, it returns `nil` and a string describing the error.
 ---
@@ -3380,7 +3344,6 @@ ngx.arg = {}
 ---
 ---@return ngx.phase.name
 function ngx.get_phase() end
-
 
 --- When `status >= 200` (i.e., `ngx.HTTP_OK` and above), it will interrupt the execution of the current request and return status code to NGINX.
 ---
@@ -3512,7 +3475,6 @@ function ngx.exit(status) end
 ---@param status? 301|302|303|307|308
 function ngx.redirect(uri, status) end
 
-
 --- Registers a user Lua function as the callback which gets called automatically when the client closes the (downstream) connection prematurely.
 ---
 --- Returns `1` if the callback is registered successfully or returns `nil` and a string describing the error otherwise.
@@ -3544,7 +3506,6 @@ function ngx.redirect(uri, status) end
 ---@return boolean ok
 ---@return string|'"lua_check_client_abort is off"'|'"duplicate call"' error
 function ngx.on_abort(callback) end
-
 
 --- Does an internal redirect to `uri` with `args` and is similar to the `echo_exec` directive of the `echo-nginx-module`.
 ---
@@ -3632,13 +3593,11 @@ ngx.location = {}
 ---
 ---@field always_forward_body boolean #  when set to true, the current (parent) request's request body will always be forwarded to the subrequest being created if the `body` option is not specified. The request body read by either `ngx.req.read_body()` or `lua_need_request_body on` will be directly forwarded to the subrequest without copying the whole request body data when creating the subrequest (no matter the request body data is buffered in memory buffers or temporary files). By default, this option is `false` and when the `body` option is not specified, the request body of the current (parent) request is only forwarded when the subrequest takes the `PUT` or `POST` request method.
 
-
 ---@alias ngx.location.capture.uri string
 
 ---@class ngx.location.capture.arg : table
 ---@field [1] ngx.location.capture.uri      request uri
 ---@field [2] ngx.location.capture.options? request options
-
 
 --- Issues a synchronous but still non-blocking *NGINX Subrequest* using `uri`.
 ---
@@ -3868,7 +3827,6 @@ ngx.location = {}
 ---@return ngx.location.capture.response
 function ngx.location.capture(uri, options) end
 
-
 --- Just like `ngx.location.capture`, but supports multiple subrequests running in parallel.
 ---
 --- This function issues several parallel subrequests specified by the input table and returns their results in the same order. For example,
@@ -3925,7 +3883,6 @@ function ngx.location.capture(uri, options) end
 ---@param args ngx.location.capture.arg[]
 ---@return ngx.location.capture.response ...
 function ngx.location.capture_multi(args) end
-
 
 --- Set, add to, or clear the current request's `HEADER` response header that is to be sent.
 ---
@@ -4028,7 +3985,6 @@ function ngx.location.capture_multi(args) end
 ---@type table<string, string|string[]|nil>
 ngx.header = {}
 
-
 --- Parse the http time string (as returned by `ngx.http_time`) into seconds. Returns the seconds or `nil` if the input string is in bad forms.
 ---
 --- ```lua
@@ -4042,7 +3998,6 @@ ngx.header = {}
 ---@return number?
 function ngx.parse_http_time(str) end
 
-
 --- Returns a formated string can be used as the http header time (for example, being used in `Last-Modified` header). The parameter `sec` is the time stamp in seconds (like those returned from `ngx.time`).
 ---
 --- ```lua
@@ -4053,7 +4008,6 @@ function ngx.parse_http_time(str) end
 ---@param sec number
 ---@return string
 function ngx.http_time(sec) end
-
 
 --- Sleeps for the specified seconds without blocking. One can specify time resolution up to 0.001 seconds (i.e., one milliseconds).
 ---
@@ -4121,7 +4075,6 @@ function ngx.time() end
 ---@param level ngx.log.level
 ---@param ... any
 function ngx.log(level, ...) end
-
 
 --- Explicitly specify the end of the response output stream. In the case of HTTP 1.1 chunked encoded output, it will just trigger the NGINX core to send out the "last chunk".
 ---
@@ -4387,7 +4340,6 @@ function ngx.resp.get_headers(max_headers, raw) end
 ---@return boolean ok
 ---@return ngx.thread.arg? result_or_error
 ---@return any ...
-function ngx.run_worker_thread(threadpool, module_name, func_name, arg1, arg2, ...)
-end
+function ngx.run_worker_thread(threadpool, module_name, func_name, arg1, arg2, ...) end
 
 return ngx

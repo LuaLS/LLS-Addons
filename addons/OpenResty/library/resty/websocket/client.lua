@@ -2,7 +2,7 @@
 
 ---@class resty.websocket.client : resty.websocket
 local client = {
-  _VERSION = "0.09"
+	_VERSION = "0.09",
 }
 
 ---Instantiates a WebSocket client object.
@@ -58,6 +58,5 @@ function client:close() end
 ---@field pool       string           custom name for the connection pool being used. If omitted, then the connection pool name will be generated from the string template <host>:<port>.
 ---@field ssl_verify boolean          whether to perform SSL certificate verification during the SSL handshake if the wss:// scheme is used.
 ---@field headers    string[]         custom headers to be sent in the handshake request. The table is expected to contain strings in the format {"a-header: a header value", "another-header: another header value"}.
-
 
 return client

@@ -72,7 +72,4 @@ function tilemap.set_tile(url, layer, x, y, tile, transform_bitmask) end
 ---@param visible boolean # should the layer be visible
 function tilemap.set_visible(url, layer, visible) end
 
-
-
-
 return tilemap

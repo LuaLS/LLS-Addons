@@ -175,7 +175,4 @@ function resource.texture(path) end
 ---@return hash # a path hash to the binary version of the resource
 function resource.tile_source(path) end
 
-
-
-
 return resource

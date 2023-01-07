@@ -1,19 +1,16 @@
 ---@meta
 
----@class ccs.Tween 
-local Tween={ }
-ccs.Tween=Tween
+---@class ccs.Tween
+local Tween = {}
+ccs.Tween = Tween
 
-
-
-
----* 
+---*
 ---@return ccs.ArmatureAnimation
-function Tween:getAnimation () end
----* 
+function Tween:getAnimation() end
+---*
 ---@param frameIndex int
 ---@return self
-function Tween:gotoAndPause (frameIndex) end
+function Tween:gotoAndPause(frameIndex) end
 ---* Start the Process<br>
 ---* param  movementBoneData  the MovementBoneData include all FrameData<br>
 ---* param  durationTo the number of frames changing to this animation needs.<br>
@@ -34,25 +31,25 @@ function Tween:gotoAndPause (frameIndex) end
 ---@param loop int
 ---@param tweenEasing int
 ---@return self
-function Tween:play (movementBoneData,durationTo,durationTween,loop,tweenEasing) end
----* 
+function Tween:play(movementBoneData, durationTo, durationTween, loop, tweenEasing) end
+---*
 ---@param frameIndex int
 ---@return self
-function Tween:gotoAndPlay (frameIndex) end
+function Tween:gotoAndPlay(frameIndex) end
 ---* Init with a Bone<br>
 ---* param bone the Bone Tween will bind to
 ---@param bone ccs.Bone
 ---@return boolean
-function Tween:init (bone) end
----* 
+function Tween:init(bone) end
+---*
 ---@param animation ccs.ArmatureAnimation
 ---@return self
-function Tween:setAnimation (animation) end
+function Tween:setAnimation(animation) end
 ---* Create with a Bone<br>
 ---* param bone the Bone Tween will bind to
 ---@param bone ccs.Bone
 ---@return self
-function Tween:create (bone) end
----* 
+function Tween:create(bone) end
+---*
 ---@return self
-function Tween:Tween () end
+function Tween:Tween() end

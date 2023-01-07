@@ -1,20 +1,17 @@
 ---@meta
 
 ---@class cc.PhysicsShapeEdgeSegment :cc.PhysicsShape
-local PhysicsShapeEdgeSegment={ }
-cc.PhysicsShapeEdgeSegment=PhysicsShapeEdgeSegment
-
-
-
+local PhysicsShapeEdgeSegment = {}
+cc.PhysicsShapeEdgeSegment = PhysicsShapeEdgeSegment
 
 ---* Get this edge's end position.<br>
 ---* return A Vec2 object.
 ---@return vec2_table
-function PhysicsShapeEdgeSegment:getPointB () end
+function PhysicsShapeEdgeSegment:getPointB() end
 ---* Get this edge's begin position.<br>
 ---* return A Vec2 object.
 ---@return vec2_table
-function PhysicsShapeEdgeSegment:getPointA () end
+function PhysicsShapeEdgeSegment:getPointA() end
 ---* Creates a PhysicsShapeEdgeSegment with specified value.<br>
 ---* param   a It's the edge's begin position.<br>
 ---* param   b It's the edge's end position.<br>
@@ -26,8 +23,8 @@ function PhysicsShapeEdgeSegment:getPointA () end
 ---@param material cc.PhysicsMaterial
 ---@param border float
 ---@return self
-function PhysicsShapeEdgeSegment:create (a,b,material,border) end
+function PhysicsShapeEdgeSegment:create(a, b, material, border) end
 ---* Get this edge's center position.<br>
 ---* return A Vec2 object.
 ---@return vec2_table
-function PhysicsShapeEdgeSegment:getCenter () end
+function PhysicsShapeEdgeSegment:getCenter() end

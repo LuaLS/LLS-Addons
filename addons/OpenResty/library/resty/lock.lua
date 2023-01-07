@@ -6,9 +6,8 @@
 ---
 ---@class resty.lock : table
 local lock = {
-  _VERSION = "0.08",
+	_VERSION = "0.08",
 }
-
 
 ---@class resty.lock.opts : table
 ---
@@ -40,7 +39,6 @@ local lock = {
 --- Specifies the maximal step size (i.e., sleep interval, in seconds) allowed.
 --- See also the step and ratio options). Default to 0.5 (seconds).
 ---@field max_step number
-
 
 --- Creates a new lock object instance by specifying the shared dictionary name
 --- (created by `lua_shared_dict`) and an optional options table `opts`.

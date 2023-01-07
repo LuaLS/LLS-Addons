@@ -1,5 +1,5 @@
 ---@meta
-local upstream={}
+local upstream = {}
 function upstream.get_backup_peers() end
 function upstream.get_servers() end
 function upstream.current_upstream_name() end

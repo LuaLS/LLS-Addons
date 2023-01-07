@@ -71,7 +71,6 @@ match.is.Ref = match.Ref
 match.is.ref = match.Ref
 match.is_ref = match.Ref
 
-
 ---Combine matchers, matching all provided matchers.
 ---@param ... table|function
 ---```lua
@@ -141,7 +140,6 @@ match.is_none_of = match.none_of
 match.is.none_of = match.none_of
 
 --#endregion
-
 
 --[[ Matchers ]]
 
@@ -293,7 +291,6 @@ match.is.Matches = match.Matches
 match.is_match = match.Matches
 
 --#endregion
-
 
 --[[ Inverse Matchers ]]
 

@@ -31,11 +31,11 @@ function love.physics.getMeter() end
 ---
 ---Creates a new body.
 ---
----There are three types of bodies. 
+---There are three types of bodies.
 ---
----* Static bodies do not move, have a infinite mass, and can be used for level boundaries. 
+---* Static bodies do not move, have a infinite mass, and can be used for level boundaries.
 ---
----* Dynamic bodies are the main actors in the simulation, they collide with everything. 
+---* Dynamic bodies are the main actors in the simulation, they collide with everything.
 ---
 ---* Kinematic bodies do not react to forces and only collide with dynamic bodies.
 ---
@@ -148,7 +148,7 @@ function love.physics.newMotorJoint(body1, body2, correctionFactor) end
 ---
 ---This joint actually connects the body to a fixed point in the world. To make it follow the mouse, the fixed point must be updated every timestep (example below).
 ---
----The advantage of using a MouseJoint instead of just changing a body position directly is that collisions and reactions to other joints are handled by the physics engine. 
+---The advantage of using a MouseJoint instead of just changing a body position directly is that collisions and reactions to other joints are handled by the physics engine.
 ---
 ---@param body love.Body # The body to attach to the mouse.
 ---@param x number # The x position of the connecting point.
@@ -212,7 +212,7 @@ function love.physics.newPrismaticJoint(body1, body2, x, y, ax, ay, collideConne
 function love.physics.newPulleyJoint(body1, body2, gx1, gy1, gx2, gy2, x1, y1, x2, y2, ratio, collideConnected) end
 
 ---
----Shorthand for creating rectangular PolygonShapes. 
+---Shorthand for creating rectangular PolygonShapes.
 ---
 ---By default, the local origin is located at the '''center''' of the rectangle as opposed to the top left for graphics.
 ---
@@ -331,7 +331,7 @@ function Body:applyForce(fx, fy) end
 ---
 ---An impulse pushes a body in a direction. A body with with a larger mass will react less. The reaction does '''not''' depend on the timestep, and is equivalent to applying a force continuously for 1 second. Impulses are best used to give a single push to a body. For a continuous push to a body it is better to use Body:applyForce.
 ---
----If the position to apply the impulse is not given, it will act on the center of mass of the body. The part of the impulse not directed towards the center of mass will cause the body to spin (and depends on the rotational inertia). 
+---If the position to apply the impulse is not given, it will act on the center of mass of the body. The part of the impulse not directed towards the center of mass will cause the body to spin (and depends on the rotational inertia).
 ---
 ---Note that the impulse components and position must be given in world coordinates.
 ---
@@ -696,7 +696,7 @@ function Body:setActive(active) end
 ---
 ---A value of 0 radians will mean 'looking to the right'. Although radians increase counter-clockwise, the y axis points down so it becomes ''clockwise'' from our point of view.
 ---
----It is possible to cause a collision with another body by changing its angle. 
+---It is possible to cause a collision with another body by changing its angle.
 ---
 ---@param angle number # The angle in radians.
 function Body:setAngle(angle) end
@@ -716,7 +716,7 @@ function Body:setAngularDamping(damping) end
 ---
 ---The angular velocity is the ''rate of change of angle over time''.
 ---
----This function will not accumulate anything; any impulses previously applied since the last call to World:update will be lost. 
+---This function will not accumulate anything; any impulses previously applied since the last call to World:update will be lost.
 ---
 ---@param w number # The new angular velocity, in radians per second
 function Body:setAngularVelocity(w) end
@@ -746,7 +746,7 @@ function Body:setBullet(status) end
 ---
 ---Set whether a body has fixed rotation.
 ---
----Bodies with fixed rotation don't vary the speed at which they rotate. Calling this function causes the mass to be reset. 
+---Bodies with fixed rotation don't vary the speed at which they rotate. Calling this function causes the mass to be reset.
 ---
 ---@param isFixed boolean # Whether the body should have fixed rotation.
 function Body:setFixedRotation(isFixed) end
@@ -843,7 +843,7 @@ function Body:setUserData(value) end
 ---
 ---Set the x position of the body.
 ---
----This function cannot wake up the body. 
+---This function cannot wake up the body.
 ---
 ---@param x number # The x position.
 function Body:setX(x) end
@@ -851,7 +851,7 @@ function Body:setX(x) end
 ---
 ---Set the y position of the body.
 ---
----This function cannot wake up the body. 
+---This function cannot wake up the body.
 ---
 ---@param y number # The y position.
 function Body:setY(y) end
@@ -1430,7 +1430,7 @@ local Joint = {}
 ---
 ---Explicitly destroys the Joint. An error will occur if you attempt to use the object after calling this function.
 ---
----In 0.7.2, when you don't have time to wait for garbage collection, this function 
+---In 0.7.2, when you don't have time to wait for garbage collection, this function
 ---
 ---may be used to free the object immediately.
 ---
@@ -1940,7 +1940,7 @@ function RopeJoint:setMaxLength(maxLength) end
 ---
 ---Shapes are solid 2d geometrical objects which handle the mass and collision of a Body in love.physics.
 ---
----Shapes are attached to a Body via a Fixture. The Shape object is copied when this happens. 
+---Shapes are attached to a Body via a Fixture. The Shape object is copied when this happens.
 ---
 ---The Shape's position is relative to the position of the Body it has been attached to.
 ---
@@ -2161,7 +2161,7 @@ function WheelJoint:setSpringFrequency(freq) end
 local World = {}
 
 ---
----Destroys the world, taking all bodies, joints, fixtures and their shapes with it. 
+---Destroys the world, taking all bodies, joints, fixtures and their shapes with it.
 ---
 ---An error will occur if you attempt to use any of the destroyed objects after calling this function.
 ---
@@ -2256,7 +2256,7 @@ function World:isSleepingAllowed() end
 function World:queryBoundingBox(topLeftX, topLeftY, bottomRightX, bottomRightY, callback) end
 
 ---
----Casts a ray and calls a function for each fixtures it intersects. 
+---Casts a ray and calls a function for each fixtures it intersects.
 ---
 ---@param fixture love.Fixture # The fixture intersecting the ray.
 ---@param x number # The x position of the intersection point.
@@ -2319,7 +2319,7 @@ function World:translateOrigin(x, y) end
 function World:update(dt, velocityiterations, positioniterations) end
 
 ---
----The types of a Body. 
+---The types of a Body.
 ---
 ---@alias love.BodyType
 ---

@@ -1,11 +1,8 @@
 ---@meta
 
 ---@class cc.TransitionSlideInB :cc.TransitionSlideInL
-local TransitionSlideInB={ }
-cc.TransitionSlideInB=TransitionSlideInB
-
-
-
+local TransitionSlideInB = {}
+cc.TransitionSlideInB = TransitionSlideInB
 
 ---*  Creates a transition with duration and incoming scene.<br>
 ---* param t Duration time, in seconds.<br>
@@ -14,10 +11,10 @@ cc.TransitionSlideInB=TransitionSlideInB
 ---@param t float
 ---@param scene cc.Scene
 ---@return self
-function TransitionSlideInB:create (t,scene) end
----*  returns the action that will be performed by the incoming and outgoing scene 
+function TransitionSlideInB:create(t, scene) end
+---*  returns the action that will be performed by the incoming and outgoing scene
 ---@return cc.ActionInterval
-function TransitionSlideInB:action () end
----* 
+function TransitionSlideInB:action() end
+---*
 ---@return self
-function TransitionSlideInB:TransitionSlideInB () end
+function TransitionSlideInB:TransitionSlideInB() end

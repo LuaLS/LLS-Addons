@@ -1,3 +1,3 @@
 ---@meta
-toComment={}
+toComment = {}
 return toComment

@@ -1,6 +1,6 @@
 ---@meta
-local pipe={}
-pipe._gc_ref_c_opt="-c"
+local pipe = {}
+pipe._gc_ref_c_opt = "-c"
 
 pipe.version = require("resty.core.base").version
 
@@ -79,7 +79,6 @@ pipe.version = require("resty.core.base").version
 ---@return string?        error
 function pipe.spawn(args, opts) end
 
-
 --- Options for ngx.pipe.spawn()
 ---
 ---@class ngx.pipe.spawn.opts : table
@@ -104,7 +103,6 @@ function pipe.spawn(args, opts) end
 ---
 --- specifies the wait timeout threshold, in milliseconds. The default threshold is 10000. If the threshold is 0, the wait operation will never time out.
 ---@field wait_timeout number
-
 
 ---@class ngx.pipe.proc : table
 local proc = {}
@@ -155,11 +153,9 @@ function proc:set_timeouts(write_timeout, stdout_read_timeout, stderr_read_timeo
 ---@return number              status
 function proc:wait() end
 
-
 --- Returns the pid number of the sub-process.
 ---@return number pid
 function proc:pid() end
-
 
 --- Sends a signal to the sub-process.
 ---
@@ -288,7 +284,6 @@ function proc:stderr_read_bytes(len) end
 ---@return string? error
 ---@return string? partial
 function proc:stdout_read_bytes(len) end
-
 
 --- Reads from stderr like `stderr_read_all`, but returns immediately when any amount of data is received.
 ---

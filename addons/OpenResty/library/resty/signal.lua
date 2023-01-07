@@ -1,7 +1,7 @@
 ---@meta
 
 local signal = {
-    version = 0.03,
+	version = 0.03,
 }
 
 ---@alias resty.signal.name
@@ -38,7 +38,6 @@ local signal = {
 ---| '"SYS"'
 ---| '"INFO"'
 ---| '"NONE"' # The special signal name NONE is also supported, which is mapped to zero (0).
-
 
 ---
 -- Sends a signal with its name string or number value to the process of the specified pid.

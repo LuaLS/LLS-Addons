@@ -1,26 +1,23 @@
 ---@meta
 
 ---@class cc.EaseQuarticActionOut :cc.ActionEase
-local EaseQuarticActionOut={ }
-cc.EaseQuarticActionOut=EaseQuarticActionOut
+local EaseQuarticActionOut = {}
+cc.EaseQuarticActionOut = EaseQuarticActionOut
 
-
-
-
----* 
+---*
 ---@param action cc.ActionInterval
 ---@return self
-function EaseQuarticActionOut:create (action) end
----* 
+function EaseQuarticActionOut:create(action) end
+---*
 ---@return self
-function EaseQuarticActionOut:clone () end
----* 
+function EaseQuarticActionOut:clone() end
+---*
 ---@param time float
 ---@return self
-function EaseQuarticActionOut:update (time) end
----* 
+function EaseQuarticActionOut:update(time) end
+---*
 ---@return cc.ActionEase
-function EaseQuarticActionOut:reverse () end
----* 
+function EaseQuarticActionOut:reverse() end
+---*
 ---@return self
-function EaseQuarticActionOut:EaseQuarticActionOut () end
+function EaseQuarticActionOut:EaseQuarticActionOut() end

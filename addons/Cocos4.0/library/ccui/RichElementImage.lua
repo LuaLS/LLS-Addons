@@ -1,16 +1,13 @@
 ---@meta
 
 ---@class ccui.RichElementImage :ccui.RichElement
-local RichElementImage={ }
-ccui.RichElementImage=RichElementImage
+local RichElementImage = {}
+ccui.RichElementImage = RichElementImage
 
-
-
-
----* 
+---*
 ---@param height int
 ---@return self
-function RichElementImage:setHeight (height) end
+function RichElementImage:setHeight(height) end
 ---* brief Initialize a RichElementImage with various arguments.<br>
 ---* param tag A integer tag value.<br>
 ---* param color A color in Color3B.<br>
@@ -26,15 +23,15 @@ function RichElementImage:setHeight (height) end
 ---@param url string
 ---@param texType int
 ---@return boolean
-function RichElementImage:init (tag,color,opacity,filePath,url,texType) end
----* 
+function RichElementImage:init(tag, color, opacity, filePath, url, texType) end
+---*
 ---@param width int
 ---@return self
-function RichElementImage:setWidth (width) end
----* 
+function RichElementImage:setWidth(width) end
+---*
 ---@param url string
 ---@return self
-function RichElementImage:setUrl (url) end
+function RichElementImage:setUrl(url) end
 ---* brief Create a RichElementImage with various arguments.<br>
 ---* param tag A integer tag value.<br>
 ---* param color A color in Color3B.<br>
@@ -50,9 +47,9 @@ function RichElementImage:setUrl (url) end
 ---@param url string
 ---@param texType int
 ---@return self
-function RichElementImage:create (tag,color,opacity,filePath,url,texType) end
+function RichElementImage:create(tag, color, opacity, filePath, url, texType) end
 ---* brief Default constructor.<br>
 ---* js ctor<br>
 ---* lua new
 ---@return self
-function RichElementImage:RichElementImage () end
+function RichElementImage:RichElementImage() end

@@ -1,8 +1,7 @@
 ---@meta
-local session={}
+local session = {}
 
 session.version = require("resty.core.base").version
-
 
 --- Sets the serialized SSL session provided as the argument to the current SSL connection.
 --- If the SSL session is successfully set, the current SSL connection can resume the session

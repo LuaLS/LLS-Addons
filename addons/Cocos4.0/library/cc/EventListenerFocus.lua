@@ -1,21 +1,18 @@
 ---@meta
 
 ---@class cc.EventListenerFocus :cc.EventListener
-local EventListenerFocus={ }
-cc.EventListenerFocus=EventListenerFocus
+local EventListenerFocus = {}
+cc.EventListenerFocus = EventListenerFocus
 
-
-
-
----* 
+---*
 ---@return boolean
-function EventListenerFocus:init () end
+function EventListenerFocus:init() end
 ---* / Overrides
 ---@return self
-function EventListenerFocus:clone () end
----* 
+function EventListenerFocus:clone() end
+---*
 ---@return boolean
-function EventListenerFocus:checkAvailable () end
----* 
+function EventListenerFocus:checkAvailable() end
+---*
 ---@return self
-function EventListenerFocus:EventListenerFocus () end
+function EventListenerFocus:EventListenerFocus() end

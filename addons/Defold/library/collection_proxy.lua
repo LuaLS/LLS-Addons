@@ -4,6 +4,4 @@
 ---@class collectionproxy
 collectionproxy = {}
 
-
-
 return collectionproxy

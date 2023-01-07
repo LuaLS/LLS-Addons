@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class resty.md5 : resty.string.checksum
-local md5={}
+local md5 = {}
 
 --- Create a new md5 checksum object.
 ---@return resty.md5

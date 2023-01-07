@@ -1,11 +1,8 @@
 ---@meta
 
 ---@class cc.PageTurn3D :cc.Grid3DAction
-local PageTurn3D={ }
-cc.PageTurn3D=PageTurn3D
-
-
-
+local PageTurn3D = {}
+cc.PageTurn3D = PageTurn3D
 
 ---* brief Create an action with duration, grid size.<br>
 ---* param duration Specify the duration of the PageTurn3D action. It's a value in seconds.<br>
@@ -14,14 +11,14 @@ cc.PageTurn3D=PageTurn3D
 ---@param duration float
 ---@param gridSize size_table
 ---@return self
-function PageTurn3D:create (duration,gridSize) end
----* 
+function PageTurn3D:create(duration, gridSize) end
+---*
 ---@return self
-function PageTurn3D:clone () end
----* js NA 
+function PageTurn3D:clone() end
+---* js NA
 ---@return cc.GridBase
-function PageTurn3D:getGrid () end
----* 
+function PageTurn3D:getGrid() end
+---*
 ---@param time float
 ---@return self
-function PageTurn3D:update (time) end
+function PageTurn3D:update(time) end

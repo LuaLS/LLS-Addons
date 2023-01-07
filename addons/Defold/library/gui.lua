@@ -923,7 +923,4 @@ function on_reload(self) end
 ---@param dt number # the time-step of the frame update
 function update(self, dt) end
 
-
-
-
 return gui

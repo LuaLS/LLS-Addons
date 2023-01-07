@@ -48,7 +48,4 @@ function collectionfactory.load(url, complete_function) end
 ---@param url string|hash|url? # the collection factory component to unload
 function collectionfactory.unload(url) end
 
-
-
-
 return collectionfactory

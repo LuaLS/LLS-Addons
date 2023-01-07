@@ -26,7 +26,4 @@ function sprite.set_hflip(url, flip) end
 ---@param flip boolean # true if the sprite should flip its animations, false if not
 function sprite.set_vflip(url, flip) end
 
-
-
-
 return sprite

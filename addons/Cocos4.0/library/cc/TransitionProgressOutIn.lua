@@ -1,11 +1,8 @@
 ---@meta
 
 ---@class cc.TransitionProgressOutIn :cc.TransitionProgress
-local TransitionProgressOutIn={ }
-cc.TransitionProgressOutIn=TransitionProgressOutIn
-
-
-
+local TransitionProgressOutIn = {}
+cc.TransitionProgressOutIn = TransitionProgressOutIn
 
 ---*  Creates a transition with duration and incoming scene.<br>
 ---* param t Duration time, in seconds.<br>
@@ -14,7 +11,7 @@ cc.TransitionProgressOutIn=TransitionProgressOutIn
 ---@param t float
 ---@param scene cc.Scene
 ---@return self
-function TransitionProgressOutIn:create (t,scene) end
+function TransitionProgressOutIn:create(t, scene) end
 ---* js ctor
 ---@return self
-function TransitionProgressOutIn:TransitionProgressOutIn () end
+function TransitionProgressOutIn:TransitionProgressOutIn() end

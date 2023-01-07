@@ -7,8 +7,7 @@ local sharetable = {}
 ---@param filename string
 ---@vararg any 传递的参数
 ---@return table
-function sharetable.loadfile(filename, ...)
-end
+function sharetable.loadfile(filename, ...) end
 ---* 和 loadfile 类似，但是是从一个字符串读取。
 ---* 推荐使用 sharetable.loadfile 创建这个共享表。
 ---* 因为使用 sharetable.loadtable 会经过一次序列化和拷贝，对于太大的表，这个过程非常的耗时。
@@ -16,22 +15,18 @@ end
 ---@param source string
 ---@vararg any
 ---@return table
-function sharetable.loadstring(filename, source, ...)
-end
+function sharetable.loadstring(filename, source, ...) end
 ---* 直接将一个 table 共享。
 ---@param filename string
 ---@param tbl table
 ---@return table
-function sharetable.loadtable(filename, tbl)
-end
+function sharetable.loadtable(filename, tbl) end
 ---* 以 filename 为 key 查找一个被共享的 table 。
 ---@param filename string
 ---@return table
-function sharetable.query(filename)
-end
+function sharetable.query(filename) end
 ---* 更新一个或多个 key 。
 ---@vararg ... keys
-function sharetable.update(...)
-end
+function sharetable.update(...) end
 
 return sharetable

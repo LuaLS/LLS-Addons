@@ -1,22 +1,19 @@
 ---@meta
 
 ---@class cc.EventListenerAcceleration :cc.EventListener
-local EventListenerAcceleration={ }
-cc.EventListenerAcceleration=EventListenerAcceleration
+local EventListenerAcceleration = {}
+cc.EventListenerAcceleration = EventListenerAcceleration
 
-
-
-
----* 
+---*
 ---@param callback function
 ---@return boolean
-function EventListenerAcceleration:init (callback) end
+function EventListenerAcceleration:init(callback) end
 ---* / Overrides
 ---@return self
-function EventListenerAcceleration:clone () end
----* 
+function EventListenerAcceleration:clone() end
+---*
 ---@return boolean
-function EventListenerAcceleration:checkAvailable () end
----* 
+function EventListenerAcceleration:checkAvailable() end
+---*
 ---@return self
-function EventListenerAcceleration:EventListenerAcceleration () end
+function EventListenerAcceleration:EventListenerAcceleration() end

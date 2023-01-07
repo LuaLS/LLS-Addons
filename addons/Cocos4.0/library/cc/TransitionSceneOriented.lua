@@ -1,18 +1,15 @@
 ---@meta
 
 ---@class cc.TransitionSceneOriented :cc.TransitionScene
-local TransitionSceneOriented={ }
-cc.TransitionSceneOriented=TransitionSceneOriented
+local TransitionSceneOriented = {}
+cc.TransitionSceneOriented = TransitionSceneOriented
 
-
-
-
----*  initializes a transition with duration and incoming scene 
+---*  initializes a transition with duration and incoming scene
 ---@param t float
 ---@param scene cc.Scene
 ---@param orientation int
 ---@return boolean
-function TransitionSceneOriented:initWithDuration (t,scene,orientation) end
+function TransitionSceneOriented:initWithDuration(t, scene, orientation) end
 ---*  Creates a transition with duration, incoming scene and orientation.<br>
 ---* param t Duration time, in seconds.<br>
 ---* param scene A given scene.<br>
@@ -22,7 +19,7 @@ function TransitionSceneOriented:initWithDuration (t,scene,orientation) end
 ---@param scene cc.Scene
 ---@param orientation int
 ---@return self
-function TransitionSceneOriented:create (t,scene,orientation) end
----* 
+function TransitionSceneOriented:create(t, scene, orientation) end
+---*
 ---@return self
-function TransitionSceneOriented:TransitionSceneOriented () end
+function TransitionSceneOriented:TransitionSceneOriented() end

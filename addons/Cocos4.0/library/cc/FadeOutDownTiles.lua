@@ -1,11 +1,8 @@
 ---@meta
 
 ---@class cc.FadeOutDownTiles :cc.FadeOutUpTiles
-local FadeOutDownTiles={ }
-cc.FadeOutDownTiles=FadeOutDownTiles
-
-
-
+local FadeOutDownTiles = {}
+cc.FadeOutDownTiles = FadeOutDownTiles
 
 ---* brief Create the action with the grid size and the duration.<br>
 ---* param duration Specify the duration of the FadeOutDownTiles action. It's a value in seconds.<br>
@@ -14,15 +11,15 @@ cc.FadeOutDownTiles=FadeOutDownTiles
 ---@param duration float
 ---@param gridSize size_table
 ---@return self
-function FadeOutDownTiles:create (duration,gridSize) end
----* 
+function FadeOutDownTiles:create(duration, gridSize) end
+---*
 ---@return self
-function FadeOutDownTiles:clone () end
----* 
+function FadeOutDownTiles:clone() end
+---*
 ---@param pos size_table
 ---@param time float
 ---@return float
-function FadeOutDownTiles:testFunc (pos,time) end
----* 
+function FadeOutDownTiles:testFunc(pos, time) end
+---*
 ---@return self
-function FadeOutDownTiles:FadeOutDownTiles () end
+function FadeOutDownTiles:FadeOutDownTiles() end

@@ -1,17 +1,14 @@
 ---@meta
 
 ---@class cc.Waves :cc.Grid3DAction
-local Waves={ }
-cc.Waves=Waves
-
-
-
+local Waves = {}
+cc.Waves = Waves
 
 ---* brief Set the amplitude rate of the effect.<br>
 ---* param amplitudeRate The value of amplitude rate will be set.
 ---@param amplitudeRate float
 ---@return self
-function Waves:setAmplitudeRate (amplitudeRate) end
+function Waves:setAmplitudeRate(amplitudeRate) end
 ---* brief Initializes the action with amplitude, horizontal sin, vertical sin, grid size, waves count and duration.<br>
 ---* param duration Specify the duration of the Waves action. It's a value in seconds.<br>
 ---* param gridSize Specify the size of the grid.<br>
@@ -27,20 +24,20 @@ function Waves:setAmplitudeRate (amplitudeRate) end
 ---@param horizontal boolean
 ---@param vertical boolean
 ---@return boolean
-function Waves:initWithDuration (duration,gridSize,waves,amplitude,horizontal,vertical) end
+function Waves:initWithDuration(duration, gridSize, waves, amplitude, horizontal, vertical) end
 ---* brief Get the amplitude of the effect.<br>
 ---* return Return the amplitude of the effect.
 ---@return float
-function Waves:getAmplitude () end
+function Waves:getAmplitude() end
 ---* brief Get the amplitude rate of the effect.<br>
 ---* return Return the amplitude rate of the effect.
 ---@return float
-function Waves:getAmplitudeRate () end
+function Waves:getAmplitudeRate() end
 ---* brief Set the amplitude to the effect.<br>
 ---* param amplitude The value of amplitude will be set.
 ---@param amplitude float
 ---@return self
-function Waves:setAmplitude (amplitude) end
+function Waves:setAmplitude(amplitude) end
 ---* brief Create the action with amplitude, horizontal sin, vertical sin, grid size, waves count and duration.<br>
 ---* param duration Specify the duration of the Waves action. It's a value in seconds.<br>
 ---* param gridSize Specify the size of the grid.<br>
@@ -56,14 +53,14 @@ function Waves:setAmplitude (amplitude) end
 ---@param horizontal boolean
 ---@param vertical boolean
 ---@return self
-function Waves:create (duration,gridSize,waves,amplitude,horizontal,vertical) end
----* 
+function Waves:create(duration, gridSize, waves, amplitude, horizontal, vertical) end
+---*
 ---@return self
-function Waves:clone () end
----* 
+function Waves:clone() end
+---*
 ---@param time float
 ---@return self
-function Waves:update (time) end
----* 
+function Waves:update(time) end
+---*
 ---@return self
-function Waves:Waves () end
+function Waves:Waves() end

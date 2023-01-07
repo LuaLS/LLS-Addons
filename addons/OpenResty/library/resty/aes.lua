@@ -1,6 +1,6 @@
 ---@meta
 
-local aes={}
+local aes = {}
 
 ---@alias resty.aes.cipher.name
 ---| '"ecb"'
@@ -32,12 +32,12 @@ function aes.cipher(size, cipher) end
 
 ---@type table<string, resty.aes.hash_cdata>
 aes.hash = {}
-aes.hash.sha1={}
-aes.hash.md5={}
-aes.hash.sha224={}
-aes.hash.sha512={}
-aes.hash.sha256={}
-aes.hash.sha384={}
+aes.hash.sha1 = {}
+aes.hash.md5 = {}
+aes.hash.sha224 = {}
+aes.hash.sha512 = {}
+aes.hash.sha256 = {}
+aes.hash.sha384 = {}
 
 ---@alias resty.aes.hash resty.aes.hash_cdata|resty.aes.hash_table
 
@@ -63,7 +63,6 @@ local aes_ctx = {}
 ---@return string? decrypted
 ---@return string? error
 function aes_ctx:decrypt(s, tag) end
-
 
 --- Encrypt a string.
 ---

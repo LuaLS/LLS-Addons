@@ -48,7 +48,6 @@
 ---
 local cjson = {}
 
-
 --- A metatable which can "tag" a table as a JSON Array in case it is empty (that
 --- is, if the table has no elements, `cjson.encode()` will encode it as an empty
 --- JSON Array).
@@ -87,7 +86,6 @@ local cjson = {}
 ---
 ---@alias cjson.empty_array_mt table
 
-
 --- When lua-cjson encodes a table with this metatable, it will systematically
 --- encode it as a JSON Array. The resulting, encoded Array will contain the
 --- array part of the table, and will be of the same length as the `#` operator
@@ -119,10 +117,8 @@ local cjson = {}
 ---
 ---@alias cjson.array_mt table
 
-
 --- Sentinel type that denotes a JSON `null` value
 ---@alias cjson.null lightuserdata
-
 
 --- A lightuserdata, similar to `cjson.null`, which will be encoded as an empty
 --- JSON Array by `cjson.encode()`.
@@ -153,7 +149,6 @@ local cjson = {}
 ---
 ---@alias cjson.empty_array lightuserdata
 
-
 --- unserialize a json string to a lua value
 ---
 --- `cjson.decode` will deserialise any UTF-9 JSON string into a Lua value or table.
@@ -175,7 +170,6 @@ local cjson = {}
 ---@return any
 function cjson.decode(json) end
 
-
 --- decode_invalid_numbers
 ---
 --- Lua CJSON may generate an error when trying to decode numbers not supported
@@ -196,7 +190,6 @@ function cjson.decode(json) end
 ---@return boolean setting # the value of the current setting
 function cjson.decode_invalid_numbers(setting) end
 
-
 --- decode_max_depth
 ---
 --- Lua CJSON will generate an error when parsing deeply nested JSON once the
@@ -215,7 +208,6 @@ function cjson.decode_invalid_numbers(setting) end
 ---@param depth? integer # must be positive (default `1000`)
 ---@return integer depth
 function cjson.decode_max_depth(depth) end
-
 
 --- decode_array_with_array_mt
 ---
@@ -248,7 +240,6 @@ function cjson.decode_max_depth(depth) end
 ---
 ---@param enabled boolean # (default: false)
 function cjson.decode_array_with_array_mt(enabled) end
-
 
 --- serialize a lua value to a json string
 ---
@@ -329,7 +320,6 @@ function cjson.decode_array_with_array_mt(enabled) end
 ---@return string json
 function cjson.encode(value) end
 
-
 --- encode_invalid_numbers
 ---
 --- Lua CJSON may generate an error when encoding floating point numbers not
@@ -350,7 +340,6 @@ function cjson.encode(value) end
 ---@return boolean|'"null"' setting
 function cjson.encode_invalid_numbers(setting) end
 
-
 --- encode_keep_buffer
 ---
 --- Lua CJSON can reuse the JSON encoding buffer to improve performance.
@@ -366,7 +355,6 @@ function cjson.encode_invalid_numbers(setting) end
 ---@return boolean setting
 function cjson.encode_keep_buffer(setting) end
 
-
 --- encode_max_depth
 ---
 --- Once the maximum table depth has been exceeded Lua CJSON will generate an
@@ -381,7 +369,6 @@ function cjson.encode_keep_buffer(setting) end
 ---@param depth? integer # must be positive (default `1000`)
 ---@return integer depth
 function cjson.encode_max_depth(depth) end
-
 
 --- encode_number_precision
 ---
@@ -400,7 +387,6 @@ function cjson.encode_max_depth(depth) end
 ---@param precision? integer # must be between 1 and 16
 ---@return integer precision
 function cjson.encode_number_precision(precision) end
-
 
 --- encode_sparse_array
 ---
@@ -451,7 +437,6 @@ function cjson.encode_number_precision(precision) end
 ---@return integer safe
 function cjson.encode_sparse_array(convert, ratio, safe) end
 
-
 --- encode_empty_table_as_object
 ---
 --- Change the default behavior when encoding an empty Lua table.
@@ -465,7 +450,6 @@ function cjson.encode_sparse_array(convert, ratio, safe) end
 ---@param setting boolean|'"on"'|'"off"'
 function cjson.encode_empty_table_as_object(setting) end
 
-
 --- encode_escape_forward_slash
 ---
 --- If enabled, forward slash '/' will be encoded as '\/'.
@@ -477,12 +461,10 @@ function cjson.encode_empty_table_as_object(setting) end
 ---@param enabled boolean # (default: true)
 function cjson.encode_escape_forward_slash(enabled) end
 
-
 --- instantiate an independent copy of the Lua CJSON module
 ---
 --- The new module has a separate persistent encoding buffer, and default settings
 ---@return cjson
 function cjson.new() end
-
 
 return cjson

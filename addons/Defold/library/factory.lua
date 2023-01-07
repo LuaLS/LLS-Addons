@@ -41,7 +41,4 @@ function factory.load(url, complete_function) end
 ---@param url string|hash|url? # the factory component to unload
 function factory.unload(url) end
 
-
-
-
 return factory

@@ -1,134 +1,131 @@
 ---@meta
 
 ---@class ccs.ComAudio :cc.Component@all parent class: Component,PlayableProtocol
-local ComAudio={ }
-ccs.ComAudio=ComAudio
+local ComAudio = {}
+ccs.ComAudio = ComAudio
 
-
-
-
----* 
+---*
 ---@return self
-function ComAudio:stopAllEffects () end
----* 
+function ComAudio:stopAllEffects() end
+---*
 ---@return float
-function ComAudio:getEffectsVolume () end
----* 
+function ComAudio:getEffectsVolume() end
+---*
 ---@param nSoundId unsigned_int
 ---@return self
-function ComAudio:stopEffect (nSoundId) end
----* 
+function ComAudio:stopEffect(nSoundId) end
+---*
 ---@return float
-function ComAudio:getBackgroundMusicVolume () end
----* 
+function ComAudio:getBackgroundMusicVolume() end
+---*
 ---@return boolean
-function ComAudio:willPlayBackgroundMusic () end
----* 
+function ComAudio:willPlayBackgroundMusic() end
+---*
 ---@param volume float
 ---@return self
-function ComAudio:setBackgroundMusicVolume (volume) end
+function ComAudio:setBackgroundMusicVolume(volume) end
 ---* / @{/ @name implement Playable Protocol
 ---@return self
-function ComAudio:start () end
+function ComAudio:start() end
 ---@overload fun():self
 ---@overload fun(boolean:boolean):self
 ---@param bReleaseData boolean
 ---@return self
-function ComAudio:stopBackgroundMusic (bReleaseData) end
----* 
+function ComAudio:stopBackgroundMusic(bReleaseData) end
+---*
 ---@return self
-function ComAudio:pauseBackgroundMusic () end
----* 
+function ComAudio:pauseBackgroundMusic() end
+---*
 ---@return boolean
-function ComAudio:isBackgroundMusicPlaying () end
----* 
+function ComAudio:isBackgroundMusicPlaying() end
+---*
 ---@return boolean
-function ComAudio:isLoop () end
----* 
+function ComAudio:isLoop() end
+---*
 ---@return self
-function ComAudio:resumeAllEffects () end
----* 
+function ComAudio:resumeAllEffects() end
+---*
 ---@return self
-function ComAudio:pauseAllEffects () end
----* 
+function ComAudio:pauseAllEffects() end
+---*
 ---@param pszFilePath char
 ---@return self
-function ComAudio:preloadBackgroundMusic (pszFilePath) end
+function ComAudio:preloadBackgroundMusic(pszFilePath) end
 ---@overload fun(char:char):self
 ---@overload fun(char:char,boolean:boolean):self
 ---@overload fun():self
 ---@param pszFilePath char
 ---@param bLoop boolean
 ---@return self
-function ComAudio:playBackgroundMusic (pszFilePath,bLoop) end
----* 
+function ComAudio:playBackgroundMusic(pszFilePath, bLoop) end
+---*
 ---@return self
-function ComAudio:stop () end
+function ComAudio:stop() end
 ---* lua endToLua
 ---@return self
-function ComAudio:endToLua () end
+function ComAudio:endToLua() end
 ---@overload fun(char:char):self
 ---@overload fun(char:char,boolean:boolean):self
 ---@overload fun():self
 ---@param pszFilePath char
 ---@param bLoop boolean
 ---@return unsigned_int
-function ComAudio:playEffect (pszFilePath,bLoop) end
----* 
+function ComAudio:playEffect(pszFilePath, bLoop) end
+---*
 ---@param pszFilePath char
 ---@return self
-function ComAudio:preloadEffect (pszFilePath) end
----* 
+function ComAudio:preloadEffect(pszFilePath) end
+---*
 ---@param bLoop boolean
 ---@return self
-function ComAudio:setLoop (bLoop) end
----* 
+function ComAudio:setLoop(bLoop) end
+---*
 ---@param pszFilePath char
 ---@return self
-function ComAudio:unloadEffect (pszFilePath) end
----* 
+function ComAudio:unloadEffect(pszFilePath) end
+---*
 ---@return self
-function ComAudio:rewindBackgroundMusic () end
----* 
+function ComAudio:rewindBackgroundMusic() end
+---*
 ---@param nSoundId unsigned_int
 ---@return self
-function ComAudio:pauseEffect (nSoundId) end
----* 
+function ComAudio:pauseEffect(nSoundId) end
+---*
 ---@return self
-function ComAudio:resumeBackgroundMusic () end
----* 
+function ComAudio:resumeBackgroundMusic() end
+---*
 ---@param pszFilePath char
 ---@return self
-function ComAudio:setFile (pszFilePath) end
----* 
+function ComAudio:setFile(pszFilePath) end
+---*
 ---@param volume float
 ---@return self
-function ComAudio:setEffectsVolume (volume) end
----* 
+function ComAudio:setEffectsVolume(volume) end
+---*
 ---@return char
-function ComAudio:getFile () end
----* 
+function ComAudio:getFile() end
+---*
 ---@param nSoundId unsigned_int
 ---@return self
-function ComAudio:resumeEffect (nSoundId) end
----* 
+function ComAudio:resumeEffect(nSoundId) end
+---*
 ---@return self
-function ComAudio:create () end
----* 
+function ComAudio:create() end
+---*
 ---@return cc.Ref
-function ComAudio:createInstance () end
+function ComAudio:createInstance() end
 ---* js NA<br>
 ---* lua NA
 ---@return self
-function ComAudio:onRemove () end
----* 
+function ComAudio:onRemove() end
+---*
 ---@param r void
 ---@return boolean
-function ComAudio:serialize (r) end
----* 
+function ComAudio:serialize(r) end
+---*
 ---@return boolean
-function ComAudio:init () end
+function ComAudio:init() end
 ---* js NA<br>
 ---* lua NA
 ---@return self
-function ComAudio:onAdd () end
+function ComAudio:onAdd() end

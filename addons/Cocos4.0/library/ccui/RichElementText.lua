@@ -1,11 +1,8 @@
 ---@meta
 
 ---@class ccui.RichElementText :ccui.RichElement
-local RichElementText={ }
-ccui.RichElementText=RichElementText
-
-
-
+local RichElementText = {}
+ccui.RichElementText = RichElementText
 
 ---* brief Initialize a RichElementText with various arguments.<br>
 ---* param tag A integer tag value.<br>
@@ -38,7 +35,23 @@ ccui.RichElementText=RichElementText
 ---@param shadowBlurRadius int
 ---@param glowColor color3b_table
 ---@return boolean
-function RichElementText:init (tag,color,opacity,text,fontName,fontSize,flags,url,outlineColor,outlineSize,shadowColor,shadowOffset,shadowBlurRadius,glowColor) end
+function RichElementText:init(
+	tag,
+	color,
+	opacity,
+	text,
+	fontName,
+	fontSize,
+	flags,
+	url,
+	outlineColor,
+	outlineSize,
+	shadowColor,
+	shadowOffset,
+	shadowBlurRadius,
+	glowColor
+)
+end
 ---* brief Create a RichElementText with various arguments.<br>
 ---* param tag A integer tag value.<br>
 ---* param color A color in Color3B.<br>
@@ -70,9 +83,25 @@ function RichElementText:init (tag,color,opacity,text,fontName,fontSize,flags,ur
 ---@param shadowBlurRadius int
 ---@param glowColor color3b_table
 ---@return self
-function RichElementText:create (tag,color,opacity,text,fontName,fontSize,flags,url,outlineColor,outlineSize,shadowColor,shadowOffset,shadowBlurRadius,glowColor) end
+function RichElementText:create(
+	tag,
+	color,
+	opacity,
+	text,
+	fontName,
+	fontSize,
+	flags,
+	url,
+	outlineColor,
+	outlineSize,
+	shadowColor,
+	shadowOffset,
+	shadowBlurRadius,
+	glowColor
+)
+end
 ---* brief Default constructor.<br>
 ---* js ctor<br>
 ---* lua new
 ---@return self
-function RichElementText:RichElementText () end
+function RichElementText:RichElementText() end

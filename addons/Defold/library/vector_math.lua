@@ -400,7 +400,4 @@ function vmath.vector4(v1) end
 ---@return vector4 # new vector
 function vmath.vector4(x, y, z, w) end
 
-
-
-
 return vmath

@@ -1,9 +1,8 @@
 ---@meta
 
 local shell = {
-    version = 0.03,
+	version = 0.03,
 }
-
 
 --- Runs a shell command, `cmd`, with an optional stdin.
 ---
@@ -57,6 +56,5 @@ local shell = {
 ---@return string|'"exit"'|'"signal"' reason
 ---@return number? status
 function shell.run(cmd, stdin, timeout, max_size) end
-
 
 return shell

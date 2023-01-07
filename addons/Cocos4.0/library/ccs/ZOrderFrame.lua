@@ -1,25 +1,22 @@
 ---@meta
 
 ---@class ccs.ZOrderFrame :ccs.Frame
-local ZOrderFrame={ }
-ccs.ZOrderFrame=ZOrderFrame
+local ZOrderFrame = {}
+ccs.ZOrderFrame = ZOrderFrame
 
-
-
-
----* 
+---*
 ---@return int
-function ZOrderFrame:getZOrder () end
----* 
+function ZOrderFrame:getZOrder() end
+---*
 ---@param zorder int
 ---@return self
-function ZOrderFrame:setZOrder (zorder) end
----* 
+function ZOrderFrame:setZOrder(zorder) end
+---*
 ---@return self
-function ZOrderFrame:create () end
----* 
+function ZOrderFrame:create() end
+---*
 ---@return ccs.Frame
-function ZOrderFrame:clone () end
----* 
+function ZOrderFrame:clone() end
+---*
 ---@return self
-function ZOrderFrame:ZOrderFrame () end
+function ZOrderFrame:ZOrderFrame() end

@@ -1,11 +1,8 @@
 ---@meta
 
 ---@class cc.TransitionProgressRadialCCW :cc.TransitionProgress
-local TransitionProgressRadialCCW={ }
-cc.TransitionProgressRadialCCW=TransitionProgressRadialCCW
-
-
-
+local TransitionProgressRadialCCW = {}
+cc.TransitionProgressRadialCCW = TransitionProgressRadialCCW
 
 ---*  Creates a transition with duration and incoming scene.<br>
 ---* param t Duration time, in seconds.<br>
@@ -14,7 +11,7 @@ cc.TransitionProgressRadialCCW=TransitionProgressRadialCCW
 ---@param t float
 ---@param scene cc.Scene
 ---@return self
-function TransitionProgressRadialCCW:create (t,scene) end
+function TransitionProgressRadialCCW:create(t, scene) end
 ---* js ctor
 ---@return self
-function TransitionProgressRadialCCW:TransitionProgressRadialCCW () end
+function TransitionProgressRadialCCW:TransitionProgressRadialCCW() end

@@ -14,7 +14,4 @@ function json.decode(json) end
 ---@return string # encoded json
 function json.encode(tbl) end
 
-
-
-
 return json

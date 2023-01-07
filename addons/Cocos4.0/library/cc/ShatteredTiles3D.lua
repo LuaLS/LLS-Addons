@@ -1,11 +1,8 @@
 ---@meta
 
 ---@class cc.ShatteredTiles3D :cc.TiledGrid3DAction
-local ShatteredTiles3D={ }
-cc.ShatteredTiles3D=ShatteredTiles3D
-
-
-
+local ShatteredTiles3D = {}
+cc.ShatteredTiles3D = ShatteredTiles3D
 
 ---* brief Initializes the action with a range, shatter Z vertices, grid size and duration.<br>
 ---* param duration Specify the duration of the ShatteredTiles3D action. It's a value in seconds.<br>
@@ -18,7 +15,7 @@ cc.ShatteredTiles3D=ShatteredTiles3D
 ---@param range int
 ---@param shatterZ boolean
 ---@return boolean
-function ShatteredTiles3D:initWithDuration (duration,gridSize,range,shatterZ) end
+function ShatteredTiles3D:initWithDuration(duration, gridSize, range, shatterZ) end
 ---* brief Create the action with a range, whether of not to shatter Z vertices, grid size and duration.<br>
 ---* param duration Specify the duration of the ShatteredTiles3D action. It's a value in seconds.<br>
 ---* param gridSize Specify the size of the grid.<br>
@@ -30,14 +27,14 @@ function ShatteredTiles3D:initWithDuration (duration,gridSize,range,shatterZ) en
 ---@param range int
 ---@param shatterZ boolean
 ---@return self
-function ShatteredTiles3D:create (duration,gridSize,range,shatterZ) end
----* 
+function ShatteredTiles3D:create(duration, gridSize, range, shatterZ) end
+---*
 ---@return self
-function ShatteredTiles3D:clone () end
----* 
+function ShatteredTiles3D:clone() end
+---*
 ---@param time float
 ---@return self
-function ShatteredTiles3D:update (time) end
----* 
+function ShatteredTiles3D:update(time) end
+---*
 ---@return self
-function ShatteredTiles3D:ShatteredTiles3D () end
+function ShatteredTiles3D:ShatteredTiles3D() end

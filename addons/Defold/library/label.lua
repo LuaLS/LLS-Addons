@@ -14,7 +14,4 @@ function label.get_text(url) end
 ---@param text string # the text
 function label.set_text(url, text) end
 
-
-
-
 return label

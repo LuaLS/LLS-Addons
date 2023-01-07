@@ -62,7 +62,4 @@ function buffer.get_bytes(buffer, stream_name) end
 ---@return bufferstream # the data stream
 function buffer.get_stream(buffer, stream_name) end
 
-
-
-
 return buffer

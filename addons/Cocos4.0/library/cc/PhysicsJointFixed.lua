@@ -1,15 +1,12 @@
 ---@meta
 
 ---@class cc.PhysicsJointFixed :cc.PhysicsJoint
-local PhysicsJointFixed={ }
-cc.PhysicsJointFixed=PhysicsJointFixed
+local PhysicsJointFixed = {}
+cc.PhysicsJointFixed = PhysicsJointFixed
 
-
-
-
----* 
+---*
 ---@return boolean
-function PhysicsJointFixed:createConstraints () end
+function PhysicsJointFixed:createConstraints() end
 ---*  Create a fixed joint.<br>
 ---* param a A is the body to connect.<br>
 ---* param b B is the body to connect.<br>
@@ -19,4 +16,4 @@ function PhysicsJointFixed:createConstraints () end
 ---@param b cc.PhysicsBody
 ---@param anchr vec2_table
 ---@return self
-function PhysicsJointFixed:construct (a,b,anchr) end
+function PhysicsJointFixed:construct(a, b, anchr) end

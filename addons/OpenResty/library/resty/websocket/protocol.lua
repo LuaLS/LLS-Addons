@@ -2,7 +2,7 @@
 
 ---@class resty.websocket.protocol
 local protocol = {
-  _VERSION = "0.09",
+	_VERSION = "0.09",
 }
 
 --- websocket object
@@ -117,7 +117,6 @@ function websocket:recv_frame() end
 ---@field max_payload_len  integer  maximal length of payload allowed when sending and receiving WebSocket frames
 ---@field send_masked      boolean  whether to send out masked WebSocket frames
 ---@field timeout          integer  network timeout threshold in milliseconds
-
 
 --- Websocket op code
 ---

@@ -1,11 +1,8 @@
 ---@meta
 
 ---@class cc.EventListener :cc.Ref
-local EventListener={ }
-cc.EventListener=EventListener
-
-
-
+local EventListener = {}
+cc.EventListener = EventListener
 
 ---*  Enables or disables the listener.<br>
 ---* note Only listeners with `enabled` state will be able to receive events.<br>
@@ -15,15 +12,15 @@ cc.EventListener=EventListener
 ---* param enabled True if enables the listener.
 ---@param enabled boolean
 ---@return self
-function EventListener:setEnabled (enabled) end
+function EventListener:setEnabled(enabled) end
 ---*  Checks whether the listener is enabled.<br>
 ---* return True if the listener is enabled.
 ---@return boolean
-function EventListener:isEnabled () end
+function EventListener:isEnabled() end
 ---*  Clones the listener, its subclasses have to override this method.
 ---@return self
-function EventListener:clone () end
+function EventListener:clone() end
 ---*  Checks whether the listener is available.<br>
 ---* return True if the listener is available.
 ---@return boolean
-function EventListener:checkAvailable () end
+function EventListener:checkAvailable() end

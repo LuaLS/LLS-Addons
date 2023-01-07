@@ -1,47 +1,44 @@
 ---@meta
 
 ---@class cc.ControlSaturationBrightnessPicker :cc.Control
-local ControlSaturationBrightnessPicker={ }
-cc.ControlSaturationBrightnessPicker=ControlSaturationBrightnessPicker
+local ControlSaturationBrightnessPicker = {}
+cc.ControlSaturationBrightnessPicker = ControlSaturationBrightnessPicker
 
-
-
-
----* 
+---*
 ---@return cc.Sprite
-function ControlSaturationBrightnessPicker:getShadow () end
----* 
+function ControlSaturationBrightnessPicker:getShadow() end
+---*
 ---@param target cc.Node
 ---@param pos vec2_table
 ---@return boolean
-function ControlSaturationBrightnessPicker:initWithTargetAndPos (target,pos) end
----* 
+function ControlSaturationBrightnessPicker:initWithTargetAndPos(target, pos) end
+---*
 ---@return vec2_table
-function ControlSaturationBrightnessPicker:getStartPos () end
----* 
+function ControlSaturationBrightnessPicker:getStartPos() end
+---*
 ---@return cc.Sprite
-function ControlSaturationBrightnessPicker:getOverlay () end
----* 
+function ControlSaturationBrightnessPicker:getOverlay() end
+---*
 ---@return cc.Sprite
-function ControlSaturationBrightnessPicker:getSlider () end
----* 
+function ControlSaturationBrightnessPicker:getSlider() end
+---*
 ---@return cc.Sprite
-function ControlSaturationBrightnessPicker:getBackground () end
----* 
+function ControlSaturationBrightnessPicker:getBackground() end
+---*
 ---@return float
-function ControlSaturationBrightnessPicker:getSaturation () end
----* 
+function ControlSaturationBrightnessPicker:getSaturation() end
+---*
 ---@return float
-function ControlSaturationBrightnessPicker:getBrightness () end
----* 
+function ControlSaturationBrightnessPicker:getBrightness() end
+---*
 ---@param target cc.Node
 ---@param pos vec2_table
 ---@return self
-function ControlSaturationBrightnessPicker:create (target,pos) end
----* 
+function ControlSaturationBrightnessPicker:create(target, pos) end
+---*
 ---@param enabled boolean
 ---@return self
-function ControlSaturationBrightnessPicker:setEnabled (enabled) end
+function ControlSaturationBrightnessPicker:setEnabled(enabled) end
 ---* js ctor
 ---@return self
-function ControlSaturationBrightnessPicker:ControlSaturationBrightnessPicker () end
+function ControlSaturationBrightnessPicker:ControlSaturationBrightnessPicker() end

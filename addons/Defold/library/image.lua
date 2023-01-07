@@ -14,7 +14,4 @@ image.TYPE_RGBA = nil
 ---@return table # object or nil if loading fails. The object is a table with the following fields:
 function image.load(buffer, premult) end
 
-
-
-
 return image

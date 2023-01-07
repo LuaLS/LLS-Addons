@@ -1,11 +1,8 @@
 ---@meta
 
 ---@class ccb.TextureCubemapBackend :ccb.TextureBackend
-local TextureCubemapBackend={ }
-ccb.TextureCubemapBackend=TextureCubemapBackend
-
-
-
+local TextureCubemapBackend = {}
+ccb.TextureCubemapBackend = TextureCubemapBackend
 
 ---* Update texutre cube data in give slice side.<br>
 ---* param side Specifies which slice texture of cube to be update.<br>
@@ -13,4 +10,4 @@ ccb.TextureCubemapBackend=TextureCubemapBackend
 ---@param side int
 ---@param data void
 ---@return cc.backend.TextureCubemapBackend
-function TextureCubemapBackend:updateFaceData (side,data) end
+function TextureCubemapBackend:updateFaceData(side, data) end

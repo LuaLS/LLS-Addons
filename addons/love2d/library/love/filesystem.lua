@@ -59,7 +59,7 @@ function love.filesystem.getCRequirePath() end
 function love.filesystem.getDirectoryItems(dir) end
 
 ---
----Gets the write directory name for your game. 
+---Gets the write directory name for your game.
 ---
 ---Note that this only returns the name of the folder to store your files in, not the full path.
 ---
@@ -176,7 +176,7 @@ function love.filesystem.load(name) end
 function love.filesystem.mount(archive, mountpoint, appendToPath) end
 
 ---
----Creates a new File object. 
+---Creates a new File object.
 ---
 ---It needs to be opened before it can be accessed.
 ---
@@ -225,7 +225,7 @@ function love.filesystem.remove(name) end
 function love.filesystem.setCRequirePath(paths) end
 
 ---
----Sets the write directory for your game. 
+---Sets the write directory for your game.
 ---
 ---Note that you can only set the name of the folder to store your files in, not the location.
 ---

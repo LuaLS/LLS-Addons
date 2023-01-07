@@ -1,11 +1,8 @@
 ---@meta
 
 ---@class cc.SplitRows :cc.TiledGrid3DAction
-local SplitRows={ }
-cc.SplitRows=SplitRows
-
-
-
+local SplitRows = {}
+cc.SplitRows = SplitRows
 
 ---* brief Initializes the action with the number rows and the duration.<br>
 ---* param duration Specify the duration of the SplitRows action. It's a value in seconds.<br>
@@ -14,7 +11,7 @@ cc.SplitRows=SplitRows
 ---@param duration float
 ---@param rows unsigned_int
 ---@return boolean
-function SplitRows:initWithDuration (duration,rows) end
+function SplitRows:initWithDuration(duration, rows) end
 ---* brief Create the action with the number of rows and the duration.<br>
 ---* param duration Specify the duration of the SplitRows action. It's a value in seconds.<br>
 ---* param rows Specify the rows count should be split.<br>
@@ -22,18 +19,18 @@ function SplitRows:initWithDuration (duration,rows) end
 ---@param duration float
 ---@param rows unsigned_int
 ---@return self
-function SplitRows:create (duration,rows) end
----* 
+function SplitRows:create(duration, rows) end
+---*
 ---@param target cc.Node
 ---@return self
-function SplitRows:startWithTarget (target) end
----* 
+function SplitRows:startWithTarget(target) end
+---*
 ---@return self
-function SplitRows:clone () end
----* 
+function SplitRows:clone() end
+---*
 ---@param time float
 ---@return self
-function SplitRows:update (time) end
----* 
+function SplitRows:update(time) end
+---*
 ---@return self
-function SplitRows:SplitRows () end
+function SplitRows:SplitRows() end

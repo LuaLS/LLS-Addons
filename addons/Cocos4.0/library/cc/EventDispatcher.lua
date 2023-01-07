@@ -1,11 +1,8 @@
 ---@meta
 
 ---@class cc.EventDispatcher :cc.Ref
-local EventDispatcher={ }
-cc.EventDispatcher=EventDispatcher
-
-
-
+local EventDispatcher = {}
+cc.EventDispatcher = EventDispatcher
 
 ---*  Pauses all listeners which are associated the specified target.<br>
 ---* param target A given target node.<br>
@@ -13,7 +10,7 @@ cc.EventDispatcher=EventDispatcher
 ---@param target cc.Node
 ---@param recursive boolean
 ---@return self
-function EventDispatcher:pauseEventListenersForTarget (target,recursive) end
+function EventDispatcher:pauseEventListenersForTarget(target, recursive) end
 ---*  Adds a event listener for a specified event with the priority of scene graph.<br>
 ---* param listener The listener of a specified event.<br>
 ---* param node The priority of the listener is based on the draw order of this node.<br>
@@ -22,12 +19,12 @@ function EventDispatcher:pauseEventListenersForTarget (target,recursive) end
 ---@param listener cc.EventListener
 ---@param node cc.Node
 ---@return self
-function EventDispatcher:addEventListenerWithSceneGraphPriority (listener,node) end
+function EventDispatcher:addEventListenerWithSceneGraphPriority(listener, node) end
 ---*  Whether to enable dispatching events.<br>
 ---* param isEnabled  True if enable dispatching events.
 ---@param isEnabled boolean
 ---@return self
-function EventDispatcher:setEnabled (isEnabled) end
+function EventDispatcher:setEnabled(isEnabled) end
 ---*  Adds a event listener for a specified event with the fixed priority.<br>
 ---* param listener The listener of a specified event.<br>
 ---* param fixedPriority The fixed priority of the listener.<br>
@@ -36,40 +33,40 @@ function EventDispatcher:setEnabled (isEnabled) end
 ---@param listener cc.EventListener
 ---@param fixedPriority int
 ---@return self
-function EventDispatcher:addEventListenerWithFixedPriority (listener,fixedPriority) end
+function EventDispatcher:addEventListenerWithFixedPriority(listener, fixedPriority) end
 ---*  Remove a listener.<br>
 ---* param listener The specified event listener which needs to be removed.
 ---@param listener cc.EventListener
 ---@return self
-function EventDispatcher:removeEventListener (listener) end
+function EventDispatcher:removeEventListener(listener) end
 ---*  Dispatches a Custom Event with a event name an optional user data.<br>
 ---* param eventName The name of the event which needs to be dispatched.<br>
 ---* param optionalUserData The optional user data, it's a void*, the default value is nullptr.
 ---@param eventName string
 ---@param optionalUserData void
 ---@return self
-function EventDispatcher:dispatchCustomEvent (eventName,optionalUserData) end
+function EventDispatcher:dispatchCustomEvent(eventName, optionalUserData) end
 ---*  Resumes all listeners which are associated the specified target.<br>
 ---* param target A given target node.<br>
 ---* param recursive True if resume recursively, the default value is false.
 ---@param target cc.Node
 ---@param recursive boolean
 ---@return self
-function EventDispatcher:resumeEventListenersForTarget (target,recursive) end
+function EventDispatcher:resumeEventListenersForTarget(target, recursive) end
 ---*  Removes all listeners which are associated with the specified target.<br>
 ---* param target A given target node.<br>
 ---* param recursive True if remove recursively, the default value is false.
 ---@param target cc.Node
 ---@param recursive boolean
 ---@return self
-function EventDispatcher:removeEventListenersForTarget (target,recursive) end
+function EventDispatcher:removeEventListenersForTarget(target, recursive) end
 ---*  Sets listener's priority with fixed value.<br>
 ---* param listener A given listener.<br>
 ---* param fixedPriority The fixed priority value.
 ---@param listener cc.EventListener
 ---@param fixedPriority int
 ---@return self
-function EventDispatcher:setPriority (listener,fixedPriority) end
+function EventDispatcher:setPriority(listener, fixedPriority) end
 ---*  Adds a Custom event listener.<br>
 ---* It will use a fixed priority of 1.<br>
 ---* param eventName A given name of the event.<br>
@@ -78,37 +75,37 @@ function EventDispatcher:setPriority (listener,fixedPriority) end
 ---@param eventName string
 ---@param callback function
 ---@return cc.EventListenerCustom
-function EventDispatcher:addCustomEventListener (eventName,callback) end
+function EventDispatcher:addCustomEventListener(eventName, callback) end
 ---*  Dispatches the event.<br>
 ---* Also removes all EventListeners marked for deletion from the<br>
 ---* event dispatcher list.<br>
 ---* param event The event needs to be dispatched.
 ---@param event cc.Event
 ---@return self
-function EventDispatcher:dispatchEvent (event) end
+function EventDispatcher:dispatchEvent(event) end
 ---*  Query whether the specified event listener id has been added.<br>
 ---* param listenerID The listenerID of the event listener id.<br>
 ---* return True if dispatching events is exist
 ---@param listenerID string
 ---@return boolean
-function EventDispatcher:hasEventListener (listenerID) end
+function EventDispatcher:hasEventListener(listenerID) end
 ---*  Removes all listeners.
 ---@return self
-function EventDispatcher:removeAllEventListeners () end
+function EventDispatcher:removeAllEventListeners() end
 ---*  Removes all custom listeners with the same event name.<br>
 ---* param customEventName A given event listener name which needs to be removed.
 ---@param customEventName string
 ---@return self
-function EventDispatcher:removeCustomEventListeners (customEventName) end
+function EventDispatcher:removeCustomEventListeners(customEventName) end
 ---*  Checks whether dispatching events is enabled.<br>
 ---* return True if dispatching events is enabled.
 ---@return boolean
-function EventDispatcher:isEnabled () end
+function EventDispatcher:isEnabled() end
 ---*  Removes all listeners with the same event listener type.<br>
 ---* param listenerType A given event listener type which needs to be removed.
 ---@param listenerType int
 ---@return self
-function EventDispatcher:removeEventListenersForType (listenerType) end
+function EventDispatcher:removeEventListenersForType(listenerType) end
 ---*  Constructor of EventDispatcher.
 ---@return self
-function EventDispatcher:EventDispatcher () end
+function EventDispatcher:EventDispatcher() end

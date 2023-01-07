@@ -1,13 +1,12 @@
 ---@meta
 local process = {
-  version = require("resty.core.base").version,
+	version = require("resty.core.base").version,
 }
 
 --- Returns a number value for the nginx master process's process ID (or PID).
 ---
 ---@return integer? pid
 function process.get_master_pid() end
-
 
 --- Enables the privileged agent process in Nginx.
 ---
@@ -26,7 +25,6 @@ function process.get_master_pid() end
 ---@return string? error
 function process.enable_privileged_agent(connections) end
 
-
 ---@alias ngx.process.type
 ---| '"master"'           # the NGINX master process
 ---| '"worker"'           # an NGINX worker process
@@ -39,7 +37,6 @@ function process.enable_privileged_agent(connections) end
 ---@return ngx.process.type type
 function process.type() end
 
-
 --- Signals the current NGINX worker process to quit gracefully, after all the
 --- timers have expired (in time or expired prematurely).
 ---
@@ -47,6 +44,5 @@ function process.type() end
 --- `ngx_quit` to signal the nginx event loop directly. No UNIX signals or IPC
 --- are involved here.
 function process.signal_graceful_exit() end
-
 
 return process

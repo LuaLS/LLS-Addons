@@ -1,6 +1,6 @@
 ---@meta
 local balancer = {
-  version = require("resty.core.base").version,
+	version = require("resty.core.base").version,
 }
 
 --- Sets the peer address (host and port) for the current backend query (which
@@ -17,7 +17,6 @@ local balancer = {
 ---@return boolean ok
 ---@return string? error
 function balancer.set_current_peer(addr, port) end
-
 
 --- Sets the upstream timeout (connect, send and read) in seconds for the
 --- current and any subsequent backend requests (which might be a retry).

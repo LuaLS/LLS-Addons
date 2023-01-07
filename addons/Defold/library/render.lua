@@ -433,7 +433,4 @@ function render.set_view(matrix) end
 ---@param height number # viewport height
 function render.set_viewport(x, y, width, height) end
 
-
-
-
 return render

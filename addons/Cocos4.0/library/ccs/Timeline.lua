@@ -1,63 +1,60 @@
 ---@meta
 
 ---@class ccs.Timeline :cc.Ref
-local Timeline={ }
-ccs.Timeline=Timeline
+local Timeline = {}
+ccs.Timeline = Timeline
 
-
-
-
----* 
+---*
 ---@return self
-function Timeline:clone () end
----* 
+function Timeline:clone() end
+---*
 ---@param frameIndex int
 ---@return self
-function Timeline:gotoFrame (frameIndex) end
----* 
+function Timeline:gotoFrame(frameIndex) end
+---*
 ---@param node cc.Node
 ---@return self
-function Timeline:setNode (node) end
----* 
+function Timeline:setNode(node) end
+---*
 ---@return ccs.ActionTimeline
-function Timeline:getActionTimeline () end
----* 
+function Timeline:getActionTimeline() end
+---*
 ---@param frame ccs.Frame
 ---@param index int
 ---@return self
-function Timeline:insertFrame (frame,index) end
----* 
+function Timeline:insertFrame(frame, index) end
+---*
 ---@param tag int
 ---@return self
-function Timeline:setActionTag (tag) end
----* 
+function Timeline:setActionTag(tag) end
+---*
 ---@param frame ccs.Frame
 ---@return self
-function Timeline:addFrame (frame) end
----* 
+function Timeline:addFrame(frame) end
+---*
 ---@return array_table
-function Timeline:getFrames () end
----* 
+function Timeline:getFrames() end
+---*
 ---@return int
-function Timeline:getActionTag () end
----* 
+function Timeline:getActionTag() end
+---*
 ---@return cc.Node
-function Timeline:getNode () end
----* 
+function Timeline:getNode() end
+---*
 ---@param frame ccs.Frame
 ---@return self
-function Timeline:removeFrame (frame) end
----* 
+function Timeline:removeFrame(frame) end
+---*
 ---@param action ccs.ActionTimeline
 ---@return self
-function Timeline:setActionTimeline (action) end
----* 
+function Timeline:setActionTimeline(action) end
+---*
 ---@param frameIndex int
 ---@return self
-function Timeline:stepToFrame (frameIndex) end
----* 
+function Timeline:stepToFrame(frameIndex) end
+---*
 ---@return self
-function Timeline:create () end
----* 
+function Timeline:create() end
+---*
 ---@return self
-function Timeline:Timeline () end
+function Timeline:Timeline() end

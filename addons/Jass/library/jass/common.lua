@@ -5711,7 +5711,7 @@ function common.Atan(x) end
 ---@param y real
 ---@param x real
 ---@return real
-function common.Atan2(y,x) end
+function common.Atan2(y, x) end
 
 ---Returns 0 if x < 0
 ---平方根
@@ -5726,7 +5726,7 @@ function common.SquareRoot(x) end
 ---@param x real
 ---@param power real
 ---@return real
-function common.Pow(x,power) end
+function common.Pow(x, power) end
 
 ---MathRound
 ---@param r real
@@ -5759,7 +5759,7 @@ function common.R2S(r) end
 ---@param width integer
 ---@param precision integer
 ---@return string
-function common.R2SW(r,width,precision) end
+function common.R2SW(r, width, precision) end
 
 ---转换字串符为整数
 ---@param s string
@@ -5781,7 +5781,7 @@ function common.GetHandleId(h) end
 ---@param start integer
 ---@param end_ integer
 ---@return string
-function common.SubString(source,start,end_) end
+function common.SubString(source, start, end_) end
 
 ---字串符长度
 ---@param s string
@@ -5792,7 +5792,7 @@ function common.StringLength(s) end
 ---@param source string
 ---@param upper boolean
 ---@return string
-function common.StringCase(source,upper) end
+function common.StringCase(source, upper) end
 
 ---StringHash
 ---@param s string
@@ -5829,58 +5829,58 @@ function common.SetPlayers(playercount) end
 ---@param whichStartLoc integer
 ---@param x real
 ---@param y real
-function common.DefineStartLocation(whichStartLoc,x,y) end
+function common.DefineStartLocation(whichStartLoc, x, y) end
 
 ---DefineStartLocationLoc
 ---@param whichStartLoc integer
 ---@param whichLocation location
-function common.DefineStartLocationLoc(whichStartLoc,whichLocation) end
+function common.DefineStartLocationLoc(whichStartLoc, whichLocation) end
 
 ---SetStartLocPrioCount
 ---@param whichStartLoc integer
 ---@param prioSlotCount integer
-function common.SetStartLocPrioCount(whichStartLoc,prioSlotCount) end
+function common.SetStartLocPrioCount(whichStartLoc, prioSlotCount) end
 
 ---SetStartLocPrio
 ---@param whichStartLoc integer
 ---@param prioSlotIndex integer
 ---@param otherStartLocIndex integer
 ---@param priority startlocprio
-function common.SetStartLocPrio(whichStartLoc,prioSlotIndex,otherStartLocIndex,priority) end
+function common.SetStartLocPrio(whichStartLoc, prioSlotIndex, otherStartLocIndex, priority) end
 
 ---GetStartLocPrioSlot
 ---@param whichStartLoc integer
 ---@param prioSlotIndex integer
 ---@return integer
-function common.GetStartLocPrioSlot(whichStartLoc,prioSlotIndex) end
+function common.GetStartLocPrioSlot(whichStartLoc, prioSlotIndex) end
 
 ---GetStartLocPrio
 ---@param whichStartLoc integer
 ---@param prioSlotIndex integer
 ---@return startlocprio
-function common.GetStartLocPrio(whichStartLoc,prioSlotIndex) end
+function common.GetStartLocPrio(whichStartLoc, prioSlotIndex) end
 
 ---SetEnemyStartLocPrioCount
 ---@param whichStartLoc integer
 ---@param prioSlotCount integer
-function common.SetEnemyStartLocPrioCount(whichStartLoc,prioSlotCount) end
+function common.SetEnemyStartLocPrioCount(whichStartLoc, prioSlotCount) end
 
 ---SetEnemyStartLocPrio
 ---@param whichStartLoc integer
 ---@param prioSlotIndex integer
 ---@param otherStartLocIndex integer
 ---@param priority startlocprio
-function common.SetEnemyStartLocPrio(whichStartLoc,prioSlotIndex,otherStartLocIndex,priority) end
+function common.SetEnemyStartLocPrio(whichStartLoc, prioSlotIndex, otherStartLocIndex, priority) end
 
 ---SetGameTypeSupported
 ---@param whichGameType gametype
 ---@param value boolean
-function common.SetGameTypeSupported(whichGameType,value) end
+function common.SetGameTypeSupported(whichGameType, value) end
 
 ---设置地图参数
 ---@param whichMapFlag mapflag
 ---@param value boolean
-function common.SetMapFlag(whichMapFlag,value) end
+function common.SetMapFlag(whichMapFlag, value) end
 
 ---SetGamePlacement
 ---@param whichPlacementType placement
@@ -5962,12 +5962,12 @@ function common.GetStartLocationLoc(whichStartLocation) end
 ---设置玩家队伍
 ---@param whichPlayer player
 ---@param whichTeam integer
-function common.SetPlayerTeam(whichPlayer,whichTeam) end
+function common.SetPlayerTeam(whichPlayer, whichTeam) end
 
 ---SetPlayerStartLocation
 ---@param whichPlayer player
 ---@param startLocIndex integer
-function common.SetPlayerStartLocation(whichPlayer,startLocIndex) end
+function common.SetPlayerStartLocation(whichPlayer, startLocIndex) end
 
 ---forces player to have the specified start loc and marks the start loc as occupied
 ---which removes it from consideration for subsequently placed players
@@ -5976,51 +5976,51 @@ function common.SetPlayerStartLocation(whichPlayer,startLocIndex) end
 ---use random placement for any unplaced players etc )
 ---@param whichPlayer player
 ---@param startLocIndex integer
-function common.ForcePlayerStartLocation(whichPlayer,startLocIndex) end
+function common.ForcePlayerStartLocation(whichPlayer, startLocIndex) end
 
 ---改变玩家颜色 [R]
 ---@param whichPlayer player
 ---@param color playercolor
-function common.SetPlayerColor(whichPlayer,color) end
+function common.SetPlayerColor(whichPlayer, color) end
 
 ---设置联盟状态(指定项目) [R]
 ---@param sourcePlayer player
 ---@param otherPlayer player
 ---@param whichAllianceSetting alliancetype
 ---@param value boolean
-function common.SetPlayerAlliance(sourcePlayer,otherPlayer,whichAllianceSetting,value) end
+function common.SetPlayerAlliance(sourcePlayer, otherPlayer, whichAllianceSetting, value) end
 
 ---设置税率 [R]
 ---@param sourcePlayer player
 ---@param otherPlayer player
 ---@param whichResource playerstate
 ---@param rate integer
-function common.SetPlayerTaxRate(sourcePlayer,otherPlayer,whichResource,rate) end
+function common.SetPlayerTaxRate(sourcePlayer, otherPlayer, whichResource, rate) end
 
 ---SetPlayerRacePreference
 ---@param whichPlayer player
 ---@param whichRacePreference racepreference
-function common.SetPlayerRacePreference(whichPlayer,whichRacePreference) end
+function common.SetPlayerRacePreference(whichPlayer, whichRacePreference) end
 
 ---SetPlayerRaceSelectable
 ---@param whichPlayer player
 ---@param value boolean
-function common.SetPlayerRaceSelectable(whichPlayer,value) end
+function common.SetPlayerRaceSelectable(whichPlayer, value) end
 
 ---SetPlayerController
 ---@param whichPlayer player
 ---@param controlType mapcontrol
-function common.SetPlayerController(whichPlayer,controlType) end
+function common.SetPlayerController(whichPlayer, controlType) end
 
 ---设置玩家名字
 ---@param whichPlayer player
 ---@param name string
-function common.SetPlayerName(whichPlayer,name) end
+function common.SetPlayerName(whichPlayer, name) end
 
 ---显示/隐藏计分屏显示 [R]
 ---@param whichPlayer player
 ---@param flag boolean
-function common.SetPlayerOnScoreScreen(whichPlayer,flag) end
+function common.SetPlayerOnScoreScreen(whichPlayer, flag) end
 
 ---玩家在的队伍
 ---@param whichPlayer player
@@ -6057,13 +6057,13 @@ function common.GetPlayerSlotState(whichPlayer) end
 ---@param otherPlayer player
 ---@param whichResource playerstate
 ---@return integer
-function common.GetPlayerTaxRate(sourcePlayer,otherPlayer,whichResource) end
+function common.GetPlayerTaxRate(sourcePlayer, otherPlayer, whichResource) end
 
 ---玩家的种族选择
 ---@param whichPlayer player
 ---@param pref racepreference
 ---@return boolean
-function common.IsPlayerRacePrefSet(whichPlayer,pref) end
+function common.IsPlayerRacePrefSet(whichPlayer, pref) end
 
 ---玩家名字
 ---@param whichPlayer player
@@ -6084,7 +6084,7 @@ function common.DestroyTimer(whichTimer) end
 ---@param timeout real
 ---@param periodic boolean
 ---@param handlerFunc code
-function common.TimerStart(whichTimer,timeout,periodic,handlerFunc) end
+function common.TimerStart(whichTimer, timeout, periodic, handlerFunc) end
 
 ---计时器经过的时间
 ---@param whichTimer timer
@@ -6126,13 +6126,13 @@ function common.DestroyGroup(whichGroup) end
 ---@param whichGroup group
 ---@param whichUnit unit
 ---@return boolean
-function common.GroupAddUnit(whichGroup,whichUnit) end
+function common.GroupAddUnit(whichGroup, whichUnit) end
 
 ---移除单位 [R]
 ---@param whichGroup group
 ---@param whichUnit unit
 ---@return boolean
-function common.GroupRemoveUnit(whichGroup,whichUnit) end
+function common.GroupRemoveUnit(whichGroup, whichUnit) end
 
 ---清除
 ---@param whichGroup group
@@ -6142,33 +6142,33 @@ function common.GroupClear(whichGroup) end
 ---@param whichGroup group
 ---@param unitname string
 ---@param filter boolexpr
-function common.GroupEnumUnitsOfType(whichGroup,unitname,filter) end
+function common.GroupEnumUnitsOfType(whichGroup, unitname, filter) end
 
 ---GroupEnumUnitsOfPlayer
 ---@param whichGroup group
 ---@param whichPlayer player
 ---@param filter boolexpr
-function common.GroupEnumUnitsOfPlayer(whichGroup,whichPlayer,filter) end
+function common.GroupEnumUnitsOfPlayer(whichGroup, whichPlayer, filter) end
 
 ---GroupEnumUnitsOfTypeCounted
 ---@param whichGroup group
 ---@param unitname string
 ---@param filter boolexpr
 ---@param countLimit integer
-function common.GroupEnumUnitsOfTypeCounted(whichGroup,unitname,filter,countLimit) end
+function common.GroupEnumUnitsOfTypeCounted(whichGroup, unitname, filter, countLimit) end
 
 ---GroupEnumUnitsInRect
 ---@param whichGroup group
 ---@param r rect
 ---@param filter boolexpr
-function common.GroupEnumUnitsInRect(whichGroup,r,filter) end
+function common.GroupEnumUnitsInRect(whichGroup, r, filter) end
 
 ---GroupEnumUnitsInRectCounted
 ---@param whichGroup group
 ---@param r rect
 ---@param filter boolexpr
 ---@param countLimit integer
-function common.GroupEnumUnitsInRectCounted(whichGroup,r,filter,countLimit) end
+function common.GroupEnumUnitsInRectCounted(whichGroup, r, filter, countLimit) end
 
 ---选取单位添加到单位组(坐标)
 ---@param whichGroup group
@@ -6176,14 +6176,14 @@ function common.GroupEnumUnitsInRectCounted(whichGroup,r,filter,countLimit) end
 ---@param y real
 ---@param radius real
 ---@param filter boolexpr
-function common.GroupEnumUnitsInRange(whichGroup,x,y,radius,filter) end
+function common.GroupEnumUnitsInRange(whichGroup, x, y, radius, filter) end
 
 ---选取单位添加到单位组(点)
 ---@param whichGroup group
 ---@param whichLocation location
 ---@param radius real
 ---@param filter boolexpr
-function common.GroupEnumUnitsInRangeOfLoc(whichGroup,whichLocation,radius,filter) end
+function common.GroupEnumUnitsInRangeOfLoc(whichGroup, whichLocation, radius, filter) end
 
 ---选取单位添加到单位组(坐标)(不建议使用)
 ---@param whichGroup group
@@ -6192,7 +6192,7 @@ function common.GroupEnumUnitsInRangeOfLoc(whichGroup,whichLocation,radius,filte
 ---@param radius real
 ---@param filter boolexpr
 ---@param countLimit integer
-function common.GroupEnumUnitsInRangeCounted(whichGroup,x,y,radius,filter,countLimit) end
+function common.GroupEnumUnitsInRangeCounted(whichGroup, x, y, radius, filter, countLimit) end
 
 ---选取单位添加到单位组(点)(不建议使用)
 ---@param whichGroup group
@@ -6200,25 +6200,25 @@ function common.GroupEnumUnitsInRangeCounted(whichGroup,x,y,radius,filter,countL
 ---@param radius real
 ---@param filter boolexpr
 ---@param countLimit integer
-function common.GroupEnumUnitsInRangeOfLocCounted(whichGroup,whichLocation,radius,filter,countLimit) end
+function common.GroupEnumUnitsInRangeOfLocCounted(whichGroup, whichLocation, radius, filter, countLimit) end
 
 ---GroupEnumUnitsSelected
 ---@param whichGroup group
 ---@param whichPlayer player
 ---@param filter boolexpr
-function common.GroupEnumUnitsSelected(whichGroup,whichPlayer,filter) end
+function common.GroupEnumUnitsSelected(whichGroup, whichPlayer, filter) end
 
 ---发送单位组命令到 没有目标
 ---@param whichGroup group
 ---@param order string
 ---@return boolean
-function common.GroupImmediateOrder(whichGroup,order) end
+function common.GroupImmediateOrder(whichGroup, order) end
 
 ---发布命令(无目标)(ID)
 ---@param whichGroup group
 ---@param order integer
 ---@return boolean
-function common.GroupImmediateOrderById(whichGroup,order) end
+function common.GroupImmediateOrderById(whichGroup, order) end
 
 ---发布命令(指定坐标) [R]
 ---@param whichGroup group
@@ -6226,14 +6226,14 @@ function common.GroupImmediateOrderById(whichGroup,order) end
 ---@param x real
 ---@param y real
 ---@return boolean
-function common.GroupPointOrder(whichGroup,order,x,y) end
+function common.GroupPointOrder(whichGroup, order, x, y) end
 
 ---发送单位组命令到 点
 ---@param whichGroup group
 ---@param order string
 ---@param whichLocation location
 ---@return boolean
-function common.GroupPointOrderLoc(whichGroup,order,whichLocation) end
+function common.GroupPointOrderLoc(whichGroup, order, whichLocation) end
 
 ---发布命令(指定坐标)(ID)
 ---@param whichGroup group
@@ -6241,28 +6241,28 @@ function common.GroupPointOrderLoc(whichGroup,order,whichLocation) end
 ---@param x real
 ---@param y real
 ---@return boolean
-function common.GroupPointOrderById(whichGroup,order,x,y) end
+function common.GroupPointOrderById(whichGroup, order, x, y) end
 
 ---发布命令(指定点)(ID)
 ---@param whichGroup group
 ---@param order integer
 ---@param whichLocation location
 ---@return boolean
-function common.GroupPointOrderByIdLoc(whichGroup,order,whichLocation) end
+function common.GroupPointOrderByIdLoc(whichGroup, order, whichLocation) end
 
 ---发送单位组命令到 单位
 ---@param whichGroup group
 ---@param order string
 ---@param targetWidget widget
 ---@return boolean
-function common.GroupTargetOrder(whichGroup,order,targetWidget) end
+function common.GroupTargetOrder(whichGroup, order, targetWidget) end
 
 ---发布命令(指定单位)(ID)
 ---@param whichGroup group
 ---@param order integer
 ---@param targetWidget widget
 ---@return boolean
-function common.GroupTargetOrderById(whichGroup,order,targetWidget) end
+function common.GroupTargetOrderById(whichGroup, order, targetWidget) end
 
 ---This will be difficult to support with potentially disjoint, cell-based regions
 ---as it would involve enumerating all the cells that are covered by a particularregion
@@ -6271,7 +6271,7 @@ function common.GroupTargetOrderById(whichGroup,order,targetWidget) end
 ---选取所有单位在单位组做 多动作
 ---@param whichGroup group
 ---@param callback code
-function common.ForGroup(whichGroup,callback) end
+function common.ForGroup(whichGroup, callback) end
 
 ---单位组中第一个单位
 ---@param whichGroup group
@@ -6290,12 +6290,12 @@ function common.DestroyForce(whichForce) end
 ---添加玩家 [R]
 ---@param whichForce force
 ---@param whichPlayer player
-function common.ForceAddPlayer(whichForce,whichPlayer) end
+function common.ForceAddPlayer(whichForce, whichPlayer) end
 
 ---移除玩家 [R]
 ---@param whichForce force
 ---@param whichPlayer player
-function common.ForceRemovePlayer(whichForce,whichPlayer) end
+function common.ForceRemovePlayer(whichForce, whichPlayer) end
 
 ---清除玩家
 ---@param whichForce force
@@ -6304,30 +6304,30 @@ function common.ForceClear(whichForce) end
 ---ForceEnumPlayers
 ---@param whichForce force
 ---@param filter boolexpr
-function common.ForceEnumPlayers(whichForce,filter) end
+function common.ForceEnumPlayers(whichForce, filter) end
 
 ---ForceEnumPlayersCounted
 ---@param whichForce force
 ---@param filter boolexpr
 ---@param countLimit integer
-function common.ForceEnumPlayersCounted(whichForce,filter,countLimit) end
+function common.ForceEnumPlayersCounted(whichForce, filter, countLimit) end
 
 ---ForceEnumAllies
 ---@param whichForce force
 ---@param whichPlayer player
 ---@param filter boolexpr
-function common.ForceEnumAllies(whichForce,whichPlayer,filter) end
+function common.ForceEnumAllies(whichForce, whichPlayer, filter) end
 
 ---ForceEnumEnemies
 ---@param whichForce force
 ---@param whichPlayer player
 ---@param filter boolexpr
-function common.ForceEnumEnemies(whichForce,whichPlayer,filter) end
+function common.ForceEnumEnemies(whichForce, whichPlayer, filter) end
 
 ---选取所有玩家在玩家组做动作(单一的)
 ---@param whichForce force
 ---@param callback code
-function common.ForForce(whichForce,callback) end
+function common.ForForce(whichForce, callback) end
 
 ---Region and Location API
 ---将坐标转换为区域
@@ -6336,13 +6336,13 @@ function common.ForForce(whichForce,callback) end
 ---@param maxx real
 ---@param maxy real
 ---@return rect
-function common.Rect(minx,miny,maxx,maxy) end
+function common.Rect(minx, miny, maxx, maxy) end
 
 ---将点转换为区域
 ---@param min location
 ---@param max location
 ---@return rect
-function common.RectFromLoc(min,max) end
+function common.RectFromLoc(min, max) end
 
 ---删除矩形区域 [R]
 ---@param whichRect rect
@@ -6354,24 +6354,24 @@ function common.RemoveRect(whichRect) end
 ---@param miny real
 ---@param maxx real
 ---@param maxy real
-function common.SetRect(whichRect,minx,miny,maxx,maxy) end
+function common.SetRect(whichRect, minx, miny, maxx, maxy) end
 
 ---设置矩形区域(指定点) [R]
 ---@param whichRect rect
 ---@param min location
 ---@param max location
-function common.SetRectFromLoc(whichRect,min,max) end
+function common.SetRectFromLoc(whichRect, min, max) end
 
 ---移动矩形区域(指定坐标) [R]
 ---@param whichRect rect
 ---@param newCenterX real
 ---@param newCenterY real
-function common.MoveRectTo(whichRect,newCenterX,newCenterY) end
+function common.MoveRectTo(whichRect, newCenterX, newCenterY) end
 
 ---移动区域
 ---@param whichRect rect
 ---@param newCenterLoc location
-function common.MoveRectToLoc(whichRect,newCenterLoc) end
+function common.MoveRectToLoc(whichRect, newCenterLoc) end
 
 ---区域中心的 X 坐标
 ---@param whichRect rect
@@ -6414,40 +6414,40 @@ function common.RemoveRegion(whichRegion) end
 ---添加区域 [R]
 ---@param whichRegion region
 ---@param r rect
-function common.RegionAddRect(whichRegion,r) end
+function common.RegionAddRect(whichRegion, r) end
 
 ---移除区域 [R]
 ---@param whichRegion region
 ---@param r rect
-function common.RegionClearRect(whichRegion,r) end
+function common.RegionClearRect(whichRegion, r) end
 
 ---添加单元点(指定坐标) [R]
 ---@param whichRegion region
 ---@param x real
 ---@param y real
-function common.RegionAddCell(whichRegion,x,y) end
+function common.RegionAddCell(whichRegion, x, y) end
 
 ---添加单元点(指定点) [R]
 ---@param whichRegion region
 ---@param whichLocation location
-function common.RegionAddCellAtLoc(whichRegion,whichLocation) end
+function common.RegionAddCellAtLoc(whichRegion, whichLocation) end
 
 ---移除单元点(指定坐标) [R]
 ---@param whichRegion region
 ---@param x real
 ---@param y real
-function common.RegionClearCell(whichRegion,x,y) end
+function common.RegionClearCell(whichRegion, x, y) end
 
 ---移除单元点(指定点) [R]
 ---@param whichRegion region
 ---@param whichLocation location
-function common.RegionClearCellAtLoc(whichRegion,whichLocation) end
+function common.RegionClearCellAtLoc(whichRegion, whichLocation) end
 
 ---转换坐标到点
 ---@param x real
 ---@param y real
 ---@return location
-function common.Location(x,y) end
+function common.Location(x, y) end
 
 ---清除点 [R]
 ---@param whichLocation location
@@ -6457,7 +6457,7 @@ function common.RemoveLocation(whichLocation) end
 ---@param whichLocation location
 ---@param newX real
 ---@param newY real
-function common.MoveLocation(whichLocation,newX,newY) end
+function common.MoveLocation(whichLocation, newX, newY) end
 
 ---X 坐标
 ---@param whichLocation location
@@ -6480,20 +6480,20 @@ function common.GetLocationZ(whichLocation) end
 ---@param whichRegion region
 ---@param whichUnit unit
 ---@return boolean
-function common.IsUnitInRegion(whichRegion,whichUnit) end
+function common.IsUnitInRegion(whichRegion, whichUnit) end
 
 ---包含坐标
 ---@param whichRegion region
 ---@param x real
 ---@param y real
 ---@return boolean
-function common.IsPointInRegion(whichRegion,x,y) end
+function common.IsPointInRegion(whichRegion, x, y) end
 
 ---包含点
 ---@param whichRegion region
 ---@param whichLocation location
 ---@return boolean
-function common.IsLocationInRegion(whichRegion,whichLocation) end
+function common.IsLocationInRegion(whichRegion, whichLocation) end
 
 ---Returns full map bounds, including unplayable borders, in world coordinates
 ---Returns full map bounds, including unplayable borders, in world coordinates
@@ -6529,7 +6529,7 @@ function common.IsTriggerEnabled(whichTrigger) end
 ---TriggerWaitOnSleeps
 ---@param whichTrigger trigger
 ---@param flag boolean
-function common.TriggerWaitOnSleeps(whichTrigger,flag) end
+function common.TriggerWaitOnSleeps(whichTrigger, flag) end
 
 ---IsTriggerWaitOnSleeps
 ---@param whichTrigger trigger
@@ -6599,13 +6599,13 @@ function common.ExecuteFunc(funcName) end
 ---@param operandA boolexpr
 ---@param operandB boolexpr
 ---@return boolexpr
-function common.And(operandA,operandB) end
+function common.And(operandA, operandB) end
 
 ---Or
 ---@param operandA boolexpr
 ---@param operandB boolexpr
 ---@return boolexpr
-function common.Or(operandA,operandB) end
+function common.Or(operandA, operandB) end
 
 ---Not
 ---@param operand boolexpr
@@ -6640,7 +6640,7 @@ function common.DestroyBoolExpr(e) end
 ---@param opcode limitop
 ---@param limitval real
 ---@return event
-function common.TriggerRegisterVariableEvent(whichTrigger,varName,opcode,limitval) end
+function common.TriggerRegisterVariableEvent(whichTrigger, varName, opcode, limitval) end
 
 ---Creates it's own timer and triggers when it expires
 ---Creates it's own timer and triggers when it expires
@@ -6648,14 +6648,14 @@ function common.TriggerRegisterVariableEvent(whichTrigger,varName,opcode,limitva
 ---@param timeout real
 ---@param periodic boolean
 ---@return event
-function common.TriggerRegisterTimerEvent(whichTrigger,timeout,periodic) end
+function common.TriggerRegisterTimerEvent(whichTrigger, timeout, periodic) end
 
 ---Triggers when the timer you tell it about expires
 ---Triggers when the timer you tell it about expires
 ---@param whichTrigger trigger
 ---@param t timer
 ---@return event
-function common.TriggerRegisterTimerExpireEvent(whichTrigger,t) end
+function common.TriggerRegisterTimerExpireEvent(whichTrigger, t) end
 
 ---TriggerRegisterGameStateEvent
 ---@param whichTrigger trigger
@@ -6663,19 +6663,19 @@ function common.TriggerRegisterTimerExpireEvent(whichTrigger,t) end
 ---@param opcode limitop
 ---@param limitval real
 ---@return event
-function common.TriggerRegisterGameStateEvent(whichTrigger,whichState,opcode,limitval) end
+function common.TriggerRegisterGameStateEvent(whichTrigger, whichState, opcode, limitval) end
 
 ---TriggerRegisterDialogEvent
 ---@param whichTrigger trigger
 ---@param whichDialog dialog
 ---@return event
-function common.TriggerRegisterDialogEvent(whichTrigger,whichDialog) end
+function common.TriggerRegisterDialogEvent(whichTrigger, whichDialog) end
 
 ---对话框按钮被点击 [R]
 ---@param whichTrigger trigger
 ---@param whichButton button
 ---@return event
-function common.TriggerRegisterDialogButtonEvent(whichTrigger,whichButton) end
+function common.TriggerRegisterDialogButtonEvent(whichTrigger, whichButton) end
 
 ---EVENT_GAME_STATE_LIMIT
 ---EVENT_GAME_STATE_LIMIT
@@ -6686,7 +6686,7 @@ function common.GetEventGameState() end
 ---@param whichTrigger trigger
 ---@param whichGameEvent gameevent
 ---@return event
-function common.TriggerRegisterGameEvent(whichTrigger,whichGameEvent) end
+function common.TriggerRegisterGameEvent(whichTrigger, whichGameEvent) end
 
 ---EVENT_GAME_VICTORY
 ---EVENT_GAME_VICTORY
@@ -6698,7 +6698,7 @@ function common.GetWinningPlayer() end
 ---@param whichRegion region
 ---@param filter boolexpr
 ---@return event
-function common.TriggerRegisterEnterRegion(whichTrigger,whichRegion,filter) end
+function common.TriggerRegisterEnterRegion(whichTrigger, whichRegion, filter) end
 
 ---EVENT_GAME_ENTER_REGION
 ---触发区域 [R]
@@ -6714,7 +6714,7 @@ function common.GetEnteringUnit() end
 ---@param whichRegion region
 ---@param filter boolexpr
 ---@return event
-function common.TriggerRegisterLeaveRegion(whichTrigger,whichRegion,filter) end
+function common.TriggerRegisterLeaveRegion(whichTrigger, whichRegion, filter) end
 
 ---正在离开的单位
 ---@return unit
@@ -6724,13 +6724,13 @@ function common.GetLeavingUnit() end
 ---@param whichTrigger trigger
 ---@param t trackable
 ---@return event
-function common.TriggerRegisterTrackableHitEvent(whichTrigger,t) end
+function common.TriggerRegisterTrackableHitEvent(whichTrigger, t) end
 
 ---鼠标移动到追踪对象 [R]
 ---@param whichTrigger trigger
 ---@param t trackable
 ---@return event
-function common.TriggerRegisterTrackableTrackEvent(whichTrigger,t) end
+function common.TriggerRegisterTrackableTrackEvent(whichTrigger, t) end
 
 ---EVENT_COMMAND_BUTTON_CLICK
 ---EVENT_COMMAND_BUTTON_CLICK
@@ -6738,13 +6738,13 @@ function common.TriggerRegisterTrackableTrackEvent(whichTrigger,t) end
 ---@param whichAbility integer
 ---@param order string
 ---@return event
-function common.TriggerRegisterCommandEvent(whichTrigger,whichAbility,order) end
+function common.TriggerRegisterCommandEvent(whichTrigger, whichAbility, order) end
 
 ---TriggerRegisterUpgradeCommandEvent
 ---@param whichTrigger trigger
 ---@param whichUpgrade integer
 ---@return event
-function common.TriggerRegisterUpgradeCommandEvent(whichTrigger,whichUpgrade) end
+function common.TriggerRegisterUpgradeCommandEvent(whichTrigger, whichUpgrade) end
 
 ---EVENT_GAME_TRACKABLE_HIT
 ---EVENT_GAME_TRACKABLE_TRACK
@@ -6789,7 +6789,7 @@ function common.GetSaveBasicFilename() end
 ---@param whichPlayer player
 ---@param whichPlayerEvent playerevent
 ---@return event
-function common.TriggerRegisterPlayerEvent(whichTrigger,whichPlayer,whichPlayerEvent) end
+function common.TriggerRegisterPlayerEvent(whichTrigger, whichPlayer, whichPlayerEvent) end
 
 ---EVENT_PLAYER_DEFEAT
 ---EVENT_PLAYER_VICTORY
@@ -6803,7 +6803,7 @@ function common.GetTriggerPlayer() end
 ---@param whichPlayerUnitEvent playerunitevent
 ---@param filter boolexpr
 ---@return event
-function common.TriggerRegisterPlayerUnitEvent(whichTrigger,whichPlayer,whichPlayerUnitEvent,filter) end
+function common.TriggerRegisterPlayerUnitEvent(whichTrigger, whichPlayer, whichPlayerUnitEvent, filter) end
 
 ---EVENT_PLAYER_HERO_LEVEL
 ---EVENT_UNIT_HERO_LEVEL
@@ -7052,7 +7052,7 @@ function common.GetSpellTargetUnit() end
 ---@param whichPlayer player
 ---@param whichAlliance alliancetype
 ---@return event
-function common.TriggerRegisterPlayerAllianceChange(whichTrigger,whichPlayer,whichAlliance) end
+function common.TriggerRegisterPlayerAllianceChange(whichTrigger, whichPlayer, whichAlliance) end
 
 ---属性
 ---@param whichTrigger trigger
@@ -7061,7 +7061,7 @@ function common.TriggerRegisterPlayerAllianceChange(whichTrigger,whichPlayer,whi
 ---@param opcode limitop
 ---@param limitval real
 ---@return event
-function common.TriggerRegisterPlayerStateEvent(whichTrigger,whichPlayer,whichState,opcode,limitval) end
+function common.TriggerRegisterPlayerStateEvent(whichTrigger, whichPlayer, whichState, opcode, limitval) end
 
 ---EVENT_PLAYER_STATE_LIMIT
 ---EVENT_PLAYER_STATE_LIMIT
@@ -7074,7 +7074,7 @@ function common.GetEventPlayerState() end
 ---@param chatMessageToDetect string
 ---@param exactMatchOnly boolean
 ---@return event
-function common.TriggerRegisterPlayerChatEvent(whichTrigger,whichPlayer,chatMessageToDetect,exactMatchOnly) end
+function common.TriggerRegisterPlayerChatEvent(whichTrigger, whichPlayer, chatMessageToDetect, exactMatchOnly) end
 
 ---returns the actual string they typed in ( same as what you registered for
 ---if you required exact match )
@@ -7091,7 +7091,7 @@ function common.GetEventPlayerChatStringMatched() end
 ---@param whichTrigger trigger
 ---@param whichWidget widget
 ---@return event
-function common.TriggerRegisterDeathEvent(whichTrigger,whichWidget) end
+function common.TriggerRegisterDeathEvent(whichTrigger, whichWidget) end
 
 ---触发单位
 ---@return unit
@@ -7104,7 +7104,7 @@ function common.GetTriggerUnit() end
 ---@param opcode limitop
 ---@param limitval real
 ---@return event
-function common.TriggerRegisterUnitStateEvent(whichTrigger,whichUnit,whichState,opcode,limitval) end
+function common.TriggerRegisterUnitStateEvent(whichTrigger, whichUnit, whichState, opcode, limitval) end
 
 ---EVENT_UNIT_STATE_LIMIT
 ---EVENT_UNIT_STATE_LIMIT
@@ -7117,7 +7117,7 @@ function common.GetEventUnitState() end
 ---@param whichUnit unit
 ---@param whichEvent unitevent
 ---@return event
-function common.TriggerRegisterUnitEvent(whichTrigger,whichUnit,whichEvent) end
+function common.TriggerRegisterUnitEvent(whichTrigger, whichUnit, whichEvent) end
 
 ---EVENT_UNIT_DAMAGED
 ---被伤害的生命值
@@ -7139,7 +7139,7 @@ function common.GetEventDetectingPlayer() end
 ---@param whichEvent unitevent
 ---@param filter boolexpr
 ---@return event
-function common.TriggerRegisterFilterUnitEvent(whichTrigger,whichUnit,whichEvent,filter) end
+function common.TriggerRegisterFilterUnitEvent(whichTrigger, whichUnit, whichEvent, filter) end
 
 ---EVENT_UNIT_ACQUIRED_TARGET
 ---EVENT_UNIT_TARGET_IN_RANGE
@@ -7153,18 +7153,18 @@ function common.GetEventTargetUnit() end
 ---@param range real
 ---@param filter boolexpr
 ---@return event
-function common.TriggerRegisterUnitInRange(whichTrigger,whichUnit,range,filter) end
+function common.TriggerRegisterUnitInRange(whichTrigger, whichUnit, range, filter) end
 
 ---添加触发器限制条件
 ---@param whichTrigger trigger
 ---@param condition boolexpr
 ---@return triggercondition
-function common.TriggerAddCondition(whichTrigger,condition) end
+function common.TriggerAddCondition(whichTrigger, condition) end
 
 ---TriggerRemoveCondition
 ---@param whichTrigger trigger
 ---@param whichCondition triggercondition
-function common.TriggerRemoveCondition(whichTrigger,whichCondition) end
+function common.TriggerRemoveCondition(whichTrigger, whichCondition) end
 
 ---TriggerClearConditions
 ---@param whichTrigger trigger
@@ -7174,12 +7174,12 @@ function common.TriggerClearConditions(whichTrigger) end
 ---@param whichTrigger trigger
 ---@param actionFunc code
 ---@return triggeraction
-function common.TriggerAddAction(whichTrigger,actionFunc) end
+function common.TriggerAddAction(whichTrigger, actionFunc) end
 
 ---TriggerRemoveAction
 ---@param whichTrigger trigger
 ---@param whichAction triggeraction
-function common.TriggerRemoveAction(whichTrigger,whichAction) end
+function common.TriggerRemoveAction(whichTrigger, whichAction) end
 
 ---TriggerClearActions
 ---@param whichTrigger trigger
@@ -7192,7 +7192,7 @@ function common.TriggerSleepAction(timeout) end
 ---TriggerWaitForSound
 ---@param s sound
 ---@param offset real
-function common.TriggerWaitForSound(s,offset) end
+function common.TriggerWaitForSound(s, offset) end
 
 ---触发器条件成立
 ---@param whichTrigger trigger
@@ -7222,7 +7222,7 @@ function common.GetWidgetLife(whichWidget) end
 ---SetWidgetLife
 ---@param whichWidget widget
 ---@param newLife real
-function common.SetWidgetLife(whichWidget,newLife) end
+function common.SetWidgetLife(whichWidget, newLife) end
 
 ---GetWidgetX
 ---@param whichWidget widget
@@ -7248,7 +7248,7 @@ function common.GetTriggerWidget() end
 ---@param scale real
 ---@param variation integer
 ---@return destructable
-function common.CreateDestructable(objectid,x,y,face,scale,variation) end
+function common.CreateDestructable(objectid, x, y, face, scale, variation) end
 
 ---新建可破坏物 [R]
 ---@param objectid integer
@@ -7259,7 +7259,7 @@ function common.CreateDestructable(objectid,x,y,face,scale,variation) end
 ---@param scale real
 ---@param variation integer
 ---@return destructable
-function common.CreateDestructableZ(objectid,x,y,z,face,scale,variation) end
+function common.CreateDestructableZ(objectid, x, y, z, face, scale, variation) end
 
 ---CreateDeadDestructable
 ---@param objectid integer
@@ -7269,7 +7269,7 @@ function common.CreateDestructableZ(objectid,x,y,z,face,scale,variation) end
 ---@param scale real
 ---@param variation integer
 ---@return destructable
-function common.CreateDeadDestructable(objectid,x,y,face,scale,variation) end
+function common.CreateDeadDestructable(objectid, x, y, face, scale, variation) end
 
 ---新建可破坏物(死亡的) [R]
 ---@param objectid integer
@@ -7280,7 +7280,7 @@ function common.CreateDeadDestructable(objectid,x,y,face,scale,variation) end
 ---@param scale real
 ---@param variation integer
 ---@return destructable
-function common.CreateDeadDestructableZ(objectid,x,y,z,face,scale,variation) end
+function common.CreateDeadDestructableZ(objectid, x, y, z, face, scale, variation) end
 
 ---删除 可毁坏物
 ---@param d destructable
@@ -7293,7 +7293,7 @@ function common.KillDestructable(d) end
 ---SetDestructableInvulnerable
 ---@param d destructable
 ---@param flag boolean
-function common.SetDestructableInvulnerable(d,flag) end
+function common.SetDestructableInvulnerable(d, flag) end
 
 ---IsDestructableInvulnerable
 ---@param d destructable
@@ -7304,7 +7304,7 @@ function common.IsDestructableInvulnerable(d) end
 ---@param r rect
 ---@param filter boolexpr
 ---@param actionFunc code
-function common.EnumDestructablesInRect(r,filter,actionFunc) end
+function common.EnumDestructablesInRect(r, filter, actionFunc) end
 
 ---建筑的类型
 ---@param d destructable
@@ -7324,7 +7324,7 @@ function common.GetDestructableY(d) end
 ---设置 可毁坏物 生命 (值)
 ---@param d destructable
 ---@param life real
-function common.SetDestructableLife(d,life) end
+function common.SetDestructableLife(d, life) end
 
 ---生命值 (可毁坏物)
 ---@param d destructable
@@ -7334,7 +7334,7 @@ function common.GetDestructableLife(d) end
 ---SetDestructableMaxLife
 ---@param d destructable
 ---@param max real
-function common.SetDestructableMaxLife(d,max) end
+function common.SetDestructableMaxLife(d, max) end
 
 ---最大生命值 (可毁坏物)
 ---@param d destructable
@@ -7345,27 +7345,27 @@ function common.GetDestructableMaxLife(d) end
 ---@param d destructable
 ---@param life real
 ---@param birth boolean
-function common.DestructableRestoreLife(d,life,birth) end
+function common.DestructableRestoreLife(d, life, birth) end
 
 ---QueueDestructableAnimation
 ---@param d destructable
 ---@param whichAnimation string
-function common.QueueDestructableAnimation(d,whichAnimation) end
+function common.QueueDestructableAnimation(d, whichAnimation) end
 
 ---SetDestructableAnimation
 ---@param d destructable
 ---@param whichAnimation string
-function common.SetDestructableAnimation(d,whichAnimation) end
+function common.SetDestructableAnimation(d, whichAnimation) end
 
 ---改变可破坏物动画播放速度 [R]
 ---@param d destructable
 ---@param speedFactor real
-function common.SetDestructableAnimationSpeed(d,speedFactor) end
+function common.SetDestructableAnimationSpeed(d, speedFactor) end
 
 ---显示/隐藏 [R]
 ---@param d destructable
 ---@param flag boolean
-function common.ShowDestructable(d,flag) end
+function common.ShowDestructable(d, flag) end
 
 ---闭塞高度 (可毁坏物)
 ---@param d destructable
@@ -7375,7 +7375,7 @@ function common.GetDestructableOccluderHeight(d) end
 ---设置闭塞高度
 ---@param d destructable
 ---@param height real
-function common.SetDestructableOccluderHeight(d,height) end
+function common.SetDestructableOccluderHeight(d, height) end
 
 ---可毁坏物的名字
 ---@param d destructable
@@ -7392,7 +7392,7 @@ function common.GetTriggerDestructable() end
 ---@param x real
 ---@param y real
 ---@return item
-function common.CreateItem(itemid,x,y) end
+function common.CreateItem(itemid, x, y) end
 
 ---删除物品
 ---@param whichItem item
@@ -7422,33 +7422,33 @@ function common.GetItemY(i) end
 ---@param i item
 ---@param x real
 ---@param y real
-function common.SetItemPosition(i,x,y) end
+function common.SetItemPosition(i, x, y) end
 
 ---SetItemDropOnDeath
 ---@param whichItem item
 ---@param flag boolean
-function common.SetItemDropOnDeath(whichItem,flag) end
+function common.SetItemDropOnDeath(whichItem, flag) end
 
 ---SetItemDroppable
 ---@param i item
 ---@param flag boolean
-function common.SetItemDroppable(i,flag) end
+function common.SetItemDroppable(i, flag) end
 
 ---设置物品能否变卖
 ---@param i item
 ---@param flag boolean
-function common.SetItemPawnable(i,flag) end
+function common.SetItemPawnable(i, flag) end
 
 ---SetItemPlayer
 ---@param whichItem item
 ---@param whichPlayer player
 ---@param changeColor boolean
-function common.SetItemPlayer(whichItem,whichPlayer,changeColor) end
+function common.SetItemPlayer(whichItem, whichPlayer, changeColor) end
 
 ---SetItemInvulnerable
 ---@param whichItem item
 ---@param flag boolean
-function common.SetItemInvulnerable(whichItem,flag) end
+function common.SetItemInvulnerable(whichItem, flag) end
 
 ---物品是无敌的
 ---@param whichItem item
@@ -7458,7 +7458,7 @@ function common.IsItemInvulnerable(whichItem) end
 ---显示/隐藏 [R]
 ---@param whichItem item
 ---@param show boolean
-function common.SetItemVisible(whichItem,show) end
+function common.SetItemVisible(whichItem, show) end
 
 ---物品可见 [R]
 ---@param whichItem item
@@ -7504,7 +7504,7 @@ function common.IsItemIdPawnable(itemId) end
 ---@param r rect
 ---@param filter boolexpr
 ---@param actionFunc code
-function common.EnumItemsInRect(r,filter,actionFunc) end
+function common.EnumItemsInRect(r, filter, actionFunc) end
 
 ---物品等级
 ---@param whichItem item
@@ -7519,7 +7519,7 @@ function common.GetItemType(whichItem) end
 ---设置重生神符的产生单位类型
 ---@param whichItem item
 ---@param unitId integer
-function common.SetItemDropID(whichItem,unitId) end
+function common.SetItemDropID(whichItem, unitId) end
 
 ---物品名
 ---@param whichItem item
@@ -7534,7 +7534,7 @@ function common.GetItemCharges(whichItem) end
 ---设置物品数量[使用次数]
 ---@param whichItem item
 ---@param charges integer
-function common.SetItemCharges(whichItem,charges) end
+function common.SetItemCharges(whichItem, charges) end
 
 ---物品自定义值
 ---@param whichItem item
@@ -7544,7 +7544,7 @@ function common.GetItemUserData(whichItem) end
 ---设置物品自定义数据
 ---@param whichItem item
 ---@param data integer
-function common.SetItemUserData(whichItem,data) end
+function common.SetItemUserData(whichItem, data) end
 
 ---Unit API
 ---Facing arguments are specified in degrees
@@ -7555,7 +7555,7 @@ function common.SetItemUserData(whichItem,data) end
 ---@param y real
 ---@param face real
 ---@return unit
-function common.CreateUnit(id,unitid,x,y,face) end
+function common.CreateUnit(id, unitid, x, y, face) end
 
 ---CreateUnitByName
 ---@param whichPlayer player
@@ -7564,7 +7564,7 @@ function common.CreateUnit(id,unitid,x,y,face) end
 ---@param y real
 ---@param face real
 ---@return unit
-function common.CreateUnitByName(whichPlayer,unitname,x,y,face) end
+function common.CreateUnitByName(whichPlayer, unitname, x, y, face) end
 
 ---新建单位(指定点) [R]
 ---@param id player
@@ -7572,7 +7572,7 @@ function common.CreateUnitByName(whichPlayer,unitname,x,y,face) end
 ---@param whichLocation location
 ---@param face real
 ---@return unit
-function common.CreateUnitAtLoc(id,unitid,whichLocation,face) end
+function common.CreateUnitAtLoc(id, unitid, whichLocation, face) end
 
 ---CreateUnitAtLocByName
 ---@param id player
@@ -7580,7 +7580,7 @@ function common.CreateUnitAtLoc(id,unitid,whichLocation,face) end
 ---@param whichLocation location
 ---@param face real
 ---@return unit
-function common.CreateUnitAtLocByName(id,unitname,whichLocation,face) end
+function common.CreateUnitAtLocByName(id, unitname, whichLocation, face) end
 
 ---新建尸体 [R]
 ---@param whichPlayer player
@@ -7589,7 +7589,7 @@ function common.CreateUnitAtLocByName(id,unitname,whichLocation,face) end
 ---@param y real
 ---@param face real
 ---@return unit
-function common.CreateCorpse(whichPlayer,unitid,x,y,face) end
+function common.CreateCorpse(whichPlayer, unitid, x, y, face) end
 
 ---杀死单位
 ---@param whichUnit unit
@@ -7602,76 +7602,76 @@ function common.RemoveUnit(whichUnit) end
 ---显示/隐藏 [R]
 ---@param whichUnit unit
 ---@param show boolean
-function common.ShowUnit(whichUnit,show) end
+function common.ShowUnit(whichUnit, show) end
 
 ---设置单位属性 [R]
 ---@param whichUnit unit
 ---@param whichUnitState unitstate
 ---@param newVal real
-function common.SetUnitState(whichUnit,whichUnitState,newVal) end
+function common.SetUnitState(whichUnit, whichUnitState, newVal) end
 
 ---设置X坐标 [R]
 ---@param whichUnit unit
 ---@param newX real
-function common.SetUnitX(whichUnit,newX) end
+function common.SetUnitX(whichUnit, newX) end
 
 ---设置Y坐标 [R]
 ---@param whichUnit unit
 ---@param newY real
-function common.SetUnitY(whichUnit,newY) end
+function common.SetUnitY(whichUnit, newY) end
 
 ---移动单位(立即)(指定坐标) [R]
 ---@param whichUnit unit
 ---@param newX real
 ---@param newY real
-function common.SetUnitPosition(whichUnit,newX,newY) end
+function common.SetUnitPosition(whichUnit, newX, newY) end
 
 ---移动单位 (立刻)
 ---@param whichUnit unit
 ---@param whichLocation location
-function common.SetUnitPositionLoc(whichUnit,whichLocation) end
+function common.SetUnitPositionLoc(whichUnit, whichLocation) end
 
 ---设置单位面向角度 [R]
 ---@param whichUnit unit
 ---@param facingAngle real
-function common.SetUnitFacing(whichUnit,facingAngle) end
+function common.SetUnitFacing(whichUnit, facingAngle) end
 
 ---设置单位面对角度
 ---@param whichUnit unit
 ---@param facingAngle real
 ---@param duration real
-function common.SetUnitFacingTimed(whichUnit,facingAngle,duration) end
+function common.SetUnitFacingTimed(whichUnit, facingAngle, duration) end
 
 ---设置单位移动速度
 ---@param whichUnit unit
 ---@param newSpeed real
-function common.SetUnitMoveSpeed(whichUnit,newSpeed) end
+function common.SetUnitMoveSpeed(whichUnit, newSpeed) end
 
 ---SetUnitFlyHeight
 ---@param whichUnit unit
 ---@param newHeight real
 ---@param rate real
-function common.SetUnitFlyHeight(whichUnit,newHeight,rate) end
+function common.SetUnitFlyHeight(whichUnit, newHeight, rate) end
 
 ---SetUnitTurnSpeed
 ---@param whichUnit unit
 ---@param newTurnSpeed real
-function common.SetUnitTurnSpeed(whichUnit,newTurnSpeed) end
+function common.SetUnitTurnSpeed(whichUnit, newTurnSpeed) end
 
 ---改变单位转向角度(弧度制) [R]
 ---@param whichUnit unit
 ---@param newPropWindowAngle real
-function common.SetUnitPropWindow(whichUnit,newPropWindowAngle) end
+function common.SetUnitPropWindow(whichUnit, newPropWindowAngle) end
 
 ---SetUnitAcquireRange
 ---@param whichUnit unit
 ---@param newAcquireRange real
-function common.SetUnitAcquireRange(whichUnit,newAcquireRange) end
+function common.SetUnitAcquireRange(whichUnit, newAcquireRange) end
 
 ---锁定指定单位的警戒点 [R]
 ---@param whichUnit unit
 ---@param creepGuard boolean
-function common.SetUnitCreepGuard(whichUnit,creepGuard) end
+function common.SetUnitCreepGuard(whichUnit, creepGuard) end
 
 ---单位射程 (当前)
 ---@param whichUnit unit
@@ -7717,29 +7717,29 @@ function common.GetUnitDefaultFlyHeight(whichUnit) end
 ---@param whichUnit unit
 ---@param whichPlayer player
 ---@param changeColor boolean
-function common.SetUnitOwner(whichUnit,whichPlayer,changeColor) end
+function common.SetUnitOwner(whichUnit, whichPlayer, changeColor) end
 
 ---改变单位颜色
 ---@param whichUnit unit
 ---@param whichColor playercolor
-function common.SetUnitColor(whichUnit,whichColor) end
+function common.SetUnitColor(whichUnit, whichColor) end
 
 ---改变单位尺寸(按倍数) [R]
 ---@param whichUnit unit
 ---@param scaleX real
 ---@param scaleY real
 ---@param scaleZ real
-function common.SetUnitScale(whichUnit,scaleX,scaleY,scaleZ) end
+function common.SetUnitScale(whichUnit, scaleX, scaleY, scaleZ) end
 
 ---改变单位动画播放速度(按倍数) [R]
 ---@param whichUnit unit
 ---@param timeScale real
-function common.SetUnitTimeScale(whichUnit,timeScale) end
+function common.SetUnitTimeScale(whichUnit, timeScale) end
 
 ---SetUnitBlendTime
 ---@param whichUnit unit
 ---@param blendTime real
-function common.SetUnitBlendTime(whichUnit,blendTime) end
+function common.SetUnitBlendTime(whichUnit, blendTime) end
 
 ---改变单位的颜色(RGB:0-255) [R]
 ---@param whichUnit unit
@@ -7747,34 +7747,34 @@ function common.SetUnitBlendTime(whichUnit,blendTime) end
 ---@param green integer
 ---@param blue integer
 ---@param alpha integer
-function common.SetUnitVertexColor(whichUnit,red,green,blue,alpha) end
+function common.SetUnitVertexColor(whichUnit, red, green, blue, alpha) end
 
 ---QueueUnitAnimation
 ---@param whichUnit unit
 ---@param whichAnimation string
-function common.QueueUnitAnimation(whichUnit,whichAnimation) end
+function common.QueueUnitAnimation(whichUnit, whichAnimation) end
 
 ---播放单位动作
 ---@param whichUnit unit
 ---@param whichAnimation string
-function common.SetUnitAnimation(whichUnit,whichAnimation) end
+function common.SetUnitAnimation(whichUnit, whichAnimation) end
 
 ---播放单位指定序号动动作 [R]
 ---@param whichUnit unit
 ---@param whichAnimation integer
-function common.SetUnitAnimationByIndex(whichUnit,whichAnimation) end
+function common.SetUnitAnimationByIndex(whichUnit, whichAnimation) end
 
 ---播放单位动作 (指定概率)
 ---@param whichUnit unit
 ---@param whichAnimation string
 ---@param rarity raritycontrol
-function common.SetUnitAnimationWithRarity(whichUnit,whichAnimation,rarity) end
+function common.SetUnitAnimationWithRarity(whichUnit, whichAnimation, rarity) end
 
 ---添加/删除 单位动画附加名 [R]
 ---@param whichUnit unit
 ---@param animProperties string
 ---@param add boolean
-function common.AddUnitAnimationProperties(whichUnit,animProperties,add) end
+function common.AddUnitAnimationProperties(whichUnit, animProperties, add) end
 
 ---锁定单位脸面对方向
 ---@param whichUnit unit
@@ -7783,7 +7783,7 @@ function common.AddUnitAnimationProperties(whichUnit,animProperties,add) end
 ---@param offsetX real
 ---@param offsetY real
 ---@param offsetZ real
-function common.SetUnitLookAt(whichUnit,whichBone,lookAtTarget,offsetX,offsetY,offsetZ) end
+function common.SetUnitLookAt(whichUnit, whichBone, lookAtTarget, offsetX, offsetY, offsetZ) end
 
 ---重置单位面对方向
 ---@param whichUnit unit
@@ -7793,54 +7793,54 @@ function common.ResetUnitLookAt(whichUnit) end
 ---@param whichUnit unit
 ---@param byWhichPlayer player
 ---@param flag boolean
-function common.SetUnitRescuable(whichUnit,byWhichPlayer,flag) end
+function common.SetUnitRescuable(whichUnit, byWhichPlayer, flag) end
 
 ---设置营救单位的营救距离
 ---@param whichUnit unit
 ---@param range real
-function common.SetUnitRescueRange(whichUnit,range) end
+function common.SetUnitRescueRange(whichUnit, range) end
 
 ---设置英雄力量 [R]
 ---@param whichHero unit
 ---@param newStr integer
 ---@param permanent boolean
-function common.SetHeroStr(whichHero,newStr,permanent) end
+function common.SetHeroStr(whichHero, newStr, permanent) end
 
 ---设置英雄敏捷 [R]
 ---@param whichHero unit
 ---@param newAgi integer
 ---@param permanent boolean
-function common.SetHeroAgi(whichHero,newAgi,permanent) end
+function common.SetHeroAgi(whichHero, newAgi, permanent) end
 
 ---设置英雄智力 [R]
 ---@param whichHero unit
 ---@param newInt integer
 ---@param permanent boolean
-function common.SetHeroInt(whichHero,newInt,permanent) end
+function common.SetHeroInt(whichHero, newInt, permanent) end
 
 ---英雄力量 [R]
 ---@param whichHero unit
 ---@param includeBonuses boolean
 ---@return integer
-function common.GetHeroStr(whichHero,includeBonuses) end
+function common.GetHeroStr(whichHero, includeBonuses) end
 
 ---英雄敏捷 [R]
 ---@param whichHero unit
 ---@param includeBonuses boolean
 ---@return integer
-function common.GetHeroAgi(whichHero,includeBonuses) end
+function common.GetHeroAgi(whichHero, includeBonuses) end
 
 ---英雄智力 [R]
 ---@param whichHero unit
 ---@param includeBonuses boolean
 ---@return integer
-function common.GetHeroInt(whichHero,includeBonuses) end
+function common.GetHeroInt(whichHero, includeBonuses) end
 
 ---降低等级 [R]
 ---@param whichHero unit
 ---@param howManyLevels integer
 ---@return boolean
-function common.UnitStripHeroLevel(whichHero,howManyLevels) end
+function common.UnitStripHeroLevel(whichHero, howManyLevels) end
 
 ---英雄的经验值
 ---@param whichHero unit
@@ -7851,7 +7851,7 @@ function common.GetHeroXP(whichHero) end
 ---@param whichHero unit
 ---@param newXpVal integer
 ---@param showEyeCandy boolean
-function common.SetHeroXP(whichHero,newXpVal,showEyeCandy) end
+function common.SetHeroXP(whichHero, newXpVal, showEyeCandy) end
 
 ---未用完的技能点数
 ---@param whichHero unit
@@ -7862,19 +7862,19 @@ function common.GetHeroSkillPoints(whichHero) end
 ---@param whichHero unit
 ---@param skillPointDelta integer
 ---@return boolean
-function common.UnitModifySkillPoints(whichHero,skillPointDelta) end
+function common.UnitModifySkillPoints(whichHero, skillPointDelta) end
 
 ---增加经验值 [R]
 ---@param whichHero unit
 ---@param xpToAdd integer
 ---@param showEyeCandy boolean
-function common.AddHeroXP(whichHero,xpToAdd,showEyeCandy) end
+function common.AddHeroXP(whichHero, xpToAdd, showEyeCandy) end
 
 ---设置英雄等级
 ---@param whichHero unit
 ---@param level integer
 ---@param showEyeCandy boolean
-function common.SetHeroLevel(whichHero,level,showEyeCandy) end
+function common.SetHeroLevel(whichHero, level, showEyeCandy) end
 
 ---英雄等级
 ---@param whichHero unit
@@ -7894,7 +7894,7 @@ function common.GetHeroProperName(whichHero) end
 ---允许/禁止经验获取 [R]
 ---@param whichHero unit
 ---@param flag boolean
-function common.SuspendHeroXP(whichHero,flag) end
+function common.SuspendHeroXP(whichHero, flag) end
 
 ---英雄获得经验值
 ---@param whichHero unit
@@ -7904,32 +7904,32 @@ function common.IsSuspendedXP(whichHero) end
 ---英雄学习技能
 ---@param whichHero unit
 ---@param abilcode integer
-function common.SelectHeroSkill(whichHero,abilcode) end
+function common.SelectHeroSkill(whichHero, abilcode) end
 
 ---单位技能等级 [R]
 ---@param whichUnit unit
 ---@param abilcode integer
 ---@return integer
-function common.GetUnitAbilityLevel(whichUnit,abilcode) end
+function common.GetUnitAbilityLevel(whichUnit, abilcode) end
 
 ---降低技能等级 [R]
 ---@param whichUnit unit
 ---@param abilcode integer
 ---@return integer
-function common.DecUnitAbilityLevel(whichUnit,abilcode) end
+function common.DecUnitAbilityLevel(whichUnit, abilcode) end
 
 ---提升技能等级 [R]
 ---@param whichUnit unit
 ---@param abilcode integer
 ---@return integer
-function common.IncUnitAbilityLevel(whichUnit,abilcode) end
+function common.IncUnitAbilityLevel(whichUnit, abilcode) end
 
 ---设置技能等级 [R]
 ---@param whichUnit unit
 ---@param abilcode integer
 ---@param level integer
 ---@return integer
-function common.SetUnitAbilityLevel(whichUnit,abilcode,level) end
+function common.SetUnitAbilityLevel(whichUnit, abilcode, level) end
 
 ---立即复活(指定坐标) [R]
 ---@param whichHero unit
@@ -7937,29 +7937,29 @@ function common.SetUnitAbilityLevel(whichUnit,abilcode,level) end
 ---@param y real
 ---@param doEyecandy boolean
 ---@return boolean
-function common.ReviveHero(whichHero,x,y,doEyecandy) end
+function common.ReviveHero(whichHero, x, y, doEyecandy) end
 
 ---复活英雄（立即）
 ---@param whichHero unit
 ---@param loc location
 ---@param doEyecandy boolean
 ---@return boolean
-function common.ReviveHeroLoc(whichHero,loc,doEyecandy) end
+function common.ReviveHeroLoc(whichHero, loc, doEyecandy) end
 
 ---SetUnitExploded
 ---@param whichUnit unit
 ---@param exploded boolean
-function common.SetUnitExploded(whichUnit,exploded) end
+function common.SetUnitExploded(whichUnit, exploded) end
 
 ---设置单位 无敌/可攻击
 ---@param whichUnit unit
 ---@param flag boolean
-function common.SetUnitInvulnerable(whichUnit,flag) end
+function common.SetUnitInvulnerable(whichUnit, flag) end
 
 ---暂停/恢复 [R]
 ---@param whichUnit unit
 ---@param flag boolean
-function common.PauseUnit(whichUnit,flag) end
+function common.PauseUnit(whichUnit, flag) end
 
 ---IsUnitPaused
 ---@param whichHero unit
@@ -7969,7 +7969,7 @@ function common.IsUnitPaused(whichHero) end
 ---设置碰撞 打开/关闭
 ---@param whichUnit unit
 ---@param flag boolean
-function common.SetUnitPathing(whichUnit,flag) end
+function common.SetUnitPathing(whichUnit, flag) end
 
 ---清除所有选定
 function common.ClearSelection() end
@@ -7977,7 +7977,7 @@ function common.ClearSelection() end
 ---SelectUnit
 ---@param whichUnit unit
 ---@param flag boolean
-function common.SelectUnit(whichUnit,flag) end
+function common.SelectUnit(whichUnit, flag) end
 
 ---单位的 附加值
 ---@param whichUnit unit
@@ -7993,43 +7993,43 @@ function common.GetUnitPointValueByType(unitType) end
 ---@param whichUnit unit
 ---@param whichItem item
 ---@return boolean
-function common.UnitAddItem(whichUnit,whichItem) end
+function common.UnitAddItem(whichUnit, whichItem) end
 
 ---UnitAddItemById
 ---@param whichUnit unit
 ---@param itemId integer
 ---@return item
-function common.UnitAddItemById(whichUnit,itemId) end
+function common.UnitAddItemById(whichUnit, itemId) end
 
 ---新建物品到指定物品栏 [R]
 ---@param whichUnit unit
 ---@param itemId integer
 ---@param itemSlot integer
 ---@return boolean
-function common.UnitAddItemToSlotById(whichUnit,itemId,itemSlot) end
+function common.UnitAddItemToSlotById(whichUnit, itemId, itemSlot) end
 
 ---UnitRemoveItem
 ---@param whichUnit unit
 ---@param whichItem item
-function common.UnitRemoveItem(whichUnit,whichItem) end
+function common.UnitRemoveItem(whichUnit, whichItem) end
 
 ---UnitRemoveItemFromSlot
 ---@param whichUnit unit
 ---@param itemSlot integer
 ---@return item
-function common.UnitRemoveItemFromSlot(whichUnit,itemSlot) end
+function common.UnitRemoveItemFromSlot(whichUnit, itemSlot) end
 
 ---英雄已有物品
 ---@param whichUnit unit
 ---@param whichItem item
 ---@return boolean
-function common.UnitHasItem(whichUnit,whichItem) end
+function common.UnitHasItem(whichUnit, whichItem) end
 
 ---单位持有物品
 ---@param whichUnit unit
 ---@param itemSlot integer
 ---@return item
-function common.UnitItemInSlot(whichUnit,itemSlot) end
+function common.UnitItemInSlot(whichUnit, itemSlot) end
 
 ---UnitInventorySize
 ---@param whichUnit unit
@@ -8042,27 +8042,27 @@ function common.UnitInventorySize(whichUnit) end
 ---@param x real
 ---@param y real
 ---@return boolean
-function common.UnitDropItemPoint(whichUnit,whichItem,x,y) end
+function common.UnitDropItemPoint(whichUnit, whichItem, x, y) end
 
 ---移动物品到物品栏 [R]
 ---@param whichUnit unit
 ---@param whichItem item
 ---@param slot integer
 ---@return boolean
-function common.UnitDropItemSlot(whichUnit,whichItem,slot) end
+function common.UnitDropItemSlot(whichUnit, whichItem, slot) end
 
 ---UnitDropItemTarget
 ---@param whichUnit unit
 ---@param whichItem item
 ---@param target widget
 ---@return boolean
-function common.UnitDropItemTarget(whichUnit,whichItem,target) end
+function common.UnitDropItemTarget(whichUnit, whichItem, target) end
 
 ---使用物品
 ---@param whichUnit unit
 ---@param whichItem item
 ---@return boolean
-function common.UnitUseItem(whichUnit,whichItem) end
+function common.UnitUseItem(whichUnit, whichItem) end
 
 ---使用物品(指定坐标)
 ---@param whichUnit unit
@@ -8070,14 +8070,14 @@ function common.UnitUseItem(whichUnit,whichItem) end
 ---@param x real
 ---@param y real
 ---@return boolean
-function common.UnitUseItemPoint(whichUnit,whichItem,x,y) end
+function common.UnitUseItemPoint(whichUnit, whichItem, x, y) end
 
 ---对单位使用物品
 ---@param whichUnit unit
 ---@param whichItem item
 ---@param target widget
 ---@return boolean
-function common.UnitUseItemTarget(whichUnit,whichItem,target) end
+function common.UnitUseItemTarget(whichUnit, whichItem, target) end
 
 ---单位所在X轴坐标 [R]
 ---@param whichUnit unit
@@ -8113,7 +8113,7 @@ function common.GetUnitDefaultMoveSpeed(whichUnit) end
 ---@param whichUnit unit
 ---@param whichUnitState unitstate
 ---@return real
-function common.GetUnitState(whichUnit,whichUnitState) end
+function common.GetUnitState(whichUnit, whichUnitState) end
 
 ---单位的所有者
 ---@param whichUnit unit
@@ -8158,7 +8158,7 @@ function common.GetFoodUsed(unitId) end
 ---允许/禁止 人口占用 [R]
 ---@param whichUnit unit
 ---@param useFood boolean
-function common.SetUnitUseFood(whichUnit,useFood) end
+function common.SetUnitUseFood(whichUnit, useFood) end
 
 ---聚集点
 ---@param whichUnit unit
@@ -8179,92 +8179,92 @@ function common.GetUnitRallyDestructable(whichUnit) end
 ---@param whichUnit unit
 ---@param whichGroup group
 ---@return boolean
-function common.IsUnitInGroup(whichUnit,whichGroup) end
+function common.IsUnitInGroup(whichUnit, whichGroup) end
 
 ---是玩家组里玩家的单位
 ---@param whichUnit unit
 ---@param whichForce force
 ---@return boolean
-function common.IsUnitInForce(whichUnit,whichForce) end
+function common.IsUnitInForce(whichUnit, whichForce) end
 
 ---是玩家的单位
 ---@param whichUnit unit
 ---@param whichPlayer player
 ---@return boolean
-function common.IsUnitOwnedByPlayer(whichUnit,whichPlayer) end
+function common.IsUnitOwnedByPlayer(whichUnit, whichPlayer) end
 
 ---单位所属玩家的同盟玩家
 ---@param whichUnit unit
 ---@param whichPlayer player
 ---@return boolean
-function common.IsUnitAlly(whichUnit,whichPlayer) end
+function common.IsUnitAlly(whichUnit, whichPlayer) end
 
 ---单位所属玩家的敌对玩家
 ---@param whichUnit unit
 ---@param whichPlayer player
 ---@return boolean
-function common.IsUnitEnemy(whichUnit,whichPlayer) end
+function common.IsUnitEnemy(whichUnit, whichPlayer) end
 
 ---单位对于玩家可见
 ---@param whichUnit unit
 ---@param whichPlayer player
 ---@return boolean
-function common.IsUnitVisible(whichUnit,whichPlayer) end
+function common.IsUnitVisible(whichUnit, whichPlayer) end
 
 ---被检测到
 ---@param whichUnit unit
 ---@param whichPlayer player
 ---@return boolean
-function common.IsUnitDetected(whichUnit,whichPlayer) end
+function common.IsUnitDetected(whichUnit, whichPlayer) end
 
 ---单位对于玩家不可见
 ---@param whichUnit unit
 ---@param whichPlayer player
 ---@return boolean
-function common.IsUnitInvisible(whichUnit,whichPlayer) end
+function common.IsUnitInvisible(whichUnit, whichPlayer) end
 
 ---单位被战争迷雾遮挡
 ---@param whichUnit unit
 ---@param whichPlayer player
 ---@return boolean
-function common.IsUnitFogged(whichUnit,whichPlayer) end
+function common.IsUnitFogged(whichUnit, whichPlayer) end
 
 ---单位被黑色阴影遮挡
 ---@param whichUnit unit
 ---@param whichPlayer player
 ---@return boolean
-function common.IsUnitMasked(whichUnit,whichPlayer) end
+function common.IsUnitMasked(whichUnit, whichPlayer) end
 
 ---玩家已选定单位
 ---@param whichUnit unit
 ---@param whichPlayer player
 ---@return boolean
-function common.IsUnitSelected(whichUnit,whichPlayer) end
+function common.IsUnitSelected(whichUnit, whichPlayer) end
 
 ---单位种族检查
 ---@param whichUnit unit
 ---@param whichRace race
 ---@return boolean
-function common.IsUnitRace(whichUnit,whichRace) end
+function common.IsUnitRace(whichUnit, whichRace) end
 
 ---检查单位 分类
 ---@param whichUnit unit
 ---@param whichUnitType unittype
 ---@return boolean
-function common.IsUnitType(whichUnit,whichUnitType) end
+function common.IsUnitType(whichUnit, whichUnitType) end
 
 ---IsUnit
 ---@param whichUnit unit
 ---@param whichSpecifiedUnit unit
 ---@return boolean
-function common.IsUnit(whichUnit,whichSpecifiedUnit) end
+function common.IsUnit(whichUnit, whichSpecifiedUnit) end
 
 ---在指定单位范围内 [R]
 ---@param whichUnit unit
 ---@param otherUnit unit
 ---@param distance real
 ---@return boolean
-function common.IsUnitInRange(whichUnit,otherUnit,distance) end
+function common.IsUnitInRange(whichUnit, otherUnit, distance) end
 
 ---在指定坐标范围内 [R]
 ---@param whichUnit unit
@@ -8272,14 +8272,14 @@ function common.IsUnitInRange(whichUnit,otherUnit,distance) end
 ---@param y real
 ---@param distance real
 ---@return boolean
-function common.IsUnitInRangeXY(whichUnit,x,y,distance) end
+function common.IsUnitInRangeXY(whichUnit, x, y, distance) end
 
 ---在指定点范围内 [R]
 ---@param whichUnit unit
 ---@param whichLocation location
 ---@param distance real
 ---@return boolean
-function common.IsUnitInRangeLoc(whichUnit,whichLocation,distance) end
+function common.IsUnitInRangeLoc(whichUnit, whichLocation, distance) end
 
 ---IsUnitHidden
 ---@param whichUnit unit
@@ -8295,7 +8295,7 @@ function common.IsUnitIllusion(whichUnit) end
 ---@param whichUnit unit
 ---@param whichTransport unit
 ---@return boolean
-function common.IsUnitInTransport(whichUnit,whichTransport) end
+function common.IsUnitInTransport(whichUnit, whichTransport) end
 
 ---IsUnitLoaded
 ---@param whichUnit unit
@@ -8311,55 +8311,55 @@ function common.IsHeroUnitId(unitId) end
 ---@param unitId integer
 ---@param whichUnitType unittype
 ---@return boolean
-function common.IsUnitIdType(unitId,whichUnitType) end
+function common.IsUnitIdType(unitId, whichUnitType) end
 
 ---共享视野 [R]
 ---@param whichUnit unit
 ---@param whichPlayer player
 ---@param share boolean
-function common.UnitShareVision(whichUnit,whichPlayer,share) end
+function common.UnitShareVision(whichUnit, whichPlayer, share) end
 
 ---暂停尸体腐烂 [R]
 ---@param whichUnit unit
 ---@param suspend boolean
-function common.UnitSuspendDecay(whichUnit,suspend) end
+function common.UnitSuspendDecay(whichUnit, suspend) end
 
 ---添加类别 [R]
 ---@param whichUnit unit
 ---@param whichUnitType unittype
 ---@return boolean
-function common.UnitAddType(whichUnit,whichUnitType) end
+function common.UnitAddType(whichUnit, whichUnitType) end
 
 ---删除类别 [R]
 ---@param whichUnit unit
 ---@param whichUnitType unittype
 ---@return boolean
-function common.UnitRemoveType(whichUnit,whichUnitType) end
+function common.UnitRemoveType(whichUnit, whichUnitType) end
 
 ---添加技能 [R]
 ---@param whichUnit unit
 ---@param abilityId integer
 ---@return boolean
-function common.UnitAddAbility(whichUnit,abilityId) end
+function common.UnitAddAbility(whichUnit, abilityId) end
 
 ---删除技能 [R]
 ---@param whichUnit unit
 ---@param abilityId integer
 ---@return boolean
-function common.UnitRemoveAbility(whichUnit,abilityId) end
+function common.UnitRemoveAbility(whichUnit, abilityId) end
 
 ---设置技能永久性 [R]
 ---@param whichUnit unit
 ---@param permanent boolean
 ---@param abilityId integer
 ---@return boolean
-function common.UnitMakeAbilityPermanent(whichUnit,permanent,abilityId) end
+function common.UnitMakeAbilityPermanent(whichUnit, permanent, abilityId) end
 
 ---删除魔法效果(指定极性) [R]
 ---@param whichUnit unit
 ---@param removePositive boolean
 ---@param removeNegative boolean
-function common.UnitRemoveBuffs(whichUnit,removePositive,removeNegative) end
+function common.UnitRemoveBuffs(whichUnit, removePositive, removeNegative) end
 
 ---删除魔法效果(详细类别) [R]
 ---@param whichUnit unit
@@ -8370,7 +8370,17 @@ function common.UnitRemoveBuffs(whichUnit,removePositive,removeNegative) end
 ---@param timedLife boolean
 ---@param aura boolean
 ---@param autoDispel boolean
-function common.UnitRemoveBuffsEx(whichUnit,removePositive,removeNegative,magic,physical,timedLife,aura,autoDispel) end
+function common.UnitRemoveBuffsEx(
+	whichUnit,
+	removePositive,
+	removeNegative,
+	magic,
+	physical,
+	timedLife,
+	aura,
+	autoDispel
+)
+end
 
 ---UnitHasBuffsEx
 ---@param whichUnit unit
@@ -8382,7 +8392,17 @@ function common.UnitRemoveBuffsEx(whichUnit,removePositive,removeNegative,magic,
 ---@param aura boolean
 ---@param autoDispel boolean
 ---@return boolean
-function common.UnitHasBuffsEx(whichUnit,removePositive,removeNegative,magic,physical,timedLife,aura,autoDispel) end
+function common.UnitHasBuffsEx(
+	whichUnit,
+	removePositive,
+	removeNegative,
+	magic,
+	physical,
+	timedLife,
+	aura,
+	autoDispel
+)
+end
 
 ---拥有Buff数量 [R]
 ---@param whichUnit unit
@@ -8394,12 +8414,22 @@ function common.UnitHasBuffsEx(whichUnit,removePositive,removeNegative,magic,phy
 ---@param aura boolean
 ---@param autoDispel boolean
 ---@return integer
-function common.UnitCountBuffsEx(whichUnit,removePositive,removeNegative,magic,physical,timedLife,aura,autoDispel) end
+function common.UnitCountBuffsEx(
+	whichUnit,
+	removePositive,
+	removeNegative,
+	magic,
+	physical,
+	timedLife,
+	aura,
+	autoDispel
+)
+end
 
 ---UnitAddSleep
 ---@param whichUnit unit
 ---@param add boolean
-function common.UnitAddSleep(whichUnit,add) end
+function common.UnitAddSleep(whichUnit, add) end
 
 ---UnitCanSleep
 ---@param whichUnit unit
@@ -8409,7 +8439,7 @@ function common.UnitCanSleep(whichUnit) end
 ---设置单位睡眠(无论何时)
 ---@param whichUnit unit
 ---@param add boolean
-function common.UnitAddSleepPerm(whichUnit,add) end
+function common.UnitAddSleepPerm(whichUnit, add) end
 
 ---单位在睡觉
 ---@param whichUnit unit
@@ -8429,13 +8459,13 @@ function common.UnitWakeUp(whichUnit) end
 ---@param whichUnit unit
 ---@param buffId integer
 ---@param duration real
-function common.UnitApplyTimedLife(whichUnit,buffId,duration) end
+function common.UnitApplyTimedLife(whichUnit, buffId, duration) end
 
 ---UnitIgnoreAlarm
 ---@param whichUnit unit
 ---@param flag boolean
 ---@return boolean
-function common.UnitIgnoreAlarm(whichUnit,flag) end
+function common.UnitIgnoreAlarm(whichUnit, flag) end
 
 ---UnitIgnoreAlarmToggled
 ---@param whichUnit unit
@@ -8449,22 +8479,22 @@ function common.UnitResetCooldown(whichUnit) end
 ---设置建筑物 建筑升级比
 ---@param whichUnit unit
 ---@param constructionPercentage integer
-function common.UnitSetConstructionProgress(whichUnit,constructionPercentage) end
+function common.UnitSetConstructionProgress(whichUnit, constructionPercentage) end
 
 ---设置建筑物 科技升级比
 ---@param whichUnit unit
 ---@param upgradePercentage integer
-function common.UnitSetUpgradeProgress(whichUnit,upgradePercentage) end
+function common.UnitSetUpgradeProgress(whichUnit, upgradePercentage) end
 
 ---暂停/恢复生命周期 [R]
 ---@param whichUnit unit
 ---@param flag boolean
-function common.UnitPauseTimedLife(whichUnit,flag) end
+function common.UnitPauseTimedLife(whichUnit, flag) end
 
 ---UnitSetUsesAltIcon
 ---@param whichUnit unit
 ---@param flag boolean
-function common.UnitSetUsesAltIcon(whichUnit,flag) end
+function common.UnitSetUsesAltIcon(whichUnit, flag) end
 
 ---伤害区域 [R]
 ---@param whichUnit unit
@@ -8479,7 +8509,20 @@ function common.UnitSetUsesAltIcon(whichUnit,flag) end
 ---@param damageType damagetype
 ---@param weaponType weapontype
 ---@return boolean
-function common.UnitDamagePoint(whichUnit,delay,radius,x,y,amount,attack,ranged,attackType,damageType,weaponType) end
+function common.UnitDamagePoint(
+	whichUnit,
+	delay,
+	radius,
+	x,
+	y,
+	amount,
+	attack,
+	ranged,
+	attackType,
+	damageType,
+	weaponType
+)
+end
 
 ---伤害目标 [R]
 ---@param whichUnit unit
@@ -8491,19 +8534,19 @@ function common.UnitDamagePoint(whichUnit,delay,radius,x,y,amount,attack,ranged,
 ---@param damageType damagetype
 ---@param weaponType weapontype
 ---@return boolean
-function common.UnitDamageTarget(whichUnit,target,amount,attack,ranged,attackType,damageType,weaponType) end
+function common.UnitDamageTarget(whichUnit, target, amount, attack, ranged, attackType, damageType, weaponType) end
 
 ---给单位发送命令到 没有目标
 ---@param whichUnit unit
 ---@param order string
 ---@return boolean
-function common.IssueImmediateOrder(whichUnit,order) end
+function common.IssueImmediateOrder(whichUnit, order) end
 
 ---发布命令(无目标)(ID)
 ---@param whichUnit unit
 ---@param order integer
 ---@return boolean
-function common.IssueImmediateOrderById(whichUnit,order) end
+function common.IssueImmediateOrderById(whichUnit, order) end
 
 ---发布命令(指定坐标)
 ---@param whichUnit unit
@@ -8511,14 +8554,14 @@ function common.IssueImmediateOrderById(whichUnit,order) end
 ---@param x real
 ---@param y real
 ---@return boolean
-function common.IssuePointOrder(whichUnit,order,x,y) end
+function common.IssuePointOrder(whichUnit, order, x, y) end
 
 ---给单位发送命令到 点
 ---@param whichUnit unit
 ---@param order string
 ---@param whichLocation location
 ---@return boolean
-function common.IssuePointOrderLoc(whichUnit,order,whichLocation) end
+function common.IssuePointOrderLoc(whichUnit, order, whichLocation) end
 
 ---发布命令(指定坐标)(ID)
 ---@param whichUnit unit
@@ -8526,28 +8569,28 @@ function common.IssuePointOrderLoc(whichUnit,order,whichLocation) end
 ---@param x real
 ---@param y real
 ---@return boolean
-function common.IssuePointOrderById(whichUnit,order,x,y) end
+function common.IssuePointOrderById(whichUnit, order, x, y) end
 
 ---发布命令(指定点)(ID)
 ---@param whichUnit unit
 ---@param order integer
 ---@param whichLocation location
 ---@return boolean
-function common.IssuePointOrderByIdLoc(whichUnit,order,whichLocation) end
+function common.IssuePointOrderByIdLoc(whichUnit, order, whichLocation) end
 
 ---给单位发送命令到 单位
 ---@param whichUnit unit
 ---@param order string
 ---@param targetWidget widget
 ---@return boolean
-function common.IssueTargetOrder(whichUnit,order,targetWidget) end
+function common.IssueTargetOrder(whichUnit, order, targetWidget) end
 
 ---发布命令(指定单位)(ID)
 ---@param whichUnit unit
 ---@param order integer
 ---@param targetWidget widget
 ---@return boolean
-function common.IssueTargetOrderById(whichUnit,order,targetWidget) end
+function common.IssueTargetOrderById(whichUnit, order, targetWidget) end
 
 ---IssueInstantPointOrder
 ---@param whichUnit unit
@@ -8556,7 +8599,7 @@ function common.IssueTargetOrderById(whichUnit,order,targetWidget) end
 ---@param y real
 ---@param instantTargetWidget widget
 ---@return boolean
-function common.IssueInstantPointOrder(whichUnit,order,x,y,instantTargetWidget) end
+function common.IssueInstantPointOrder(whichUnit, order, x, y, instantTargetWidget) end
 
 ---IssueInstantPointOrderById
 ---@param whichUnit unit
@@ -8565,7 +8608,7 @@ function common.IssueInstantPointOrder(whichUnit,order,x,y,instantTargetWidget) 
 ---@param y real
 ---@param instantTargetWidget widget
 ---@return boolean
-function common.IssueInstantPointOrderById(whichUnit,order,x,y,instantTargetWidget) end
+function common.IssueInstantPointOrderById(whichUnit, order, x, y, instantTargetWidget) end
 
 ---IssueInstantTargetOrder
 ---@param whichUnit unit
@@ -8573,7 +8616,7 @@ function common.IssueInstantPointOrderById(whichUnit,order,x,y,instantTargetWidg
 ---@param targetWidget widget
 ---@param instantTargetWidget widget
 ---@return boolean
-function common.IssueInstantTargetOrder(whichUnit,order,targetWidget,instantTargetWidget) end
+function common.IssueInstantTargetOrder(whichUnit, order, targetWidget, instantTargetWidget) end
 
 ---IssueInstantTargetOrderById
 ---@param whichUnit unit
@@ -8581,7 +8624,7 @@ function common.IssueInstantTargetOrder(whichUnit,order,targetWidget,instantTarg
 ---@param targetWidget widget
 ---@param instantTargetWidget widget
 ---@return boolean
-function common.IssueInstantTargetOrderById(whichUnit,order,targetWidget,instantTargetWidget) end
+function common.IssueInstantTargetOrderById(whichUnit, order, targetWidget, instantTargetWidget) end
 
 ---IssueBuildOrder
 ---@param whichPeon unit
@@ -8589,7 +8632,7 @@ function common.IssueInstantTargetOrderById(whichUnit,order,targetWidget,instant
 ---@param x real
 ---@param y real
 ---@return boolean
-function common.IssueBuildOrder(whichPeon,unitToBuild,x,y) end
+function common.IssueBuildOrder(whichPeon, unitToBuild, x, y) end
 
 ---发布建造命令(指定坐标) [R]
 ---@param whichPeon unit
@@ -8597,21 +8640,21 @@ function common.IssueBuildOrder(whichPeon,unitToBuild,x,y) end
 ---@param x real
 ---@param y real
 ---@return boolean
-function common.IssueBuildOrderById(whichPeon,unitId,x,y) end
+function common.IssueBuildOrderById(whichPeon, unitId, x, y) end
 
 ---发布中介命令(无目标)
 ---@param forWhichPlayer player
 ---@param neutralStructure unit
 ---@param unitToBuild string
 ---@return boolean
-function common.IssueNeutralImmediateOrder(forWhichPlayer,neutralStructure,unitToBuild) end
+function common.IssueNeutralImmediateOrder(forWhichPlayer, neutralStructure, unitToBuild) end
 
 ---发布中介命令(无目标)(ID)
 ---@param forWhichPlayer player
 ---@param neutralStructure unit
 ---@param unitId integer
 ---@return boolean
-function common.IssueNeutralImmediateOrderById(forWhichPlayer,neutralStructure,unitId) end
+function common.IssueNeutralImmediateOrderById(forWhichPlayer, neutralStructure, unitId) end
 
 ---发布中介命令(指定坐标)
 ---@param forWhichPlayer player
@@ -8620,7 +8663,7 @@ function common.IssueNeutralImmediateOrderById(forWhichPlayer,neutralStructure,u
 ---@param x real
 ---@param y real
 ---@return boolean
-function common.IssueNeutralPointOrder(forWhichPlayer,neutralStructure,unitToBuild,x,y) end
+function common.IssueNeutralPointOrder(forWhichPlayer, neutralStructure, unitToBuild, x, y) end
 
 ---发布中介命令(指定坐标)(ID)
 ---@param forWhichPlayer player
@@ -8629,7 +8672,7 @@ function common.IssueNeutralPointOrder(forWhichPlayer,neutralStructure,unitToBui
 ---@param x real
 ---@param y real
 ---@return boolean
-function common.IssueNeutralPointOrderById(forWhichPlayer,neutralStructure,unitId,x,y) end
+function common.IssueNeutralPointOrderById(forWhichPlayer, neutralStructure, unitId, x, y) end
 
 ---发布中介命令(指定单位)
 ---@param forWhichPlayer player
@@ -8637,7 +8680,7 @@ function common.IssueNeutralPointOrderById(forWhichPlayer,neutralStructure,unitI
 ---@param unitToBuild string
 ---@param target widget
 ---@return boolean
-function common.IssueNeutralTargetOrder(forWhichPlayer,neutralStructure,unitToBuild,target) end
+function common.IssueNeutralTargetOrder(forWhichPlayer, neutralStructure, unitToBuild, target) end
 
 ---发布中介命令(指定单位)(ID)
 ---@param forWhichPlayer player
@@ -8645,7 +8688,7 @@ function common.IssueNeutralTargetOrder(forWhichPlayer,neutralStructure,unitToBu
 ---@param unitId integer
 ---@param target widget
 ---@return boolean
-function common.IssueNeutralTargetOrderById(forWhichPlayer,neutralStructure,unitId,target) end
+function common.IssueNeutralTargetOrderById(forWhichPlayer, neutralStructure, unitId, target) end
 
 ---单位当前的命令
 ---@param whichUnit unit
@@ -8655,12 +8698,12 @@ function common.GetUnitCurrentOrder(whichUnit) end
 ---设置金矿资源
 ---@param whichUnit unit
 ---@param amount integer
-function common.SetResourceAmount(whichUnit,amount) end
+function common.SetResourceAmount(whichUnit, amount) end
 
 ---添加金矿资源
 ---@param whichUnit unit
 ---@param amount integer
-function common.AddResourceAmount(whichUnit,amount) end
+function common.AddResourceAmount(whichUnit, amount) end
 
 ---黄金资源数量
 ---@param whichUnit unit
@@ -8681,12 +8724,12 @@ function common.WaygateGetDestinationY(waygate) end
 ---@param waygate unit
 ---@param x real
 ---@param y real
-function common.WaygateSetDestination(waygate,x,y) end
+function common.WaygateSetDestination(waygate, x, y) end
 
 ---WaygateActivate
 ---@param waygate unit
 ---@param activate boolean
-function common.WaygateActivate(waygate,activate) end
+function common.WaygateActivate(waygate, activate) end
 
 ---WaygateIsActive
 ---@param waygate unit
@@ -8697,27 +8740,27 @@ function common.WaygateIsActive(waygate) end
 ---@param itemId integer
 ---@param currentStock integer
 ---@param stockMax integer
-function common.AddItemToAllStock(itemId,currentStock,stockMax) end
+function common.AddItemToAllStock(itemId, currentStock, stockMax) end
 
 ---AddItemToStock
 ---@param whichUnit unit
 ---@param itemId integer
 ---@param currentStock integer
 ---@param stockMax integer
-function common.AddItemToStock(whichUnit,itemId,currentStock,stockMax) end
+function common.AddItemToStock(whichUnit, itemId, currentStock, stockMax) end
 
 ---增加 单位-类型 (到所有商店)
 ---@param unitId integer
 ---@param currentStock integer
 ---@param stockMax integer
-function common.AddUnitToAllStock(unitId,currentStock,stockMax) end
+function common.AddUnitToAllStock(unitId, currentStock, stockMax) end
 
 ---AddUnitToStock
 ---@param whichUnit unit
 ---@param unitId integer
 ---@param currentStock integer
 ---@param stockMax integer
-function common.AddUnitToStock(whichUnit,unitId,currentStock,stockMax) end
+function common.AddUnitToStock(whichUnit, unitId, currentStock, stockMax) end
 
 ---删除 物品-类型 (从所有商店)
 ---@param itemId integer
@@ -8726,7 +8769,7 @@ function common.RemoveItemFromAllStock(itemId) end
 ---RemoveItemFromStock
 ---@param whichUnit unit
 ---@param itemId integer
-function common.RemoveItemFromStock(whichUnit,itemId) end
+function common.RemoveItemFromStock(whichUnit, itemId) end
 
 ---删除 单位-类型 (从所有商店)
 ---@param unitId integer
@@ -8735,7 +8778,7 @@ function common.RemoveUnitFromAllStock(unitId) end
 ---RemoveUnitFromStock
 ---@param whichUnit unit
 ---@param unitId integer
-function common.RemoveUnitFromStock(whichUnit,unitId) end
+function common.RemoveUnitFromStock(whichUnit, unitId) end
 
 ---限制物品的位置 (从所有商店)
 ---@param slots integer
@@ -8748,12 +8791,12 @@ function common.SetAllUnitTypeSlots(slots) end
 ---限制物品的位置 (从商店)
 ---@param whichUnit unit
 ---@param slots integer
-function common.SetItemTypeSlots(whichUnit,slots) end
+function common.SetItemTypeSlots(whichUnit, slots) end
 
 ---限制单位的位置 (从商店)
 ---@param whichUnit unit
 ---@param slots integer
-function common.SetUnitTypeSlots(whichUnit,slots) end
+function common.SetUnitTypeSlots(whichUnit, slots) end
 
 ---单位自定义值
 ---@param whichUnit unit
@@ -8763,7 +8806,7 @@ function common.GetUnitUserData(whichUnit) end
 ---设置单位自定义数据
 ---@param whichUnit unit
 ---@param data integer
-function common.SetUnitUserData(whichUnit,data) end
+function common.SetUnitUserData(whichUnit, data) end
 
 ---Player API
 ---Player API
@@ -8779,19 +8822,19 @@ function common.GetLocalPlayer() end
 ---@param whichPlayer player
 ---@param otherPlayer player
 ---@return boolean
-function common.IsPlayerAlly(whichPlayer,otherPlayer) end
+function common.IsPlayerAlly(whichPlayer, otherPlayer) end
 
 ---玩家是玩家的敌人
 ---@param whichPlayer player
 ---@param otherPlayer player
 ---@return boolean
-function common.IsPlayerEnemy(whichPlayer,otherPlayer) end
+function common.IsPlayerEnemy(whichPlayer, otherPlayer) end
 
 ---玩家在玩家组
 ---@param whichPlayer player
 ---@param whichForce force
 ---@return boolean
-function common.IsPlayerInForce(whichPlayer,whichForce) end
+function common.IsPlayerInForce(whichPlayer, whichForce) end
 
 ---玩家是裁判或观察者 [R]
 ---@param whichPlayer player
@@ -8803,39 +8846,39 @@ function common.IsPlayerObserver(whichPlayer) end
 ---@param y real
 ---@param whichPlayer player
 ---@return boolean
-function common.IsVisibleToPlayer(x,y,whichPlayer) end
+function common.IsVisibleToPlayer(x, y, whichPlayer) end
 
 ---点对于玩家可见
 ---@param whichLocation location
 ---@param whichPlayer player
 ---@return boolean
-function common.IsLocationVisibleToPlayer(whichLocation,whichPlayer) end
+function common.IsLocationVisibleToPlayer(whichLocation, whichPlayer) end
 
 ---坐标在迷雾中
 ---@param x real
 ---@param y real
 ---@param whichPlayer player
 ---@return boolean
-function common.IsFoggedToPlayer(x,y,whichPlayer) end
+function common.IsFoggedToPlayer(x, y, whichPlayer) end
 
 ---点被迷雾遮挡
 ---@param whichLocation location
 ---@param whichPlayer player
 ---@return boolean
-function common.IsLocationFoggedToPlayer(whichLocation,whichPlayer) end
+function common.IsLocationFoggedToPlayer(whichLocation, whichPlayer) end
 
 ---坐标在黑色阴影中
 ---@param x real
 ---@param y real
 ---@param whichPlayer player
 ---@return boolean
-function common.IsMaskedToPlayer(x,y,whichPlayer) end
+function common.IsMaskedToPlayer(x, y, whichPlayer) end
 
 ---点被黑色阴影遮挡
 ---@param whichLocation location
 ---@param whichPlayer player
 ---@return boolean
-function common.IsLocationMaskedToPlayer(whichLocation,whichPlayer) end
+function common.IsLocationMaskedToPlayer(whichLocation, whichPlayer) end
 
 ---玩家的种族
 ---@param whichPlayer player
@@ -8851,7 +8894,7 @@ function common.GetPlayerId(whichPlayer) end
 ---@param whichPlayer player
 ---@param includeIncomplete boolean
 ---@return integer
-function common.GetPlayerUnitCount(whichPlayer,includeIncomplete) end
+function common.GetPlayerUnitCount(whichPlayer, includeIncomplete) end
 
 ---GetPlayerTypedUnitCount
 ---@param whichPlayer player
@@ -8859,32 +8902,32 @@ function common.GetPlayerUnitCount(whichPlayer,includeIncomplete) end
 ---@param includeIncomplete boolean
 ---@param includeUpgrades boolean
 ---@return integer
-function common.GetPlayerTypedUnitCount(whichPlayer,unitName,includeIncomplete,includeUpgrades) end
+function common.GetPlayerTypedUnitCount(whichPlayer, unitName, includeIncomplete, includeUpgrades) end
 
 ---获得建筑数量
 ---@param whichPlayer player
 ---@param includeIncomplete boolean
 ---@return integer
-function common.GetPlayerStructureCount(whichPlayer,includeIncomplete) end
+function common.GetPlayerStructureCount(whichPlayer, includeIncomplete) end
 
 ---获得玩家属性
 ---@param whichPlayer player
 ---@param whichPlayerState playerstate
 ---@return integer
-function common.GetPlayerState(whichPlayer,whichPlayerState) end
+function common.GetPlayerState(whichPlayer, whichPlayerState) end
 
 ---获得玩家得分
 ---@param whichPlayer player
 ---@param whichPlayerScore playerscore
 ---@return integer
-function common.GetPlayerScore(whichPlayer,whichPlayerScore) end
+function common.GetPlayerScore(whichPlayer, whichPlayerScore) end
 
 ---玩家与玩家结盟
 ---@param sourcePlayer player
 ---@param otherPlayer player
 ---@param whichAllianceSetting alliancetype
 ---@return boolean
-function common.GetPlayerAlliance(sourcePlayer,otherPlayer,whichAllianceSetting) end
+function common.GetPlayerAlliance(sourcePlayer, otherPlayer, whichAllianceSetting) end
 
 ---GetPlayerHandicap
 ---@param whichPlayer player
@@ -8909,88 +8952,88 @@ function common.GetPlayerHandicapDamage(whichPlayer) end
 ---设置生命上限 [R]
 ---@param whichPlayer player
 ---@param handicap real
-function common.SetPlayerHandicap(whichPlayer,handicap) end
+function common.SetPlayerHandicap(whichPlayer, handicap) end
 
 ---设置经验获得率 [R]
 ---@param whichPlayer player
 ---@param handicap real
-function common.SetPlayerHandicapXP(whichPlayer,handicap) end
+function common.SetPlayerHandicapXP(whichPlayer, handicap) end
 
 ---SetPlayerHandicapReviveTime
 ---@param whichPlayer player
 ---@param handicap real
-function common.SetPlayerHandicapReviveTime(whichPlayer,handicap) end
+function common.SetPlayerHandicapReviveTime(whichPlayer, handicap) end
 
 ---SetPlayerHandicapDamage
 ---@param whichPlayer player
 ---@param handicap real
-function common.SetPlayerHandicapDamage(whichPlayer,handicap) end
+function common.SetPlayerHandicapDamage(whichPlayer, handicap) end
 
 ---SetPlayerTechMaxAllowed
 ---@param whichPlayer player
 ---@param techid integer
 ---@param maximum integer
-function common.SetPlayerTechMaxAllowed(whichPlayer,techid,maximum) end
+function common.SetPlayerTechMaxAllowed(whichPlayer, techid, maximum) end
 
 ---GetPlayerTechMaxAllowed
 ---@param whichPlayer player
 ---@param techid integer
 ---@return integer
-function common.GetPlayerTechMaxAllowed(whichPlayer,techid) end
+function common.GetPlayerTechMaxAllowed(whichPlayer, techid) end
 
 ---增加科技等级
 ---@param whichPlayer player
 ---@param techid integer
 ---@param levels integer
-function common.AddPlayerTechResearched(whichPlayer,techid,levels) end
+function common.AddPlayerTechResearched(whichPlayer, techid, levels) end
 
 ---SetPlayerTechResearched
 ---@param whichPlayer player
 ---@param techid integer
 ---@param setToLevel integer
-function common.SetPlayerTechResearched(whichPlayer,techid,setToLevel) end
+function common.SetPlayerTechResearched(whichPlayer, techid, setToLevel) end
 
 ---GetPlayerTechResearched
 ---@param whichPlayer player
 ---@param techid integer
 ---@param specificonly boolean
 ---@return boolean
-function common.GetPlayerTechResearched(whichPlayer,techid,specificonly) end
+function common.GetPlayerTechResearched(whichPlayer, techid, specificonly) end
 
 ---获取玩家科技数量
 ---@param whichPlayer player
 ---@param techid integer
 ---@param specificonly boolean
 ---@return integer
-function common.GetPlayerTechCount(whichPlayer,techid,specificonly) end
+function common.GetPlayerTechCount(whichPlayer, techid, specificonly) end
 
 ---SetPlayerUnitsOwner
 ---@param whichPlayer player
 ---@param newOwner integer
-function common.SetPlayerUnitsOwner(whichPlayer,newOwner) end
+function common.SetPlayerUnitsOwner(whichPlayer, newOwner) end
 
 ---CripplePlayer
 ---@param whichPlayer player
 ---@param toWhichPlayers force
 ---@param flag boolean
-function common.CripplePlayer(whichPlayer,toWhichPlayers,flag) end
+function common.CripplePlayer(whichPlayer, toWhichPlayers, flag) end
 
 ---允许/禁用 技能 [R]
 ---@param whichPlayer player
 ---@param abilid integer
 ---@param avail boolean
-function common.SetPlayerAbilityAvailable(whichPlayer,abilid,avail) end
+function common.SetPlayerAbilityAvailable(whichPlayer, abilid, avail) end
 
 ---设置玩家属性
 ---@param whichPlayer player
 ---@param whichPlayerState playerstate
 ---@param value integer
-function common.SetPlayerState(whichPlayer,whichPlayerState,value) end
+function common.SetPlayerState(whichPlayer, whichPlayerState, value) end
 
 ---踢除玩家
 ---@param whichPlayer player
 ---@param gameResult playergameresult
-function common.RemovePlayer(whichPlayer,gameResult) end
+function common.RemovePlayer(whichPlayer, gameResult) end
 
 ---Used to store hero level data for the scorescreen
 ---before units are moved to neutral passive in melee games
@@ -9003,7 +9046,7 @@ function common.CachePlayerHeroData(whichPlayer) end
 ---@param whichState fogstate
 ---@param where rect
 ---@param useSharedVision boolean
-function common.SetFogStateRect(forWhichPlayer,whichState,where,useSharedVision) end
+function common.SetFogStateRect(forWhichPlayer, whichState, where, useSharedVision) end
 
 ---设置地图迷雾(圆范围) [R]
 ---@param forWhichPlayer player
@@ -9012,7 +9055,7 @@ function common.SetFogStateRect(forWhichPlayer,whichState,where,useSharedVision)
 ---@param centerY real
 ---@param radius real
 ---@param useSharedVision boolean
-function common.SetFogStateRadius(forWhichPlayer,whichState,centerx,centerY,radius,useSharedVision) end
+function common.SetFogStateRadius(forWhichPlayer, whichState, centerx, centerY, radius, useSharedVision) end
 
 ---SetFogStateRadiusLoc
 ---@param forWhichPlayer player
@@ -9020,7 +9063,7 @@ function common.SetFogStateRadius(forWhichPlayer,whichState,centerx,centerY,radi
 ---@param center location
 ---@param radius real
 ---@param useSharedVision boolean
-function common.SetFogStateRadiusLoc(forWhichPlayer,whichState,center,radius,useSharedVision) end
+function common.SetFogStateRadiusLoc(forWhichPlayer, whichState, center, radius, useSharedVision) end
 
 ---启用/禁用黑色阴影 [R]
 ---@param enable boolean
@@ -9045,7 +9088,7 @@ function common.IsFogEnabled() end
 ---@param useSharedVision boolean
 ---@param afterUnits boolean
 ---@return fogmodifier
-function common.CreateFogModifierRect(forWhichPlayer,whichState,where,useSharedVision,afterUnits) end
+function common.CreateFogModifierRect(forWhichPlayer, whichState, where, useSharedVision, afterUnits) end
 
 ---新建可见度修正器(圆范围) [R]
 ---@param forWhichPlayer player
@@ -9056,7 +9099,16 @@ function common.CreateFogModifierRect(forWhichPlayer,whichState,where,useSharedV
 ---@param useSharedVision boolean
 ---@param afterUnits boolean
 ---@return fogmodifier
-function common.CreateFogModifierRadius(forWhichPlayer,whichState,centerx,centerY,radius,useSharedVision,afterUnits) end
+function common.CreateFogModifierRadius(
+	forWhichPlayer,
+	whichState,
+	centerx,
+	centerY,
+	radius,
+	useSharedVision,
+	afterUnits
+)
+end
 
 ---CreateFogModifierRadiusLoc
 ---@param forWhichPlayer player
@@ -9066,7 +9118,7 @@ function common.CreateFogModifierRadius(forWhichPlayer,whichState,centerx,center
 ---@param useSharedVision boolean
 ---@param afterUnits boolean
 ---@return fogmodifier
-function common.CreateFogModifierRadiusLoc(forWhichPlayer,whichState,center,radius,useSharedVision,afterUnits) end
+function common.CreateFogModifierRadiusLoc(forWhichPlayer, whichState, center, radius, useSharedVision, afterUnits) end
 
 ---删除可见度修正器
 ---@param whichFogModifier fogmodifier
@@ -9103,7 +9155,7 @@ function common.EndGame(doScoreScreen) end
 ---切换关卡 [R]
 ---@param newLevel string
 ---@param doScoreScreen boolean
-function common.ChangeLevel(newLevel,doScoreScreen) end
+function common.ChangeLevel(newLevel, doScoreScreen) end
 
 ---RestartGame
 ---@param doScoreScreen boolean
@@ -9128,7 +9180,7 @@ function common.ForceCampaignSelectScreen() end
 ---LoadGame
 ---@param saveFileName string
 ---@param doScoreScreen boolean
-function common.LoadGame(saveFileName,doScoreScreen) end
+function common.LoadGame(saveFileName, doScoreScreen) end
 
 ---保存进度 [R]
 ---@param saveFileName string
@@ -9138,7 +9190,7 @@ function common.SaveGame(saveFileName) end
 ---@param sourceDirName string
 ---@param destDirName string
 ---@return boolean
-function common.RenameSaveDirectory(sourceDirName,destDirName) end
+function common.RenameSaveDirectory(sourceDirName, destDirName) end
 
 ---RemoveSaveDirectory
 ---@param sourceDirName string
@@ -9149,7 +9201,7 @@ function common.RemoveSaveDirectory(sourceDirName) end
 ---@param sourceSaveName string
 ---@param destSaveName string
 ---@return boolean
-function common.CopySaveGame(sourceSaveName,destSaveName) end
+function common.CopySaveGame(sourceSaveName, destSaveName) end
 
 ---游戏进度是存在的
 ---@param saveName string
@@ -9163,7 +9215,7 @@ function common.SetMaxCheckpointSaves(maxCheckpointSaves) end
 ---SaveGameCheckpoint
 ---@param saveFileName string
 ---@param showWindow boolean
-function common.SaveGameCheckpoint(saveFileName,showWindow) end
+function common.SaveGameCheckpoint(saveFileName, showWindow) end
 
 ---SyncSelections
 function common.SyncSelections() end
@@ -9171,7 +9223,7 @@ function common.SyncSelections() end
 ---SetFloatGameState
 ---@param whichFloatGameState fgamestate
 ---@param value real
-function common.SetFloatGameState(whichFloatGameState,value) end
+function common.SetFloatGameState(whichFloatGameState, value) end
 
 ---GetFloatGameState
 ---@param whichFloatGameState fgamestate
@@ -9181,7 +9233,7 @@ function common.GetFloatGameState(whichFloatGameState) end
 ---SetIntegerGameState
 ---@param whichIntegerGameState igamestate
 ---@param value integer
-function common.SetIntegerGameState(whichIntegerGameState,value) end
+function common.SetIntegerGameState(whichIntegerGameState, value) end
 
 ---GetIntegerGameState
 ---@param whichIntegerGameState igamestate
@@ -9197,22 +9249,22 @@ function common.SetTutorialCleared(cleared) end
 ---@param campaignNumber integer
 ---@param missionNumber integer
 ---@param available boolean
-function common.SetMissionAvailable(campaignNumber,missionNumber,available) end
+function common.SetMissionAvailable(campaignNumber, missionNumber, available) end
 
 ---SetCampaignAvailable
 ---@param campaignNumber integer
 ---@param available boolean
-function common.SetCampaignAvailable(campaignNumber,available) end
+function common.SetCampaignAvailable(campaignNumber, available) end
 
 ---SetOpCinematicAvailable
 ---@param campaignNumber integer
 ---@param available boolean
-function common.SetOpCinematicAvailable(campaignNumber,available) end
+function common.SetOpCinematicAvailable(campaignNumber, available) end
 
 ---SetEdCinematicAvailable
 ---@param campaignNumber integer
 ---@param available boolean
-function common.SetEdCinematicAvailable(campaignNumber,available) end
+function common.SetEdCinematicAvailable(campaignNumber, available) end
 
 ---GetDefaultDifficulty
 ---@return gamedifficulty
@@ -9225,7 +9277,7 @@ function common.SetDefaultDifficulty(g) end
 ---SetCustomCampaignButtonVisible
 ---@param whichButton integer
 ---@param visible boolean
-function common.SetCustomCampaignButtonVisible(whichButton,visible) end
+function common.SetCustomCampaignButtonVisible(whichButton, visible) end
 
 ---GetCustomCampaignButtonVisible
 ---@param whichButton integer
@@ -9251,14 +9303,14 @@ function common.DialogClear(whichDialog) end
 ---DialogSetMessage
 ---@param whichDialog dialog
 ---@param messageText string
-function common.DialogSetMessage(whichDialog,messageText) end
+function common.DialogSetMessage(whichDialog, messageText) end
 
 ---添加对话框按钮 [R]
 ---@param whichDialog dialog
 ---@param buttonText string
 ---@param hotkey integer
 ---@return button
-function common.DialogAddButton(whichDialog,buttonText,hotkey) end
+function common.DialogAddButton(whichDialog, buttonText, hotkey) end
 
 ---添加退出游戏按钮 [R]
 ---@param whichDialog dialog
@@ -9266,13 +9318,13 @@ function common.DialogAddButton(whichDialog,buttonText,hotkey) end
 ---@param buttonText string
 ---@param hotkey integer
 ---@return button
-function common.DialogAddQuitButton(whichDialog,doScoreScreen,buttonText,hotkey) end
+function common.DialogAddQuitButton(whichDialog, doScoreScreen, buttonText, hotkey) end
 
 ---显示/隐藏 [R]
 ---@param whichPlayer player
 ---@param whichDialog dialog
 ---@param flag boolean
-function common.DialogDisplay(whichPlayer,whichDialog,flag) end
+function common.DialogDisplay(whichPlayer, whichDialog, flag) end
 
 ---Creates a new or reads in an existing game cache file stored
 ---in the current campaign profile dir
@@ -9295,21 +9347,21 @@ function common.SaveGameCache(whichCache) end
 ---@param missionKey string
 ---@param key string
 ---@param value integer
-function common.StoreInteger(cache,missionKey,key,value) end
+function common.StoreInteger(cache, missionKey, key, value) end
 
 ---记录实数
 ---@param cache gamecache
 ---@param missionKey string
 ---@param key string
 ---@param value real
-function common.StoreReal(cache,missionKey,key,value) end
+function common.StoreReal(cache, missionKey, key, value) end
 
 ---记录布尔值
 ---@param cache gamecache
 ---@param missionKey string
 ---@param key string
 ---@param value boolean
-function common.StoreBoolean(cache,missionKey,key,value) end
+function common.StoreBoolean(cache, missionKey, key, value) end
 
 ---StoreUnit
 ---@param cache gamecache
@@ -9317,7 +9369,7 @@ function common.StoreBoolean(cache,missionKey,key,value) end
 ---@param key string
 ---@param whichUnit unit
 ---@return boolean
-function common.StoreUnit(cache,missionKey,key,whichUnit) end
+function common.StoreUnit(cache, missionKey, key, whichUnit) end
 
 ---记录字符串
 ---@param cache gamecache
@@ -9325,72 +9377,72 @@ function common.StoreUnit(cache,missionKey,key,whichUnit) end
 ---@param key string
 ---@param value string
 ---@return boolean
-function common.StoreString(cache,missionKey,key,value) end
+function common.StoreString(cache, missionKey, key, value) end
 
 ---SyncStoredInteger
 ---@param cache gamecache
 ---@param missionKey string
 ---@param key string
-function common.SyncStoredInteger(cache,missionKey,key) end
+function common.SyncStoredInteger(cache, missionKey, key) end
 
 ---SyncStoredReal
 ---@param cache gamecache
 ---@param missionKey string
 ---@param key string
-function common.SyncStoredReal(cache,missionKey,key) end
+function common.SyncStoredReal(cache, missionKey, key) end
 
 ---SyncStoredBoolean
 ---@param cache gamecache
 ---@param missionKey string
 ---@param key string
-function common.SyncStoredBoolean(cache,missionKey,key) end
+function common.SyncStoredBoolean(cache, missionKey, key) end
 
 ---SyncStoredUnit
 ---@param cache gamecache
 ---@param missionKey string
 ---@param key string
-function common.SyncStoredUnit(cache,missionKey,key) end
+function common.SyncStoredUnit(cache, missionKey, key) end
 
 ---SyncStoredString
 ---@param cache gamecache
 ---@param missionKey string
 ---@param key string
-function common.SyncStoredString(cache,missionKey,key) end
+function common.SyncStoredString(cache, missionKey, key) end
 
 ---HaveStoredInteger
 ---@param cache gamecache
 ---@param missionKey string
 ---@param key string
 ---@return boolean
-function common.HaveStoredInteger(cache,missionKey,key) end
+function common.HaveStoredInteger(cache, missionKey, key) end
 
 ---HaveStoredReal
 ---@param cache gamecache
 ---@param missionKey string
 ---@param key string
 ---@return boolean
-function common.HaveStoredReal(cache,missionKey,key) end
+function common.HaveStoredReal(cache, missionKey, key) end
 
 ---HaveStoredBoolean
 ---@param cache gamecache
 ---@param missionKey string
 ---@param key string
 ---@return boolean
-function common.HaveStoredBoolean(cache,missionKey,key) end
+function common.HaveStoredBoolean(cache, missionKey, key) end
 
 ---HaveStoredUnit
 ---@param cache gamecache
 ---@param missionKey string
 ---@param key string
 ---@return boolean
-function common.HaveStoredUnit(cache,missionKey,key) end
+function common.HaveStoredUnit(cache, missionKey, key) end
 
 ---HaveStoredString
 ---@param cache gamecache
 ---@param missionKey string
 ---@param key string
 ---@return boolean
-function common.HaveStoredString(cache,missionKey,key) end
+function common.HaveStoredString(cache, missionKey, key) end
 
 ---删除缓存 [C]
 ---@param cache gamecache
@@ -9399,37 +9451,37 @@ function common.FlushGameCache(cache) end
 ---删除类别
 ---@param cache gamecache
 ---@param missionKey string
-function common.FlushStoredMission(cache,missionKey) end
+function common.FlushStoredMission(cache, missionKey) end
 
 ---FlushStoredInteger
 ---@param cache gamecache
 ---@param missionKey string
 ---@param key string
-function common.FlushStoredInteger(cache,missionKey,key) end
+function common.FlushStoredInteger(cache, missionKey, key) end
 
 ---FlushStoredReal
 ---@param cache gamecache
 ---@param missionKey string
 ---@param key string
-function common.FlushStoredReal(cache,missionKey,key) end
+function common.FlushStoredReal(cache, missionKey, key) end
 
 ---FlushStoredBoolean
 ---@param cache gamecache
 ---@param missionKey string
 ---@param key string
-function common.FlushStoredBoolean(cache,missionKey,key) end
+function common.FlushStoredBoolean(cache, missionKey, key) end
 
 ---FlushStoredUnit
 ---@param cache gamecache
 ---@param missionKey string
 ---@param key string
-function common.FlushStoredUnit(cache,missionKey,key) end
+function common.FlushStoredUnit(cache, missionKey, key) end
 
 ---FlushStoredString
 ---@param cache gamecache
 ---@param missionKey string
 ---@param key string
-function common.FlushStoredString(cache,missionKey,key) end
+function common.FlushStoredString(cache, missionKey, key) end
 
 ---Will return 0 if the specified value's data is not found in the cache
 ---缓存读取整数 [C]
@@ -9437,28 +9489,28 @@ function common.FlushStoredString(cache,missionKey,key) end
 ---@param missionKey string
 ---@param key string
 ---@return integer
-function common.GetStoredInteger(cache,missionKey,key) end
+function common.GetStoredInteger(cache, missionKey, key) end
 
 ---缓存读取实数 [C]
 ---@param cache gamecache
 ---@param missionKey string
 ---@param key string
 ---@return real
-function common.GetStoredReal(cache,missionKey,key) end
+function common.GetStoredReal(cache, missionKey, key) end
 
 ---读取布尔值[R]
 ---@param cache gamecache
 ---@param missionKey string
 ---@param key string
 ---@return boolean
-function common.GetStoredBoolean(cache,missionKey,key) end
+function common.GetStoredBoolean(cache, missionKey, key) end
 
 ---读取字符串 [C]
 ---@param cache gamecache
 ---@param missionKey string
 ---@param key string
 ---@return string
-function common.GetStoredString(cache,missionKey,key) end
+function common.GetStoredString(cache, missionKey, key) end
 
 ---RestoreUnit
 ---@param cache gamecache
@@ -9469,7 +9521,7 @@ function common.GetStoredString(cache,missionKey,key) end
 ---@param y real
 ---@param facing real
 ---@return unit
-function common.RestoreUnit(cache,missionKey,key,forWhichPlayer,x,y,facing) end
+function common.RestoreUnit(cache, missionKey, key, forWhichPlayer, x, y, facing) end
 
 ---<1.24> 新建哈希表 [C]
 ---@return hashtable
@@ -9480,21 +9532,21 @@ function common.InitHashtable() end
 ---@param parentKey integer
 ---@param childKey integer
 ---@param value integer
-function common.SaveInteger(table,parentKey,childKey,value) end
+function common.SaveInteger(table, parentKey, childKey, value) end
 
 ---<1.24> 保存实数 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@param value real
-function common.SaveReal(table,parentKey,childKey,value) end
+function common.SaveReal(table, parentKey, childKey, value) end
 
 ---<1.24> 保存布尔 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@param value boolean
-function common.SaveBoolean(table,parentKey,childKey,value) end
+function common.SaveBoolean(table, parentKey, childKey, value) end
 
 ---<1.24> 保存字符串 [C]
 ---@param table hashtable
@@ -9502,7 +9554,7 @@ function common.SaveBoolean(table,parentKey,childKey,value) end
 ---@param childKey integer
 ---@param value string
 ---@return boolean
-function common.SaveStr(table,parentKey,childKey,value) end
+function common.SaveStr(table, parentKey, childKey, value) end
 
 ---<1.24> 保存玩家 [C]
 ---@param table hashtable
@@ -9510,7 +9562,7 @@ function common.SaveStr(table,parentKey,childKey,value) end
 ---@param childKey integer
 ---@param whichPlayer player
 ---@return boolean
-function common.SavePlayerHandle(table,parentKey,childKey,whichPlayer) end
+function common.SavePlayerHandle(table, parentKey, childKey, whichPlayer) end
 
 ---SaveWidgetHandle
 ---@param table hashtable
@@ -9518,7 +9570,7 @@ function common.SavePlayerHandle(table,parentKey,childKey,whichPlayer) end
 ---@param childKey integer
 ---@param whichWidget widget
 ---@return boolean
-function common.SaveWidgetHandle(table,parentKey,childKey,whichWidget) end
+function common.SaveWidgetHandle(table, parentKey, childKey, whichWidget) end
 
 ---<1.24> 保存可破坏物 [C]
 ---@param table hashtable
@@ -9526,7 +9578,7 @@ function common.SaveWidgetHandle(table,parentKey,childKey,whichWidget) end
 ---@param childKey integer
 ---@param whichDestructable destructable
 ---@return boolean
-function common.SaveDestructableHandle(table,parentKey,childKey,whichDestructable) end
+function common.SaveDestructableHandle(table, parentKey, childKey, whichDestructable) end
 
 ---<1.24> 保存物品 [C]
 ---@param table hashtable
@@ -9534,7 +9586,7 @@ function common.SaveDestructableHandle(table,parentKey,childKey,whichDestructabl
 ---@param childKey integer
 ---@param whichItem item
 ---@return boolean
-function common.SaveItemHandle(table,parentKey,childKey,whichItem) end
+function common.SaveItemHandle(table, parentKey, childKey, whichItem) end
 
 ---<1.24> 保存单位 [C]
 ---@param table hashtable
@@ -9542,7 +9594,7 @@ function common.SaveItemHandle(table,parentKey,childKey,whichItem) end
 ---@param childKey integer
 ---@param whichUnit unit
 ---@return boolean
-function common.SaveUnitHandle(table,parentKey,childKey,whichUnit) end
+function common.SaveUnitHandle(table, parentKey, childKey, whichUnit) end
 
 ---SaveAbilityHandle
 ---@param table hashtable
@@ -9550,7 +9602,7 @@ function common.SaveUnitHandle(table,parentKey,childKey,whichUnit) end
 ---@param childKey integer
 ---@param whichAbility ability
 ---@return boolean
-function common.SaveAbilityHandle(table,parentKey,childKey,whichAbility) end
+function common.SaveAbilityHandle(table, parentKey, childKey, whichAbility) end
 
 ---<1.24> 保存计时器 [C]
 ---@param table hashtable
@@ -9558,7 +9610,7 @@ function common.SaveAbilityHandle(table,parentKey,childKey,whichAbility) end
 ---@param childKey integer
 ---@param whichTimer timer
 ---@return boolean
-function common.SaveTimerHandle(table,parentKey,childKey,whichTimer) end
+function common.SaveTimerHandle(table, parentKey, childKey, whichTimer) end
 
 ---<1.24> 保存触发器 [C]
 ---@param table hashtable
@@ -9566,7 +9618,7 @@ function common.SaveTimerHandle(table,parentKey,childKey,whichTimer) end
 ---@param childKey integer
 ---@param whichTrigger trigger
 ---@return boolean
-function common.SaveTriggerHandle(table,parentKey,childKey,whichTrigger) end
+function common.SaveTriggerHandle(table, parentKey, childKey, whichTrigger) end
 
 ---<1.24> 保存触发条件 [C]
 ---@param table hashtable
@@ -9574,7 +9626,7 @@ function common.SaveTriggerHandle(table,parentKey,childKey,whichTrigger) end
 ---@param childKey integer
 ---@param whichTriggercondition triggercondition
 ---@return boolean
-function common.SaveTriggerConditionHandle(table,parentKey,childKey,whichTriggercondition) end
+function common.SaveTriggerConditionHandle(table, parentKey, childKey, whichTriggercondition) end
 
 ---<1.24> 保存触发动作 [C]
 ---@param table hashtable
@@ -9582,7 +9634,7 @@ function common.SaveTriggerConditionHandle(table,parentKey,childKey,whichTrigger
 ---@param childKey integer
 ---@param whichTriggeraction triggeraction
 ---@return boolean
-function common.SaveTriggerActionHandle(table,parentKey,childKey,whichTriggeraction) end
+function common.SaveTriggerActionHandle(table, parentKey, childKey, whichTriggeraction) end
 
 ---<1.24> 保存触发事件 [C]
 ---@param table hashtable
@@ -9590,7 +9642,7 @@ function common.SaveTriggerActionHandle(table,parentKey,childKey,whichTriggeract
 ---@param childKey integer
 ---@param whichEvent event
 ---@return boolean
-function common.SaveTriggerEventHandle(table,parentKey,childKey,whichEvent) end
+function common.SaveTriggerEventHandle(table, parentKey, childKey, whichEvent) end
 
 ---<1.24> 保存玩家组 [C]
 ---@param table hashtable
@@ -9598,7 +9650,7 @@ function common.SaveTriggerEventHandle(table,parentKey,childKey,whichEvent) end
 ---@param childKey integer
 ---@param whichForce force
 ---@return boolean
-function common.SaveForceHandle(table,parentKey,childKey,whichForce) end
+function common.SaveForceHandle(table, parentKey, childKey, whichForce) end
 
 ---<1.24> 保存单位组 [C]
 ---@param table hashtable
@@ -9606,7 +9658,7 @@ function common.SaveForceHandle(table,parentKey,childKey,whichForce) end
 ---@param childKey integer
 ---@param whichGroup group
 ---@return boolean
-function common.SaveGroupHandle(table,parentKey,childKey,whichGroup) end
+function common.SaveGroupHandle(table, parentKey, childKey, whichGroup) end
 
 ---<1.24> 保存点 [C]
 ---@param table hashtable
@@ -9614,7 +9666,7 @@ function common.SaveGroupHandle(table,parentKey,childKey,whichGroup) end
 ---@param childKey integer
 ---@param whichLocation location
 ---@return boolean
-function common.SaveLocationHandle(table,parentKey,childKey,whichLocation) end
+function common.SaveLocationHandle(table, parentKey, childKey, whichLocation) end
 
 ---<1.24> 保存区域(矩型) [C]
 ---@param table hashtable
@@ -9622,7 +9674,7 @@ function common.SaveLocationHandle(table,parentKey,childKey,whichLocation) end
 ---@param childKey integer
 ---@param whichRect rect
 ---@return boolean
-function common.SaveRectHandle(table,parentKey,childKey,whichRect) end
+function common.SaveRectHandle(table, parentKey, childKey, whichRect) end
 
 ---<1.24> 保存布尔表达式 [C]
 ---@param table hashtable
@@ -9630,7 +9682,7 @@ function common.SaveRectHandle(table,parentKey,childKey,whichRect) end
 ---@param childKey integer
 ---@param whichBoolexpr boolexpr
 ---@return boolean
-function common.SaveBooleanExprHandle(table,parentKey,childKey,whichBoolexpr) end
+function common.SaveBooleanExprHandle(table, parentKey, childKey, whichBoolexpr) end
 
 ---<1.24> 保存音效 [C]
 ---@param table hashtable
@@ -9638,7 +9690,7 @@ function common.SaveBooleanExprHandle(table,parentKey,childKey,whichBoolexpr) en
 ---@param childKey integer
 ---@param whichSound sound
 ---@return boolean
-function common.SaveSoundHandle(table,parentKey,childKey,whichSound) end
+function common.SaveSoundHandle(table, parentKey, childKey, whichSound) end
 
 ---<1.24> 保存特效 [C]
 ---@param table hashtable
@@ -9646,7 +9698,7 @@ function common.SaveSoundHandle(table,parentKey,childKey,whichSound) end
 ---@param childKey integer
 ---@param whichEffect effect
 ---@return boolean
-function common.SaveEffectHandle(table,parentKey,childKey,whichEffect) end
+function common.SaveEffectHandle(table, parentKey, childKey, whichEffect) end
 
 ---<1.24> 保存单位池 [C]
 ---@param table hashtable
@@ -9654,7 +9706,7 @@ function common.SaveEffectHandle(table,parentKey,childKey,whichEffect) end
 ---@param childKey integer
 ---@param whichUnitpool unitpool
 ---@return boolean
-function common.SaveUnitPoolHandle(table,parentKey,childKey,whichUnitpool) end
+function common.SaveUnitPoolHandle(table, parentKey, childKey, whichUnitpool) end
 
 ---<1.24> 保存物品池 [C]
 ---@param table hashtable
@@ -9662,7 +9714,7 @@ function common.SaveUnitPoolHandle(table,parentKey,childKey,whichUnitpool) end
 ---@param childKey integer
 ---@param whichItempool itempool
 ---@return boolean
-function common.SaveItemPoolHandle(table,parentKey,childKey,whichItempool) end
+function common.SaveItemPoolHandle(table, parentKey, childKey, whichItempool) end
 
 ---<1.24> 保存任务 [C]
 ---@param table hashtable
@@ -9670,7 +9722,7 @@ function common.SaveItemPoolHandle(table,parentKey,childKey,whichItempool) end
 ---@param childKey integer
 ---@param whichQuest quest
 ---@return boolean
-function common.SaveQuestHandle(table,parentKey,childKey,whichQuest) end
+function common.SaveQuestHandle(table, parentKey, childKey, whichQuest) end
 
 ---<1.24> 保存任务要求 [C]
 ---@param table hashtable
@@ -9678,7 +9730,7 @@ function common.SaveQuestHandle(table,parentKey,childKey,whichQuest) end
 ---@param childKey integer
 ---@param whichQuestitem questitem
 ---@return boolean
-function common.SaveQuestItemHandle(table,parentKey,childKey,whichQuestitem) end
+function common.SaveQuestItemHandle(table, parentKey, childKey, whichQuestitem) end
 
 ---<1.24> 保存失败条件 [C]
 ---@param table hashtable
@@ -9686,7 +9738,7 @@ function common.SaveQuestItemHandle(table,parentKey,childKey,whichQuestitem) end
 ---@param childKey integer
 ---@param whichDefeatcondition defeatcondition
 ---@return boolean
-function common.SaveDefeatConditionHandle(table,parentKey,childKey,whichDefeatcondition) end
+function common.SaveDefeatConditionHandle(table, parentKey, childKey, whichDefeatcondition) end
 
 ---<1.24> 保存计时器窗口 [C]
 ---@param table hashtable
@@ -9694,7 +9746,7 @@ function common.SaveDefeatConditionHandle(table,parentKey,childKey,whichDefeatco
 ---@param childKey integer
 ---@param whichTimerdialog timerdialog
 ---@return boolean
-function common.SaveTimerDialogHandle(table,parentKey,childKey,whichTimerdialog) end
+function common.SaveTimerDialogHandle(table, parentKey, childKey, whichTimerdialog) end
 
 ---<1.24> 保存排行榜 [C]
 ---@param table hashtable
@@ -9702,7 +9754,7 @@ function common.SaveTimerDialogHandle(table,parentKey,childKey,whichTimerdialog)
 ---@param childKey integer
 ---@param whichLeaderboard leaderboard
 ---@return boolean
-function common.SaveLeaderboardHandle(table,parentKey,childKey,whichLeaderboard) end
+function common.SaveLeaderboardHandle(table, parentKey, childKey, whichLeaderboard) end
 
 ---<1.24> 保存多面板 [C]
 ---@param table hashtable
@@ -9710,7 +9762,7 @@ function common.SaveLeaderboardHandle(table,parentKey,childKey,whichLeaderboard)
 ---@param childKey integer
 ---@param whichMultiboard multiboard
 ---@return boolean
-function common.SaveMultiboardHandle(table,parentKey,childKey,whichMultiboard) end
+function common.SaveMultiboardHandle(table, parentKey, childKey, whichMultiboard) end
 
 ---<1.24> 保存多面板项目 [C]
 ---@param table hashtable
@@ -9718,7 +9770,7 @@ function common.SaveMultiboardHandle(table,parentKey,childKey,whichMultiboard) e
 ---@param childKey integer
 ---@param whichMultiboarditem multiboarditem
 ---@return boolean
-function common.SaveMultiboardItemHandle(table,parentKey,childKey,whichMultiboarditem) end
+function common.SaveMultiboardItemHandle(table, parentKey, childKey, whichMultiboarditem) end
 
 ---<1.24> 保存可追踪物 [C]
 ---@param table hashtable
@@ -9726,7 +9778,7 @@ function common.SaveMultiboardItemHandle(table,parentKey,childKey,whichMultiboar
 ---@param childKey integer
 ---@param whichTrackable trackable
 ---@return boolean
-function common.SaveTrackableHandle(table,parentKey,childKey,whichTrackable) end
+function common.SaveTrackableHandle(table, parentKey, childKey, whichTrackable) end
 
 ---<1.24> 保存对话框 [C]
 ---@param table hashtable
@@ -9734,7 +9786,7 @@ function common.SaveTrackableHandle(table,parentKey,childKey,whichTrackable) end
 ---@param childKey integer
 ---@param whichDialog dialog
 ---@return boolean
-function common.SaveDialogHandle(table,parentKey,childKey,whichDialog) end
+function common.SaveDialogHandle(table, parentKey, childKey, whichDialog) end
 
 ---<1.24> 保存对话框按钮 [C]
 ---@param table hashtable
@@ -9742,7 +9794,7 @@ function common.SaveDialogHandle(table,parentKey,childKey,whichDialog) end
 ---@param childKey integer
 ---@param whichButton button
 ---@return boolean
-function common.SaveButtonHandle(table,parentKey,childKey,whichButton) end
+function common.SaveButtonHandle(table, parentKey, childKey, whichButton) end
 
 ---<1.24> 保存漂浮文字 [C]
 ---@param table hashtable
@@ -9750,7 +9802,7 @@ function common.SaveButtonHandle(table,parentKey,childKey,whichButton) end
 ---@param childKey integer
 ---@param whichTexttag texttag
 ---@return boolean
-function common.SaveTextTagHandle(table,parentKey,childKey,whichTexttag) end
+function common.SaveTextTagHandle(table, parentKey, childKey, whichTexttag) end
 
 ---<1.24> 保存闪电效果 [C]
 ---@param table hashtable
@@ -9758,7 +9810,7 @@ function common.SaveTextTagHandle(table,parentKey,childKey,whichTexttag) end
 ---@param childKey integer
 ---@param whichLightning lightning
 ---@return boolean
-function common.SaveLightningHandle(table,parentKey,childKey,whichLightning) end
+function common.SaveLightningHandle(table, parentKey, childKey, whichLightning) end
 
 ---<1.24> 保存图像 [C]
 ---@param table hashtable
@@ -9766,7 +9818,7 @@ function common.SaveLightningHandle(table,parentKey,childKey,whichLightning) end
 ---@param childKey integer
 ---@param whichImage image
 ---@return boolean
-function common.SaveImageHandle(table,parentKey,childKey,whichImage) end
+function common.SaveImageHandle(table, parentKey, childKey, whichImage) end
 
 ---<1.24> 保存地面纹理变化 [C]
 ---@param table hashtable
@@ -9774,7 +9826,7 @@ function common.SaveImageHandle(table,parentKey,childKey,whichImage) end
 ---@param childKey integer
 ---@param whichUbersplat ubersplat
 ---@return boolean
-function common.SaveUbersplatHandle(table,parentKey,childKey,whichUbersplat) end
+function common.SaveUbersplatHandle(table, parentKey, childKey, whichUbersplat) end
 
 ---<1.24> 保存区域(不规则) [C]
 ---@param table hashtable
@@ -9782,7 +9834,7 @@ function common.SaveUbersplatHandle(table,parentKey,childKey,whichUbersplat) end
 ---@param childKey integer
 ---@param whichRegion region
 ---@return boolean
-function common.SaveRegionHandle(table,parentKey,childKey,whichRegion) end
+function common.SaveRegionHandle(table, parentKey, childKey, whichRegion) end
 
 ---<1.24> 保存迷雾状态 [C]
 ---@param table hashtable
@@ -9790,7 +9842,7 @@ function common.SaveRegionHandle(table,parentKey,childKey,whichRegion) end
 ---@param childKey integer
 ---@param whichFogState fogstate
 ---@return boolean
-function common.SaveFogStateHandle(table,parentKey,childKey,whichFogState) end
+function common.SaveFogStateHandle(table, parentKey, childKey, whichFogState) end
 
 ---<1.24> 保存可见度修正器 [C]
 ---@param table hashtable
@@ -9798,7 +9850,7 @@ function common.SaveFogStateHandle(table,parentKey,childKey,whichFogState) end
 ---@param childKey integer
 ---@param whichFogModifier fogmodifier
 ---@return boolean
-function common.SaveFogModifierHandle(table,parentKey,childKey,whichFogModifier) end
+function common.SaveFogModifierHandle(table, parentKey, childKey, whichFogModifier) end
 
 ---<1.24> 保存实体对象 [C]
 ---@param table hashtable
@@ -9806,7 +9858,7 @@ function common.SaveFogModifierHandle(table,parentKey,childKey,whichFogModifier)
 ---@param childKey integer
 ---@param whichAgent agent
 ---@return boolean
-function common.SaveAgentHandle(table,parentKey,childKey,whichAgent) end
+function common.SaveAgentHandle(table, parentKey, childKey, whichAgent) end
 
 ---<1.24> 保存哈希表 [C]
 ---@param table hashtable
@@ -9814,7 +9866,7 @@ function common.SaveAgentHandle(table,parentKey,childKey,whichAgent) end
 ---@param childKey integer
 ---@param whichHashtable hashtable
 ---@return boolean
-function common.SaveHashtableHandle(table,parentKey,childKey,whichHashtable) end
+function common.SaveHashtableHandle(table, parentKey, childKey, whichHashtable) end
 
 ---SaveFrameHandle
 ---@param table hashtable
@@ -9822,373 +9874,373 @@ function common.SaveHashtableHandle(table,parentKey,childKey,whichHashtable) end
 ---@param childKey integer
 ---@param whichFrameHandle framehandle
 ---@return boolean
-function common.SaveFrameHandle(table,parentKey,childKey,whichFrameHandle) end
+function common.SaveFrameHandle(table, parentKey, childKey, whichFrameHandle) end
 
 ---<1.24> 从哈希表提取整数 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return integer
-function common.LoadInteger(table,parentKey,childKey) end
+function common.LoadInteger(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取实数 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return real
-function common.LoadReal(table,parentKey,childKey) end
+function common.LoadReal(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取布尔 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return boolean
-function common.LoadBoolean(table,parentKey,childKey) end
+function common.LoadBoolean(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取字符串 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return string
-function common.LoadStr(table,parentKey,childKey) end
+function common.LoadStr(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取玩家 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return player
-function common.LoadPlayerHandle(table,parentKey,childKey) end
+function common.LoadPlayerHandle(table, parentKey, childKey) end
 
 ---LoadWidgetHandle
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return widget
-function common.LoadWidgetHandle(table,parentKey,childKey) end
+function common.LoadWidgetHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取可破坏物 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return destructable
-function common.LoadDestructableHandle(table,parentKey,childKey) end
+function common.LoadDestructableHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取物品 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return item
-function common.LoadItemHandle(table,parentKey,childKey) end
+function common.LoadItemHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取单位 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return unit
-function common.LoadUnitHandle(table,parentKey,childKey) end
+function common.LoadUnitHandle(table, parentKey, childKey) end
 
 ---LoadAbilityHandle
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return ability
-function common.LoadAbilityHandle(table,parentKey,childKey) end
+function common.LoadAbilityHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取计时器 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return timer
-function common.LoadTimerHandle(table,parentKey,childKey) end
+function common.LoadTimerHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取触发器 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return trigger
-function common.LoadTriggerHandle(table,parentKey,childKey) end
+function common.LoadTriggerHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取触发条件 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return triggercondition
-function common.LoadTriggerConditionHandle(table,parentKey,childKey) end
+function common.LoadTriggerConditionHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取触发动作 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return triggeraction
-function common.LoadTriggerActionHandle(table,parentKey,childKey) end
+function common.LoadTriggerActionHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取触发事件 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return event
-function common.LoadTriggerEventHandle(table,parentKey,childKey) end
+function common.LoadTriggerEventHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取玩家组 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return force
-function common.LoadForceHandle(table,parentKey,childKey) end
+function common.LoadForceHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取单位组 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return group
-function common.LoadGroupHandle(table,parentKey,childKey) end
+function common.LoadGroupHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取点 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return location
-function common.LoadLocationHandle(table,parentKey,childKey) end
+function common.LoadLocationHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取区域(矩型) [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return rect
-function common.LoadRectHandle(table,parentKey,childKey) end
+function common.LoadRectHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取布尔表达式 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return boolexpr
-function common.LoadBooleanExprHandle(table,parentKey,childKey) end
+function common.LoadBooleanExprHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取音效 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return sound
-function common.LoadSoundHandle(table,parentKey,childKey) end
+function common.LoadSoundHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取特效 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return effect
-function common.LoadEffectHandle(table,parentKey,childKey) end
+function common.LoadEffectHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取单位池 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return unitpool
-function common.LoadUnitPoolHandle(table,parentKey,childKey) end
+function common.LoadUnitPoolHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取物品池 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return itempool
-function common.LoadItemPoolHandle(table,parentKey,childKey) end
+function common.LoadItemPoolHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取任务 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return quest
-function common.LoadQuestHandle(table,parentKey,childKey) end
+function common.LoadQuestHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取任务要求 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return questitem
-function common.LoadQuestItemHandle(table,parentKey,childKey) end
+function common.LoadQuestItemHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取失败条件 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return defeatcondition
-function common.LoadDefeatConditionHandle(table,parentKey,childKey) end
+function common.LoadDefeatConditionHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取计时器窗口 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return timerdialog
-function common.LoadTimerDialogHandle(table,parentKey,childKey) end
+function common.LoadTimerDialogHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取排行榜 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return leaderboard
-function common.LoadLeaderboardHandle(table,parentKey,childKey) end
+function common.LoadLeaderboardHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取多面板 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return multiboard
-function common.LoadMultiboardHandle(table,parentKey,childKey) end
+function common.LoadMultiboardHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取多面板项目 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return multiboarditem
-function common.LoadMultiboardItemHandle(table,parentKey,childKey) end
+function common.LoadMultiboardItemHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取可追踪物 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return trackable
-function common.LoadTrackableHandle(table,parentKey,childKey) end
+function common.LoadTrackableHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取对话框 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return dialog
-function common.LoadDialogHandle(table,parentKey,childKey) end
+function common.LoadDialogHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取对话框按钮 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return button
-function common.LoadButtonHandle(table,parentKey,childKey) end
+function common.LoadButtonHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取漂浮文字 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return texttag
-function common.LoadTextTagHandle(table,parentKey,childKey) end
+function common.LoadTextTagHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取闪电效果 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return lightning
-function common.LoadLightningHandle(table,parentKey,childKey) end
+function common.LoadLightningHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取图象 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return image
-function common.LoadImageHandle(table,parentKey,childKey) end
+function common.LoadImageHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取地面纹理变化 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return ubersplat
-function common.LoadUbersplatHandle(table,parentKey,childKey) end
+function common.LoadUbersplatHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取区域(不规则) [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return region
-function common.LoadRegionHandle(table,parentKey,childKey) end
+function common.LoadRegionHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取迷雾状态 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return fogstate
-function common.LoadFogStateHandle(table,parentKey,childKey) end
+function common.LoadFogStateHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取可见度修正器 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return fogmodifier
-function common.LoadFogModifierHandle(table,parentKey,childKey) end
+function common.LoadFogModifierHandle(table, parentKey, childKey) end
 
 ---<1.24> 从哈希表提取哈希表 [C]
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return hashtable
-function common.LoadHashtableHandle(table,parentKey,childKey) end
+function common.LoadHashtableHandle(table, parentKey, childKey) end
 
 ---LoadFrameHandle
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return framehandle
-function common.LoadFrameHandle(table,parentKey,childKey) end
+function common.LoadFrameHandle(table, parentKey, childKey) end
 
 ---HaveSavedInteger
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return boolean
-function common.HaveSavedInteger(table,parentKey,childKey) end
+function common.HaveSavedInteger(table, parentKey, childKey) end
 
 ---HaveSavedReal
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return boolean
-function common.HaveSavedReal(table,parentKey,childKey) end
+function common.HaveSavedReal(table, parentKey, childKey) end
 
 ---HaveSavedBoolean
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return boolean
-function common.HaveSavedBoolean(table,parentKey,childKey) end
+function common.HaveSavedBoolean(table, parentKey, childKey) end
 
 ---HaveSavedString
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return boolean
-function common.HaveSavedString(table,parentKey,childKey) end
+function common.HaveSavedString(table, parentKey, childKey) end
 
 ---HaveSavedHandle
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
 ---@return boolean
-function common.HaveSavedHandle(table,parentKey,childKey) end
+function common.HaveSavedHandle(table, parentKey, childKey) end
 
 ---RemoveSavedInteger
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
-function common.RemoveSavedInteger(table,parentKey,childKey) end
+function common.RemoveSavedInteger(table, parentKey, childKey) end
 
 ---RemoveSavedReal
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
-function common.RemoveSavedReal(table,parentKey,childKey) end
+function common.RemoveSavedReal(table, parentKey, childKey) end
 
 ---RemoveSavedBoolean
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
-function common.RemoveSavedBoolean(table,parentKey,childKey) end
+function common.RemoveSavedBoolean(table, parentKey, childKey) end
 
 ---RemoveSavedString
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
-function common.RemoveSavedString(table,parentKey,childKey) end
+function common.RemoveSavedString(table, parentKey, childKey) end
 
 ---RemoveSavedHandle
 ---@param table hashtable
 ---@param parentKey integer
 ---@param childKey integer
-function common.RemoveSavedHandle(table,parentKey,childKey) end
+function common.RemoveSavedHandle(table, parentKey, childKey) end
 
 ---<1.24> 清空哈希表 [C]
 ---@param table hashtable
@@ -10197,20 +10249,20 @@ function common.FlushParentHashtable(table) end
 ---<1.24> 清空哈希表主索引 [C]
 ---@param table hashtable
 ---@param parentKey integer
-function common.FlushChildHashtable(table,parentKey) end
+function common.FlushChildHashtable(table, parentKey) end
 
 ---Randomization API
 ---随机数字
 ---@param lowBound integer
 ---@param highBound integer
 ---@return integer
-function common.GetRandomInt(lowBound,highBound) end
+function common.GetRandomInt(lowBound, highBound) end
 
 ---随机数
 ---@param lowBound real
 ---@param highBound real
 ---@return real
-function common.GetRandomReal(lowBound,highBound) end
+function common.GetRandomReal(lowBound, highBound) end
 
 ---新建单位池 [R]
 ---@return unitpool
@@ -10224,12 +10276,12 @@ function common.DestroyUnitPool(whichPool) end
 ---@param whichPool unitpool
 ---@param unitId integer
 ---@param weight real
-function common.UnitPoolAddUnitType(whichPool,unitId,weight) end
+function common.UnitPoolAddUnitType(whichPool, unitId, weight) end
 
 ---删除单位类型 [R]
 ---@param whichPool unitpool
 ---@param unitId integer
-function common.UnitPoolRemoveUnitType(whichPool,unitId) end
+function common.UnitPoolRemoveUnitType(whichPool, unitId) end
 
 ---选择放置单位 [R]
 ---@param whichPool unitpool
@@ -10238,7 +10290,7 @@ function common.UnitPoolRemoveUnitType(whichPool,unitId) end
 ---@param y real
 ---@param facing real
 ---@return unit
-function common.PlaceRandomUnit(whichPool,forWhichPlayer,x,y,facing) end
+function common.PlaceRandomUnit(whichPool, forWhichPlayer, x, y, facing) end
 
 ---新建物品池 [R]
 ---@return itempool
@@ -10252,19 +10304,19 @@ function common.DestroyItemPool(whichItemPool) end
 ---@param whichItemPool itempool
 ---@param itemId integer
 ---@param weight real
-function common.ItemPoolAddItemType(whichItemPool,itemId,weight) end
+function common.ItemPoolAddItemType(whichItemPool, itemId, weight) end
 
 ---删除物品类型 [R]
 ---@param whichItemPool itempool
 ---@param itemId integer
-function common.ItemPoolRemoveItemType(whichItemPool,itemId) end
+function common.ItemPoolRemoveItemType(whichItemPool, itemId) end
 
 ---选择放置物品 [R]
 ---@param whichItemPool itempool
 ---@param x real
 ---@param y real
 ---@return item
-function common.PlaceRandomItem(whichItemPool,x,y) end
+function common.PlaceRandomItem(whichItemPool, x, y) end
 
 ---Choose any random unit/item. (NP means Neutral Passive)
 ---Choose any random unit/item. (NP means Neutral Passive)
@@ -10285,7 +10337,7 @@ function common.ChooseRandomItem(level) end
 ---@param whichType itemtype
 ---@param level integer
 ---@return integer
-function common.ChooseRandomItemEx(whichType,level) end
+function common.ChooseRandomItemEx(whichType, level) end
 
 ---设置随机种子
 ---@param seed integer
@@ -10298,7 +10350,7 @@ function common.SetRandomSeed(seed) end
 ---@param c real
 ---@param d real
 ---@param e real
-function common.SetTerrainFog(a,b,c,d,e) end
+function common.SetTerrainFog(a, b, c, d, e) end
 
 ---ResetTerrainFog
 function common.ResetTerrainFog() end
@@ -10309,7 +10361,7 @@ function common.ResetTerrainFog() end
 ---@param c real
 ---@param d real
 ---@param e real
-function common.SetUnitFog(a,b,c,d,e) end
+function common.SetUnitFog(a, b, c, d, e) end
 
 ---设置迷雾 [R]
 ---@param style integer
@@ -10319,14 +10371,14 @@ function common.SetUnitFog(a,b,c,d,e) end
 ---@param red real
 ---@param green real
 ---@param blue real
-function common.SetTerrainFogEx(style,zstart,zend,density,red,green,blue) end
+function common.SetTerrainFogEx(style, zstart, zend, density, red, green, blue) end
 
 ---对玩家显示文本消息(自动限时) [R]
 ---@param toPlayer player
 ---@param x real
 ---@param y real
 ---@param message string
-function common.DisplayTextToPlayer(toPlayer,x,y,message) end
+function common.DisplayTextToPlayer(toPlayer, x, y, message) end
 
 ---对玩家显示文本消息(指定时间) [R]
 ---@param toPlayer player
@@ -10334,7 +10386,7 @@ function common.DisplayTextToPlayer(toPlayer,x,y,message) end
 ---@param y real
 ---@param duration real
 ---@param message string
-function common.DisplayTimedTextToPlayer(toPlayer,x,y,duration,message) end
+function common.DisplayTimedTextToPlayer(toPlayer, x, y, duration, message) end
 
 ---DisplayTimedTextFromPlayer
 ---@param toPlayer player
@@ -10342,7 +10394,7 @@ function common.DisplayTimedTextToPlayer(toPlayer,x,y,duration,message) end
 ---@param y real
 ---@param duration real
 ---@param message string
-function common.DisplayTimedTextFromPlayer(toPlayer,x,y,duration,message) end
+function common.DisplayTimedTextFromPlayer(toPlayer, x, y, duration, message) end
 
 ---清空文本信息(所有玩家) [R]
 function common.ClearTextMessages() end
@@ -10350,7 +10402,7 @@ function common.ClearTextMessages() end
 ---SetDayNightModels
 ---@param terrainDNCFile string
 ---@param unitDNCFile string
-function common.SetDayNightModels(terrainDNCFile,unitDNCFile) end
+function common.SetDayNightModels(terrainDNCFile, unitDNCFile) end
 
 ---SetPortraitLight
 ---@param portraitDNCFile string
@@ -10383,7 +10435,7 @@ function common.GetTimeOfDayScale() end
 ---开启/关闭 信箱模式(所有玩家) [R]
 ---@param flag boolean
 ---@param fadeDuration real
-function common.ShowInterface(flag,fadeDuration) end
+function common.ShowInterface(flag, fadeDuration) end
 
 ---暂停/恢复游戏 [R]
 ---@param flag boolean
@@ -10395,7 +10447,7 @@ function common.PauseGame(flag) end
 ---@param green integer
 ---@param blue integer
 ---@param alpha integer
-function common.UnitAddIndicator(whichUnit,red,green,blue,alpha) end
+function common.UnitAddIndicator(whichUnit, red, green, blue, alpha) end
 
 ---AddIndicator
 ---@param whichWidget widget
@@ -10403,13 +10455,13 @@ function common.UnitAddIndicator(whichUnit,red,green,blue,alpha) end
 ---@param green integer
 ---@param blue integer
 ---@param alpha integer
-function common.AddIndicator(whichWidget,red,green,blue,alpha) end
+function common.AddIndicator(whichWidget, red, green, blue, alpha) end
 
 ---小地图信号(所有玩家) [R]
 ---@param x real
 ---@param y real
 ---@param duration real
-function common.PingMinimap(x,y,duration) end
+function common.PingMinimap(x, y, duration) end
 
 ---小地图信号(指定颜色)(所有玩家) [R]
 ---@param x real
@@ -10419,7 +10471,7 @@ function common.PingMinimap(x,y,duration) end
 ---@param green integer
 ---@param blue integer
 ---@param extraEffects boolean
-function common.PingMinimapEx(x,y,duration,red,green,blue,extraEffects) end
+function common.PingMinimapEx(x, y, duration, red, green, blue, extraEffects) end
 
 ---CreateMinimapIconOnUnit
 ---@param whichUnit unit
@@ -10429,7 +10481,7 @@ function common.PingMinimapEx(x,y,duration,red,green,blue,extraEffects) end
 ---@param pingPath string
 ---@param fogVisibility fogstate
 ---@return minimapicon
-function common.CreateMinimapIconOnUnit(whichUnit,red,green,blue,pingPath,fogVisibility) end
+function common.CreateMinimapIconOnUnit(whichUnit, red, green, blue, pingPath, fogVisibility) end
 
 ---CreateMinimapIconAtLoc
 ---@param where location
@@ -10439,7 +10491,7 @@ function common.CreateMinimapIconOnUnit(whichUnit,red,green,blue,pingPath,fogVis
 ---@param pingPath string
 ---@param fogVisibility fogstate
 ---@return minimapicon
-function common.CreateMinimapIconAtLoc(where,red,green,blue,pingPath,fogVisibility) end
+function common.CreateMinimapIconAtLoc(where, red, green, blue, pingPath, fogVisibility) end
 
 ---CreateMinimapIcon
 ---@param x real
@@ -10450,7 +10502,7 @@ function common.CreateMinimapIconAtLoc(where,red,green,blue,pingPath,fogVisibili
 ---@param pingPath string
 ---@param fogVisibility fogstate
 ---@return minimapicon
-function common.CreateMinimapIcon(x,y,red,green,blue,pingPath,fogVisibility) end
+function common.CreateMinimapIcon(x, y, red, green, blue, pingPath, fogVisibility) end
 
 ---SkinManagerGetLocalPath
 ---@param key string
@@ -10464,12 +10516,12 @@ function common.DestroyMinimapIcon(pingId) end
 ---SetMinimapIconVisible
 ---@param whichMinimapIcon minimapicon
 ---@param visible boolean
-function common.SetMinimapIconVisible(whichMinimapIcon,visible) end
+function common.SetMinimapIconVisible(whichMinimapIcon, visible) end
 
 ---SetMinimapIconOrphanDestroy
 ---@param whichMinimapIcon minimapicon
 ---@param doDestroy boolean
-function common.SetMinimapIconOrphanDestroy(whichMinimapIcon,doDestroy) end
+function common.SetMinimapIconOrphanDestroy(whichMinimapIcon, doDestroy) end
 
 ---允许/禁止闭塞(所有玩家) [R]
 ---@param flag boolean
@@ -10525,20 +10577,20 @@ function common.DestroyTextTag(t) end
 ---@param t texttag
 ---@param s string
 ---@param height real
-function common.SetTextTagText(t,s,height) end
+function common.SetTextTagText(t, s, height) end
 
 ---改变位置(坐标) [R]
 ---@param t texttag
 ---@param x real
 ---@param y real
 ---@param heightOffset real
-function common.SetTextTagPos(t,x,y,heightOffset) end
+function common.SetTextTagPos(t, x, y, heightOffset) end
 
 ---SetTextTagPosUnit
 ---@param t texttag
 ---@param whichUnit unit
 ---@param heightOffset real
-function common.SetTextTagPosUnit(t,whichUnit,heightOffset) end
+function common.SetTextTagPosUnit(t, whichUnit, heightOffset) end
 
 ---改变颜色 [R]
 ---@param t texttag
@@ -10546,43 +10598,43 @@ function common.SetTextTagPosUnit(t,whichUnit,heightOffset) end
 ---@param green integer
 ---@param blue integer
 ---@param alpha integer
-function common.SetTextTagColor(t,red,green,blue,alpha) end
+function common.SetTextTagColor(t, red, green, blue, alpha) end
 
 ---设置速率 [R]
 ---@param t texttag
 ---@param xvel real
 ---@param yvel real
-function common.SetTextTagVelocity(t,xvel,yvel) end
+function common.SetTextTagVelocity(t, xvel, yvel) end
 
 ---显示/隐藏 (所有玩家) [R]
 ---@param t texttag
 ---@param flag boolean
-function common.SetTextTagVisibility(t,flag) end
+function common.SetTextTagVisibility(t, flag) end
 
 ---SetTextTagSuspended
 ---@param t texttag
 ---@param flag boolean
-function common.SetTextTagSuspended(t,flag) end
+function common.SetTextTagSuspended(t, flag) end
 
 ---SetTextTagPermanent
 ---@param t texttag
 ---@param flag boolean
-function common.SetTextTagPermanent(t,flag) end
+function common.SetTextTagPermanent(t, flag) end
 
 ---SetTextTagAge
 ---@param t texttag
 ---@param age real
-function common.SetTextTagAge(t,age) end
+function common.SetTextTagAge(t, age) end
 
 ---SetTextTagLifespan
 ---@param t texttag
 ---@param lifespan real
-function common.SetTextTagLifespan(t,lifespan) end
+function common.SetTextTagLifespan(t, lifespan) end
 
 ---SetTextTagFadepoint
 ---@param t texttag
 ---@param fadepoint real
-function common.SetTextTagFadepoint(t,fadepoint) end
+function common.SetTextTagFadepoint(t, fadepoint) end
 
 ---保留英雄按钮
 ---@param reserved integer
@@ -10607,22 +10659,22 @@ function common.SetCreepCampFilterState(state) end
 ---允许/禁止小地图按钮
 ---@param enableAlly boolean
 ---@param enableCreep boolean
-function common.EnableMinimapFilterButtons(enableAlly,enableCreep) end
+function common.EnableMinimapFilterButtons(enableAlly, enableCreep) end
 
 ---允许/禁止框选
 ---@param state boolean
 ---@param ui boolean
-function common.EnableDragSelect(state,ui) end
+function common.EnableDragSelect(state, ui) end
 
 ---允许/禁止预选
 ---@param state boolean
 ---@param ui boolean
-function common.EnablePreSelect(state,ui) end
+function common.EnablePreSelect(state, ui) end
 
 ---允许/禁止选择
 ---@param state boolean
 ---@param ui boolean
-function common.EnableSelect(state,ui) end
+function common.EnableSelect(state, ui) end
 
 ---Trackable API
 ---新建可追踪物 [R]
@@ -10631,7 +10683,7 @@ function common.EnableSelect(state,ui) end
 ---@param y real
 ---@param facing real
 ---@return trackable
-function common.CreateTrackable(trackableModelPath,x,y,facing) end
+function common.CreateTrackable(trackableModelPath, x, y, facing) end
 
 ---Quest API
 ---新建任务 [R]
@@ -10645,42 +10697,42 @@ function common.DestroyQuest(whichQuest) end
 ---QuestSetTitle
 ---@param whichQuest quest
 ---@param title string
-function common.QuestSetTitle(whichQuest,title) end
+function common.QuestSetTitle(whichQuest, title) end
 
 ---QuestSetDescription
 ---@param whichQuest quest
 ---@param description string
-function common.QuestSetDescription(whichQuest,description) end
+function common.QuestSetDescription(whichQuest, description) end
 
 ---QuestSetIconPath
 ---@param whichQuest quest
 ---@param iconPath string
-function common.QuestSetIconPath(whichQuest,iconPath) end
+function common.QuestSetIconPath(whichQuest, iconPath) end
 
 ---QuestSetRequired
 ---@param whichQuest quest
 ---@param required boolean
-function common.QuestSetRequired(whichQuest,required) end
+function common.QuestSetRequired(whichQuest, required) end
 
 ---QuestSetCompleted
 ---@param whichQuest quest
 ---@param completed boolean
-function common.QuestSetCompleted(whichQuest,completed) end
+function common.QuestSetCompleted(whichQuest, completed) end
 
 ---QuestSetDiscovered
 ---@param whichQuest quest
 ---@param discovered boolean
-function common.QuestSetDiscovered(whichQuest,discovered) end
+function common.QuestSetDiscovered(whichQuest, discovered) end
 
 ---QuestSetFailed
 ---@param whichQuest quest
 ---@param failed boolean
-function common.QuestSetFailed(whichQuest,failed) end
+function common.QuestSetFailed(whichQuest, failed) end
 
 ---启用/禁用 任务 [R]
 ---@param whichQuest quest
 ---@param enabled boolean
-function common.QuestSetEnabled(whichQuest,enabled) end
+function common.QuestSetEnabled(whichQuest, enabled) end
 
 ---任务是必须完成的
 ---@param whichQuest quest
@@ -10715,12 +10767,12 @@ function common.QuestCreateItem(whichQuest) end
 ---QuestItemSetDescription
 ---@param whichQuestItem questitem
 ---@param description string
-function common.QuestItemSetDescription(whichQuestItem,description) end
+function common.QuestItemSetDescription(whichQuestItem, description) end
 
 ---QuestItemSetCompleted
 ---@param whichQuestItem questitem
 ---@param completed boolean
-function common.QuestItemSetCompleted(whichQuestItem,completed) end
+function common.QuestItemSetCompleted(whichQuestItem, completed) end
 
 ---任务条件完成
 ---@param whichQuestItem questitem
@@ -10738,7 +10790,7 @@ function common.DestroyDefeatCondition(whichCondition) end
 ---DefeatConditionSetDescription
 ---@param whichCondition defeatcondition
 ---@param description string
-function common.DefeatConditionSetDescription(whichCondition,description) end
+function common.DefeatConditionSetDescription(whichCondition, description) end
 
 ---FlashQuestDialogButton
 function common.FlashQuestDialogButton() end
@@ -10759,7 +10811,7 @@ function common.DestroyTimerDialog(whichDialog) end
 ---设置计时器窗口标题
 ---@param whichDialog timerdialog
 ---@param title string
-function common.TimerDialogSetTitle(whichDialog,title) end
+function common.TimerDialogSetTitle(whichDialog, title) end
 
 ---改变计时器窗口文字颜色 [R]
 ---@param whichDialog timerdialog
@@ -10767,7 +10819,7 @@ function common.TimerDialogSetTitle(whichDialog,title) end
 ---@param green integer
 ---@param blue integer
 ---@param alpha integer
-function common.TimerDialogSetTitleColor(whichDialog,red,green,blue,alpha) end
+function common.TimerDialogSetTitleColor(whichDialog, red, green, blue, alpha) end
 
 ---改变计时器窗口计时颜色 [R]
 ---@param whichDialog timerdialog
@@ -10775,17 +10827,17 @@ function common.TimerDialogSetTitleColor(whichDialog,red,green,blue,alpha) end
 ---@param green integer
 ---@param blue integer
 ---@param alpha integer
-function common.TimerDialogSetTimeColor(whichDialog,red,green,blue,alpha) end
+function common.TimerDialogSetTimeColor(whichDialog, red, green, blue, alpha) end
 
 ---设置计时器窗口速率 [R]
 ---@param whichDialog timerdialog
 ---@param speedMultFactor real
-function common.TimerDialogSetSpeed(whichDialog,speedMultFactor) end
+function common.TimerDialogSetSpeed(whichDialog, speedMultFactor) end
 
 ---显示/隐藏 计时器窗口(所有玩家) [R]
 ---@param whichDialog timerdialog
 ---@param display boolean
-function common.TimerDialogDisplay(whichDialog,display) end
+function common.TimerDialogDisplay(whichDialog, display) end
 
 ---判断计时器窗口是否显示
 ---@param whichDialog timerdialog
@@ -10795,7 +10847,7 @@ function common.IsTimerDialogDisplayed(whichDialog) end
 ---TimerDialogSetRealTimeRemaining
 ---@param whichDialog timerdialog
 ---@param timeRemaining real
-function common.TimerDialogSetRealTimeRemaining(whichDialog,timeRemaining) end
+function common.TimerDialogSetRealTimeRemaining(whichDialog, timeRemaining) end
 
 ---Create a leaderboard object
 ---新建排行榜 [R]
@@ -10809,7 +10861,7 @@ function common.DestroyLeaderboard(lb) end
 ---显示/隐藏 [R]
 ---@param lb leaderboard
 ---@param show boolean
-function common.LeaderboardDisplay(lb,show) end
+function common.LeaderboardDisplay(lb, show) end
 
 ---IsLeaderboardDisplayed
 ---@param lb leaderboard
@@ -10824,24 +10876,24 @@ function common.LeaderboardGetItemCount(lb) end
 ---LeaderboardSetSizeByItemCount
 ---@param lb leaderboard
 ---@param count integer
-function common.LeaderboardSetSizeByItemCount(lb,count) end
+function common.LeaderboardSetSizeByItemCount(lb, count) end
 
 ---LeaderboardAddItem
 ---@param lb leaderboard
 ---@param label string
 ---@param value integer
 ---@param p player
-function common.LeaderboardAddItem(lb,label,value,p) end
+function common.LeaderboardAddItem(lb, label, value, p) end
 
 ---LeaderboardRemoveItem
 ---@param lb leaderboard
 ---@param index integer
-function common.LeaderboardRemoveItem(lb,index) end
+function common.LeaderboardRemoveItem(lb, index) end
 
 ---LeaderboardRemovePlayerItem
 ---@param lb leaderboard
 ---@param p player
-function common.LeaderboardRemovePlayerItem(lb,p) end
+function common.LeaderboardRemovePlayerItem(lb, p) end
 
 ---清空 [R]
 ---@param lb leaderboard
@@ -10850,34 +10902,34 @@ function common.LeaderboardClear(lb) end
 ---LeaderboardSortItemsByValue
 ---@param lb leaderboard
 ---@param ascending boolean
-function common.LeaderboardSortItemsByValue(lb,ascending) end
+function common.LeaderboardSortItemsByValue(lb, ascending) end
 
 ---LeaderboardSortItemsByPlayer
 ---@param lb leaderboard
 ---@param ascending boolean
-function common.LeaderboardSortItemsByPlayer(lb,ascending) end
+function common.LeaderboardSortItemsByPlayer(lb, ascending) end
 
 ---LeaderboardSortItemsByLabel
 ---@param lb leaderboard
 ---@param ascending boolean
-function common.LeaderboardSortItemsByLabel(lb,ascending) end
+function common.LeaderboardSortItemsByLabel(lb, ascending) end
 
 ---LeaderboardHasPlayerItem
 ---@param lb leaderboard
 ---@param p player
 ---@return boolean
-function common.LeaderboardHasPlayerItem(lb,p) end
+function common.LeaderboardHasPlayerItem(lb, p) end
 
 ---LeaderboardGetPlayerIndex
 ---@param lb leaderboard
 ---@param p player
 ---@return integer
-function common.LeaderboardGetPlayerIndex(lb,p) end
+function common.LeaderboardGetPlayerIndex(lb, p) end
 
 ---LeaderboardSetLabel
 ---@param lb leaderboard
 ---@param label string
-function common.LeaderboardSetLabel(lb,label) end
+function common.LeaderboardSetLabel(lb, label) end
 
 ---LeaderboardGetLabelText
 ---@param lb leaderboard
@@ -10887,7 +10939,7 @@ function common.LeaderboardGetLabelText(lb) end
 ---设置玩家使用的排行榜 [R]
 ---@param toPlayer player
 ---@param lb leaderboard
-function common.PlayerSetLeaderboard(toPlayer,lb) end
+function common.PlayerSetLeaderboard(toPlayer, lb) end
 
 ---PlayerGetLeaderboard
 ---@param toPlayer player
@@ -10900,7 +10952,7 @@ function common.PlayerGetLeaderboard(toPlayer) end
 ---@param green integer
 ---@param blue integer
 ---@param alpha integer
-function common.LeaderboardSetLabelColor(lb,red,green,blue,alpha) end
+function common.LeaderboardSetLabelColor(lb, red, green, blue, alpha) end
 
 ---设置数值颜色 [R]
 ---@param lb leaderboard
@@ -10908,7 +10960,7 @@ function common.LeaderboardSetLabelColor(lb,red,green,blue,alpha) end
 ---@param green integer
 ---@param blue integer
 ---@param alpha integer
-function common.LeaderboardSetValueColor(lb,red,green,blue,alpha) end
+function common.LeaderboardSetValueColor(lb, red, green, blue, alpha) end
 
 ---LeaderboardSetStyle
 ---@param lb leaderboard
@@ -10916,19 +10968,19 @@ function common.LeaderboardSetValueColor(lb,red,green,blue,alpha) end
 ---@param showNames boolean
 ---@param showValues boolean
 ---@param showIcons boolean
-function common.LeaderboardSetStyle(lb,showLabel,showNames,showValues,showIcons) end
+function common.LeaderboardSetStyle(lb, showLabel, showNames, showValues, showIcons) end
 
 ---LeaderboardSetItemValue
 ---@param lb leaderboard
 ---@param whichItem integer
 ---@param val integer
-function common.LeaderboardSetItemValue(lb,whichItem,val) end
+function common.LeaderboardSetItemValue(lb, whichItem, val) end
 
 ---LeaderboardSetItemLabel
 ---@param lb leaderboard
 ---@param whichItem integer
 ---@param val string
-function common.LeaderboardSetItemLabel(lb,whichItem,val) end
+function common.LeaderboardSetItemLabel(lb, whichItem, val) end
 
 ---LeaderboardSetItemStyle
 ---@param lb leaderboard
@@ -10936,7 +10988,7 @@ function common.LeaderboardSetItemLabel(lb,whichItem,val) end
 ---@param showLabel boolean
 ---@param showValue boolean
 ---@param showIcon boolean
-function common.LeaderboardSetItemStyle(lb,whichItem,showLabel,showValue,showIcon) end
+function common.LeaderboardSetItemStyle(lb, whichItem, showLabel, showValue, showIcon) end
 
 ---LeaderboardSetItemLabelColor
 ---@param lb leaderboard
@@ -10945,7 +10997,7 @@ function common.LeaderboardSetItemStyle(lb,whichItem,showLabel,showValue,showIco
 ---@param green integer
 ---@param blue integer
 ---@param alpha integer
-function common.LeaderboardSetItemLabelColor(lb,whichItem,red,green,blue,alpha) end
+function common.LeaderboardSetItemLabelColor(lb, whichItem, red, green, blue, alpha) end
 
 ---LeaderboardSetItemValueColor
 ---@param lb leaderboard
@@ -10954,7 +11006,7 @@ function common.LeaderboardSetItemLabelColor(lb,whichItem,red,green,blue,alpha) 
 ---@param green integer
 ---@param blue integer
 ---@param alpha integer
-function common.LeaderboardSetItemValueColor(lb,whichItem,red,green,blue,alpha) end
+function common.LeaderboardSetItemValueColor(lb, whichItem, red, green, blue, alpha) end
 
 ---Create a multiboard object
 ---新建多面板 [R]
@@ -10968,7 +11020,7 @@ function common.DestroyMultiboard(lb) end
 ---显示/隐藏 [R]
 ---@param lb multiboard
 ---@param show boolean
-function common.MultiboardDisplay(lb,show) end
+function common.MultiboardDisplay(lb, show) end
 
 ---多列面板 是已显示的
 ---@param lb multiboard
@@ -10978,7 +11030,7 @@ function common.IsMultiboardDisplayed(lb) end
 ---最大/最小化 [R]
 ---@param lb multiboard
 ---@param minimize boolean
-function common.MultiboardMinimize(lb,minimize) end
+function common.MultiboardMinimize(lb, minimize) end
 
 ---多列面板 是最小化的
 ---@param lb multiboard
@@ -10992,7 +11044,7 @@ function common.MultiboardClear(lb) end
 ---改变 多列面板 标题
 ---@param lb multiboard
 ---@param label string
-function common.MultiboardSetTitleText(lb,label) end
+function common.MultiboardSetTitleText(lb, label) end
 
 ---多列面板 的标题
 ---@param lb multiboard
@@ -11005,7 +11057,7 @@ function common.MultiboardGetTitleText(lb) end
 ---@param green integer
 ---@param blue integer
 ---@param alpha integer
-function common.MultiboardSetTitleTextColor(lb,red,green,blue,alpha) end
+function common.MultiboardSetTitleTextColor(lb, red, green, blue, alpha) end
 
 ---获得多列面板 的行数
 ---@param lb multiboard
@@ -11020,24 +11072,24 @@ function common.MultiboardGetColumnCount(lb) end
 ---改变多列面板'列数'
 ---@param lb multiboard
 ---@param count integer
-function common.MultiboardSetColumnCount(lb,count) end
+function common.MultiboardSetColumnCount(lb, count) end
 
 ---改变多列面板'行数'
 ---@param lb multiboard
 ---@param count integer
-function common.MultiboardSetRowCount(lb,count) end
+function common.MultiboardSetRowCount(lb, count) end
 
 ---broadcast settings to all items
 ---设置所有项目显示风格 [R]
 ---@param lb multiboard
 ---@param showValues boolean
 ---@param showIcons boolean
-function common.MultiboardSetItemsStyle(lb,showValues,showIcons) end
+function common.MultiboardSetItemsStyle(lb, showValues, showIcons) end
 
 ---设置所有项目文本 [R]
 ---@param lb multiboard
 ---@param value string
-function common.MultiboardSetItemsValue(lb,value) end
+function common.MultiboardSetItemsValue(lb, value) end
 
 ---设置所有项目颜色 [R]
 ---@param lb multiboard
@@ -11045,17 +11097,17 @@ function common.MultiboardSetItemsValue(lb,value) end
 ---@param green integer
 ---@param blue integer
 ---@param alpha integer
-function common.MultiboardSetItemsValueColor(lb,red,green,blue,alpha) end
+function common.MultiboardSetItemsValueColor(lb, red, green, blue, alpha) end
 
 ---设置所有项目宽度 [R]
 ---@param lb multiboard
 ---@param width real
-function common.MultiboardSetItemsWidth(lb,width) end
+function common.MultiboardSetItemsWidth(lb, width) end
 
 ---设置所有项目图标 [R]
 ---@param lb multiboard
 ---@param iconPath string
-function common.MultiboardSetItemsIcon(lb,iconPath) end
+function common.MultiboardSetItemsIcon(lb, iconPath) end
 
 ---funcs for modifying individual items
 ---多面板项目 [R]
@@ -11063,7 +11115,7 @@ function common.MultiboardSetItemsIcon(lb,iconPath) end
 ---@param row integer
 ---@param column integer
 ---@return multiboarditem
-function common.MultiboardGetItem(lb,row,column) end
+function common.MultiboardGetItem(lb, row, column) end
 
 ---删除多面板项目 [R]
 ---@param mbi multiboarditem
@@ -11073,12 +11125,12 @@ function common.MultiboardReleaseItem(mbi) end
 ---@param mbi multiboarditem
 ---@param showValue boolean
 ---@param showIcon boolean
-function common.MultiboardSetItemStyle(mbi,showValue,showIcon) end
+function common.MultiboardSetItemStyle(mbi, showValue, showIcon) end
 
 ---设置指定项目文本 [R]
 ---@param mbi multiboarditem
 ---@param val string
-function common.MultiboardSetItemValue(mbi,val) end
+function common.MultiboardSetItemValue(mbi, val) end
 
 ---设置指定项目颜色 [R]
 ---@param mbi multiboarditem
@@ -11086,17 +11138,17 @@ function common.MultiboardSetItemValue(mbi,val) end
 ---@param green integer
 ---@param blue integer
 ---@param alpha integer
-function common.MultiboardSetItemValueColor(mbi,red,green,blue,alpha) end
+function common.MultiboardSetItemValueColor(mbi, red, green, blue, alpha) end
 
 ---设置指定项目宽度 [R]
 ---@param mbi multiboarditem
 ---@param width real
-function common.MultiboardSetItemWidth(mbi,width) end
+function common.MultiboardSetItemWidth(mbi, width) end
 
 ---设置指定项目图标 [R]
 ---@param mbi multiboarditem
 ---@param iconFileName string
-function common.MultiboardSetItemIcon(mbi,iconFileName) end
+function common.MultiboardSetItemIcon(mbi, iconFileName) end
 
 ---meant to unequivocally suspend display of existing and
 ---subsequently displayed multiboards
@@ -11108,12 +11160,12 @@ function common.MultiboardSuppressDisplay(flag) end
 ---Camera API
 ---@param x real
 ---@param y real
-function common.SetCameraPosition(x,y) end
+function common.SetCameraPosition(x, y) end
 
 ---设置空格键转向点(所有玩家) [R]
 ---@param x real
 ---@param y real
-function common.SetCameraQuickPosition(x,y) end
+function common.SetCameraQuickPosition(x, y) end
 
 ---设置可用镜头区域(所有玩家) [R]
 ---@param x1 real
@@ -11124,7 +11176,7 @@ function common.SetCameraQuickPosition(x,y) end
 ---@param y3 real
 ---@param x4 real
 ---@param y4 real
-function common.SetCameraBounds(x1,y1,x2,y2,x3,y3,x4,y4) end
+function common.SetCameraBounds(x1, y1, x2, y2, x3, y3, x4, y4) end
 
 ---停止播放镜头(所有玩家) [R]
 function common.StopCamera() end
@@ -11136,26 +11188,26 @@ function common.ResetToGameCamera(duration) end
 ---PanCameraTo
 ---@param x real
 ---@param y real
-function common.PanCameraTo(x,y) end
+function common.PanCameraTo(x, y) end
 
 ---平移镜头(所有玩家)(限时) [R]
 ---@param x real
 ---@param y real
 ---@param duration real
-function common.PanCameraToTimed(x,y,duration) end
+function common.PanCameraToTimed(x, y, duration) end
 
 ---PanCameraToWithZ
 ---@param x real
 ---@param y real
 ---@param zOffsetDest real
-function common.PanCameraToWithZ(x,y,zOffsetDest) end
+function common.PanCameraToWithZ(x, y, zOffsetDest) end
 
 ---指定高度平移镜头(所有玩家)(限时) [R]
 ---@param x real
 ---@param y real
 ---@param zOffsetDest real
 ---@param duration real
-function common.PanCameraToTimedWithZ(x,y,zOffsetDest,duration) end
+function common.PanCameraToTimedWithZ(x, y, zOffsetDest, duration) end
 
 ---播放电影镜头(所有玩家) [R]
 ---@param cameraModelFile string
@@ -11166,32 +11218,32 @@ function common.SetCinematicCamera(cameraModelFile) end
 ---@param y real
 ---@param radiansToSweep real
 ---@param duration real
-function common.SetCameraRotateMode(x,y,radiansToSweep,duration) end
+function common.SetCameraRotateMode(x, y, radiansToSweep, duration) end
 
 ---设置镜头属性(所有玩家)(限时) [R]
 ---@param whichField camerafield
 ---@param value real
 ---@param duration real
-function common.SetCameraField(whichField,value,duration) end
+function common.SetCameraField(whichField, value, duration) end
 
 ---AdjustCameraField
 ---@param whichField camerafield
 ---@param offset real
 ---@param duration real
-function common.AdjustCameraField(whichField,offset,duration) end
+function common.AdjustCameraField(whichField, offset, duration) end
 
 ---锁定镜头到单位(所有玩家) [R]
 ---@param whichUnit unit
 ---@param xoffset real
 ---@param yoffset real
 ---@param inheritOrientation boolean
-function common.SetCameraTargetController(whichUnit,xoffset,yoffset,inheritOrientation) end
+function common.SetCameraTargetController(whichUnit, xoffset, yoffset, inheritOrientation) end
 
 ---锁定镜头到单位(固定镜头源)(所有玩家) [R]
 ---@param whichUnit unit
 ---@param xoffset real
 ---@param yoffset real
-function common.SetCameraOrientController(whichUnit,xoffset,yoffset) end
+function common.SetCameraOrientController(whichUnit, xoffset, yoffset) end
 
 ---CreateCameraSetup
 ---@return camerasetup
@@ -11202,20 +11254,20 @@ function common.CreateCameraSetup() end
 ---@param whichField camerafield
 ---@param value real
 ---@param duration real
-function common.CameraSetupSetField(whichSetup,whichField,value,duration) end
+function common.CameraSetupSetField(whichSetup, whichField, value, duration) end
 
 ---镜头属性(指定镜头) [R]
 ---@param whichSetup camerasetup
 ---@param whichField camerafield
 ---@return real
-function common.CameraSetupGetField(whichSetup,whichField) end
+function common.CameraSetupGetField(whichSetup, whichField) end
 
 ---CameraSetupSetDestPosition
 ---@param whichSetup camerasetup
 ---@param x real
 ---@param y real
 ---@param duration real
-function common.CameraSetupSetDestPosition(whichSetup,x,y,duration) end
+function common.CameraSetupSetDestPosition(whichSetup, x, y, duration) end
 
 ---摄象机的目标
 ---@param whichSetup camerasetup
@@ -11236,46 +11288,46 @@ function common.CameraSetupGetDestPositionY(whichSetup) end
 ---@param whichSetup camerasetup
 ---@param doPan boolean
 ---@param panTimed boolean
-function common.CameraSetupApply(whichSetup,doPan,panTimed) end
+function common.CameraSetupApply(whichSetup, doPan, panTimed) end
 
 ---CameraSetupApplyWithZ
 ---@param whichSetup camerasetup
 ---@param zDestOffset real
-function common.CameraSetupApplyWithZ(whichSetup,zDestOffset) end
+function common.CameraSetupApplyWithZ(whichSetup, zDestOffset) end
 
 ---应用镜头(所有玩家)(限时) [R]
 ---@param whichSetup camerasetup
 ---@param doPan boolean
 ---@param forceDuration real
-function common.CameraSetupApplyForceDuration(whichSetup,doPan,forceDuration) end
+function common.CameraSetupApplyForceDuration(whichSetup, doPan, forceDuration) end
 
 ---CameraSetupApplyForceDurationWithZ
 ---@param whichSetup camerasetup
 ---@param zDestOffset real
 ---@param forceDuration real
-function common.CameraSetupApplyForceDurationWithZ(whichSetup,zDestOffset,forceDuration) end
+function common.CameraSetupApplyForceDurationWithZ(whichSetup, zDestOffset, forceDuration) end
 
 ---CameraSetTargetNoise
 ---@param mag real
 ---@param velocity real
-function common.CameraSetTargetNoise(mag,velocity) end
+function common.CameraSetTargetNoise(mag, velocity) end
 
 ---CameraSetSourceNoise
 ---@param mag real
 ---@param velocity real
-function common.CameraSetSourceNoise(mag,velocity) end
+function common.CameraSetSourceNoise(mag, velocity) end
 
 ---摇晃镜头目标(所有玩家) [R]
 ---@param mag real
 ---@param velocity real
 ---@param vertOnly boolean
-function common.CameraSetTargetNoiseEx(mag,velocity,vertOnly) end
+function common.CameraSetTargetNoiseEx(mag, velocity, vertOnly) end
 
 ---摇晃镜头源(所有玩家) [R]
 ---@param mag real
 ---@param velocity real
 ---@param vertOnly boolean
-function common.CameraSetSourceNoiseEx(mag,velocity,vertOnly) end
+function common.CameraSetSourceNoiseEx(mag, velocity, vertOnly) end
 
 ---CameraSetSmoothingFactor
 ---@param factor real
@@ -11306,28 +11358,28 @@ function common.SetCineFilterTexMapFlags(whichFlags) end
 ---@param minv real
 ---@param maxu real
 ---@param maxv real
-function common.SetCineFilterStartUV(minu,minv,maxu,maxv) end
+function common.SetCineFilterStartUV(minu, minv, maxu, maxv) end
 
 ---SetCineFilterEndUV
 ---@param minu real
 ---@param minv real
 ---@param maxu real
 ---@param maxv real
-function common.SetCineFilterEndUV(minu,minv,maxu,maxv) end
+function common.SetCineFilterEndUV(minu, minv, maxu, maxv) end
 
 ---SetCineFilterStartColor
 ---@param red integer
 ---@param green integer
 ---@param blue integer
 ---@param alpha integer
-function common.SetCineFilterStartColor(red,green,blue,alpha) end
+function common.SetCineFilterStartColor(red, green, blue, alpha) end
 
 ---SetCineFilterEndColor
 ---@param red integer
 ---@param green integer
 ---@param blue integer
 ---@param alpha integer
-function common.SetCineFilterEndColor(red,green,blue,alpha) end
+function common.SetCineFilterEndColor(red, green, blue, alpha) end
 
 ---SetCineFilterDuration
 ---@param duration real
@@ -11348,7 +11400,7 @@ function common.IsCineFilterDisplayed() end
 ---@param text string
 ---@param sceneDuration real
 ---@param voiceoverDuration real
-function common.SetCinematicScene(portraitUnitId,color,speakerTitle,text,sceneDuration,voiceoverDuration) end
+function common.SetCinematicScene(portraitUnitId, color, speakerTitle, text, sceneDuration, voiceoverDuration) end
 
 ---EndCinematicScene
 function common.EndCinematicScene() end
@@ -11433,7 +11485,7 @@ function common.NewSoundEnvironment(environmentName) end
 ---@param fadeOutRate integer
 ---@param eaxSetting string
 ---@return sound
-function common.CreateSound(fileName,looping,is3D,stopwhenoutofrange,fadeInRate,fadeOutRate,eaxSetting) end
+function common.CreateSound(fileName, looping, is3D, stopwhenoutofrange, fadeInRate, fadeOutRate, eaxSetting) end
 
 ---CreateSoundFilenameWithLabel
 ---@param fileName string
@@ -11444,7 +11496,16 @@ function common.CreateSound(fileName,looping,is3D,stopwhenoutofrange,fadeInRate,
 ---@param fadeOutRate integer
 ---@param SLKEntryName string
 ---@return sound
-function common.CreateSoundFilenameWithLabel(fileName,looping,is3D,stopwhenoutofrange,fadeInRate,fadeOutRate,SLKEntryName) end
+function common.CreateSoundFilenameWithLabel(
+	fileName,
+	looping,
+	is3D,
+	stopwhenoutofrange,
+	fadeInRate,
+	fadeOutRate,
+	SLKEntryName
+)
+end
 
 ---CreateSoundFromLabel
 ---@param soundLabel string
@@ -11454,85 +11515,85 @@ function common.CreateSoundFilenameWithLabel(fileName,looping,is3D,stopwhenoutof
 ---@param fadeInRate integer
 ---@param fadeOutRate integer
 ---@return sound
-function common.CreateSoundFromLabel(soundLabel,looping,is3D,stopwhenoutofrange,fadeInRate,fadeOutRate) end
+function common.CreateSoundFromLabel(soundLabel, looping, is3D, stopwhenoutofrange, fadeInRate, fadeOutRate) end
 
 ---CreateMIDISound
 ---@param soundLabel string
 ---@param fadeInRate integer
 ---@param fadeOutRate integer
 ---@return sound
-function common.CreateMIDISound(soundLabel,fadeInRate,fadeOutRate) end
+function common.CreateMIDISound(soundLabel, fadeInRate, fadeOutRate) end
 
 ---SetSoundParamsFromLabel
 ---@param soundHandle sound
 ---@param soundLabel string
-function common.SetSoundParamsFromLabel(soundHandle,soundLabel) end
+function common.SetSoundParamsFromLabel(soundHandle, soundLabel) end
 
 ---SetSoundDistanceCutoff
 ---@param soundHandle sound
 ---@param cutoff real
-function common.SetSoundDistanceCutoff(soundHandle,cutoff) end
+function common.SetSoundDistanceCutoff(soundHandle, cutoff) end
 
 ---SetSoundChannel
 ---@param soundHandle sound
 ---@param channel integer
-function common.SetSoundChannel(soundHandle,channel) end
+function common.SetSoundChannel(soundHandle, channel) end
 
 ---设置音效音量 [R]
 ---@param soundHandle sound
 ---@param volume integer
-function common.SetSoundVolume(soundHandle,volume) end
+function common.SetSoundVolume(soundHandle, volume) end
 
 ---SetSoundPitch
 ---@param soundHandle sound
 ---@param pitch real
-function common.SetSoundPitch(soundHandle,pitch) end
+function common.SetSoundPitch(soundHandle, pitch) end
 
 ---the following method must be called immediately after calling "StartSound"
 ---设置音效播放时间点 [R]
 ---@param soundHandle sound
 ---@param millisecs integer
-function common.SetSoundPlayPosition(soundHandle,millisecs) end
+function common.SetSoundPlayPosition(soundHandle, millisecs) end
 
 ---these calls are only valid if the sound was created with 3d enabled
 ---设置3D声音距离
 ---@param soundHandle sound
 ---@param minDist real
 ---@param maxDist real
-function common.SetSoundDistances(soundHandle,minDist,maxDist) end
+function common.SetSoundDistances(soundHandle, minDist, maxDist) end
 
 ---SetSoundConeAngles
 ---@param soundHandle sound
 ---@param inside real
 ---@param outside real
 ---@param outsideVolume integer
-function common.SetSoundConeAngles(soundHandle,inside,outside,outsideVolume) end
+function common.SetSoundConeAngles(soundHandle, inside, outside, outsideVolume) end
 
 ---SetSoundConeOrientation
 ---@param soundHandle sound
 ---@param x real
 ---@param y real
 ---@param z real
-function common.SetSoundConeOrientation(soundHandle,x,y,z) end
+function common.SetSoundConeOrientation(soundHandle, x, y, z) end
 
 ---设置3D音效位置(指定坐标) [R]
 ---@param soundHandle sound
 ---@param x real
 ---@param y real
 ---@param z real
-function common.SetSoundPosition(soundHandle,x,y,z) end
+function common.SetSoundPosition(soundHandle, x, y, z) end
 
 ---SetSoundVelocity
 ---@param soundHandle sound
 ---@param x real
 ---@param y real
 ---@param z real
-function common.SetSoundVelocity(soundHandle,x,y,z) end
+function common.SetSoundVelocity(soundHandle, x, y, z) end
 
 ---AttachSoundToUnit
 ---@param soundHandle sound
 ---@param whichUnit unit
-function common.AttachSoundToUnit(soundHandle,whichUnit) end
+function common.AttachSoundToUnit(soundHandle, whichUnit) end
 
 ---StartSound
 ---@param soundHandle sound
@@ -11542,7 +11603,7 @@ function common.StartSound(soundHandle) end
 ---@param soundHandle sound
 ---@param killWhenDone boolean
 ---@param fadeOut boolean
-function common.StopSound(soundHandle,killWhenDone,fadeOut) end
+function common.StopSound(soundHandle, killWhenDone, fadeOut) end
 
 ---KillSoundWhenDone
 ---@param soundHandle sound
@@ -11553,7 +11614,7 @@ function common.KillSoundWhenDone(soundHandle) end
 ---@param musicName string
 ---@param random boolean
 ---@param index integer
-function common.SetMapMusic(musicName,random,index) end
+function common.SetMapMusic(musicName, random, index) end
 
 ---ClearMapMusic
 function common.ClearMapMusic() end
@@ -11566,7 +11627,7 @@ function common.PlayMusic(musicName) end
 ---@param musicName string
 ---@param frommsecs integer
 ---@param fadeinmsecs integer
-function common.PlayMusicEx(musicName,frommsecs,fadeinmsecs) end
+function common.PlayMusicEx(musicName, frommsecs, fadeinmsecs) end
 
 ---StopMusic
 ---@param fadeOut boolean
@@ -11582,7 +11643,7 @@ function common.PlayThematicMusic(musicFileName) end
 ---跳播主题音乐 [R]
 ---@param musicFileName string
 ---@param frommsecs integer
-function common.PlayThematicMusicEx(musicFileName,frommsecs) end
+function common.PlayThematicMusicEx(musicFileName, frommsecs) end
 
 ---停止主题音乐[C]
 function common.EndThematicMusic() end
@@ -11607,7 +11668,7 @@ function common.SetThematicMusicPlayPosition(millisecs) end
 ---other music and sound calls
 ---@param soundHandle sound
 ---@param duration integer
-function common.SetSoundDuration(soundHandle,duration) end
+function common.SetSoundDuration(soundHandle, duration) end
 
 ---GetSoundDuration
 ---@param soundHandle sound
@@ -11622,7 +11683,7 @@ function common.GetSoundFileDuration(musicFileName) end
 ---设置多通道音量 [R]
 ---@param vgroup volumegroup
 ---@param scale real
-function common.VolumeGroupSetVolume(vgroup,scale) end
+function common.VolumeGroupSetVolume(vgroup, scale) end
 
 ---VolumeGroupReset
 function common.VolumeGroupReset() end
@@ -11642,39 +11703,39 @@ function common.GetSoundIsLoading(soundHandle) end
 ---@param byPosition boolean
 ---@param rectwidth real
 ---@param rectheight real
-function common.RegisterStackedSound(soundHandle,byPosition,rectwidth,rectheight) end
+function common.RegisterStackedSound(soundHandle, byPosition, rectwidth, rectheight) end
 
 ---UnregisterStackedSound
 ---@param soundHandle sound
 ---@param byPosition boolean
 ---@param rectwidth real
 ---@param rectheight real
-function common.UnregisterStackedSound(soundHandle,byPosition,rectwidth,rectheight) end
+function common.UnregisterStackedSound(soundHandle, byPosition, rectwidth, rectheight) end
 
 ---SetSoundFacialAnimationLabel
 ---@param soundHandle sound
 ---@param animationLabel string
 ---@return boolean
-function common.SetSoundFacialAnimationLabel(soundHandle,animationLabel) end
+function common.SetSoundFacialAnimationLabel(soundHandle, animationLabel) end
 
 ---SetSoundFacialAnimationGroupLabel
 ---@param soundHandle sound
 ---@param groupLabel string
 ---@return boolean
-function common.SetSoundFacialAnimationGroupLabel(soundHandle,groupLabel) end
+function common.SetSoundFacialAnimationGroupLabel(soundHandle, groupLabel) end
 
 ---SetSoundFacialAnimationSetFilepath
 ---@param soundHandle sound
 ---@param animationSetFilepath string
 ---@return boolean
-function common.SetSoundFacialAnimationSetFilepath(soundHandle,animationSetFilepath) end
+function common.SetSoundFacialAnimationSetFilepath(soundHandle, animationSetFilepath) end
 
 ---Subtitle support that is attached to the soundHandle rather than as disperate data with the legacy UI
 ---Subtitle support that is attached to the soundHandle rather than as disperate data with the legacy UI
 ---@param soundHandle sound
 ---@param speakerName string
 ---@return boolean
-function common.SetDialogueSpeakerNameKey(soundHandle,speakerName) end
+function common.SetDialogueSpeakerNameKey(soundHandle, speakerName) end
 
 ---GetDialogueSpeakerNameKey
 ---@param soundHandle sound
@@ -11685,7 +11746,7 @@ function common.GetDialogueSpeakerNameKey(soundHandle) end
 ---@param soundHandle sound
 ---@param dialogueText string
 ---@return boolean
-function common.SetDialogueTextKey(soundHandle,dialogueText) end
+function common.SetDialogueTextKey(soundHandle, dialogueText) end
 
 ---GetDialogueTextKey
 ---@param soundHandle sound
@@ -11697,7 +11758,7 @@ function common.GetDialogueTextKey(soundHandle) end
 ---@param where rect
 ---@param effectID integer
 ---@return weathereffect
-function common.AddWeatherEffect(where,effectID) end
+function common.AddWeatherEffect(where, effectID) end
 
 ---RemoveWeatherEffect
 ---@param whichEffect weathereffect
@@ -11706,7 +11767,7 @@ function common.RemoveWeatherEffect(whichEffect) end
 ---打开/关闭天气效果
 ---@param whichEffect weathereffect
 ---@param enable boolean
-function common.EnableWeatherEffect(whichEffect,enable) end
+function common.EnableWeatherEffect(whichEffect, enable) end
 
 ---新建地形变化:弹坑 [R]
 ---@param x real
@@ -11716,7 +11777,7 @@ function common.EnableWeatherEffect(whichEffect,enable) end
 ---@param duration integer
 ---@param permanent boolean
 ---@return terraindeformation
-function common.TerrainDeformCrater(x,y,radius,depth,duration,permanent) end
+function common.TerrainDeformCrater(x, y, radius, depth, duration, permanent) end
 
 ---新建地形变化:波纹 [R]
 ---@param x real
@@ -11730,7 +11791,19 @@ function common.TerrainDeformCrater(x,y,radius,depth,duration,permanent) end
 ---@param radiusStartPct real
 ---@param limitNeg boolean
 ---@return terraindeformation
-function common.TerrainDeformRipple(x,y,radius,depth,duration,count,spaceWaves,timeWaves,radiusStartPct,limitNeg) end
+function common.TerrainDeformRipple(
+	x,
+	y,
+	radius,
+	depth,
+	duration,
+	count,
+	spaceWaves,
+	timeWaves,
+	radiusStartPct,
+	limitNeg
+)
+end
 
 ---新建地形变化:冲击波 [R]
 ---@param x real
@@ -11744,7 +11817,7 @@ function common.TerrainDeformRipple(x,y,radius,depth,duration,count,spaceWaves,t
 ---@param trailTime integer
 ---@param count integer
 ---@return terraindeformation
-function common.TerrainDeformWave(x,y,dirX,dirY,distance,speed,radius,depth,trailTime,count) end
+function common.TerrainDeformWave(x, y, dirX, dirY, distance, speed, radius, depth, trailTime, count) end
 
 ---新建地形变化:随机 [R]
 ---@param x real
@@ -11755,12 +11828,12 @@ function common.TerrainDeformWave(x,y,dirX,dirY,distance,speed,radius,depth,trai
 ---@param duration integer
 ---@param updateInterval integer
 ---@return terraindeformation
-function common.TerrainDeformRandom(x,y,radius,minDelta,maxDelta,duration,updateInterval) end
+function common.TerrainDeformRandom(x, y, radius, minDelta, maxDelta, duration, updateInterval) end
 
 ---停止地形变化 [R]
 ---@param deformation terraindeformation
 ---@param duration integer
-function common.TerrainDeformStop(deformation,duration) end
+function common.TerrainDeformStop(deformation, duration) end
 
 ---停止所有地域变形
 function common.TerrainDeformStopAll() end
@@ -11770,20 +11843,20 @@ function common.TerrainDeformStopAll() end
 ---@param x real
 ---@param y real
 ---@return effect
-function common.AddSpecialEffect(modelName,x,y) end
+function common.AddSpecialEffect(modelName, x, y) end
 
 ---新建特效(创建到点) [R]
 ---@param modelName string
 ---@param where location
 ---@return effect
-function common.AddSpecialEffectLoc(modelName,where) end
+function common.AddSpecialEffectLoc(modelName, where) end
 
 ---新建特效(创建到单位) [R]
 ---@param modelName string
 ---@param targetWidget widget
 ---@param attachPointName string
 ---@return effect
-function common.AddSpecialEffectTarget(modelName,targetWidget,attachPointName) end
+function common.AddSpecialEffectTarget(modelName, targetWidget, attachPointName) end
 
 ---DestroyEffect
 ---@param whichEffect effect
@@ -11795,14 +11868,14 @@ function common.DestroyEffect(whichEffect) end
 ---@param x real
 ---@param y real
 ---@return effect
-function common.AddSpellEffect(abilityString,t,x,y) end
+function common.AddSpellEffect(abilityString, t, x, y) end
 
 ---AddSpellEffectLoc
 ---@param abilityString string
 ---@param t effecttype
 ---@param where location
 ---@return effect
-function common.AddSpellEffectLoc(abilityString,t,where) end
+function common.AddSpellEffectLoc(abilityString, t, where) end
 
 ---新建特效(指定技能，创建到坐标) [R]
 ---@param abilityId integer
@@ -11810,14 +11883,14 @@ function common.AddSpellEffectLoc(abilityString,t,where) end
 ---@param x real
 ---@param y real
 ---@return effect
-function common.AddSpellEffectById(abilityId,t,x,y) end
+function common.AddSpellEffectById(abilityId, t, x, y) end
 
 ---新建特效(指定技能，创建到点) [R]
 ---@param abilityId integer
 ---@param t effecttype
 ---@param where location
 ---@return effect
-function common.AddSpellEffectByIdLoc(abilityId,t,where) end
+function common.AddSpellEffectByIdLoc(abilityId, t, where) end
 
 ---AddSpellEffectTarget
 ---@param modelName string
@@ -11825,7 +11898,7 @@ function common.AddSpellEffectByIdLoc(abilityId,t,where) end
 ---@param targetWidget widget
 ---@param attachPoint string
 ---@return effect
-function common.AddSpellEffectTarget(modelName,t,targetWidget,attachPoint) end
+function common.AddSpellEffectTarget(modelName, t, targetWidget, attachPoint) end
 
 ---新建特效(指定技能，创建到单位) [R]
 ---@param abilityId integer
@@ -11833,7 +11906,7 @@ function common.AddSpellEffectTarget(modelName,t,targetWidget,attachPoint) end
 ---@param targetWidget widget
 ---@param attachPoint string
 ---@return effect
-function common.AddSpellEffectTargetById(abilityId,t,targetWidget,attachPoint) end
+function common.AddSpellEffectTargetById(abilityId, t, targetWidget, attachPoint) end
 
 ---新建闪电效果 [R]
 ---@param codeName string
@@ -11843,7 +11916,7 @@ function common.AddSpellEffectTargetById(abilityId,t,targetWidget,attachPoint) e
 ---@param x2 real
 ---@param y2 real
 ---@return lightning
-function common.AddLightning(codeName,checkVisibility,x1,y1,x2,y2) end
+function common.AddLightning(codeName, checkVisibility, x1, y1, x2, y2) end
 
 ---新建闪电效果(指定Z轴) [R]
 ---@param codeName string
@@ -11855,7 +11928,7 @@ function common.AddLightning(codeName,checkVisibility,x1,y1,x2,y2) end
 ---@param y2 real
 ---@param z2 real
 ---@return lightning
-function common.AddLightningEx(codeName,checkVisibility,x1,y1,z1,x2,y2,z2) end
+function common.AddLightningEx(codeName, checkVisibility, x1, y1, z1, x2, y2, z2) end
 
 ---DestroyLightning
 ---@param whichBolt lightning
@@ -11870,7 +11943,7 @@ function common.DestroyLightning(whichBolt) end
 ---@param x2 real
 ---@param y2 real
 ---@return boolean
-function common.MoveLightning(whichBolt,checkVisibility,x1,y1,x2,y2) end
+function common.MoveLightning(whichBolt, checkVisibility, x1, y1, x2, y2) end
 
 ---移动闪电效果(指定坐标) [R]
 ---@param whichBolt lightning
@@ -11882,7 +11955,7 @@ function common.MoveLightning(whichBolt,checkVisibility,x1,y1,x2,y2) end
 ---@param y2 real
 ---@param z2 real
 ---@return boolean
-function common.MoveLightningEx(whichBolt,checkVisibility,x1,y1,z1,x2,y2,z2) end
+function common.MoveLightningEx(whichBolt, checkVisibility, x1, y1, z1, x2, y2, z2) end
 
 ---GetLightningColorA
 ---@param whichBolt lightning
@@ -11911,47 +11984,47 @@ function common.GetLightningColorB(whichBolt) end
 ---@param b real
 ---@param a real
 ---@return boolean
-function common.SetLightningColor(whichBolt,r,g,b,a) end
+function common.SetLightningColor(whichBolt, r, g, b, a) end
 
 ---GetAbilityEffect
 ---@param abilityString string
 ---@param t effecttype
 ---@param index integer
 ---@return string
-function common.GetAbilityEffect(abilityString,t,index) end
+function common.GetAbilityEffect(abilityString, t, index) end
 
 ---GetAbilityEffectById
 ---@param abilityId integer
 ---@param t effecttype
 ---@param index integer
 ---@return string
-function common.GetAbilityEffectById(abilityId,t,index) end
+function common.GetAbilityEffectById(abilityId, t, index) end
 
 ---GetAbilitySound
 ---@param abilityString string
 ---@param t soundtype
 ---@return string
-function common.GetAbilitySound(abilityString,t) end
+function common.GetAbilitySound(abilityString, t) end
 
 ---GetAbilitySoundById
 ---@param abilityId integer
 ---@param t soundtype
 ---@return string
-function common.GetAbilitySoundById(abilityId,t) end
+function common.GetAbilitySoundById(abilityId, t) end
 
 ---Terrain API
 ---地形悬崖高度(指定坐标) [R]
 ---@param x real
 ---@param y real
 ---@return integer
-function common.GetTerrainCliffLevel(x,y) end
+function common.GetTerrainCliffLevel(x, y) end
 
 ---设置水颜色 [R]
 ---@param red integer
 ---@param green integer
 ---@param blue integer
 ---@param alpha integer
-function common.SetWaterBaseColor(red,green,blue,alpha) end
+function common.SetWaterBaseColor(red, green, blue, alpha) end
 
 ---设置 水变形 开/关
 ---@param val boolean
@@ -11961,13 +12034,13 @@ function common.SetWaterDeforms(val) end
 ---@param x real
 ---@param y real
 ---@return integer
-function common.GetTerrainType(x,y) end
+function common.GetTerrainType(x, y) end
 
 ---地形样式(指定坐标) [R]
 ---@param x real
 ---@param y real
 ---@return integer
-function common.GetTerrainVariance(x,y) end
+function common.GetTerrainVariance(x, y) end
 
 ---改变地形类型(指定坐标) [R]
 ---@param x real
@@ -11976,21 +12049,21 @@ function common.GetTerrainVariance(x,y) end
 ---@param variation integer
 ---@param area integer
 ---@param shape integer
-function common.SetTerrainType(x,y,terrainType,variation,area,shape) end
+function common.SetTerrainType(x, y, terrainType, variation, area, shape) end
 
 ---地形通行状态关闭(指定坐标) [R]
 ---@param x real
 ---@param y real
 ---@param t pathingtype
 ---@return boolean
-function common.IsTerrainPathable(x,y,t) end
+function common.IsTerrainPathable(x, y, t) end
 
 ---设置地形通行状态(指定坐标) [R]
 ---@param x real
 ---@param y real
 ---@param t pathingtype
 ---@param flag boolean
-function common.SetTerrainPathable(x,y,t,flag) end
+function common.SetTerrainPathable(x, y, t, flag) end
 
 ---Image API
 ---新建图像 [R]
@@ -12006,7 +12079,7 @@ function common.SetTerrainPathable(x,y,t,flag) end
 ---@param originZ real
 ---@param imageType integer
 ---@return image
-function common.CreateImage(file,sizeX,sizeY,sizeZ,posX,posY,posZ,originX,originY,originZ,imageType) end
+function common.CreateImage(file, sizeX, sizeY, sizeZ, posX, posY, posZ, originX, originY, originZ, imageType) end
 
 ---删除图像
 ---@param whichImage image
@@ -12015,20 +12088,20 @@ function common.DestroyImage(whichImage) end
 ---显示/隐藏 [R]
 ---@param whichImage image
 ---@param flag boolean
-function common.ShowImage(whichImage,flag) end
+function common.ShowImage(whichImage, flag) end
 
 ---改变图像高度
 ---@param whichImage image
 ---@param flag boolean
 ---@param height real
-function common.SetImageConstantHeight(whichImage,flag,height) end
+function common.SetImageConstantHeight(whichImage, flag, height) end
 
 ---改变图像位置(指定坐标) [R]
 ---@param whichImage image
 ---@param x real
 ---@param y real
 ---@param z real
-function common.SetImagePosition(whichImage,x,y,z) end
+function common.SetImagePosition(whichImage, x, y, z) end
 
 ---改变图像颜色 [R]
 ---@param whichImage image
@@ -12036,28 +12109,28 @@ function common.SetImagePosition(whichImage,x,y,z) end
 ---@param green integer
 ---@param blue integer
 ---@param alpha integer
-function common.SetImageColor(whichImage,red,green,blue,alpha) end
+function common.SetImageColor(whichImage, red, green, blue, alpha) end
 
 ---改变图像着色状态
 ---@param whichImage image
 ---@param flag boolean
-function common.SetImageRender(whichImage,flag) end
+function common.SetImageRender(whichImage, flag) end
 
 ---改变图像永久着色状态
 ---@param whichImage image
 ---@param flag boolean
-function common.SetImageRenderAlways(whichImage,flag) end
+function common.SetImageRenderAlways(whichImage, flag) end
 
 ---改变图像水上状态
 ---@param whichImage image
 ---@param flag boolean
 ---@param useWaterAlpha boolean
-function common.SetImageAboveWater(whichImage,flag,useWaterAlpha) end
+function common.SetImageAboveWater(whichImage, flag, useWaterAlpha) end
 
 ---改变图像类型
 ---@param whichImage image
 ---@param imageType integer
-function common.SetImageType(whichImage,imageType) end
+function common.SetImageType(whichImage, imageType) end
 
 ---Ubersplat API
 ---新建地面纹理变化 [R]
@@ -12071,7 +12144,7 @@ function common.SetImageType(whichImage,imageType) end
 ---@param forcePaused boolean
 ---@param noBirthTime boolean
 ---@return ubersplat
-function common.CreateUbersplat(x,y,name,red,green,blue,alpha,forcePaused,noBirthTime) end
+function common.CreateUbersplat(x, y, name, red, green, blue, alpha, forcePaused, noBirthTime) end
 
 ---删除地面纹理
 ---@param whichSplat ubersplat
@@ -12088,17 +12161,17 @@ function common.FinishUbersplat(whichSplat) end
 ---显示/隐藏 地面纹理变化[R]
 ---@param whichSplat ubersplat
 ---@param flag boolean
-function common.ShowUbersplat(whichSplat,flag) end
+function common.ShowUbersplat(whichSplat, flag) end
 
 ---改变地面纹理着色状态
 ---@param whichSplat ubersplat
 ---@param flag boolean
-function common.SetUbersplatRender(whichSplat,flag) end
+function common.SetUbersplatRender(whichSplat, flag) end
 
 ---改变地面纹理永久着色状态
 ---@param whichSplat ubersplat
 ---@param flag boolean
-function common.SetUbersplatRenderAlways(whichSplat,flag) end
+function common.SetUbersplatRenderAlways(whichSplat, flag) end
 
 ---Blight API
 ---创建/删除荒芜地表(圆范围)(指定坐标) [R]
@@ -12107,27 +12180,27 @@ function common.SetUbersplatRenderAlways(whichSplat,flag) end
 ---@param y real
 ---@param radius real
 ---@param addBlight boolean
-function common.SetBlight(whichPlayer,x,y,radius,addBlight) end
+function common.SetBlight(whichPlayer, x, y, radius, addBlight) end
 
 ---创建/删除荒芜地表(矩形区域) [R]
 ---@param whichPlayer player
 ---@param r rect
 ---@param addBlight boolean
-function common.SetBlightRect(whichPlayer,r,addBlight) end
+function common.SetBlightRect(whichPlayer, r, addBlight) end
 
 ---SetBlightPoint
 ---@param whichPlayer player
 ---@param x real
 ---@param y real
 ---@param addBlight boolean
-function common.SetBlightPoint(whichPlayer,x,y,addBlight) end
+function common.SetBlightPoint(whichPlayer, x, y, addBlight) end
 
 ---SetBlightLoc
 ---@param whichPlayer player
 ---@param whichLocation location
 ---@param radius real
 ---@param addBlight boolean
-function common.SetBlightLoc(whichPlayer,whichLocation,radius,addBlight) end
+function common.SetBlightLoc(whichPlayer, whichLocation, radius, addBlight) end
 
 ---新建不死族金矿 [R]
 ---@param id player
@@ -12135,13 +12208,13 @@ function common.SetBlightLoc(whichPlayer,whichLocation,radius,addBlight) end
 ---@param y real
 ---@param face real
 ---@return unit
-function common.CreateBlightedGoldmine(id,x,y,face) end
+function common.CreateBlightedGoldmine(id, x, y, face) end
 
 ---坐标点被荒芜地表覆盖 [R]
 ---@param x real
 ---@param y real
 ---@return boolean
-function common.IsPointBlighted(x,y) end
+function common.IsPointBlighted(x, y) end
 
 ---Doodad API
 ---播放圆范围内地形装饰物动画 [R]
@@ -12152,36 +12225,36 @@ function common.IsPointBlighted(x,y) end
 ---@param nearestOnly boolean
 ---@param animName string
 ---@param animRandom boolean
-function common.SetDoodadAnimation(x,y,radius,doodadID,nearestOnly,animName,animRandom) end
+function common.SetDoodadAnimation(x, y, radius, doodadID, nearestOnly, animName, animRandom) end
 
 ---播放矩形区域内地形装饰物动画 [R]
 ---@param r rect
 ---@param doodadID integer
 ---@param animName string
 ---@param animRandom boolean
-function common.SetDoodadAnimationRect(r,doodadID,animName,animRandom) end
+function common.SetDoodadAnimationRect(r, doodadID, animName, animRandom) end
 
 ---Computer AI interface
 ---启动对战 AI
 ---@param num player
 ---@param script string
-function common.StartMeleeAI(num,script) end
+function common.StartMeleeAI(num, script) end
 
 ---启动战役 AI
 ---@param num player
 ---@param script string
-function common.StartCampaignAI(num,script) end
+function common.StartCampaignAI(num, script) end
 
 ---发送 AI 命令
 ---@param num player
 ---@param command integer
 ---@param data integer
-function common.CommandAI(num,command,data) end
+function common.CommandAI(num, command, data) end
 
 ---暂停/恢复 AI脚本运行 [R]
 ---@param p player
 ---@param pause boolean
-function common.PauseCompAI(p,pause) end
+function common.PauseCompAI(p, pause) end
 
 ---对战 AI
 ---@param num player
@@ -12268,7 +12341,7 @@ function common.AutomationTestingFinished() end
 ---@param param5 integer
 ---@param param6 integer
 ---@return integer
-function common.RequestExtraIntegerData(dataType,whichPlayer,param1,param2,param3,param4,param5,param6) end
+function common.RequestExtraIntegerData(dataType, whichPlayer, param1, param2, param3, param4, param5, param6) end
 
 ---RequestExtraBooleanData
 ---@param dataType integer
@@ -12280,7 +12353,7 @@ function common.RequestExtraIntegerData(dataType,whichPlayer,param1,param2,param
 ---@param param5 integer
 ---@param param6 integer
 ---@return boolean
-function common.RequestExtraBooleanData(dataType,whichPlayer,param1,param2,param3,param4,param5,param6) end
+function common.RequestExtraBooleanData(dataType, whichPlayer, param1, param2, param3, param4, param5, param6) end
 
 ---RequestExtraStringData
 ---@param dataType integer
@@ -12292,7 +12365,7 @@ function common.RequestExtraBooleanData(dataType,whichPlayer,param1,param2,param
 ---@param param5 integer
 ---@param param6 integer
 ---@return string
-function common.RequestExtraStringData(dataType,whichPlayer,param1,param2,param3,param4,param5,param6) end
+function common.RequestExtraStringData(dataType, whichPlayer, param1, param2, param3, param4, param5, param6) end
 
 ---RequestExtraRealData
 ---@param dataType integer
@@ -12304,13 +12377,13 @@ function common.RequestExtraStringData(dataType,whichPlayer,param1,param2,param3
 ---@param param5 integer
 ---@param param6 integer
 ---@return real
-function common.RequestExtraRealData(dataType,whichPlayer,param1,param2,param3,param4,param5,param6) end
+function common.RequestExtraRealData(dataType, whichPlayer, param1, param2, param3, param4, param5, param6) end
 
 ---CreateCommandButtonEffect
 ---@param abilityId integer
 ---@param order string
 ---@return commandbuttoneffect
-function common.CreateCommandButtonEffect(abilityId,order) end
+function common.CreateCommandButtonEffect(abilityId, order) end
 
 ---CreateUpgradeCommandButtonEffect
 ---@param whichUprgade integer

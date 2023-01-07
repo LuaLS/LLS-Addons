@@ -1,11 +1,8 @@
 ---@meta
 
 ---@class cc.TransitionSplitRows :cc.TransitionSplitCols
-local TransitionSplitRows={ }
-cc.TransitionSplitRows=TransitionSplitRows
-
-
-
+local TransitionSplitRows = {}
+cc.TransitionSplitRows = TransitionSplitRows
 
 ---*  Creates a transition with duration and incoming scene.<br>
 ---* param t Duration time, in seconds.<br>
@@ -14,10 +11,10 @@ cc.TransitionSplitRows=TransitionSplitRows
 ---@param t float
 ---@param scene cc.Scene
 ---@return self
-function TransitionSplitRows:create (t,scene) end
----* 
+function TransitionSplitRows:create(t, scene) end
+---*
 ---@return cc.ActionInterval
-function TransitionSplitRows:action () end
----* 
+function TransitionSplitRows:action() end
+---*
 ---@return self
-function TransitionSplitRows:TransitionSplitRows () end
+function TransitionSplitRows:TransitionSplitRows() end

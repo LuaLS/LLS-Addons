@@ -1,11 +1,8 @@
 ---@meta
 
 ---@class cc.TransitionRotoZoom :cc.TransitionScene
-local TransitionRotoZoom={ }
-cc.TransitionRotoZoom=TransitionRotoZoom
-
-
-
+local TransitionRotoZoom = {}
+cc.TransitionRotoZoom = TransitionRotoZoom
 
 ---*  Creates a transition with duration and incoming scene.<br>
 ---* param t Duration time, in seconds.<br>
@@ -14,7 +11,7 @@ cc.TransitionRotoZoom=TransitionRotoZoom
 ---@param t float
 ---@param scene cc.Scene
 ---@return self
-function TransitionRotoZoom:create (t,scene) end
----* 
+function TransitionRotoZoom:create(t, scene) end
+---*
 ---@return self
-function TransitionRotoZoom:TransitionRotoZoom () end
+function TransitionRotoZoom:TransitionRotoZoom() end

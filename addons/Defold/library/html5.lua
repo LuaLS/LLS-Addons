@@ -17,7 +17,4 @@ function html5.run(code) end
 ---@param callback fun(self: object) # The interaction callback. Pass an empty function or nil if you no longer wish to receive callbacks.
 function html5.set_interaction_listener(callback) end
 
-
-
-
 return html5

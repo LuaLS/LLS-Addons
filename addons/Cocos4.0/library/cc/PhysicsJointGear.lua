@@ -1,29 +1,26 @@
 ---@meta
 
 ---@class cc.PhysicsJointGear :cc.PhysicsJoint
-local PhysicsJointGear={ }
-cc.PhysicsJointGear=PhysicsJointGear
-
-
-
+local PhysicsJointGear = {}
+cc.PhysicsJointGear = PhysicsJointGear
 
 ---*  Set the ratio.
 ---@param ratchet float
 ---@return self
-function PhysicsJointGear:setRatio (ratchet) end
+function PhysicsJointGear:setRatio(ratchet) end
 ---*  Get the angular offset of the two bodies.
 ---@return float
-function PhysicsJointGear:getPhase () end
+function PhysicsJointGear:getPhase() end
 ---*  Set the angular offset of the two bodies.
 ---@param phase float
 ---@return self
-function PhysicsJointGear:setPhase (phase) end
----* 
+function PhysicsJointGear:setPhase(phase) end
+---*
 ---@return boolean
-function PhysicsJointGear:createConstraints () end
+function PhysicsJointGear:createConstraints() end
 ---*  Get the ratio.
 ---@return float
-function PhysicsJointGear:getRatio () end
+function PhysicsJointGear:getRatio() end
 ---*  Create a gear joint.<br>
 ---* param a A is the body to connect.<br>
 ---* param b B is the body to connect.<br>
@@ -35,4 +32,4 @@ function PhysicsJointGear:getRatio () end
 ---@param phase float
 ---@param ratio float
 ---@return self
-function PhysicsJointGear:construct (a,b,phase,ratio) end
+function PhysicsJointGear:construct(a, b, phase, ratio) end

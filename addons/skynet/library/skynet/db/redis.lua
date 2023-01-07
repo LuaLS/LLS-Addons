@@ -17,66 +17,54 @@ local redis = {}
 ---@see socketchannel
 ---@class command
 local command = {}
-function command:disconnect()
-end
+function command:disconnect() end
 
 ---Is key exists
 ---@param k string
 ---@return boolean
-function command:exists(k)
-end
+function command:exists(k) end
 
 ---Does value is a member of set key.
 ---@param key string #key of a set
 ---@param value string #value
-function command:sismember(key, value)
-end
+function command:sismember(key, value) end
 
 ---Pipline command
 ---If resp is a table and exits, return boolean, resp.
 ---Or return the last result. boolean, out
 ---@param ops string[]
 ---@param resp? table
-function command:pipeline(ops, resp)
-end
+function command:pipeline(ops, resp) end
 
 --- watch mode, only can  do  SUBSCRIBE, PSUBSCRIBE, UNSUBSCRIBE, PUNSUBSCRIBE, PING  and QUIT command.
 --- we can call watch:message in endless loop.
 ---@class watch
 local watch = {}
-function watch:disconnect()
-end
+function watch:disconnect() end
 
 ---阻塞模式读取消息
-function watch:message()
-end
+function watch:message() end
 
 ---subscribe channel
-function watch:subscribe(...)
-end
+function watch:subscribe(...) end
 
 ---pattern subscribe channels
-function watch:psubscribe(...)
-end
+function watch:psubscribe(...) end
 
 ---unsubscribe
-function watch:unsubscribe(...)
-end
+function watch:unsubscribe(...) end
 
 ---punsubscribe
-function watch:punsubscribe(...)
-end
+function watch:punsubscribe(...) end
 
 ---connect to redis server
 ---@param conf redisconfig
 ---@return command
-function redis.connect(conf)
-end
+function redis.connect(conf) end
 
 ---connect to redis server on watch mode
 ---@param conf redisconfig
 ---@return watch
-function redis.watch(conf)
-end
+function redis.watch(conf) end
 
 return redis

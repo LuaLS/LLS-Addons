@@ -2,7 +2,7 @@
 
 ---@class resty.lrucache : table
 local lrucache = {
-  _VERSION = "0.11",
+	_VERSION = "0.11",
 }
 
 --- User flags value associated with the item to be stored.
@@ -23,7 +23,6 @@ local lrucache = {
 ---@return string?         error
 function lrucache.new(max_items) end
 
-
 --- Sets a key with a value and an expiration time.
 ---
 --- When the cache is full, the cache will automatically evict the least
@@ -35,7 +34,6 @@ function lrucache.new(max_items) end
 ---@param ttl?   number Expiration time, in seconds. If omitted, the value never expires.
 ---@param flags? resty.lrucache.flags
 function lrucache:set(key, value, ttl, flags) end
-
 
 --- Fetches a value with the key.
 ---
@@ -51,12 +49,10 @@ function lrucache:set(key, value, ttl, flags) end
 ---@return resty.lrucache.flags? integer
 function lrucache:get(key) end
 
-
 --- Removes an item specified by the key from the cache.
 ---
 ---@param key string
 function lrucache:delete(key) end
-
 
 --- Returns the number of items currently stored in the cache, including expired
 --- items if any.
@@ -69,7 +65,6 @@ function lrucache:delete(key) end
 ---@return integer
 function lrucache:count() end
 
-
 --- Returns the maximum number of items the cache can hold.
 ---
 --- The return value is the same as the size argument given to
@@ -79,7 +74,6 @@ function lrucache:count() end
 ---
 ---@return integer
 function lrucache:capacity() end
-
 
 --- Fetch the list of keys currently inside the cache, up to `max_count`.
 ---
@@ -101,7 +95,6 @@ function lrucache:capacity() end
 ---@return table      keys
 function lrucache:get_keys(max_count, res) end
 
-
 --- Flushes all the existing data (if any) in the current cache instance.
 ---
 --- This is an O(1) operation and should be much faster than creating a brand
@@ -110,6 +103,5 @@ function lrucache:get_keys(max_count, res) end
 --- Note however that the `flush_all()` method of `resty.lrucache.pureffi` is any
 --- O(n) operation.
 function lrucache:flush_all() end
-
 
 return lrucache

@@ -50,7 +50,4 @@ function window.set_listener(callback) end
 ---@param flag boolean # The lock state for the mouse cursor
 function window.set_mouse_lock(flag) end
 
-
-
-
 return window

@@ -30,7 +30,4 @@ function timer.delay(delay, _repeat, callback) end
 ---@return boolean # if the timer was active, false if the timer is already cancelled / complete
 function timer.trigger(handle) end
 
-
-
-
 return timer

@@ -14,30 +14,25 @@ local netpack = {}
 ---@param msg lightuserdata @收到的数据
 ---@param sz number @收到的数据长度
 ---@return string
-function netpack.filter(queue, msg, sz)
-end
+function netpack.filter(queue, msg, sz) end
 ---从队列中弹出一条消息
 ---@param queue userdata
 ---@return fd, msg, sz
-function netpack.pop(queue)
-end
+function netpack.pop(queue) end
 ---* 把一个字符串（或一个 C 指针加一个长度）打包成带 2 字节包头的数据块。
 ---* 这和我们我们用 string.pack('>I2') 打包字符串长度，再连上字符串是一样的，不过，这样打包后是在，string pack 是在 Lua 管理，而不是 C 管理
 ---* 这个 api 返回一个lightuserdata 和一个 number 。你可以直接送到 socket.write 发送（socket.write 负责最终释放内存）。
 ---@param msg string | lightuserdata @当是 lightuserdata 的时候，需要指定 sz
 ---@param sz number | nil @当是一个字符串的时候，不需要这个参数
 ---@return lightuserdata,number
-function netpack.pack(msg, sz)
-end
+function netpack.pack(msg, sz) end
 ---清除一个队列
 ---@param queue any
-function netpack.clear(queue)
-end
+function netpack.clear(queue) end
 ---把 handler.message 方法收到的 msg,sz 转换成一个 lua string，并释放 msg 占用的 C 内存。
 ---@param msg any
 ---@param sz any
 ---@return string
-function netpack.tostring(msg, sz)
-end
+function netpack.tostring(msg, sz) end
 
 return netpack

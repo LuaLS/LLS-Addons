@@ -1,22 +1,19 @@
 ---@meta
 
 ---@class ccs.ContourData :cc.Ref
-local ContourData={ }
-ccs.ContourData=ContourData
+local ContourData = {}
+ccs.ContourData = ContourData
 
-
-
-
----* 
+---*
 ---@return boolean
-function ContourData:init () end
----* 
+function ContourData:init() end
+---*
 ---@param vertex vec2_table
 ---@return self
-function ContourData:addVertex (vertex) end
----* 
+function ContourData:addVertex(vertex) end
+---*
 ---@return self
-function ContourData:create () end
+function ContourData:create() end
 ---* js ctor
 ---@return self
-function ContourData:ContourData () end
+function ContourData:ContourData() end

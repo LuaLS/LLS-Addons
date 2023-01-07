@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class resty.sha512 : resty.string.checksum
-local sha512={}
+local sha512 = {}
 
 --- Create a new sha512 checksum object.
 ---@return resty.sha512

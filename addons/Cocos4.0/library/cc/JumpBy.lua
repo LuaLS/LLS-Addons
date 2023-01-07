@@ -1,11 +1,8 @@
 ---@meta
 
 ---@class cc.JumpBy :cc.ActionInterval
-local JumpBy={ }
-cc.JumpBy=JumpBy
-
-
-
+local JumpBy = {}
+cc.JumpBy = JumpBy
 
 ---* initializes the action<br>
 ---* param duration in seconds
@@ -14,7 +11,7 @@ cc.JumpBy=JumpBy
 ---@param height float
 ---@param jumps int
 ---@return boolean
-function JumpBy:initWithDuration (duration,position,height,jumps) end
+function JumpBy:initWithDuration(duration, position, height, jumps) end
 ---* Creates the action.<br>
 ---* param duration Duration time, in seconds.<br>
 ---* param position The jumping distance.<br>
@@ -26,21 +23,21 @@ function JumpBy:initWithDuration (duration,position,height,jumps) end
 ---@param height float
 ---@param jumps int
 ---@return self
-function JumpBy:create (duration,position,height,jumps) end
----* 
+function JumpBy:create(duration, position, height, jumps) end
+---*
 ---@param target cc.Node
 ---@return self
-function JumpBy:startWithTarget (target) end
----* 
+function JumpBy:startWithTarget(target) end
+---*
 ---@return self
-function JumpBy:clone () end
----* 
+function JumpBy:clone() end
+---*
 ---@return self
-function JumpBy:reverse () end
+function JumpBy:reverse() end
 ---* param time In seconds.
 ---@param time float
 ---@return self
-function JumpBy:update (time) end
----* 
+function JumpBy:update(time) end
+---*
 ---@return self
-function JumpBy:JumpBy () end
+function JumpBy:JumpBy() end

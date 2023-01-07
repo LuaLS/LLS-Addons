@@ -1,26 +1,23 @@
 ---@meta
 
 ---@class cc.ToggleVisibility :cc.ActionInstant
-local ToggleVisibility={ }
-cc.ToggleVisibility=ToggleVisibility
-
-
-
+local ToggleVisibility = {}
+cc.ToggleVisibility = ToggleVisibility
 
 ---*  Allocates and initializes the action.<br>
 ---* return An autoreleased ToggleVisibility object.
 ---@return self
-function ToggleVisibility:create () end
----* 
+function ToggleVisibility:create() end
+---*
 ---@return self
-function ToggleVisibility:clone () end
+function ToggleVisibility:clone() end
 ---* param time In seconds.
 ---@param time float
 ---@return self
-function ToggleVisibility:update (time) end
----* 
+function ToggleVisibility:update(time) end
+---*
 ---@return self
-function ToggleVisibility:reverse () end
----* 
+function ToggleVisibility:reverse() end
+---*
 ---@return self
-function ToggleVisibility:ToggleVisibility () end
+function ToggleVisibility:ToggleVisibility() end

@@ -21,7 +21,16 @@ physics.JOINT_TYPE_WELD = nil
 ---@param collisionobject_b string|hash|url # second collision object
 ---@param position_b vector3 # local position where to attach the joint on the second collision object
 ---@param properties table? # optional joint specific properties table See each joint type for possible properties field. The one field that is accepted for all joint types is: - boolean collide_connected: Set this flag to true if the attached bodies should collide.
-function physics.create_joint(joint_type, collisionobject_a, joint_id, position_a, collisionobject_b, position_b, properties) end
+function physics.create_joint(
+	joint_type,
+	collisionobject_a,
+	joint_id,
+	position_a,
+	collisionobject_b,
+	position_b,
+	properties
+)
+end
 
 ---Destroy an already physics joint. The joint has to be created before a
 ---destroy can be issued.
@@ -142,8 +151,5 @@ function physics.set_vflip(url, flip) end
 ---efficiency reasons. This function wakes them up.
 ---@param url string|hash|url # the collision object to wake. function on_input(self, action_id, action)     if action_id == hash("test") and action.pressed then         physics.wakeup("#collisionobject")     end end
 function physics.wakeup(url) end
-
-
-
 
 return physics

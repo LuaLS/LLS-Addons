@@ -34,7 +34,7 @@ function love.mouse.getRelativeMode() end
 ---
 ---Hardware cursors are framerate-independent and work the same way as normal operating system cursors. Unlike drawing an image at the mouse's current coordinates, hardware cursors never have visible lag between when the mouse is moved and when the cursor position updates, even at low framerates.
 ---
----@param ctype love.CursorType # The type of system cursor to get. 
+---@param ctype love.CursorType # The type of system cursor to get.
 ---@return love.Cursor cursor # The Cursor object representing the system cursor type.
 function love.mouse.getSystemCursor(ctype) end
 
@@ -61,7 +61,7 @@ function love.mouse.isCursorSupported() end
 ---
 ---Checks whether a certain mouse button is down.
 ---
----This function does not detect mouse wheel scrolling; you must use the love.wheelmoved (or love.mousepressed in version 0.9.2 and older) callback for that. 
+---This function does not detect mouse wheel scrolling; you must use the love.wheelmoved (or love.mousepressed in version 0.9.2 and older) callback for that.
 ---
 ---@param button number # The index of a button to check. 1 is the primary mouse button, 2 is the secondary mouse button and 3 is the middle button. Further buttons are mouse dependant.
 ---@vararg number # Additional button numbers to check.

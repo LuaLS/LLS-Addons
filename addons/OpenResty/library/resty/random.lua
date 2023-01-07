@@ -1,5 +1,5 @@
 ---@meta
-local random={}
+local random = {}
 
 --- Generate random bytes.
 ---@param len integer

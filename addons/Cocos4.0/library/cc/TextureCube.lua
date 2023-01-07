@@ -1,23 +1,20 @@
 ---@meta
 
 ---@class cc.TextureCube :cc.Ref
-local TextureCube={ }
-cc.TextureCube=TextureCube
-
-
-
+local TextureCube = {}
+cc.TextureCube = TextureCube
 
 ---*  reload texture cube after GLESContext reconstructed.
 ---@return boolean
-function TextureCube:reloadTexture () end
----* 
+function TextureCube:reloadTexture() end
+---*
 ---@return cc.backend.TextureBackend
-function TextureCube:getBackendTexture () end
+function TextureCube:getBackendTexture() end
 ---*  Sets the min filter, mag filter, wrap s and wrap t texture parameters.<br>
 ---* If the texture size is NPOT (non power of 2), then in can only use GL_CLAMP_TO_EDGE in GL_TEXTURE_WRAP_{S,T}.
 ---@param r cc.backend.SamplerDescripto
 ---@return self
-function TextureCube:setTexParameters (r) end
+function TextureCube:setTexParameters(r) end
 ---*  create cube texture from 6 textures.<br>
 ---* param positive_x texture for the right side of the texture cube face.<br>
 ---* param negative_x texture for the up side of the texture cube face.<br>
@@ -33,7 +30,7 @@ function TextureCube:setTexParameters (r) end
 ---@param positive_z string
 ---@param negative_z string
 ---@return self
-function TextureCube:create (positive_x,negative_x,positive_y,negative_y,positive_z,negative_z) end
+function TextureCube:create(positive_x, negative_x, positive_y, negative_y, positive_z, negative_z) end
 ---* Constructor.
 ---@return self
-function TextureCube:TextureCube () end
+function TextureCube:TextureCube() end

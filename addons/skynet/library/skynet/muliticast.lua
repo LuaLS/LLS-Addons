@@ -18,7 +18,6 @@ local multicast = {}
 ---新建频道
 ---@param conf table
 ---@return multicastchannel
-function multicast.new(conf)
-end
+function multicast.new(conf) end
 
 return multicast

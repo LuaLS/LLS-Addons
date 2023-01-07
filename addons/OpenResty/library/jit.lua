@@ -1,6 +1,5 @@
 ---@meta
 
-
 --- Returns (and optionally sets) the current PRNG state (an array of 8 Lua
 --- numbers with 32-bit integer values) currently used by the JIT compiler.
 ---

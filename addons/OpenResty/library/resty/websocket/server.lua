@@ -2,7 +2,7 @@
 
 ---@class resty.websocket.server : resty.websocket
 local server = {
-  _VERSION = "0.09"
+	_VERSION = "0.09",
 }
 
 ---Performs the websocket handshake process on the server side and returns a WebSocket server object.

@@ -4,7 +4,7 @@
 --- sem is the internal c handler
 ---@field sem userdata
 local semaphore = {
-  version = require("resty.core.base").version,
+	version = require("resty.core.base").version,
 }
 
 ---Creates and returns a new semaphore instance.
@@ -14,7 +14,6 @@ local semaphore = {
 ---@return string?        error
 function semaphore.new(n) end
 
-
 --- Returns the number of resources readily available in the sema semaphore
 --- instance (if any).
 ---
@@ -23,7 +22,6 @@ function semaphore.new(n) end
 ---
 ---@return integer count
 function semaphore:count() end
-
 
 --- Requests a resource from the semaphore instance.
 ---
@@ -52,7 +50,6 @@ function semaphore:count() end
 ---@return string|'"timeout"'  error
 function semaphore:wait(timeout) end
 
-
 --- Releases n (default to 1) "resources" to the semaphore instance.
 ---
 --- This will not yield the current running "light thread".
@@ -61,6 +58,5 @@ function semaphore:wait(timeout) end
 ---
 ---@param n? integer
 function semaphore:post(n) end
-
 
 return semaphore

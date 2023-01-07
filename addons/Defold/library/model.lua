@@ -37,7 +37,4 @@ function model.get_go(url, bone_id) end
 ---@param complete_function (fun(self: object, message_id: hash, message: table, sender: hash))? # function to call when the animation has completed.
 function model.play_anim(url, anim_id, playback, play_properties, complete_function) end
 
-
-
-
 return model

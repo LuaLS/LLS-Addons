@@ -40,8 +40,7 @@ local meta = {}
 --- Then the c api _newtype will malloc a continus memory of the types' size.
 ---@param typeclass table
 ---@see ECSWorld#_newtype
-function meta:register(typeclass)
-end
+function meta:register(typeclass) end
 
 ---Construct a new entity, use Lua table to describe it.
 ---The key is the component type, must register it before,
@@ -49,16 +48,14 @@ end
 ---Every component pool will get the new entity id.
 ---@param obj? table #{name = "hello", position= {x = 1, y = 2}}
 ---@return integer #eid
-function meta:new(obj)
-end
+function meta:new(obj) end
 
 ---Return the info of a list of component names.
 ---May be, for test use?
 ---@param t string[] component name list
 ---@return userdata #ctx info
 ---@see ECSWorld#_context
-function meta:context(t)
-end
+function meta:context(t) end
 
 ---Select a patterns of entitys, the mainkey( first key) can't not be has absent condtion.
 ---The pattern is a space-separated combination of `componentname[:?]action`, and the `action` can be
@@ -76,8 +73,7 @@ end
 ---@param pat string #key [{opt inout}] , opt is : or ?, inout is in, out, update, exist(default), absent, new.like t:in, b:out, id?update
 ---@return ENTITY_GROUPITER #iter function
 ---@see ECSWorld#_groupiter
-function meta:select(pat)
-end
+function meta:select(pat) end
 
 ---Sync all then component of the entity represent by a iter to LUA
 ---@param iter number|ITER #ITER or entity id
@@ -85,63 +81,56 @@ end
 ---@see ECSWorld#_read
 ---@see ECSWorld#access
 ---@see ECSWorld#fetch
-function meta:readall(iter)
-end
+function meta:readall(iter) end
 
 ---Clear a component type of name `name`
 ---@param name string component name
 ---@see ECSWorld#_clear
-function meta:clear(name)
-end
+function meta:clear(name) end
 
 ---Clear all component types.
 ---@see ECSWorld#clear
-function meta:clearall()
-end
+function meta:clearall() end
 
 ---Dump all indexes of a component of name `name`
 ---@param name string
 ---@return integer[]
 ---@see ECSWorld#_dumpid
-function meta:dumpid(name)
-end
+function meta:dumpid(name) end
 
 ---Update world, will free removed(default, or with tag `tagname`) entity.
 ---@param tagname? string #tagname, default is REMOVED, but we also can use other tag to delete entities.
 ---@see ECSWorld#_update
-function meta:update(tagname)
-end
+function meta:update(tagname) end
 
 local M = {
-    _MAXTYPE       = 255,
-    _METHODS       = meta,
-    _TYPE_INT      = 0,
-    _TYPE_FLOAT    = 1,
-    _TYPE_BOOL     = 2,
-    _TYPE_INT64    = 3,
-    _TYPE_DWORD    = 4,
-    _TYPE_WORD     = 5,
-    _TYPE_BYTE     = 6,
-    _TYPE_DOUBLE   = 7,
-    _TYPE_USERDATA = 8,
-    _TYPE_COUNT    = 9,
-    _LUAOBJECT     = -1,
-    _REMOVED       = 0,
-    _ORDERKEY      = -2,
-    NULL           = 0x0, -- userdata
+	_MAXTYPE = 255,
+	_METHODS = meta,
+	_TYPE_INT = 0,
+	_TYPE_FLOAT = 1,
+	_TYPE_BOOL = 2,
+	_TYPE_INT64 = 3,
+	_TYPE_DWORD = 4,
+	_TYPE_WORD = 5,
+	_TYPE_BYTE = 6,
+	_TYPE_DOUBLE = 7,
+	_TYPE_USERDATA = 8,
+	_TYPE_COUNT = 9,
+	_LUAOBJECT = -1,
+	_REMOVED = 0,
+	_ORDERKEY = -2,
+	NULL = 0x0, -- userdata
 }
 
 ---Lua function
 ---Construct a new LuaECS World
 ---@return ECSWorld
-function M.world()
-end
+function M.world() end
 
 ---Like new(obj), but use a specifie entity
 ---@param eid integer #entity id
 ---@param obj table #describe all component of the type
-function meta:import(eid, obj)
-end
+function meta:import(eid, obj) end
 
 -- Create a template first
 ---local t = w:template {
@@ -154,8 +143,7 @@ end
 ---@param eid integer #entity id
 ---@param temp string #template name
 ---@param obj table
-function meta:template_instance(eid, temp, obj)
-end
+function meta:template_instance(eid, temp, obj) end
 
 ---Get an entity's one component, can can write the value.
 ---@param eid integer
@@ -164,14 +152,12 @@ end
 ---@return any|nil # pattern key is tag, return boolean; lua type, return lua data; else table; if write, return nil.
 ---@see ECSWorld#readall
 ---@see ECSWorld#fetch
-function meta:access(eid, pat, value)
-end
+function meta:access(eid, pat, value) end
 
 ---Count the pattern 's object number
 ---@param pat string
 ---@return integer
-function meta:count(pat)
-end
+function meta:count(pat) end
 
 ---Extend an iter with pattern.
 ---@param iter ITER
@@ -245,14 +231,12 @@ function meta:collect() end
 ---@param cid integer component id, cacul from the Lua
 ---@param size integer # size
 ---@see ECSWorld#register
-function meta:_newtype(cid, size)
-end
+function meta:_newtype(cid, size) end
 
 --- C API
 ---Return a new entity
 ---@return integer entity id
-function meta:_newentity()
-end
+function meta:_newentity() end
 
 --- C API
 ---Check the entity is exist
@@ -266,38 +250,33 @@ function meta:_indexentity(eid) end
 ---@param eid integer entity id
 ---@param cid integer component id,
 ---@return integer #pool index id
-function meta:_addcomponent(eid, cid)
-end
+function meta:_addcomponent(eid, cid) end
 
 --- C API
 ---Update world.
 ---Remove all entity which removed(default) or  with component id `cid`, and will rearrange the world.
 ---@param cid? integer #tagid
 ---@see ECSWorld#update
-function meta:_update(cid)
-end
+function meta:_update(cid) end
 
 --- C API
 ---Clear component of id `cid`
 ---@param cid integer component id
 ---@see ECSWorld#clear
-function meta:_clear(cid)
-end
+function meta:_clear(cid) end
 
 --- C API
 ---Return the info of a list of component ids.
 ---@param t integer[]
 ---@return userdata #ctx info
 ---@see ECSWorld#context
-function meta:_context(t)
-end
+function meta:_context(t) end
 
 --- C API
 ---Return an iter function for a list of pattren.
 ---@param pat_desc table[] #{ {name, id, type, [opt, r, w, exist, absent, new] }
 ---@return ENTITY_GROUPITER #iter C function
-function meta:_groupiter(pat_desc)
-end
+function meta:_groupiter(pat_desc) end
 
 --- C API
 function meta:_mergeiter(...) end
@@ -317,20 +296,17 @@ function meta:exist(eid) end
 --- Remove an entity with eid
 --- The removed entity will has a tag REMOVED
 ---@param eid number
-function meta:remove(eid)
-end
+function meta:remove(eid) end
 
 ---C API
 ---@param ref ENTITY_GROUPITER #the iter of component
 ---@param cv any #the inited component
 ---@param index integer #the index of the component pool
-function meta:_object(ref, cv, index)
-end
+function meta:_object(ref, cv, index) end
 
 ---@param pattern string
 ---@param iter ITER
-function meta:_read(pattern, iter)
-end
+function meta:_read(pattern, iter) end
 
 ---C API
 ---Commit an mod of a group iter with out or new
@@ -344,8 +320,7 @@ function meta:_first(...) end
 ---@param cid integer
 ---@return integer[]
 ---@see ECSWorld#dumpid
-function meta:_dumpid(cid)
-end
+function meta:_dumpid(cid) end
 
 ---@see ECSWorld:count
 function meta:_count(...) end

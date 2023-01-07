@@ -2,7 +2,7 @@
 
 ---@class resty.lrucache.pureffi : resty.lrucache
 local lrucache_pureffi = {
-  _VERSION = "0.11",
+	_VERSION = "0.11",
 }
 
 --- Creates a new cache instance.

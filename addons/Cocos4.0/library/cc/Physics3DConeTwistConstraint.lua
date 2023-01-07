@@ -1,62 +1,59 @@
 ---@meta
 
 ---@class cc.Physics3DConeTwistConstraint :cc.Physics3DConstraint
-local Physics3DConeTwistConstraint={ }
-cc.Physics3DConeTwistConstraint=Physics3DConeTwistConstraint
-
-
-
+local Physics3DConeTwistConstraint = {}
+cc.Physics3DConeTwistConstraint = Physics3DConeTwistConstraint
 
 ---* get B's frame
 ---@return mat4_table
-function Physics3DConeTwistConstraint:getBFrame () end
+function Physics3DConeTwistConstraint:getBFrame() end
 ---* set fix thresh
 ---@param fixThresh float
 ---@return self
-function Physics3DConeTwistConstraint:setFixThresh (fixThresh) end
+function Physics3DConeTwistConstraint:setFixThresh(fixThresh) end
 ---* get B's frame offset
 ---@return mat4_table
-function Physics3DConeTwistConstraint:getFrameOffsetB () end
+function Physics3DConeTwistConstraint:getFrameOffsetB() end
 ---* get A's frame offset
 ---@return mat4_table
-function Physics3DConeTwistConstraint:getFrameOffsetA () end
+function Physics3DConeTwistConstraint:getFrameOffsetA() end
 ---* get fix thresh
 ---@return float
-function Physics3DConeTwistConstraint:getFixThresh () end
+function Physics3DConeTwistConstraint:getFixThresh() end
 ---* get swing span2
 ---@return float
-function Physics3DConeTwistConstraint:getSwingSpan2 () end
+function Physics3DConeTwistConstraint:getSwingSpan2() end
 ---* get swing span1
 ---@return float
-function Physics3DConeTwistConstraint:getSwingSpan1 () end
+function Physics3DConeTwistConstraint:getSwingSpan1() end
 ---* set max motor impulse
 ---@param maxMotorImpulse float
 ---@return self
-function Physics3DConeTwistConstraint:setMaxMotorImpulse (maxMotorImpulse) end
+function Physics3DConeTwistConstraint:setMaxMotorImpulse(maxMotorImpulse) end
 ---* set A and B's frame
 ---@param frameA mat4_table
 ---@param frameB mat4_table
 ---@return self
-function Physics3DConeTwistConstraint:setFrames (frameA,frameB) end
+function Physics3DConeTwistConstraint:setFrames(frameA, frameB) end
 ---* get twist angle
 ---@return float
-function Physics3DConeTwistConstraint:getTwistAngle () end
+function Physics3DConeTwistConstraint:getTwistAngle() end
 ---* get point for angle
 ---@param fAngleInRadians float
 ---@param fLength float
 ---@return vec3_table
-function Physics3DConeTwistConstraint:GetPointForAngle (fAngleInRadians,fLength) end
+function Physics3DConeTwistConstraint:GetPointForAngle(fAngleInRadians, fLength) end
 ---* set max motor impulse normalize
 ---@param maxMotorImpulse float
 ---@return self
-function Physics3DConeTwistConstraint:setMaxMotorImpulseNormalized (maxMotorImpulse) end
+function Physics3DConeTwistConstraint:setMaxMotorImpulseNormalized(maxMotorImpulse) end
 ---* get twist span
 ---@return float
-function Physics3DConeTwistConstraint:getTwistSpan () end
+function Physics3DConeTwistConstraint:getTwistSpan() end
 ---* set damping
 ---@param damping float
 ---@return self
-function Physics3DConeTwistConstraint:setDamping (damping) end
+function Physics3DConeTwistConstraint:setDamping(damping) end
 ---* set limits<br>
 ---* param swingSpan1 swing span1<br>
 ---* param swingSpan2 swing span2<br>
@@ -71,14 +68,22 @@ function Physics3DConeTwistConstraint:setDamping (damping) end
 ---@param biasFactor float
 ---@param relaxationFactor float
 ---@return self
-function Physics3DConeTwistConstraint:setLimit (swingSpan1,swingSpan2,twistSpan,softness,biasFactor,relaxationFactor) end
+function Physics3DConeTwistConstraint:setLimit(
+	swingSpan1,
+	swingSpan2,
+	twistSpan,
+	softness,
+	biasFactor,
+	relaxationFactor
+)
+end
 ---* get A's frame
 ---@return mat4_table
-function Physics3DConeTwistConstraint:getAFrame () end
+function Physics3DConeTwistConstraint:getAFrame() end
 ---* enable motor
 ---@param b boolean
 ---@return self
-function Physics3DConeTwistConstraint:enableMotor (b) end
+function Physics3DConeTwistConstraint:enableMotor(b) end
 ---@overload fun(cc.Physics3DRigidBody:cc.Physics3DRigidBody,cc.Physics3DRigidBody:cc.Physics3DRigidBody,mat4_table:mat4_table,mat4_table:mat4_table):self
 ---@overload fun(cc.Physics3DRigidBody:cc.Physics3DRigidBody,cc.Physics3DRigidBody1:mat4_table):self
 ---@param rbA cc.Physics3DRigidBody
@@ -86,7 +91,7 @@ function Physics3DConeTwistConstraint:enableMotor (b) end
 ---@param frameA mat4_table
 ---@param frameB mat4_table
 ---@return self
-function Physics3DConeTwistConstraint:create (rbA,rbB,frameA,frameB) end
----* 
+function Physics3DConeTwistConstraint:create(rbA, rbB, frameA, frameB) end
+---*
 ---@return self
-function Physics3DConeTwistConstraint:Physics3DConeTwistConstraint () end
+function Physics3DConeTwistConstraint:Physics3DConeTwistConstraint() end

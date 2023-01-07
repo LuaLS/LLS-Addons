@@ -3,9 +3,8 @@
 --- OpenResty string functions.
 --- https://github.com/openresty/lua-resty-string
 local str = {
-  _VERSION = "0.14",
+	_VERSION = "0.14",
 }
-
 
 --- Encode byte string in hexidecimal.
 ---
@@ -44,11 +43,10 @@ function str.to_hex(s) end
 ---@return number
 function str.atoi(s) end
 
-
 --- A lua-resty-string checksum object.
 ---@class resty.string.checksum : table
 local checksum = {
-  _VERSION = str._VERSION,
+	_VERSION = str._VERSION,
 }
 
 --- Create a new checksum object.
@@ -70,6 +68,5 @@ function checksum:final() end
 --- Reset the checksum object.
 ---@return boolean ok
 function checksum:reset() end
-
 
 return str

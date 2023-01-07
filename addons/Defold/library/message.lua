@@ -50,7 +50,4 @@ function msg.url(urlstring) end
 ---@return url # a new URL
 function msg.url(socket, path, fragment) end
 
-
-
-
 return msg

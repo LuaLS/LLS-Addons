@@ -1,11 +1,8 @@
 ---@meta
 
 ---@class cc.EventKeyboard :cc.Event
-local EventKeyboard={ }
-cc.EventKeyboard=EventKeyboard
-
-
-
+local EventKeyboard = {}
+cc.EventKeyboard = EventKeyboard
 
 ---*  Constructor.<br>
 ---* param keyCode A given keycode.<br>
@@ -14,4 +11,4 @@ cc.EventKeyboard=EventKeyboard
 ---@param keyCode int
 ---@param isPressed boolean
 ---@return self
-function EventKeyboard:EventKeyboard (keyCode,isPressed) end
+function EventKeyboard:EventKeyboard(keyCode, isPressed) end

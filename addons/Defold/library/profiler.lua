@@ -83,7 +83,4 @@ function profiler.set_ui_vsync_wait_visible(visible) end
 ---@param frame_index table # a table where you specify one of the following parameters:
 function profiler.view_recorded_frame(frame_index) end
 
-
-
-
 return profiler

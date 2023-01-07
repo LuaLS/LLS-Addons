@@ -1,46 +1,43 @@
 ---@meta
 
 ---@class cc.Component :cc.Ref
-local Component={ }
-cc.Component=Component
+local Component = {}
+cc.Component = Component
 
-
-
-
----* 
+---*
 ---@param enabled boolean
 ---@return self
-function Component:setEnabled (enabled) end
----* 
+function Component:setEnabled(enabled) end
+---*
 ---@return self
-function Component:onRemove () end
----* 
+function Component:onRemove() end
+---*
 ---@param name string
 ---@return self
-function Component:setName (name) end
----* 
+function Component:setName(name) end
+---*
 ---@return boolean
-function Component:isEnabled () end
----* 
+function Component:isEnabled() end
+---*
 ---@param delta float
 ---@return self
-function Component:update (delta) end
----* 
+function Component:update(delta) end
+---*
 ---@return cc.Node
-function Component:getOwner () end
----* 
+function Component:getOwner() end
+---*
 ---@return boolean
-function Component:init () end
----* 
+function Component:init() end
+---*
 ---@param owner cc.Node
 ---@return self
-function Component:setOwner (owner) end
----* 
+function Component:setOwner(owner) end
+---*
 ---@return string
-function Component:getName () end
----* 
+function Component:getName() end
+---*
 ---@return self
-function Component:onAdd () end
----* 
+function Component:onAdd() end
+---*
 ---@return self
-function Component:create () end
+function Component:create() end

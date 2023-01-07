@@ -1,11 +1,8 @@
 ---@meta
 
 ---@class cc.TransitionMoveInT :cc.TransitionMoveInL
-local TransitionMoveInT={ }
-cc.TransitionMoveInT=TransitionMoveInT
-
-
-
+local TransitionMoveInT = {}
+cc.TransitionMoveInT = TransitionMoveInT
 
 ---*  Creates a transition with duration and incoming scene.<br>
 ---* param t Duration time, in seconds.<br>
@@ -14,7 +11,7 @@ cc.TransitionMoveInT=TransitionMoveInT
 ---@param t float
 ---@param scene cc.Scene
 ---@return self
-function TransitionMoveInT:create (t,scene) end
----* 
+function TransitionMoveInT:create(t, scene) end
+---*
 ---@return self
-function TransitionMoveInT:TransitionMoveInT () end
+function TransitionMoveInT:TransitionMoveInT() end

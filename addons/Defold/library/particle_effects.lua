@@ -46,7 +46,4 @@ function particlefx.set_constant(url, emitter, constant, value) end
 ---@param options table # Options when stopping the particle fx. Supported options:
 function particlefx.stop(url, options) end
 
-
-
-
 return particlefx

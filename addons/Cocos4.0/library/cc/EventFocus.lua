@@ -1,11 +1,8 @@
 ---@meta
 
 ---@class cc.EventFocus :cc.Event
-local EventFocus={ }
-cc.EventFocus=EventFocus
-
-
-
+local EventFocus = {}
+cc.EventFocus = EventFocus
 
 ---*  Constructor.<br>
 ---* param widgetLoseFocus The widget which lose focus.<br>
@@ -14,4 +11,4 @@ cc.EventFocus=EventFocus
 ---@param widgetLoseFocus ccui.Widget
 ---@param widgetGetFocus ccui.Widget
 ---@return self
-function EventFocus:EventFocus (widgetLoseFocus,widgetGetFocus) end
+function EventFocus:EventFocus(widgetLoseFocus, widgetGetFocus) end

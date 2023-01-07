@@ -1,26 +1,23 @@
 ---@meta
 
 ---@class cc.EaseQuadraticActionIn :cc.ActionEase
-local EaseQuadraticActionIn={ }
-cc.EaseQuadraticActionIn=EaseQuadraticActionIn
+local EaseQuadraticActionIn = {}
+cc.EaseQuadraticActionIn = EaseQuadraticActionIn
 
-
-
-
----* 
+---*
 ---@param action cc.ActionInterval
 ---@return self
-function EaseQuadraticActionIn:create (action) end
----* 
+function EaseQuadraticActionIn:create(action) end
+---*
 ---@return self
-function EaseQuadraticActionIn:clone () end
----* 
+function EaseQuadraticActionIn:clone() end
+---*
 ---@param time float
 ---@return self
-function EaseQuadraticActionIn:update (time) end
----* 
+function EaseQuadraticActionIn:update(time) end
+---*
 ---@return cc.ActionEase
-function EaseQuadraticActionIn:reverse () end
----* 
+function EaseQuadraticActionIn:reverse() end
+---*
 ---@return self
-function EaseQuadraticActionIn:EaseQuadraticActionIn () end
+function EaseQuadraticActionIn:EaseQuadraticActionIn() end

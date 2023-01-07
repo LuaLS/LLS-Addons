@@ -1,5 +1,5 @@
 ---@meta
-resty_memcached={}
+resty_memcached = {}
 function resty_memcached.cas(self, key, value, cas_uniq, exptime, flags) end
 function resty_memcached.new(self, opts) end
 function resty_memcached.append(self, ...) end
@@ -22,6 +22,6 @@ function resty_memcached.connect(self, ...) end
 function resty_memcached.prepend(self, ...) end
 function resty_memcached.decr(self, key, value) end
 function resty_memcached.verbosity(self, level) end
-resty_memcached._VERSION="0.13"
+resty_memcached._VERSION = "0.13"
 function resty_memcached.get(self, key) end
 return resty_memcached

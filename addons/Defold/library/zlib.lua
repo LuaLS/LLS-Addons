@@ -12,7 +12,4 @@ function zlib.deflate(buf) end
 ---@return string # inflated buffer
 function zlib.inflate(buf) end
 
-
-
-
 return zlib

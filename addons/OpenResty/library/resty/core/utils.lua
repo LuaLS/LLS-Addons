@@ -1,5 +1,5 @@
 ---@meta
-local resty_core_utils={}
+local resty_core_utils = {}
 
 ---@param str string
 ---@param find string

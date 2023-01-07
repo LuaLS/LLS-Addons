@@ -1,26 +1,23 @@
 ---@meta
 
 ---@class cc.CameraBackgroundBrush :cc.Ref
-local CameraBackgroundBrush={ }
-cc.CameraBackgroundBrush=CameraBackgroundBrush
-
-
-
+local CameraBackgroundBrush = {}
+cc.CameraBackgroundBrush = CameraBackgroundBrush
 
 ---* get brush type<br>
 ---* return BrushType
 ---@return int
-function CameraBackgroundBrush:getBrushType () end
+function CameraBackgroundBrush:getBrushType() end
 ---* draw the background
 ---@param a cc.Camer
 ---@return self
-function CameraBackgroundBrush:drawBackground (a) end
----* 
+function CameraBackgroundBrush:drawBackground(a) end
+---*
 ---@return boolean
-function CameraBackgroundBrush:init () end
----* 
+function CameraBackgroundBrush:init() end
+---*
 ---@return boolean
-function CameraBackgroundBrush:isValid () end
+function CameraBackgroundBrush:isValid() end
 ---*  Creates a Skybox brush with 6 textures.<br>
 ---* param positive_x texture for the right side of the texture cube face.<br>
 ---* param negative_x texture for the up side of the texture cube face.<br>
@@ -36,7 +33,15 @@ function CameraBackgroundBrush:isValid () end
 ---@param positive_z string
 ---@param negative_z string
 ---@return cc.CameraBackgroundSkyBoxBrush
-function CameraBackgroundBrush:createSkyboxBrush (positive_x,negative_x,positive_y,negative_y,positive_z,negative_z) end
+function CameraBackgroundBrush:createSkyboxBrush(
+	positive_x,
+	negative_x,
+	positive_y,
+	negative_y,
+	positive_z,
+	negative_z
+)
+end
 ---* Creates a color brush<br>
 ---* param color Color of brush<br>
 ---* param depth Depth used to clear depth buffer<br>
@@ -44,16 +49,16 @@ function CameraBackgroundBrush:createSkyboxBrush (positive_x,negative_x,positive
 ---@param color color4f_table
 ---@param depth float
 ---@return cc.CameraBackgroundColorBrush
-function CameraBackgroundBrush:createColorBrush (color,depth) end
+function CameraBackgroundBrush:createColorBrush(color, depth) end
 ---* Creates a none brush, it does nothing when clear the background<br>
 ---* return Created brush.
 ---@return self
-function CameraBackgroundBrush:createNoneBrush () end
+function CameraBackgroundBrush:createNoneBrush() end
 ---* Creates a depth brush, which clears depth buffer with a given depth.<br>
 ---* param depth Depth used to clear depth buffer<br>
 ---* return Created brush
 ---@return cc.CameraBackgroundDepthBrush
-function CameraBackgroundBrush:createDepthBrush () end
----* 
+function CameraBackgroundBrush:createDepthBrush() end
+---*
 ---@return self
-function CameraBackgroundBrush:CameraBackgroundBrush () end
+function CameraBackgroundBrush:CameraBackgroundBrush() end

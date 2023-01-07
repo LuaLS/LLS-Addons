@@ -1,12 +1,11 @@
 ---@meta
 local errlog = {
-  version = require("resty.core.base").version,
+	version = require("resty.core.base").version,
 }
 
 --- Return the nginx core's error log filter level (defined via the `error_log` configuration directive in nginx.conf) as an integer value.
 ---@return ngx.log.level
 function errlog.get_sys_filter_level() end
-
 
 --- Specifies the filter log level, only to capture and buffer the error logs with a log level no lower than the specified level.
 ---
@@ -20,7 +19,6 @@ function errlog.get_sys_filter_level() end
 ---@return boolean ok
 ---@return string? err
 function errlog.set_filter_level(level) end
-
 
 --- Fetches the captured nginx error log messages if any in the global data buffer specified by ngx_lua's `lua_capture_error_log` directive. Upon return, this Lua function also removes those messages from that global capturing buffer to make room for future new error log data.
 ---
@@ -117,6 +115,5 @@ function errlog.get_logs(max, res) end
 ---@param level ngx.log.level
 ---@param msg   string
 function errlog.raw_log(level, msg) end
-
 
 return errlog

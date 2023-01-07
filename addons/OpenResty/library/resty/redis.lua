@@ -1,5 +1,5 @@
 ---@meta
-resty_redis={}
+resty_redis = {}
 function resty_redis.lrange() end
 function resty_redis.new(self) end
 function resty_redis.hset() end
@@ -20,7 +20,7 @@ function resty_redis.commit_pipeline(self) end
 function resty_redis.zrange() end
 function resty_redis.auth() end
 function resty_redis.cancel_pipeline(self) end
-resty_redis._VERSION="0.27"
+resty_redis._VERSION = "0.27"
 function resty_redis.eval() end
 function resty_redis.expire() end
 function resty_redis.sdiff() end

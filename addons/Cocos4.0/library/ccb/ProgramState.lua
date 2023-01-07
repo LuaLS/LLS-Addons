@@ -1,11 +1,8 @@
 ---@meta
 
 ---@class ccb.ProgramState :cc.Ref
-local ProgramState={ }
-ccb.ProgramState=ProgramState
-
-
-
+local ProgramState = {}
+ccb.ProgramState = ProgramState
 
 ---* Set texture.<br>
 ---* param uniformLocation Specifies texture location.<br>
@@ -15,10 +12,10 @@ ccb.ProgramState=ProgramState
 ---@param slot unsigned_int
 ---@param texture cc.backend.TextureBackend
 ---@return cc.backend.ProgramState
-function ProgramState:setTexture (uniformLocation,slot,texture) end
+function ProgramState:setTexture(uniformLocation, slot, texture) end
 ---* Deep clone ProgramState
 ---@return cc.backend.ProgramState
-function ProgramState:clone () end
+function ProgramState:clone() end
 ---* Sets a uniform auto-binding.<br>
 ---* This method parses the passed in autoBinding string and attempts to convert it<br>
 ---* to an enumeration value. If it matches to one of the predefined strings, it will create a<br>
@@ -28,16 +25,16 @@ function ProgramState:clone () end
 ---@param uniformName string
 ---@param autoBinding string
 ---@return cc.backend.ProgramState
-function ProgramState:setParameterAutoBinding (uniformName,autoBinding) end
+function ProgramState:setParameterAutoBinding(uniformName, autoBinding) end
 ---* Get the program object.
 ---@return cc.backend.Program
-function ProgramState:getProgram () end
+function ProgramState:getProgram() end
 ---@overload fun(string0:int):self
 ---@overload fun(string:string):self
 ---@param name string
 ---@return int
-function ProgramState:getAttributeLocation (name) end
+function ProgramState:getAttributeLocation(name) end
 ---* param program Specifies the program.
 ---@param program cc.backend.Program
 ---@return cc.backend.ProgramState
-function ProgramState:ProgramState (program) end
+function ProgramState:ProgramState(program) end

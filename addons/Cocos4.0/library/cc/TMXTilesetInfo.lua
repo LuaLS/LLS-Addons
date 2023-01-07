@@ -1,16 +1,13 @@
 ---@meta
 
 ---@class cc.TMXTilesetInfo :cc.Ref
-local TMXTilesetInfo={ }
-cc.TMXTilesetInfo=TMXTilesetInfo
+local TMXTilesetInfo = {}
+cc.TMXTilesetInfo = TMXTilesetInfo
 
-
-
-
----* 
+---*
 ---@param gid unsigned_int
 ---@return rect_table
-function TMXTilesetInfo:getRectForGID (gid) end
+function TMXTilesetInfo:getRectForGID(gid) end
 ---* js ctor
 ---@return self
-function TMXTilesetInfo:TMXTilesetInfo () end
+function TMXTilesetInfo:TMXTilesetInfo() end

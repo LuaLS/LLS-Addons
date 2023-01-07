@@ -478,7 +478,4 @@ function unconnected:setsockname(address, port) end
 ---@param value number # the amount of time to wait, in seconds. The nil timeout value allows operations to block indefinitely. Negative timeout values have the same effect.
 function unconnected:settimeout(value) end
 
-
-
-
 return socket

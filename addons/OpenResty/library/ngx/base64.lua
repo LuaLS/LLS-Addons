@@ -1,6 +1,6 @@
 ---@meta
 local base64 = {
-  version = require("resty.core.base").version,
+	version = require("resty.core.base").version,
 }
 
 ---Encode input using base64url rules. Returns the encoded string.

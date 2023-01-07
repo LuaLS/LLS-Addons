@@ -1,11 +1,8 @@
 ---@meta
 
 ---@class cc.CatmullRomBy :cc.CardinalSplineBy
-local CatmullRomBy={ }
-cc.CatmullRomBy=CatmullRomBy
-
-
-
+local CatmullRomBy = {}
+cc.CatmullRomBy = CatmullRomBy
 
 ---*  Initializes the action with a duration and an array of points.<br>
 ---* param dt In seconds.<br>
@@ -13,10 +10,10 @@ cc.CatmullRomBy=CatmullRomBy
 ---@param dt float
 ---@param points point_table
 ---@return boolean
-function CatmullRomBy:initWithDuration (dt,points) end
----* 
+function CatmullRomBy:initWithDuration(dt, points) end
+---*
 ---@return self
-function CatmullRomBy:clone () end
----* 
+function CatmullRomBy:clone() end
+---*
 ---@return self
-function CatmullRomBy:reverse () end
+function CatmullRomBy:reverse() end

@@ -48,7 +48,6 @@
 ---@field no_recurse  boolean
 local resolver = {}
 
-
 --- The `A` resource record type, equal to the decimal number 1.
 ---@class resty.dns.resolver.TYPE_A
 resolver.TYPE_A = 1
@@ -93,7 +92,6 @@ resolver.TYPE_SRV = 33
 ---@class resty.dns.resolver.TYPE_SPF
 resolver.TYPE_SPF = 99
 
-
 ---@alias resty.dns.resolver.TYPE integer
 ---| `resolver.TYPE_A`     # A
 ---| 1                     # A
@@ -116,7 +114,6 @@ resolver.TYPE_SPF = 99
 ---| `resolver.TYPE_SPF`   # SPF
 ---| 99                    # SPF
 
-
 ---@alias resty.dns.resolver.CLASS integer
 ---| `resolver.CLASS_IN`
 ---| 1
@@ -124,7 +121,6 @@ resolver.TYPE_SPF = 99
 --- The `Internet` resource record type
 ---@class resty.dns.resolver.CLASS_IN
 resolver.CLASS_IN = 1
-
 
 ---@alias resty.dns.resolver.SECTION integer
 ---| `resolver.SECTION_AN` # Answer section
@@ -134,21 +130,17 @@ resolver.CLASS_IN = 1
 ---| `resolver.SECTION_AR` # Additional section
 ---| 3                     # Additional section
 
-
 --- Identifier of the `Answer` section in the DNS response.
 ---@class resty.dns.resolver.SECTION_AN
 resolver.SECTION_AN = 1
-
 
 --- Identifier of the `Authority` section in the DNS response.
 ---@class resty.dns.resolver.SECTION_NS
 resolver.SECTION_NS = 2
 
-
 --- Identifier of the `Additional` section in the DNS response.
 ---@class resty.dns.resolver.SECTION_AR
 resolver.SECTION_AR = 3
-
 
 ---@alias resty.dns.resolver.ERRCODE integer
 ---| 1  # format error
@@ -157,7 +149,6 @@ resolver.SECTION_AR = 3
 ---| 4  # not implemented
 ---| 5  # refused
 
-
 ---@alias resty.dns.resolver.ERRSTR
 ---| "format error"    # errcode 1
 ---| "server failure"  # errcode 2
@@ -165,7 +156,6 @@ resolver.SECTION_AR = 3
 ---| "not implemented" # errcode 4
 ---| "refused"         # errcode 5
 ---| "unknown"         # errcode unknown
-
 
 --- Creates a dns.resolver object.
 ---
@@ -176,7 +166,6 @@ resolver.SECTION_AR = 3
 ---@return string? error
 function resolver:new(opts) end
 
-
 ---@class resty.dns.resolver.nameserver_tuple
 ---@field [1] string  # hostname or addr
 ---@field [2] integer # port number
@@ -184,7 +173,6 @@ function resolver:new(opts) end
 ---@alias resty.dns.resolver.nameserver
 ---| string
 ---| resty.dns.resolver.nameserver_tuple
-
 
 --- Options for `resty.dns.resolver:new()`
 ---
@@ -199,7 +187,6 @@ function resolver:new(opts) end
 ---@field no_recurse? boolean # (default: `false`) a boolean flag controls whether to disable the "recursion desired" (RD) flag in the UDP request.
 ---
 ---@field no_random? boolean # (default: `false`) a boolean flag controls whether to randomly pick the nameserver to query first, if `true` will always start with the first nameserver listed.
-
 
 --- Performs a DNS standard query.
 ---
@@ -223,7 +210,6 @@ function resolver:new(opts) end
 ---@return string[]? tries
 function resolver:query(qname, opts, tries) end
 
-
 ---@class resty.dns.resolver.answer : table
 ---
 ---@field name string # The resource record name.
@@ -242,7 +228,6 @@ function resolver:query(qname, opts, tries) end
 ---
 ---@field errstr? resty.dns.resolver.ERRSTR # Error string returned by the DNS server
 
-
 --- A-type answer
 ---
 ---@class resty.dns.resolver.answer.A : resty.dns.resolver.answer
@@ -255,13 +240,11 @@ function resolver:query(qname, opts, tries) end
 ---
 ---@field address string # The IPv6 address. Successive 16-bit zero groups in IPv6 addresses will not be compressed by default, if you want that, you need to call the compress_ipv6_addr static method instead.
 
-
 --- CNAME-type answer
 ---
 ---@class resty.dns.resolver.answer.CNAME : resty.dns.resolver.answer
 ---
 ---@field cname? string # The (decoded) record data value for CNAME resource records.
-
 
 --- MX-type answer
 ---
@@ -270,7 +253,6 @@ function resolver:query(qname, opts, tries) end
 ---@field preference integer # The preference integer number for MX resource records.
 ---
 ---@field exchange? string # The exchange domain name for MX resource records.
-
 
 --- SRV-type answer
 ---
@@ -284,7 +266,6 @@ function resolver:query(qname, opts, tries) end
 ---
 ---@field target string
 
-
 --- NS-type answer
 ---
 ---@class resty.dns.resolver.answer.NS : resty.dns.resolver.answer
@@ -292,13 +273,11 @@ function resolver:query(qname, opts, tries) end
 ---@field nsdname string # A domain-name which specifies a host which should be authoritative for the specified class and domain. Usually present for NS type records.
 ---
 
-
 --- TXT-type answer
 ---
 ---@class resty.dns.resolver.answer.TXT : resty.dns.resolver.answer
 ---
 ---@field txt? string|string[] # The record value for TXT records. When there is only one character string in this record, then this field takes a single Lua string. Otherwise this field takes a Lua table holding all the strings.
-
 
 --- SPF-type answer
 ---
@@ -306,13 +285,11 @@ function resolver:query(qname, opts, tries) end
 ---
 ---@field spf? string|string[] # The record value for SPF records. When there is only one character string in this record, then this field takes a single Lua string. Otherwise this field takes a Lua table holding all the strings.
 
-
 --- PTR-type answer
 ---
 ---@class resty.dns.resolver.answer.PTR : resty.dns.resolver.answer
 ---
 ---@field ptrdname string # The record value for PTR records.
-
 
 --- SOA-type answer
 ---
@@ -323,7 +300,6 @@ function resolver:query(qname, opts, tries) end
 ---@field retry    integer # SOA retry
 ---@field expire   integer # SOA expire
 ---@field minimum  integer # SOA minimum
-
 
 ---@alias resty.dns.resolver.query.answer
 ---| resty.dns.resolver.answer
@@ -338,7 +314,6 @@ function resolver:query(qname, opts, tries) end
 ---| resty.dns.resolver.answer.SRV
 ---| resty.dns.resolver.answer.TXT
 
-
 --- Options for `resty.dns.resolver:query()`
 ---
 ---@class resty.dns.resolver.query.opts : table
@@ -348,7 +323,6 @@ function resolver:query(qname, opts, tries) end
 ---@field authority_section? boolean # (default: `false`) When `true`, the answers return value includes the `Authority` section of the DNS response.
 ---
 ---@field additional_section? boolean # (default: `false`) When `true`, the answers return value includes the `Additional` section of the DNS response.
-
 
 --- Just like the query method, but enforce the TCP transport mode instead of UDP.
 ---
@@ -360,7 +334,6 @@ function resolver:query(qname, opts, tries) end
 ---@return string? error
 function resolver:tcp_query(qname, opts) end
 
-
 --- Performs a PTR lookup for both IPv4 and IPv6 addresses.
 ---
 --- This function is basically a wrapper for the query command which uses the `arpa_str` function to convert the IP address on the fly.
@@ -369,7 +342,6 @@ function resolver:tcp_query(qname, opts) end
 ---@return resty.dns.resolver.query.answer[] results
 ---@return string? error
 function resolver:reverse_query(addr) end
-
 
 --- Overrides the current timeout setting for all nameserver peers.
 ---
@@ -419,6 +391,5 @@ function resolver.expand_ipv6_addr(addr) end
 ---@param addr string
 ---@return string
 function resolver.arpa_str(addr) end
-
 
 return resolver

@@ -3,15 +3,15 @@
 ---require emmylua 0.3.36
 
 ---@class ccui
-ccui={}
+ccui = {}
 ---@class cc
-cc={}
+cc = {}
 ---@class ccs
-ccs={}
+ccs = {}
 ---@class ccb
-ccb={}
+ccb = {}
 ---@class sp
-sp={}
+sp = {}
 ---@class cc.ResourceData
 
 ---@class int
@@ -213,4 +213,3 @@ sp={}
 ---@class short
 
 ---@class cc.backend.VertexLayout
-

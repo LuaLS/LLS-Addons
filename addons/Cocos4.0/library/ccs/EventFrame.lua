@@ -1,32 +1,29 @@
 ---@meta
 
 ---@class ccs.EventFrame :ccs.Frame
-local EventFrame={ }
-ccs.EventFrame=EventFrame
+local EventFrame = {}
+ccs.EventFrame = EventFrame
 
-
-
-
----* 
+---*
 ---@param event string
 ---@return self
-function EventFrame:setEvent (event) end
----* 
+function EventFrame:setEvent(event) end
+---*
 ---@return self
-function EventFrame:init () end
----* 
+function EventFrame:init() end
+---*
 ---@return string
-function EventFrame:getEvent () end
----* 
+function EventFrame:getEvent() end
+---*
 ---@return self
-function EventFrame:create () end
----* 
+function EventFrame:create() end
+---*
 ---@return ccs.Frame
-function EventFrame:clone () end
----* 
+function EventFrame:clone() end
+---*
 ---@param node cc.Node
 ---@return self
-function EventFrame:setNode (node) end
----* 
+function EventFrame:setNode(node) end
+---*
 ---@return self
-function EventFrame:EventFrame () end
+function EventFrame:EventFrame() end

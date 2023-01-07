@@ -1,11 +1,8 @@
 ---@meta
 
 ---@class cc.PhysicsShapeEdgeBox :cc.PhysicsShapeEdgePolygon
-local PhysicsShapeEdgeBox={ }
-cc.PhysicsShapeEdgeBox=PhysicsShapeEdgeBox
-
-
-
+local PhysicsShapeEdgeBox = {}
+cc.PhysicsShapeEdgeBox = PhysicsShapeEdgeBox
 
 ---* Creates a PhysicsShapeEdgeBox with specified value.<br>
 ---* param   size Size contains this box's width and height.<br>
@@ -18,8 +15,8 @@ cc.PhysicsShapeEdgeBox=PhysicsShapeEdgeBox
 ---@param border float
 ---@param offset vec2_table
 ---@return self
-function PhysicsShapeEdgeBox:create (size,material,border,offset) end
+function PhysicsShapeEdgeBox:create(size, material, border, offset) end
 ---* Get this box's position offset.<br>
 ---* return A Vec2 object.
 ---@return vec2_table
-function PhysicsShapeEdgeBox:getOffset () end
+function PhysicsShapeEdgeBox:getOffset() end

@@ -1,11 +1,8 @@
 ---@meta
 
 ---@class cc.ProgressTo :cc.ActionInterval
-local ProgressTo={ }
-cc.ProgressTo=ProgressTo
-
-
-
+local ProgressTo = {}
+cc.ProgressTo = ProgressTo
 
 ---* brief Initializes with a duration and destination percentage. <br>
 ---* param duration Specify the duration of the ProgressTo action. It's a value in seconds.<br>
@@ -14,7 +11,7 @@ cc.ProgressTo=ProgressTo
 ---@param duration float
 ---@param percent float
 ---@return boolean
-function ProgressTo:initWithDuration (duration,percent) end
+function ProgressTo:initWithDuration(duration, percent) end
 ---* brief Create and initializes with a duration and a destination percentage.<br>
 ---* param duration Specify the duration of the ProgressTo action. It's a value in seconds.<br>
 ---* param percent Specify the destination percentage.<br>
@@ -22,21 +19,21 @@ function ProgressTo:initWithDuration (duration,percent) end
 ---@param duration float
 ---@param percent float
 ---@return self
-function ProgressTo:create (duration,percent) end
----* 
+function ProgressTo:create(duration, percent) end
+---*
 ---@param target cc.Node
 ---@return self
-function ProgressTo:startWithTarget (target) end
----* 
+function ProgressTo:startWithTarget(target) end
+---*
 ---@return self
-function ProgressTo:clone () end
----* 
+function ProgressTo:clone() end
+---*
 ---@return self
-function ProgressTo:reverse () end
----* 
+function ProgressTo:reverse() end
+---*
 ---@param time float
 ---@return self
-function ProgressTo:update (time) end
----* 
+function ProgressTo:update(time) end
+---*
 ---@return self
-function ProgressTo:ProgressTo () end
+function ProgressTo:ProgressTo() end

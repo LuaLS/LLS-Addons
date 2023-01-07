@@ -1,11 +1,8 @@
 ---@meta
 
 ---@class cc.TransitionJumpZoom :cc.TransitionScene
-local TransitionJumpZoom={ }
-cc.TransitionJumpZoom=TransitionJumpZoom
-
-
-
+local TransitionJumpZoom = {}
+cc.TransitionJumpZoom = TransitionJumpZoom
 
 ---*  Creates a transition with duration and incoming scene.<br>
 ---* param t Duration time, in seconds.<br>
@@ -14,7 +11,7 @@ cc.TransitionJumpZoom=TransitionJumpZoom
 ---@param t float
 ---@param scene cc.Scene
 ---@return self
-function TransitionJumpZoom:create (t,scene) end
----* 
+function TransitionJumpZoom:create(t, scene) end
+---*
 ---@return self
-function TransitionJumpZoom:TransitionJumpZoom () end
+function TransitionJumpZoom:TransitionJumpZoom() end

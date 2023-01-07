@@ -9,7 +9,6 @@
 ---@class cjson.safe : cjson
 local cjson_safe = {}
 
-
 --- unserialize a json string to a lua value
 ---
 --- Returns `nil` and an error string when the input cannot be decoded.
@@ -21,7 +20,6 @@ local cjson_safe = {}
 ---@return any? decoded
 ---@return string? error
 function cjson_safe.decode(json) end
-
 
 --- serialize a lua value to a json string
 ---
@@ -35,12 +33,10 @@ function cjson_safe.decode(json) end
 ---@return string? error
 function cjson_safe.encode(value) end
 
-
 --- instantiate an independent copy of the Lua CJSON module
 ---
 --- The new module has a separate persistent encoding buffer, and default settings
 ---@return cjson.safe
 function cjson_safe.new() end
-
 
 return cjson_safe

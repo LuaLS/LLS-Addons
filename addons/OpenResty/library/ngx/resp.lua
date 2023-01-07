@@ -1,5 +1,5 @@
 ---@meta
-local resp={}
+local resp = {}
 
 resp.version = require("resty.core.base").version
 

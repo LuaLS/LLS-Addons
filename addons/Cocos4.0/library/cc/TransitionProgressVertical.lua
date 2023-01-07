@@ -1,11 +1,8 @@
 ---@meta
 
 ---@class cc.TransitionProgressVertical :cc.TransitionProgress
-local TransitionProgressVertical={ }
-cc.TransitionProgressVertical=TransitionProgressVertical
-
-
-
+local TransitionProgressVertical = {}
+cc.TransitionProgressVertical = TransitionProgressVertical
 
 ---*  Creates a transition with duration and incoming scene.<br>
 ---* param t Duration time, in seconds.<br>
@@ -14,7 +11,7 @@ cc.TransitionProgressVertical=TransitionProgressVertical
 ---@param t float
 ---@param scene cc.Scene
 ---@return self
-function TransitionProgressVertical:create (t,scene) end
+function TransitionProgressVertical:create(t, scene) end
 ---* js ctor
 ---@return self
-function TransitionProgressVertical:TransitionProgressVertical () end
+function TransitionProgressVertical:TransitionProgressVertical() end

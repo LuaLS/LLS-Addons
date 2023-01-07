@@ -16,7 +16,6 @@ clienthello.version = require("resty.core.base").version
 ---@return string? error
 function clienthello.get_client_hello_server_name() end
 
-
 --- Returns raw data of arbitrary SSL client hello extension including custom extensions.
 ---
 --- Returns `nil` if the specified extension type does not exist.
@@ -80,7 +79,6 @@ function clienthello.get_client_hello_server_name() end
 ---@return string? ext
 function clienthello.get_client_hello_ext(ext_type) end
 
-
 --- Sets the SSL protocols supported by the current downstream SSL connection.
 ---
 --- Returns `true` on success, or a `nil` value and a string describing the error otherwise.
@@ -97,6 +95,5 @@ function clienthello.get_client_hello_ext(ext_type) end
 ---@return boolean ok
 ---@return string? error
 function clienthello.set_protocols(protocols) end
-
 
 return clienthello

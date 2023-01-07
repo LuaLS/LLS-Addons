@@ -84,7 +84,6 @@ internal.thread = internal.Thread
 internal.is_thread = internal.Thread
 internal.is_not_thread = internal.Thread
 
-
 ---Assert that a value is truthy.
 ---@param value any The value to confirm is truthy.
 function internal.truthy(value) end

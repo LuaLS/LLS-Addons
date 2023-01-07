@@ -1,5 +1,5 @@
 ---@meta
-local ssl={}
+local ssl = {}
 
 --- Sets the DER-formatted prviate key for the current SSL connection.
 ---
@@ -14,7 +14,6 @@ local ssl={}
 ---@return string? error
 function ssl.set_der_priv_key(der_priv_key) end
 
-
 --- Converts the PEM-formatted SSL private key data into an opaque cdata pointer (for later uses in the set_priv_key function, for example).
 ---
 --- In case of failures, returns nil and a string describing the error.
@@ -25,7 +24,6 @@ function ssl.set_der_priv_key(der_priv_key) end
 ---@return ffi.cdata*? priv_key
 ---@return string? error
 function ssl.parse_pem_priv_key(pem_priv_key) end
-
 
 --- Returns the TLS 1.x version number used by the current SSL connection. Returns nil and a string describing the error otherwise.
 ---
@@ -42,7 +40,6 @@ function ssl.parse_pem_priv_key(pem_priv_key) end
 ---@return string? error
 function ssl.get_tls1_version() end
 
-
 --- Sets the SSL certificate chain opaque pointer returned by the parse_pem_cert function for the current SSL connection.
 ---
 --- Returns true on success, or a nil value and a string describing the error otherwise.
@@ -54,8 +51,7 @@ function ssl.get_tls1_version() end
 ---@return string? error
 function ssl.set_cert(cert_chain) end
 
-
-ssl.TLS1_VERSION=769
+ssl.TLS1_VERSION = 769
 
 --- Sets the SSL private key opaque pointer returned by the parse_pem_priv_key function for the current SSL connection.
 ---
@@ -115,7 +111,6 @@ function ssl.raw_server_addr() end
 ---| '"inet"'  # a binary IPv4 address of 4 bytes long.
 ---| '"inet6"' # a binary IPv6 address of 16 bytes long.
 
-
 --- Clears any existing SSL certificates and/or private keys set on the current SSL connection.
 ---
 --- Returns true on success, or a nil value and a string describing the error otherwise.
@@ -165,7 +160,6 @@ function ssl.clear_certs() end
 ---@return string?            error
 function ssl.raw_client_addr() end
 
-
 --- Converts the PEM-formated SSL certificate chain data into an opaque cdata pointer (for later uses in the set_cert function, for example).
 ---
 --- In case of failures, returns nil and a string describing the error.
@@ -180,7 +174,7 @@ function ssl.raw_client_addr() end
 function ssl.parse_pem_cert(pem_cert_chain) end
 
 ssl.version = require("resty.core.base").version
-ssl.TLS1_2_VERSION=771
+ssl.TLS1_2_VERSION = 771
 
 --- Returns the TLS SNI (Server Name Indication) name set by the client. Returns nil when the client does not set it.
 ---
@@ -206,10 +200,8 @@ function ssl.server_name() end
 ---@return string? error
 function ssl.server_port() end
 
-
-
-ssl.TLS1_1_VERSION=770
-ssl.SSL3_VERSION=768
+ssl.TLS1_1_VERSION = 770
+ssl.SSL3_VERSION = 768
 
 --- Sets the DER-formatted SSL certificate chain data for the current SSL connection. Note that the DER data is directly in the Lua string argument. No external file names are supported here.
 ---
@@ -220,7 +212,6 @@ ssl.SSL3_VERSION=768
 ---@return boolean ok
 ---@return string? error
 function ssl.set_der_cert(der_cert_chain) end
-
 
 --- Returns the TLS 1.x version string used by the current SSL connection. Returns nil and a string describing the error otherwise.
 ---
@@ -267,7 +258,6 @@ function ssl.priv_key_pem_to_der(pem_priv_key) end
 ---@return string?        der_cert_chain
 ---@return string?        error
 function ssl.cert_pem_to_der(pem_cert_chain) end
-
 
 --- Requires a client certificate during TLS handshake.
 ---
