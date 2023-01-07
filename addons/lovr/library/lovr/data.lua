@@ -1053,9 +1053,9 @@ function Sound:getFrameCount() end
 ---@overload fun(self: lovr.Sound, sound: lovr.Sound, count?: number, srcOffset?: number, dstOffset?: number):number
 ---@param count? number # The number of frames to read.  If nil, reads as many frames as possible.
 
-Compressed sounds will automatically be decoded.
+---Compressed sounds will automatically be decoded.
 
-Reading from a stream will ignore the source offset and read the oldest frames.
+---Reading from a stream will ignore the source offset and read the oldest frames.
 ---@param srcOffset? number # A frame offset to apply to the sound when reading frames.
 ---@return table t # A table containing audio frames.
 ---@return number count # The number of frames read.
