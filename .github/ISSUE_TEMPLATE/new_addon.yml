@@ -1,5 +1,7 @@
 name: New Addon
 description: Request a new addon
+labels:
+  - "New Addon"
 body:
   - type: markdown
     attributes:

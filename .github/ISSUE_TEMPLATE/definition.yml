@@ -1,5 +1,7 @@
 name: Incorrect Definition
 description: Report an incorrect definition
+labels:
+  - "Definition"
 body:
   - type: markdown
     attributes:
