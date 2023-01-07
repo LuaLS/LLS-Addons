@@ -1,0 +1,12 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Lua Language Server
+    url: https://github.com/sumneko/lua-language-server
+    about: >
+      For info and issues about the Lua Language Server, check out its GitHub
+      repository.
+  - name: Discussions
+    url: https://github.com/carsakiller/LLS-Addons/discussions
+    about: >
+      If you have a question, please instead ask it in the "Questions & Answers"
+      section on the discussions page.

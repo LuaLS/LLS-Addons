@@ -1,0 +1,27 @@
+name: New Addon
+description: Request a new addon
+body:
+  - type: markdown
+    attributes:
+      value: >
+        **Please check for similar issues before continuing!**
+  - type: textarea
+    id: what
+    attributes:
+      label: What is the Addon for?
+      description: >
+        What is the purpose of the addon? Does it add definitions? A plugin? For what?
+      value: |
+        Add definitions for the X library
+    validations:
+      required: true
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: Additional Notes
+      description: >
+        Please provide any additional notes, context, and media you have.
+  - type: markdown
+    attributes:
+      value: |
+        Thank you very much for helping us improve! ❤️

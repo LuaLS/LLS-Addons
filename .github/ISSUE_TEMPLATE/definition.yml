@@ -1,0 +1,34 @@
+name: Incorrect Definition
+description: Report an incorrect definition
+body:
+  - type: markdown
+    attributes:
+      value: >
+        **Please check for similar issues before continuing!**
+  - type: textarea
+    id: incorrect
+    attributes:
+      label: What is Incorrect?
+    validations:
+      required: true
+  - type: textarea
+    id: proposed-change
+    attributes:
+      label: Proposed Change
+      description: Do you have a proposed change for how this can be resolved?
+      value: |
+        Line x:
+        ```diff
+        - incorrect line
+        + correct line
+        ```
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: Additional Notes
+      description: >
+        Please provide any additional notes, context, and media you have.
+  - type: markdown
+    attributes:
+      value: |
+        Thank you very much for helping us improve! ❤️
