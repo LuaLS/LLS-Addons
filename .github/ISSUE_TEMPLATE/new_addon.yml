@@ -14,7 +14,7 @@ body:
       description: >
         What is the purpose of the addon? Does it add definitions? A plugin? For what?
       value: |
-        Add definitions for the X library
+        Add definitions for the [X library](https://example.com).
     validations:
       required: true
   - type: textarea
