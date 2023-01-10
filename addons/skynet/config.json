@@ -1,5 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/carsakiller/LLS-Addons/main/schemas/addon.schema.json",
   "name": "skynet",
+  "description": "Definitions for Skynet, the framework for online game servers.",
   "text_pattern": ["skynet.start"]
 }

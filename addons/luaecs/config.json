@@ -1,5 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/carsakiller/LLS-Addons/main/schemas/addon.schema.json",
-  "name": "luaecs",
+  "name": "Lua ECS",
+  "description": "Definitions for Lua ECS, a simple Entity-Component library.",
   "text_pattern": ["ecs%.world()"]
 }

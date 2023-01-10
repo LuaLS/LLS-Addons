@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/carsakiller/LLS-Addons/main/schemas/addon.schema.json",
-  "description": "Defintions for busted testing suite",
+  "description": "Defintions for busted testing suite.",
   "settings": {
     "Lua.workspace.library": ["${3rd}/luassert/library"]
   }

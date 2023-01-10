@@ -1,6 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/carsakiller/LLS-Addons/main/schemas/addon.schema.json",
   "name": "Defold",
+  "description": "Definitions for the Defold game engine.",
   "filename_pattern": ["game.project", "*%.script", "*%.gui_script"],
   "settings": {
     "Lua.runtime.version": "Lua 5.1",
