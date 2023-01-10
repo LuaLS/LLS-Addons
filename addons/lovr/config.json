@@ -1,8 +1,8 @@
 {
-    "$schema": "https://raw.githubusercontent.com/carsakiller/LLS-Addons/main/schemas/addon.schema.json",
-    "name"    : "LÖVR",
-    "text_pattern"   : ["lovr%.%w+"],
-    "settings"  : {
-        "runtime.version" : "LuaJIT"
-    }
+  "$schema": "https://raw.githubusercontent.com/carsakiller/LLS-Addons/main/schemas/addon.schema.json",
+  "name": "LÖVR",
+  "text_pattern": ["lovr%.%w+"],
+  "settings": {
+    "Lua.runtime.version": "LuaJIT"
+  }
 }

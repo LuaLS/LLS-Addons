@@ -4,10 +4,8 @@
   "filename_pattern": ["example_trigger%.lua"],
   "text_pattern": ["trigger_activation"],
   "settings": {
-    "diagnostics": {
-      "globals": ["myGlobalOne", "myOtherGlobal"],
-      "disable": ["different-requires"]
-    },
-    "workspace.preloadFileSize": 1000
+    "Lua.diagnostics.globals": ["myGlobalOne", "myOtherGlobal"],
+    "Lua.diagnostics.disable": ["different-requires"],
+    "Lua.workspace.preloadFileSize": 1000
   }
 }

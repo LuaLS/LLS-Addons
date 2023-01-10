@@ -3,10 +3,10 @@
   "name": "Defold",
   "filename_pattern": ["game.project", "*%.script", "*%.gui_script"],
   "settings": {
-    "runtime.version": "Lua 5.1",
-    "workspace.library": [".internal"],
-    "workspace.ignoreDir": [".internal"],
-    "diagnostics.globals": [
+    "Lua.runtime.version": "Lua 5.1",
+    "Lua.workspace.library": [".internal"],
+    "Lua.workspace.ignoreDir": [".internal"],
+    "Lua.diagnostics.globals": [
       "on_input",
       "on_message",
       "init",

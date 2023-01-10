@@ -1,7 +1,7 @@
 {
-    "$schema": "https://raw.githubusercontent.com/carsakiller/LLS-Addons/main/schemas/addon.schema.json",
-    "text_pattern"   : ["jass%.common"],
-    "settings"  : {
-        "runtime.version": "Lua 5.3"
-    }
+  "$schema": "https://raw.githubusercontent.com/carsakiller/LLS-Addons/main/schemas/addon.schema.json",
+  "text_pattern": ["jass%.common"],
+  "settings": {
+    "Lua.runtime.version": "Lua 5.3"
+  }
 }

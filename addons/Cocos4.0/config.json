@@ -3,6 +3,6 @@
   "name": "Cocos",
   "filename_pattern": ["cocos"],
   "settings": {
-    "runtime.version": "LuaJIT"
+    "Lua.runtime.version": "LuaJIT"
   }
 }

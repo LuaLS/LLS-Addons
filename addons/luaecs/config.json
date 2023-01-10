@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/carsakiller/LLS-Addons/main/schemas/addon.schema.json",
-    "name" : "luaecs",
-    "text_pattern" : [ "ecs%.world()" ]
+  "$schema": "https://raw.githubusercontent.com/carsakiller/LLS-Addons/main/schemas/addon.schema.json",
+  "name": "luaecs",
+  "text_pattern": ["ecs%.world()"]
 }
