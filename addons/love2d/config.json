@@ -1,9 +1,0 @@
-{
-  "$schema": "https://raw.githubusercontent.com/carsakiller/LLS-Addons/main/schemas/addon.schema.json",
-  "name": "LÖVE",
-  "description": "Definitions for the LÖVE 2D game framework.",
-  "text_pattern": ["love%.%w+"],
-  "settings": {
-    "Lua.runtime.version": "LuaJIT"
-  }
-}
