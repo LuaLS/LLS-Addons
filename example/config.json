@@ -1,5 +1,5 @@
 {
-  "$schema": "../schemas/addon.schema.json",
+  "$schema": "https://raw.githubusercontent.com/carsakiller/LLS-Addons/main/schemas/addon.schema.json",
   "description": "An example configuration file for an addon",
   "filename_pattern": ["example_trigger%.lua"],
   "text_pattern": ["trigger_activation"],

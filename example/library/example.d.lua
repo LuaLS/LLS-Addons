@@ -1,3 +1,5 @@
+---@meta
+
 ---@class ExampleObject
 ---@field name string
 ---@field active boolean
