@@ -1,3 +1,3 @@
-[submodule "addons/wireshark"]
-	path = addons/wireshark
+[submodule "addons/wireshark/module"]
+	path = addons/wireshark/module
 	url = git@github.com:psolyca/Wireshark_Lua_API.git
