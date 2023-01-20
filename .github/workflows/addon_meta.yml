@@ -10,11 +10,14 @@ jobs:
   build:
     name: Get Addon Metadata
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v3
         name: Checkout LLS-Addons
         with:
           token: ${{ secrets.GH_TOKEN }}
+          ref: ${{ github.head_ref }}
           submodules: true
       - uses: dsaltares/fetch-gh-release-asset@1.1.0
         name: Get custom action
@@ -29,3 +32,8 @@ jobs:
       - run: pwd
       - uses: ./action/dist
         name: Get Addon Metadata
+      - name: Commit Metadata
+        uses: stefanzweifel/git-auto-commit-action@v4.16.0
+        with:
+          commit_message: "chore: Update Addon Metadata"
+          file_pattern: addons/*/info.json
