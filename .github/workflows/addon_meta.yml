@@ -11,19 +11,21 @@ jobs:
     name: Get Addon Metadata
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+        name: Checkout LLS-Addons
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          submodules: true
       - uses: dsaltares/fetch-gh-release-asset@1.1.0
         name: Get custom action
         with:
           token: ${{ secrets.GH_TOKEN }}
           repo: carsakiller/LLS-Addons-Action
-          file: out.zip
-          target: ./.github/workflows/action.zip
+          file: dist.zip
+          target: action.zip
       - name: Unzip custom action
-        run: unzip ./.github/workflows/action.zip
-      - uses: actions/checkout@v3
-        name: Checkout addons
-        with:
-          token: ${{ secrets.GH_TOKEN }}
-          submodules: true
-      - uses: ./.github/workflows/action
+        run: unzip action.zip -d action
+      - run: ls ./action/dist
+      - run: pwd
+      - uses: ./action/dist
         name: Get Addon Metadata
