@@ -22,6 +22,6 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
           submodules: true
-      - uses: .github/workflows/action
+      - uses: ./.github/workflows/action
         name: Get Addon Metadata
     # Get addon metadata
