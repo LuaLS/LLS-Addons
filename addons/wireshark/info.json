@@ -1,3 +1,5 @@
 {
-    "description": "Definitions for the Wireshark Lua API"
+  "description": "Definitions for the Wireshark Lua API",
+  "size": 169326,
+  "hasPlugin": false
 }
