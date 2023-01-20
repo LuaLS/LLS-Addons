@@ -7,16 +7,21 @@ on:
       - main
 
 jobs:
-  style:
-    name: StyLua
+  build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-      with:
-        token: ${{ secrets.GH_TOKEN }}
-        submodules: true
-    - uses: JohnnyMorganz/stylua-action@v2
-      with:
-        token: ${{ secrets.GH_TOKEN }}
-        version: latest
-        args: --check addons
+      - uses: actions/checkout@v3
+        name: Get custom action
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          repository: carsakiller/LLS-Addons-Action
+          path: .github/workflows/action
+      - uses: actions/checkout@v3
+        name: Checkout addons
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          submodules: true
+      - uses: .github/workflows/action
+        name: Get Addon Metadata
+    # Get addon metadata
