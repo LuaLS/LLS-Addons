@@ -10,6 +10,7 @@ jobs:
   build:
     name: Get Addon Metadata
     runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'push'}}
     permissions:
       contents: write
     steps:
