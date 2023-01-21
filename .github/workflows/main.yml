@@ -7,9 +7,25 @@ on:
       - main
 
 jobs:
+  style:
+    name: Run StyLua
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        name: Checkout LLS-Addons
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          ref: ${{ github.head_ref }}
+          submodules: true
+      - uses: JohnnyMorganz/stylua-action@v2.0.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          version: latest
+          args: --check addons
   build:
     name: Get Addon Metadata
     runs-on: ubuntu-latest
+    needs: style
     if: ${{ github.event_name == 'push'}}
     permissions:
       contents: write
