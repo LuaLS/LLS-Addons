@@ -1,0 +1,9 @@
+[submodule "addons/busted/module"]
+	path = addons/busted/module
+	url = git@github.com:LuaCATS/busted.git
+[submodule "addons/luassert/module"]
+	path = addons/luassert/module
+	url = git@github.com:LuaCATS/luassert.git
+[submodule "addons/openresty/module"]
+	path = addons/openresty/module
+	url = git@github.com:LuaCATS/openresty.git

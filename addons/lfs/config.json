@@ -1,9 +1,0 @@
-{
-  "$schema": "https://raw.githubusercontent.com/carsakiller/LLS-Addons/main/schemas/addon.schema.json",
-  "name": "LuaFileSystem",
-  "description": "Definitions for the LuaFileSystem library.",
-  "text_pattern": ["require[%s%(\"']+lfs[%)\"']"],
-  "settings": {
-    "Lua.diagnostics.globals": ["lfs"]
-  }
-}
