@@ -45,8 +45,6 @@ jobs:
           target: action.zip
       - name: Unzip custom action
         run: unzip action.zip -d action
-      - run: ls ./action/dist
-      - run: pwd
       - uses: ./action/dist
         name: Get Addon Metadata
       - name: Commit Metadata
