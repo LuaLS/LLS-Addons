@@ -1,3 +1,9 @@
-[submodule "addons/wireshark/module"]
-	path = addons/wireshark/module
-	url = git@github.com:psolyca/Wireshark_Lua_API.git
+[submodule "addons/busted/module"]
+	path = addons/busted/module
+	url = git@github.com:LuaCATS/busted.git
+[submodule "addons/luassert/module"]
+	path = addons/luassert/module
+	url = git@github.com:LuaCATS/luassert.git
+[submodule "addons/openresty/module"]
+	path = addons/openresty/module
+	url = git@github.com:LuaCATS/openresty.git
