@@ -9,31 +9,22 @@ New to Git/GitHub? Here are some guides that will help you get started:
 - [Setting up Git](https://docs.github.com/en/get-started/quickstart/set-up-git)
 - [Pull request workflow](https://docs.github.com/en/get-started/quickstart/github-flow)
 - [Pull request detailed guide](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/getting-started/about-collaborative-development-models)
+- [Git submodules](https://www.atlassian.com/git/tutorials/git-submodule)
 
 
 ## How To Contribute
-There are various ways to contribute to this project. Some may involve programming and others can be simple spelling corrections. Please feel free to open a pull request to add a new addon at any time.
+There are many ways to contribute to this project, you can, for example, add your own addon or help someone maintain an addon that has already been added. Tasks can range from spelling corrections to translations to programming.
 
 
 ### Reporting Issues
-Found an issue with an addon, like incorrect definitions or a malfunctioning plugin? [Search for related issues](https://github.com/carsakiller/LLS-Addons/issues) to see if someone has already discovered the issue.
+Found an issue with an addon, like incorrect definitions or a malfunctioning plugin? Head to the repository for that addon and open an issue there. Make sure to read the `CONTRIBUTING.md` over there as well!
 
 > **Note**
 > It is important to look for already open issues as it keeps things organized and duplicate issues will be closed.
 
-If your issue hasn't been reported already, [open up a new issue](https://github.com/carsakiller/LLS-Addons/issues/new/choose).
 
-
-### Solving Issues
-Take a look through the [open issues](https://github.com/carsakiller/LLS-Addons/issues) to see if there is one you are interested in solving. You can filter for [beginner-friendly issues](https://github.com/carsakiller/LLS-Addons/labels/beginner%20friendly) to find some of the easier issues that are great for getting started.
-
-
-### Making Changes
-Now that you have found/created an issue, we can learn how to contribute your solution.
-
-1. Fork the repository to get your own copy of the project.
-2. Create a branch where you can make your changes. Try to name the branch something related to what you are doing, e.g. `issue-58` or `busted-spelling`.
-3. Commit your changes to your branch and confirm that things are working as expected.
+### Creating an addon
+To create your own addon, you will want to first create an issue explaining what you are creating. This will help prevent multiple people working on their own versions of the same thing. Then you will need to create a GitHub repository to store your addon. Definition files will need to placed in a `library/` directory.
 
 
 ### Testing Changes
@@ -42,6 +33,13 @@ Making sure that definitions are accurate is very important. Receiving help with
 To test changes from a pull request, you will have to clone that repository and checkout the branch being merged.
 
 Once you have the changes locally on your computer, you can [test the changes with the Lua Language Server](https://github.com/sumneko/lua-language-server/wiki/Libraries#link-to-workspace).
+
+### Adding an addon
+1. Fork the repository to get your own copy of the project.
+2. Create a branch where you can make your changes. Try to name the branch something related to what you are doing, e.g. `issue-58` or `busted-addon`.
+3. Commit your addon as a submodule to your fork
+> **WARNING**
+> Make sure to commit the submodule and not just the updates to `.submodules`
 
 
 ### Contributing Changes

@@ -1,5 +1,5 @@
 name: New Addon
-description: Request a new addon
+description: Request a new addon be added
 labels:
   - "New Addon"
 body:
