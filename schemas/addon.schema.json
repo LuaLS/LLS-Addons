@@ -1,39 +1,10 @@
 {
-  "title": "Lua Language Server Addon",
-  "description": "Configuration for addon",
+  "title": "LLS-Addon config.json",
+  "description": "Configuration file for an addon for the Lua Language Server",
   "properties": {
-    "name": {
-      "description": "The name of the addon",
-      "type": "string"
-    },
-    "description": {
-      "description": "A description of the addon. Should explain what the purpose is and why others should use it.",
-      "type": "string",
-      "maxLength": 350,
-      "minLength": 30
-    },
-    "text_pattern": {
-      "description": "Lua string patterns that, if matched in the content of a file, will recommend this addon get applied. These should be as unique as possible to prevent this project from being recommended too often and annoying users.",
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "minItems": 1,
-      "uniqueItems": true
-    },
-    "filename_pattern": {
-      "description": "Lua string patterns that, if matched to a filename, will recommend this addon get applied. These should be as unique as possible to prevent this project from being recommended too often and annoying users.",
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "minItems": 1,
-      "uniqueItems": true
-    },
     "settings": {
       "markdownDescription": "Configurations to insert/overwrite in the user's local config file when this addon is applied.",
       "type": "object"
     }
-  },
-  "required": ["description"]
+  }
 }

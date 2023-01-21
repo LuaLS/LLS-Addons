@@ -1,0 +1,18 @@
+{
+  "title": "LLS-Addon info.json",
+  "description": "Schema for LLS addon info.json files",
+  "properties": {
+    "name": {
+      "description": "The display name for the addon",
+      "type": "string"
+    },
+    "size": {
+      "description": "The size of the addon. Generated automatically",
+      "type": "number"
+    },
+    "hasPlugin": {
+      "description": "Whether this addon contains a plugin. Generated automatically",
+      "type": "boolean"
+    }
+  }
+}
