@@ -7,3 +7,6 @@
 [submodule "addons/openresty/module"]
 	path = addons/openresty/module
 	url = git@github.com:LuaCATS/openresty.git
+[submodule "addons/love2d/module"]
+	path = addons/love2d/module
+	url = git@github.com:LuaCATS/love2d.git
