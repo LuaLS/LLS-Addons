@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/carsakiller/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "CC: Tweaked",
-  "description": "Defintions for the CC:Tweaked Lua API",
+  "description": "Definitions for the CC: Tweaked Lua API",
   "size": 245118,
   "hasPlugin": false
 }
