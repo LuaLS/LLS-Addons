@@ -16,7 +16,21 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
           ref: ${{ github.head_ref }}
-          submodules: true
+
+      # Use custom action to get submodules
+      # This allows us to get submodules that live on GitLab
+      - uses: dsaltares/fetch-gh-release-asset@1.1.0
+        name: Get submodule fetching action
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repo: carsakiller/get-submodules-action
+          file: dist.zip
+          target: submodule-action.zip
+      - name: Unzip submodule fetching action
+        run: unzip submodule-action.zip -d submodule-action
+      - uses: ./submodule-action/dist
+        name: Get all submodules
+
       - uses: JohnnyMorganz/stylua-action@v2.0.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
