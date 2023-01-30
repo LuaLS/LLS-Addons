@@ -6,6 +6,12 @@
       "description": "The display name for the addon",
       "type": "string"
     },
+    "description": {
+      "description": "A description for this addon",
+      "type": "string",
+      "minLength": 30,
+      "maxLength": 350
+    },
     "size": {
       "description": "The size of the addon. Generated automatically",
       "type": "number"
