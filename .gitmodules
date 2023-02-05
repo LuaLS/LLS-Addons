@@ -1,15 +1,15 @@
 [submodule "addons/busted/module"]
 	path = addons/busted/module
-	url = git@github.com:LuaCATS/busted.git
+	url = https://github.com/LuaCATS/busted.git
 [submodule "addons/luassert/module"]
 	path = addons/luassert/module
-	url = git@github.com:LuaCATS/luassert.git
+	url = https://github.com/LuaCATS/luassert.git
 [submodule "addons/openresty/module"]
 	path = addons/openresty/module
-	url = git@github.com:LuaCATS/openresty.git
+	url = https://github.com/LuaCATS/openresty.git
 [submodule "addons/love2d/module"]
 	path = addons/love2d/module
-	url = git@github.com:LuaCATS/love2d.git
+	url = https://github.com/LuaCATS/love2d.git
 [submodule "addons/cc-tweaked/module"]
 	path = addons/cc-tweaked/module
 	url = git@gitlab.com:carsakiller/cc-tweaked-documentation.git
