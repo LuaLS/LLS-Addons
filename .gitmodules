@@ -25,3 +25,6 @@
 [submodule "addons/luafilesystem/module"]
 	path = addons/luafilesystem/module
 	url = https://github.com/LuaCATS/luafilesystem.git
+[submodule "addons/cocos4.0/module"]
+	path = addons/cocos4.0/module
+	url = https://github.com/LuaCATS/cocos4.0.git
