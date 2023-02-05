@@ -1,5 +1,5 @@
 # Summary
-This pull request adds a new plugin 🎉
+This pull request adds _
 
 Included are definition files, a plugin, and some setting customizations.
 
@@ -10,7 +10,7 @@ Closes #ISSUE
 
 Self-review Checklist:
 
-- Verify that the config.json is valid by pasting it into https://www.jsonschemavalidator.net/s/0VgTymAt.
+- Verify that the config.json is valid by pasting it into https://www.jsonschemavalidator.net/s/JxX3xtlV.
 
 - StyLua (https://github.com/JohnnyMorganz/StyLua) has been run to meet code style requirements.
 
