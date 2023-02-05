@@ -22,3 +22,6 @@
 [submodule "addons/lovr/module"]
 	path = addons/lovr/module
 	url = https://github.com/LuaCATS/lovr.git
+[submodule "addons/luafilesystem/module"]
+	path = addons/luafilesystem/module
+	url = https://github.com/LuaCATS/luafilesystem.git
