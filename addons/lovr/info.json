@@ -1,5 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/carsakiller/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "LÖVR",
-  "description": "Definitions for the LÖVR 3D framework"
+  "description": "Definitions for the LÖVR 3D framework",
+  "size": 384055,
+  "hasPlugin": false
 }
