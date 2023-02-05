@@ -19,3 +19,6 @@
 [submodule "addons/luaecs/module"]
 	path = addons/luaecs/module
 	url = https://github.com/LuaCATS/luaecs.git
+[submodule "addons/lovr/module"]
+	path = addons/lovr/module
+	url = https://github.com/LuaCATS/lovr.git
