@@ -41,6 +41,8 @@ Once you have the changes locally on your computer, you can [test the changes wi
 > **WARNING**
 > Make sure to commit the submodule and not just the updates to `.submodules`
 
+When an addon is updated, the submodule in LLS-Addons will have to be updated to the latest commit.
+
 
 ### Contributing Changes
 Now it is time to contribute your changes back to this project for all to enjoy! Note that your changes will be added under the [license](LICENSE) of this project.
