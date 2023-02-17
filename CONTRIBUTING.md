@@ -24,7 +24,7 @@ Found an issue with an addon, like incorrect definitions or a malfunctioning plu
 
 
 ### Creating an addon
-To create your own addon, you will want to first create an issue explaining what you are creating. This will help prevent multiple people working on their own versions of the same thing. Then you will need to create a GitHub repository to store your addon. Definition files will need to placed in a `library/` directory.
+To create your own addon, you will want to first create an issue explaining what you are creating. This will help prevent multiple people working on their own versions of the same thing. Then you will need to create a GitHub repository to store your addon. Definition files will need to placed in a `library/` directory. Take a look at some of the pre-existing addons as an example and take a look at [environment emulations][environment-emulation-wiki].
 
 
 ### Testing Changes
@@ -38,7 +38,7 @@ Once you have the changes locally on your computer, you can [test the changes wi
 1. Fork the repository to get your own copy of the project.
 2. Create a branch where you can make your changes. Try to name the branch something related to what you are doing, e.g. `issue-58` or `busted-addon`.
 3. Commit your addon as a submodule to your fork
-> **WARNING**
+> **Warning**
 > Make sure to commit the submodule and not just the updates to `.submodules`
 
 When an addon is updated, the submodule in LLS-Addons will have to be updated to the latest commit.
@@ -53,3 +53,4 @@ Now it is time to contribute your changes back to this project for all to enjoy!
 
 Thank you for helping us improve! ❤️
 
+[environment-emulation-wiki]: https://github.com/sumneko/lua-language-server/wiki/Libraries#environment-emulation
