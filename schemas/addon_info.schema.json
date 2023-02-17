@@ -20,5 +20,6 @@
       "description": "Whether this addon contains a plugin. Generated automatically",
       "type": "boolean"
     }
-  }
+  },
+  "required": ["name", "description"]
 }
