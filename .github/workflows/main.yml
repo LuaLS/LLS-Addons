@@ -69,7 +69,7 @@ jobs:
         name: Get submodule metadata fetching action
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          repo: carsakiller/LLS-Addons-Action
+          repo: LuaLS/LLS-Addons-Action
           file: dist.zip
           target: action.zip
       - name: Unzip custom action
