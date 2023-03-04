@@ -28,3 +28,6 @@
 [submodule "addons/cocos4.0/module"]
 	path = addons/cocos4.0/module
 	url = https://github.com/LuaCATS/cocos4.0.git
+[submodule "addons/moneymoney/module"]
+	path = addons/moneymoney/module
+	url = https://github.com/lukasbestle/moneymoney-devkit.git
