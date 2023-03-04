@@ -28,3 +28,7 @@
 [submodule "addons/cocos4.0/module"]
 	path = addons/cocos4.0/module
 	url = https://github.com/LuaCATS/cocos4.0.git
+[submodule "addons/luvit/module"]
+	path = addons/luvit/module
+	url = https://github.com/Bilal2453/luvit-meta.git
+	branch = release

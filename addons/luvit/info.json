@@ -1,0 +1,5 @@
+{
+  "$schema": "https://raw.githubusercontent.com/carsakiller/LLS-Addons/main/schemas/addon_info.schema.json",
+  "name": "Luvit",
+  "description": "Definitions for the Luvit framework"
+}
