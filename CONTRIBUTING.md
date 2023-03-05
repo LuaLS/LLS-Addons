@@ -22,11 +22,6 @@ Found an issue with an addon, like incorrect definitions or a malfunctioning plu
 > **Note**
 > It is important to look for already open issues as it keeps things organized and duplicate issues will be closed.
 
-
-### Creating an addon
-To create your own addon, you will want to first create an issue explaining what you are creating. This will help prevent multiple people working on their own versions of the same thing. Then you will need to create a GitHub repository to store your addon. Definition files will need to placed in a `library/` directory. Take a look at some of the pre-existing addons as an example and take a look at [environment emulations][environment-emulation-wiki].
-
-
 ### Testing Changes
 Making sure that definitions are accurate is very important. Receiving help with testing changes is equally significant. There are too many libraries and frameworks for even a small team of people to test and have knowledge about.
 
@@ -35,13 +30,26 @@ To test changes from a pull request, you will have to clone that repository and 
 Once you have the changes locally on your computer, you can [test the changes with the Lua Language Server](https://github.com/sumneko/lua-language-server/wiki/Libraries#link-to-workspace).
 
 ### Adding an addon
-1. Fork the repository to get your own copy of the project.
+There are a few steps to adding your own addon. The process is still being worked on to try and make it as easy as possible.
+
+#### Creating the addon
+1. [Create an issue](https://github.com/LuaLS/LLS-Addons/issues/new?template=new_addon.yml) explaining what you are creating. This helps prevent multiple people working on their own versions of the same thing.
+2. Use the [addon template](https://github.com/LuaLS/addon-template) or create your own repository (GitHub/GitLab) to store your addon.
+3. Read ["Creating an Addon" in the Lua Language Server wiki to learn more](https://github.com/LuaLS/lua-language-server/wiki/Addons#creating-an-addon)
+
+#### Publishing the Addon
+1. Fork [LLS-Addons](https://github.com/LuaLS/LLS-Addons) to get your own copy.
 2. Create a branch where you can make your changes. Try to name the branch something related to what you are doing, e.g. `issue-58` or `busted-addon`.
-3. Commit your addon as a submodule to your fork
+3. Create an `info.json` file that lives in your addon's directory (e.g. `addons/myAddon/info.json`. You can copy an `info.json` from [an already included addon](https://github.com/LuaLS/LLS-Addons/blob/main/addons/cc-tweaked/info.json) as a template.
+4. In your `info.json`, specify a `name` (display name) and `description`. The `size` and `hasPlugin` values will be generated automatically.
+5. Commit your addon as a submodule to your fork
+   - Your git command should look like `git submodule add $HTTP_CLONE_URL addons/myAddon/module`.
+   - If you have many miscellaneous/config files in your addon repository, please create a new branch (e.g. `publish`) where you can include the minimum number of files (`LICENSE` is fine). You can then use `git submodule add -b $BRANCH_NAME $HTTP_CLONE_URL addons/myAddon/module` to add your addon.
+
 > **Warning**
 > Make sure to commit the submodule and not just the updates to `.submodules`
 
-When an addon is updated, the submodule in LLS-Addons will have to be updated to the latest commit.
+When an addon is updated, the submodule in LLS-Addons will have to be updated to the latest commit through a pull request.
 
 
 ### Contributing Changes
@@ -53,4 +61,4 @@ Now it is time to contribute your changes back to this project for all to enjoy!
 
 Thank you for helping us improve! ❤️
 
-[environment-emulation-wiki]: https://github.com/sumneko/lua-language-server/wiki/Libraries#environment-emulation
+[addons-wiki]: https://github.com/LuaLS/lua-language-server/wiki/Addons#vs-code-addon-manager
