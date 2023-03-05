@@ -1,5 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/carsakiller/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "LPeg",
-  "description": "Definitions for the LPeg library"
+  "description": "Definitions for the LPeg library",
+  "size": 14430,
+  "hasPlugin": false
 }
