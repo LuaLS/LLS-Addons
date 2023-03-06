@@ -38,3 +38,7 @@
 [submodule "addons/lpeg/module"]
 	path = addons/lpeg/module
 	url = https://github.com/LuaCATS/lpeg.git
+[submodule "addons/nodemcu-esp32/module"]
+	path = addons/nodemcu-esp32/module
+	url = https://github.com/serg3295/nodeMCU-emmylua.git
+	branch = nodemcu-esp32
