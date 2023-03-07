@@ -12,7 +12,7 @@
 	url = https://github.com/LuaCATS/love2d.git
 [submodule "addons/cc-tweaked/module"]
 	path = addons/cc-tweaked/module
-	url = git@gitlab.com:carsakiller/cc-tweaked-documentation.git
+	url = https://gitlab.com/carsakiller/cc-tweaked-documentation.git
 [submodule "addons/skynet/module"]
 	path = addons/skynet/module
 	url = https://github.com/LuaCATS/skynet.git
