@@ -1,0 +1,5 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
+  "name": "NodeMCU ESP8266",
+  "description": "Definitions for NodeMCU, Lua based firmware for the ESP8266 WiFi SoC from Espressif"
+}
