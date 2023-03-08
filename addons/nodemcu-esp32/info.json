@@ -3,5 +3,5 @@
   "name": "NodeMCU ESP32",
   "description": "Definitions for NodeMCU, Lua based firmware for the ESP32 WiFi SoC from Espressif",
   "size": 201350,
-  "hasPlugin": false
+  "hasPlugin": true
 }
