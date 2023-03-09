@@ -48,4 +48,4 @@
 	branch = nodemcu-esp8266
 [submodule "addons/luasocket/module"]
 	path = addons/luasocket/module
-	url = git@github.com:LuaCATS/luasocket.git
+	url = https://github.com/LuaCATS/luasocket.git
