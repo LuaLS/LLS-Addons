@@ -46,3 +46,6 @@
 	path = addons/nodemcu-esp8266/module
 	url = https://github.com/serg3295/nodeMCU-emmylua.git
 	branch = nodemcu-esp8266
+[submodule "addons/luasocket/module"]
+	path = addons/luasocket/module
+	url = https://github.com/LuaCATS/luasocket.git
