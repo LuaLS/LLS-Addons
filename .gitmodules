@@ -54,4 +54,4 @@
 	url = https://github.com/LuaCATS/luazip.git
 [submodule "addons/md5/module"]
 	path = addons/md5/module
-	url = git@github.com:LuaCATS/md5.git
+	url = https://github.com/LuaCATS/md5.git
