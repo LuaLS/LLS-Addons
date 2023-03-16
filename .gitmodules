@@ -61,3 +61,6 @@
 [submodule "addons/tex-luatex/module"]
 	path = addons/tex-luatex/module
 	url = https://github.com/LuaCATS/tex-luatex.git
+[submodule "addons/slnunicode/module"]
+	path = addons/slnunicode/module
+	url = https://github.com/LuaCATS/slnunicode.git
