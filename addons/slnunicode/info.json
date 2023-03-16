@@ -1,5 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/carsakiller/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "slnunicode",
-  "description": "Definitions for the slnunicode library"
+  "description": "Definitions for the slnunicode library",
+  "size": 14387,
+  "hasPlugin": false
 }
