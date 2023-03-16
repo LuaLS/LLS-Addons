@@ -58,3 +58,6 @@
 [submodule "addons/lzlib/module"]
 	path = addons/lzlib/module
 	url = https://github.com/LuaCATS/lzlib.git
+[submodule "addons/tex-luatex/module"]
+	path = addons/tex-luatex/module
+	url = https://github.com/LuaCATS/tex-luatex.git
