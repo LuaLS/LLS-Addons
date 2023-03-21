@@ -64,6 +64,9 @@
 [submodule "addons/slnunicode/module"]
 	path = addons/slnunicode/module
 	url = https://github.com/LuaCATS/slnunicode.git
+[submodule "addons/tex-lualatex/module"]
+	path = addons/tex-lualatex/module
+	url = https://github.com/LuaCATS/tex-lualatex.git
 [submodule "addons/xmake/module"]
 	path = addons/xmake/module
 	url = https://github.com/LelouchHe/xmake-luals-addon.git
