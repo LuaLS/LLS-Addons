@@ -64,7 +64,7 @@
 [submodule "addons/slnunicode/module"]
 	path = addons/slnunicode/module
 	url = https://github.com/LuaCATS/slnunicode.git
-[submodule ".\\addons\\xmake\\module"]
-	path = .\\addons\\xmake\\module
-	url = https://github.com/LelouchHe/xmake-luals-addon
+[submodule "addons/xmake/module"]
+	path = addons/xmake/module
+	url = https://github.com/LelouchHe/xmake-luals-addon.git
 	branch = publish
