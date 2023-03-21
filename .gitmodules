@@ -71,3 +71,7 @@
 	path = addons/penlight/module
 	url = https://github.com/goldenstein64/pl-definitions.git
 	branch = publish
+[submodule "addons/xmake/module"]
+	path = addons/xmake/module
+	url = https://github.com/LelouchHe/xmake-luals-addon.git
+
