@@ -71,3 +71,7 @@
 	path = addons/xmake/module
 	url = https://github.com/LelouchHe/xmake-luals-addon.git
 	branch = publish
+[submodule "addons/love-nuklear/module"]
+	path = addons/love-nuklear/module
+	url = https://github.com/goldenstein64/love-nuklear-definitions.git
+	branch = publish

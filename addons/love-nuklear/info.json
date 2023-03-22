@@ -1,0 +1,5 @@
+{
+  "$schema": "https://raw.githubusercontent.com/carsakiller/LLS-Addons/main/schemas/addon_info.schema.json",
+	"name": "LÖVE Nuklear",
+	"description": "Definitions for the LÖVE Nuklear 2.6.1 library."
+}
