@@ -71,3 +71,6 @@
 	path = addons/xmake/module
 	url = https://github.com/LelouchHe/xmake-luals-addon.git
 	branch = publish
+[submodule "addons/luaharfbuzz/module"]
+	path = addons/luaharfbuzz/module
+	url = https://github.com/LuaCATS/luaharfbuzz.git
