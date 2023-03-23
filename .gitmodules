@@ -74,3 +74,7 @@
 [submodule "addons/luaharfbuzz/module"]
 	path = addons/luaharfbuzz/module
 	url = https://github.com/LuaCATS/luaharfbuzz.git
+[submodule "addons/argparse/module"]
+	path = addons/argparse/module
+	url = https://github.com/goldenstein64/argparse-definitions.git
+	branch = publish
