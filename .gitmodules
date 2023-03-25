@@ -86,3 +86,6 @@
 	path = addons/love-nuklear/module
 	url = https://github.com/goldenstein64/love-nuklear-definitions.git
   branch = publish
+[submodule "addons/bee/module"]
+	path = addons/bee/module
+	url = https://github.com/LuaCATS/bee.git
