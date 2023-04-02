@@ -89,6 +89,3 @@
 [submodule "addons/bee/module"]
 	path = addons/bee/module
 	url = https://github.com/LuaCATS/bee.git
-[submodule "addons/moonloader/module"]
-	path = addons/moonloader/module
-	url = https://github.com/GovnocodedByChapo/moonloader-definitions.git
