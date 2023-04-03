@@ -1,4 +1,6 @@
 {
-  "name":"MoonLoader",
-  "description": "Definitions for MoonLoader, a modding interface for GTA: SA"
+  "name": "MoonLoader",
+  "description": "Definitions for MoonLoader, a modding interface for GTA: SA",
+  "size": 239091,
+  "hasPlugin": false
 }
