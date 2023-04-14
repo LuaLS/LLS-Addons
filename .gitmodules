@@ -92,3 +92,9 @@
 [submodule "addons/moonloader/module"]
 	path = addons/moonloader/module
 	url = https://github.com/GovnocodedByChapo/moonloader-definitions.git
+[submodule "addons/tex-lualibs/module"]
+	path = addons/tex-lualibs/module
+	url = https://github.com/LuaCATS/tex-lualibs.git
+[submodule "addons/tex-luametatex/module"]
+	path = addons/tex-luametatex/module
+	url = https://github.com/LuaCATS/tex-luametatex.git
