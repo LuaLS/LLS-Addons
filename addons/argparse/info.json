@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/carsakiller/LLS-Addons/main/schemas/addon_info.schema.json",
+  "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "argparse",
   "description": "Definitions for the argparse 0.7.1 library.",
   "size": 42443,

@@ -1,4 +1,5 @@
 {
+  "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "MoonLoader",
   "description": "Definitions for MoonLoader, a modding interface for GTA: SA",
   "size": 239091,
