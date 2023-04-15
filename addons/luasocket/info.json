@@ -2,6 +2,6 @@
   "$schema": "https://raw.githubusercontent.com/carsakiller/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "LuaSocket",
   "description": "Definitions for the LuaSocket library",
-  "size": 23063,
+  "size": 23951,
   "hasPlugin": false
 }
