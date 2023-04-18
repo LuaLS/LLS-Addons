@@ -2,6 +2,6 @@
   "$schema": "https://raw.githubusercontent.com/carsakiller/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "LuaMetaTeX",
   "description": "Definitions for the TeX engine LuaMetaTeX",
-  "size": 67368,
+  "size": 72737,
   "hasPlugin": false
 }
