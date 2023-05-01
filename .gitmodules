@@ -98,3 +98,7 @@
 [submodule "addons/tex-luametatex/module"]
 	path = addons/tex-luametatex/module
 	url = https://github.com/LuaCATS/tex-luametatex.git
+[submodule "addons/garrysmod/module"]
+	path = addons/garrysmod/module
+	url = https://github.com/luttje/glua-api-snippets.git
+	branch = lua-language-server-addon
