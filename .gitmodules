@@ -102,3 +102,6 @@
 	path = addons/garrysmod/module
 	url = https://github.com/luttje/glua-api-snippets.git
 	branch = lua-language-server-addon
+[submodule "addons/yue/module"]
+	path = addons/yue/module
+	url = https://github.com/Frityet/luayue-definitions.git
