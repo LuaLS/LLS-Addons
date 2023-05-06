@@ -1,5 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "Yue",
-  "description": "Definitions for the Yue library"
+  "description": "Definitions for the Yue library",
+  "size": 106403,
+  "hasPlugin": false
 }
