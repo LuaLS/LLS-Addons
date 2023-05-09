@@ -2,6 +2,6 @@
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "lzlib",
   "description": "Definitions for the lzlib library",
-  "size": 8325,
+  "size": 8924,
   "hasPlugin": false
 }

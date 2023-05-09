@@ -2,6 +2,6 @@
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "LPeg",
   "description": "Definitions for the LPeg library",
-  "size": 20973,
+  "size": 24016,
   "hasPlugin": false
 }
