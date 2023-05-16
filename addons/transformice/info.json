@@ -1,5 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "Transformice",
-  "description": "Definitions for the Transformice game's Module API"
+  "description": "Definitions for the Transformice game's Module API",
+  "size": 48694,
+  "hasPlugin": false
 }
