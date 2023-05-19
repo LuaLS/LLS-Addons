@@ -109,3 +109,6 @@
 	path = addons/transformice/module
 	url = https://github.com/MouseTool/tfm-types.git
 	branch = luals-addon
+[submodule "addons/luaunit/module"]
+	path = addons/luaunit/module
+	url = https://github.com/serg3295/luaunit.git
