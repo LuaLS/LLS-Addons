@@ -1,7 +1,7 @@
 {
-    "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
-    "name": "HALion",
-    "description": "Definitions for HALion scripting Lua API",
-    "size": 245159,
-    "hasPlugin": false
-  }
+  "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
+  "name": "HALion",
+  "description": "Definitions for HALion scripting Lua API",
+  "size": 61258,
+  "hasPlugin": false
+}
