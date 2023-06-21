@@ -1,7 +1,7 @@
 {
-  "$schema": "https://raw.githubusercontent.com/carsakiller/LLS-Addons/main/schemas/addon_info.schema.json",
+  "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "lzlib",
   "description": "Definitions for the lzlib library",
-  "size": 4598,
+  "size": 8924,
   "hasPlugin": false
 }

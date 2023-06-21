@@ -1,7 +1,7 @@
 {
-  "$schema": "https://raw.githubusercontent.com/carsakiller/LLS-Addons/main/schemas/addon_info.schema.json",
+  "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "md5",
   "description": "Definitions for the md5 library",
-  "size": 5163,
+  "size": 7058,
   "hasPlugin": false
 }

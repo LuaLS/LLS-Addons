@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/carsakiller/LLS-Addons/main/schemas/addon_info.schema.json",
+  "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "description": "Definitions for skynet, a framework for online game servers",
   "size": 60543,
   "hasPlugin": false
