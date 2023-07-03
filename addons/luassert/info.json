@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/carsakiller/LLS-Addons/main/schemas/addon_info.schema.json",
+  "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "description": "Definitions for the luassert assertion library",
   "size": 36858,
   "hasPlugin": false

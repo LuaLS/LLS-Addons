@@ -93,3 +93,32 @@
 	path = addons/lualogging/module
 	url = https://github.com/goldenstein64/lualogging-definitions.git
 	branch = publish
+[submodule "addons/moonloader/module"]
+	path = addons/moonloader/module
+	url = https://github.com/GovnocodedByChapo/moonloader-definitions.git
+[submodule "addons/tex-lualibs/module"]
+	path = addons/tex-lualibs/module
+	url = https://github.com/LuaCATS/tex-lualibs.git
+[submodule "addons/tex-luametatex/module"]
+	path = addons/tex-luametatex/module
+	url = https://github.com/LuaCATS/tex-luametatex.git
+[submodule "addons/garrysmod/module"]
+	path = addons/garrysmod/module
+	url = https://github.com/luttje/glua-api-snippets.git
+	branch = lua-language-server-addon
+[submodule "addons/yue/module"]
+	path = addons/yue/module
+	url = https://github.com/Frityet/luayue-definitions.git
+[submodule "addons/transformice/module"]
+	path = addons/transformice/module
+	url = https://github.com/MouseTool/tfm-types.git
+	branch = luals-addon
+[submodule "addons/luaunit/module"]
+	path = addons/luaunit/module
+	url = https://github.com/serg3295/luaunit.git
+[submodule "addons/halion/module"]
+	path = addons/halion/module
+	url = https://github.com/misohoza/halion.git
+[submodule "addons/minetest/module"]
+	path = addons/minetest/module
+	url = https://git.sr.ht/~fgaz/minetest-lls-definitions

@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
-  "name": "LPeg",
-  "description": "Definitions for the LPeg library",
-  "size": 24016,
+  "name": "Garry's Mod",
+  "description": "Definitions for the game Garry's Mod",
+  "size": 2235265,
   "hasPlugin": false
 }

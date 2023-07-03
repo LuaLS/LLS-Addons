@@ -20,10 +20,10 @@ There are many ways to contribute to this project, you can, for example, add you
 Found an issue with an addon, like incorrect definitions or a malfunctioning plugin? Head to the repository for that addon and open an issue there. Make sure to read the `CONTRIBUTING.md` over there as well!
 
 > **Note**
-> It is important to look for already open issues as it keeps things organized and duplicate issues will be closed.
+> Please make sure to look for already open issues to keep things organized and make sure your issue is not closed as a duplicate.
 
 ### Testing Changes
-Making sure that definitions are accurate is very important. Receiving help with testing changes is equally significant. There are too many libraries and frameworks for even a small team of people to test and have knowledge about.
+Making sure that definitions are accurate is very important. Receiving help with testing changes is equally significant. There are too many libraries and frameworks for even a team of people to test and have knowledge about.
 
 To test changes from a pull request, you will have to clone that repository and checkout the branch being merged.
 
@@ -39,15 +39,16 @@ There are a few steps to adding your own addon. The process is still being worke
 
 #### Publishing the Addon
 1. Fork [LLS-Addons](https://github.com/LuaLS/LLS-Addons) to get your own copy.
-2. Create a branch where you can make your changes. Try to name the branch something related to what you are doing, e.g. `issue-58` or `busted-addon`.
+2. Create a branch where you can make your changes. Try to name the branch something related to what you are doing, e.g. `issue-58`, `add-busted`, `update-luassert`, etc.
 3. Create an `info.json` file that lives in your addon's directory (e.g. `addons/myAddon/info.json`. You can copy an `info.json` from [an already included addon](https://github.com/LuaLS/LLS-Addons/blob/main/addons/cc-tweaked/info.json) as a template.
 4. In your `info.json`, specify a `name` (display name) and `description`. The `size` and `hasPlugin` values will be generated automatically.
-5. Commit your addon as a submodule to your fork
+5. Run [StyLua](https://github.com/JohnnyMorganz/StyLua) on your addon to apply the proper code style to the definition files.
+6. Commit your addon as a submodule to your fork.
    - Your git command should look like `git submodule add $HTTP_CLONE_URL addons/myAddon/module`.
    - If you have many miscellaneous/config files in your addon repository, please create a new branch (e.g. `publish`) where you can include the minimum number of files (`LICENSE` is fine). You can then use `git submodule add -b $BRANCH_NAME $HTTP_CLONE_URL addons/myAddon/module` to add your addon.
 
-> **Warning**
-> Make sure to commit the submodule and not just the updates to `.submodules`
+> ❗ **Warning** ❗
+> Make sure to commit the submodule and not **just** the updates to `.submodules`
 
 When an addon is updated, the submodule in LLS-Addons will have to be updated to the latest commit through a pull request.
 
