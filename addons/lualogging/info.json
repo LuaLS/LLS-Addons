@@ -1,0 +1,7 @@
+{
+  "$schema": "https://raw.githubusercontent.com/carsakiller/LLS-Addons/main/schemas/addon_info.schema.json",
+  "name": "LuaLogging",
+  "description": "Definitions for LuaLogging 1.8.2",
+  "size": 48004,
+  "hasPlugin": true
+}
