@@ -27,7 +27,7 @@ Making sure that definitions are accurate is very important. Receiving help with
 
 To test changes from a pull request, you will have to clone that repository and checkout the branch being merged.
 
-Once you have the changes locally on your computer, you can [test the changes with the Lua Language Server](https://github.com/sumneko/lua-language-server/wiki/Libraries#link-to-workspace).
+Once you have the changes locally on your computer, you can test the changes with the Lua Language Server using [`workspace.library`](https://luals.github.io/wiki/settings#workspacelibrary).
 
 ### Adding an addon
 There are a few steps to adding your own addon. The process is still being worked on to try and make it as easy as possible.
@@ -35,7 +35,7 @@ There are a few steps to adding your own addon. The process is still being worke
 #### Creating the addon
 1. [Create an issue](https://github.com/LuaLS/LLS-Addons/issues/new?template=new_addon.yml) explaining what you are creating. This helps prevent multiple people working on their own versions of the same thing.
 2. Use the [addon template](https://github.com/LuaLS/addon-template) or create your own repository (GitHub/GitLab) to store your addon.
-3. Read ["Creating an Addon" in the Lua Language Server wiki to learn more](https://github.com/LuaLS/lua-language-server/wiki/Addons#creating-an-addon)
+3. Read ["Creating an Addon" in the Lua Language Server wiki to learn more](https://luals.github.io/wiki/addons#creating-an-addon)
 
 #### Publishing the Addon
 1. Fork [LLS-Addons](https://github.com/LuaLS/LLS-Addons) to get your own copy.
@@ -61,5 +61,3 @@ Now it is time to contribute your changes back to this project for all to enjoy!
 3. Make sure you have [allowed edits from maintainers](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/allowing-changes-to-a-pull-request-branch-created-from-a-fork) in case some tweaks need to be made.
 
 Thank you for helping us improve! ❤️
-
-[addons-wiki]: https://github.com/LuaLS/lua-language-server/wiki/Addons#vs-code-addon-manager
