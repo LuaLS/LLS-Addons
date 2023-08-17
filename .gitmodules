@@ -125,3 +125,6 @@
 [submodule "addons/REFramework-LLS/module"]
 	path = addons/REFramework-LLS/module
 	url = https://github.com/youwereeatenbyalid/REFramework-LLS.git
+[submodule "addons/mirai/module"]
+	path = addons/mirai/module
+	url = https://github.com/cloudwindy/mirai-types.git
