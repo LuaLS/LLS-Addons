@@ -128,3 +128,6 @@
 [submodule "addons/unbound-api/module"]
 	path = addons/unbound-api/module
 	url = https://github.com/Wolf-64/unbound-api.git
+[submodule "addons/mirai/module"]
+	path = addons/mirai/module
+	url = https://github.com/cloudwindy/mirai-types.git
