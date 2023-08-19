@@ -131,3 +131,7 @@
 [submodule "addons/mirai/module"]
 	path = addons/mirai/module
 	url = https://github.com/cloudwindy/mirai-types.git
+[submodule "addons/fivem/module"]
+	path = addons/fivem/module
+	url = https://github.com/tf-framework/fivem-lls-addon.git
+	branch = dist
