@@ -2,5 +2,6 @@
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "FiveM",
   "description": "Definitions for the FiveM scripting API",
-  "hasPlugin": true
+  "hasPlugin": true,
+  "size": 2360442
 }
