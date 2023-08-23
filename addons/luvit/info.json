@@ -2,6 +2,6 @@
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "Luvit",
   "description": "Definitions for the Luvit framework",
-  "size": 323502,
+  "size": 325985,
   "hasPlugin": false
 }
