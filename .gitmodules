@@ -127,4 +127,4 @@
 	url = https://github.com/youwereeatenbyalid/REFramework-LLS.git
 [submodule "addons/unbound-api/module"]
 	path = addons/unbound-api/module
-	url = git@github.com:Wolf-64/unbound-api.git
+	url = https://github.com/Wolf-64/unbound-api.git
