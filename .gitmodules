@@ -135,6 +135,3 @@
 	path = addons/fivem/module
 	url = https://github.com/tf-framework/fivem-lls-addon.git
 	branch = dist
-[submodule "addons/unbound-api/module"]
-	path = addons/unbound-api/module
-	url = https://github.com/Wolf-64/unbound-api.git
