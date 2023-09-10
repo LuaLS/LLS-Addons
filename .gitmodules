@@ -135,3 +135,6 @@
 	path = addons/fivem/module
 	url = https://github.com/tf-framework/fivem-lls-addon.git
 	branch = dist
+[submodule "addons/lldebugger/module"]
+	path = addons/lldebugger/module
+	url = https://github.com/b0mbie/local-lua-debugger-api.git
