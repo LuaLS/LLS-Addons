@@ -135,3 +135,7 @@
 	path = addons/fivem/module
 	url = https://github.com/tf-framework/fivem-lls-addon.git
 	branch = dist
+[submodule "addons/lmathx/module"]
+	path = addons/lmathx/module
+	url = https://github.com/LuaCATS/lmathx.git
+	branch = main
