@@ -1,4 +1,6 @@
 {
   "name": "Local Lua Debugger",
-  "description": "Definitions for the Local Lua Debugger library"
+  "description": "Definitions for the Local Lua Debugger library",
+  "size": 1855,
+  "hasPlugin": false
 }
