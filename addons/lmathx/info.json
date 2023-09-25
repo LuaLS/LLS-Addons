@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
-  "name": "LuaTeX",
-  "description": "Definitions for the TeX engine LuaTeX",
-  "size": 1158951,
+  "name": "lmathx",
+  "description": "Definitions for the lmathx library",
+  "size": 19831,
   "hasPlugin": false
 }
