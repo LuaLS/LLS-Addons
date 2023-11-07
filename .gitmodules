@@ -142,3 +142,7 @@
 [submodule "addons/lldebugger/module"]
 	path = addons/lldebugger/module
 	url = https://github.com/b0mbie/local-lua-debugger-api.git
+[submodule "addons/dkjson/module"]
+	path = addons/dkjson/module
+	url = https://github.com/goldenstein64/dkjson-definitions
+	branch = publish
