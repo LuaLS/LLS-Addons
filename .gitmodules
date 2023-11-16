@@ -146,3 +146,6 @@
 	path = addons/dkjson/module
 	url = https://github.com/goldenstein64/dkjson-definitions
 	branch = publish
+[submodule "addons/lapis/addons/lapis/module"]
+	path = addons/lapis/addons/lapis/module
+	url = https://github.com/Sylviettee/lapis-annotations.git
