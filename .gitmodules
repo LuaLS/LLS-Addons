@@ -149,3 +149,7 @@
 [submodule "addons/lapis/module"]
 	path = addons/lapis/module
 	url = https://github.com/Sylviettee/lapis-annotations.git
+[submodule "addons/lua-cjson/module"]
+	path = addons/lua-cjson/module
+	url = https://github.com/goldenstein64/lua-cjson-definitions
+	branch = publish
