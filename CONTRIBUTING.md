@@ -19,7 +19,7 @@ There are many ways to contribute to this project, you can, for example, add you
 ### Reporting Issues
 Found an issue with an addon, like incorrect definitions or a malfunctioning plugin? Head to the repository for that addon and open an issue there. Make sure to read the `CONTRIBUTING.md` over there as well!
 
-> **Note**
+> [!NOTE]
 > Please make sure to look for already open issues to keep things organized and make sure your issue is not closed as a duplicate.
 
 ### Testing Changes
@@ -43,11 +43,14 @@ There are a few steps to adding your own addon. The process is still being worke
 3. Create an `info.json` file that lives in your addon's directory (e.g. `addons/myAddon/info.json`. You can copy an `info.json` from [an already included addon](https://github.com/LuaLS/LLS-Addons/blob/main/addons/cc-tweaked/info.json) as a template.
 4. In your `info.json`, specify a `name` (display name) and `description`. The `size` and `hasPlugin` values will be generated automatically.
 5. Run [StyLua](https://github.com/JohnnyMorganz/StyLua) on your addon to apply the proper code style to the definition files.
-6. Commit your addon as a submodule to your fork.
+> [!NOTE]
+> If you have a `.editorconfig` file, make sure to run StyLua with the `--no-editorconfig` flag to run StyLua using its default configuration.
+
+7. Commit your addon as a submodule to your fork.
    - Your git command should look like `git submodule add $HTTP_CLONE_URL addons/myAddon/module`.
    - If you have many miscellaneous/config files in your addon repository, please create a new branch (e.g. `publish`) where you can include the minimum number of files (`LICENSE` is fine). You can then use `git submodule add -b $BRANCH_NAME $HTTP_CLONE_URL addons/myAddon/module` to add your addon.
 
-> ❗ **Warning** ❗
+> [!IMPORTANT]
 > Make sure to commit the submodule and not **just** the updates to `.submodules`
 
 When an addon is updated, the submodule in LLS-Addons will have to be updated to the latest commit through a pull request.
