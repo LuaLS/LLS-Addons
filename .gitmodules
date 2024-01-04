@@ -153,3 +153,6 @@
 	path = addons/lua-cjson/module
 	url = https://github.com/goldenstein64/lua-cjson-definitions
 	branch = publish
+[submodule "addons/StormworksAddonLua/module"]
+	path = addons/StormworksAddonLua/module
+	url = https://github.com/Ierdna100/StormworksAddonLua
