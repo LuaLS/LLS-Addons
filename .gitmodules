@@ -159,3 +159,6 @@
 [submodule "addons/ao/module"]
 	path = addons/ao/module
 	url = https://github.com/martonlederer/ao-definitions
+[submodule "addons/RavenscriptIDEA/module"]
+	path = addons/RavenscriptIDEA/module
+	url = https://github.com/RavenfieldCommunity/RavenscriptIDEA.git
