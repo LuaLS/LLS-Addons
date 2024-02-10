@@ -1,5 +1,5 @@
 {
-  "$schema": "https://github.com/LuaLS/LLS-Addons/blob/main/schemas/addon_info.schema.json",
+  "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "Ravenscript IDEA",
   "description": "The NEXT snippet addons for ravenscript coding.",
   "size": 268031,
