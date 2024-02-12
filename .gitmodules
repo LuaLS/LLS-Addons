@@ -162,3 +162,7 @@
 [submodule "addons/RavenscriptIDEA/module"]
 	path = addons/RavenscriptIDEA/module
 	url = https://github.com/RavenfieldCommunity/RavenscriptIDEA.git
+[submodule "addons/TTSLua/module"]
+	path = addons/TTSLua/module
+	url = https://github.com/bavalpey/TTSLua.git
+	branch = publish
