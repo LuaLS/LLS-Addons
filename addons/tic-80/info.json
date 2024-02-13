@@ -1,0 +1,5 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
+  "name": "TIC-80",
+  "description": "Definitions for TIC-80 Lua functions"
+}
