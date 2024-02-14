@@ -162,3 +162,6 @@
 [submodule "addons/RavenscriptIDEA/module"]
 	path = addons/RavenscriptIDEA/module
 	url = https://github.com/RavenfieldCommunity/RavenscriptIDEA.git
+[submodule "addons/tic-80/module"]
+	path = addons/tic-80/module
+	url = https://github.com/adamico/tic-80.git
