@@ -2,6 +2,6 @@
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "CC: Tweaked",
   "description": "Definitions for the CC: Tweaked Lua API. Types are now namespaced under ccTweaked",
-  "size": 245215,
+  "size": 259259,
   "hasPlugin": false
 }
