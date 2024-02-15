@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
-  "name": "LuaSocket",
-  "description": "Definitions for the LuaSocket library",
-  "size": 38853,
+  "name": "TTSLua",
+  "description": "Definitions for Tabletop Simulator's Lua API",
+  "size": 401842,
   "hasPlugin": false
 }

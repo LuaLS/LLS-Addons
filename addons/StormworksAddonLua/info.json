@@ -1,5 +1,7 @@
 {
-    "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
-    "name": "Stormworks Addon Lua",
-    "description": "Definitions for Stormworks Addon built-in code. Does not support any microcontroller related definitions."
+  "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
+  "name": "Stormworks Addon Lua",
+  "description": "Definitions for Stormworks Addon built-in code. Does not support any microcontroller related definitions.",
+  "size": 92809,
+  "hasPlugin": false
 }
