@@ -1,5 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "Umbrella",
-  "description": "Definitions for Project Zomboid's API"
+  "description": "Definitions for Project Zomboid's API",
+  "size": 4747806,
+  "hasPlugin": false
 }
