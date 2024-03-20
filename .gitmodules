@@ -169,3 +169,6 @@
 [submodule "addons/umbrella/module"]
 	path = addons/umbrella/module
 	url = https://github.com/demiurgeQuantified/UmbrellaAddon.git
+[submodule "addons/luals-relative-imports/module"]
+	path = addons/luals-relative-imports/module
+	url = https://github.com/qeffects/luals-relative-require.git

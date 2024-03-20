@@ -1,0 +1,7 @@
+{
+  "$schema": "https://raw.githubusercontent.com/carsakiller/LLS-Addons/main/schemas/addon_info.schema.json",
+  "name": "LuaLS Relative Imports",
+  "description": "A plugin to enable annotations for LuaImport",
+  "size": 48004,
+  "hasPlugin": true
+}
