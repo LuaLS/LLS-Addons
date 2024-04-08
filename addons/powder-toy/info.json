@@ -1,6 +1,6 @@
 {
   "name": "The Powder Toy (TPT) Lua API",
   "description": "Definitions for The Powder Toy Lua API",
-  "size": 200323,
-  "hasPlugin": true
+  "size": 244686,
+  "hasPlugin": false
 }
