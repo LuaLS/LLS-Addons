@@ -173,3 +173,6 @@
 	path = addons/powder-toy/module
 	url = https://github.com/Maticzpl/TPT-LuaAPI-Addon.git
 	branch = publish
+[submodule "addons/RavenscriptIDEA_withRavenM/module"]
+	path = addons/RavenscriptIDEA_withRavenM/module
+	url = https://github.com/RavenfieldCommunity/ravenscriptidea
