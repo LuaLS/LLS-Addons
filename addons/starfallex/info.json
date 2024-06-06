@@ -1,0 +1,6 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
+  "name": "Starfall Ex",
+  "description": "Definitions for the Starfall Ex addon from Garry's Mod."
+}
+  
