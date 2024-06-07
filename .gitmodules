@@ -180,3 +180,6 @@
 [submodule "addons/fenster/module"]
 	path = addons/fenster/module
 	url = https://github.com/jonasgeiler/lua-fenster-type-definitions.git
+[submodule "addons/starfallex/module"]
+	path = addons/starfallex/module
+	url = https://github.com/Periapsises/Starfall-LLS
