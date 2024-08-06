@@ -2,6 +2,6 @@
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "toml-edit",
   "description": "Definitions for toml-edit: Edit toml files while preserving whitespace and formatting from Lua.",
-  "size": 259243,
+  "size": 1699,
   "hasPlugin": false
 }
