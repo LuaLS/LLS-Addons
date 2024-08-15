@@ -187,6 +187,6 @@
 	path = addons/smbx2-lunalua/module
 	url = https://github.com/Wild-W/smbx2-lunalua-luacats
 	branch = publish
-[submodule "addons/toml-edit/toml_edit"]
-	path = addons/toml-edit/toml_edit
+[submodule "addons/toml-edit/module"]
+	path = addons/toml-edit/module
 	url = https://github.com/nvim-neorocks/toml-edit-lua-ls-addon.git
