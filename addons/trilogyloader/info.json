@@ -1,4 +1,6 @@
 {
   "name": "TrilogyLoader",
-  "description": "Definitions for the TrilogyLoader, a modding interface for GTA: SA - Definitive Edition"
+  "description": "Definitions for the TrilogyLoader, a modding interface for GTA: SA - Definitive Edition",
+  "size": 201984,
+  "hasPlugin": false
 }
