@@ -2,6 +2,6 @@
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "Garry's Mod",
   "description": "Definitions for the game Garry's Mod",
-  "size": 2827278,
+  "size": 2840572,
   "hasPlugin": false
 }
