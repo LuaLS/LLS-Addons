@@ -193,3 +193,6 @@
 [submodule "addons/trilogyloader/module"]
 	path = addons/trilogyloader/module
 	url = https://github.com/fokichevskiy/TrilogySnippets.git
+[submodule "addons/devilspie2/module"]
+	path = addons/devilspie2/module
+	url = https://github.com/sparr/LuaLS-Addon-devilspie2.git
