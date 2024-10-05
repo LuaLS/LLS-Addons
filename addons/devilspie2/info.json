@@ -1,5 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "Devilspie2",
-  "description": "Definitions for Devilspie2 scripts and config"
+  "description": "Definitions for Devilspie2 scripts and config",
+  "size": 20070,
+  "hasPlugin": false
 }
