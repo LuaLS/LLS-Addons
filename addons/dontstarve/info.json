@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
-  "description": "Definitions for the bee.lua library",
+  "description": "Definitions for the dontstarve library",
   "size": 8674,
   "hasPlugin": true
 }
