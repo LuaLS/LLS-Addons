@@ -94,3 +94,6 @@ jobs:
         with:
           commit_message: "chore: Update Addon Metadata"
           file_pattern: addons/*/info.json
+          commit_author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+          commit_user_name: github-actions[bot]
+          commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
