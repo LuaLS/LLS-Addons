@@ -1,0 +1,95 @@
+name: Check Added Submodules
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  style:
+    name: Run StyLua
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        name: Checkout LLS-Addons
+        with:
+          submodules: false
+
+      - name: Fetch Base Branch
+        run: |
+          git fetch origin ${GITHUB_BASE_REF}
+          git checkout ${GITHUB_BASE_REF}
+
+      - name: Detect Added Submodules
+        run: |
+          BASE_REF=${{github.event.pull_request.base.sha}}
+          git checkout $BASE_REF
+          ADDED_SUBMODULES=$(git diff --submodule ${BASE_REF}..HEAD | grep '^Submodule' | awk '{ print $2 }')
+          echo "Added submodules: $ADDED_SUBMODULES"
+          echo "ADDED_SUBMODULES=$ADDED_SUBMODULES" >> $GITHUB_ENV
+
+      - name: Fetch submodules
+        run: |
+          for submodule in $ADDED_SUBMODULES; do
+              echo "Getting submodule: $submodule"
+              git submodule update --init --recursive $submodule
+            done
+
+      - uses: JohnnyMorganz/stylua-action@v2.0.0
+        name: Run StyLua
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          version: latest
+          args: --check addons
+
+  metadata:
+    name: "Fetch Addon Metadata"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        name: Checkout LLS-Addons
+        with:
+          submodules: false
+
+      - name: Fetch Base Branch
+        run: |
+          git fetch origin ${GITHUB_BASE_REF}
+          git checkout ${GITHUB_BASE_REF}
+
+      - name: Detect Added Submodules
+        run: |
+          BASE_REF=${{github.event.pull_request.base.sha}}
+          git checkout $BASE_REF
+          ADDED_SUBMODULES=$(git diff --submodule ${BASE_REF}..HEAD | grep '^Submodule' | awk '{ print $2 }')
+          echo "Added submodules: $ADDED_SUBMODULES"
+          echo "ADDED_SUBMODULES=$ADDED_SUBMODULES" >> $GITHUB_ENV
+
+      - name: Fetch submodules
+        run: |
+          for submodule in $ADDED_SUBMODULES; do
+              echo "Getting submodule: $submodule"
+              git submodule update --init --recursive $submodule
+            done
+
+      # Custom action that gets metadata on each addon
+      - uses: dsaltares/fetch-gh-release-asset@1.1.0
+        name: Get submodule metadata fetching action
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repo: LuaLS/LLS-Addons-Action
+          file: dist.zip
+          target: action.zip
+      - name: Unzip custom action
+        run: unzip action.zip -d action
+      - uses: ./action/dist
+        name: Get Addon Metadata
+
+      # Commit new metadata
+      - name: Commit Metadata
+        uses: stefanzweifel/git-auto-commit-action@v4.16.0
+        with:
+          commit_message: "chore: Update Addon Metadata"
+          file_pattern: addons/*/info.json
+          commit_author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+          commit_user_name: github-actions[bot]
+          commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
