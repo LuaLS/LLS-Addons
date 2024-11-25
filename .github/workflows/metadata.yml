@@ -41,8 +41,8 @@ jobs:
       - name: Fetch Base Branch
         run: |
           # Fetch all history for the base branch and PR head
-          git fetch origin ${BASE_REF} --depth=1
-          git fetch origin ${HEAD_REF} --depth=1
+          git fetch origin ${BASE_REF}
+          git fetch origin ${HEAD_REF}
 
       - name: Detect Added Submodules
         run: |
