@@ -25,6 +25,7 @@ jobs:
         name: Checkout LLS-Addons
         with:
           submodules: false
+          fetch-depth: 0
 
       - name: Set Base and Head Refs
         run: |
