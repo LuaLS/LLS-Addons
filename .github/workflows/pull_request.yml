@@ -17,13 +17,16 @@ jobs:
 
       - name: Fetch Base Branch
         run: |
-          git fetch origin ${GITHUB_BASE_REF}
-          git checkout ${GITHUB_BASE_REF}
+          # Fetch all history for the base branch and PR head
+          git fetch origin ${{ github.base_ref }} --depth=1
+          git fetch origin ${{ github.head_ref }} --depth=1
 
       - name: Detect Added Submodules
         run: |
-          BASE_REF=${{github.event.pull_request.base.sha}}
-          ADDED_SUBMODULES=$(git diff --submodule ${BASE_REF}..HEAD | grep '^Submodule' | awk '{ print $2 }')
+          BASE_REF=${{ github.event.pull_request.base.sha }}
+          HEAD_REF=${{ github.event.pull_request.head.sha }}
+
+          ADDED_SUBMODULES=$(git diff --submodule ${BASE_REF}..${HEAD_REF} | grep '^Submodule' | awk '{ print $2 }')
           echo "Added submodules: $ADDED_SUBMODULES"
           echo "ADDED_SUBMODULES=$ADDED_SUBMODULES" >> $GITHUB_ENV
 
@@ -52,13 +55,16 @@ jobs:
 
       - name: Fetch Base Branch
         run: |
-          git fetch origin ${GITHUB_BASE_REF}
-          git checkout ${GITHUB_BASE_REF}
+          # Fetch all history for the base branch and PR head
+          git fetch origin ${{ github.base_ref }} --depth=1
+          git fetch origin ${{ github.head_ref }} --depth=1
 
       - name: Detect Added Submodules
         run: |
-          BASE_REF=${{github.event.pull_request.base.sha}}
-          ADDED_SUBMODULES=$(git diff --submodule ${BASE_REF}..HEAD | grep '^Submodule' | awk '{ print $2 }')
+          BASE_REF=${{ github.event.pull_request.base.sha }}
+          HEAD_REF=${{ github.event.pull_request.head.sha }}
+
+          ADDED_SUBMODULES=$(git diff --submodule ${BASE_REF}..${HEAD_REF} | grep '^Submodule' | awk '{ print $2 }')
           echo "Added submodules: $ADDED_SUBMODULES"
           echo "ADDED_SUBMODULES=$ADDED_SUBMODULES" >> $GITHUB_ENV
 
