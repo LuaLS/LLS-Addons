@@ -4,6 +4,13 @@ on:
   pull_request_review:
     types: [submitted]
   workflow_dispatch:
+    inputs:
+      base_ref:
+        description: "Base branch reference (e.g., main)"
+        required: true
+      head_ref:
+        description: "Head branch reference (e.g., feature-branch)"
+        required: true
 
 jobs:
   metadata:
@@ -19,15 +26,27 @@ jobs:
         with:
           submodules: false
 
+      - name: Set Base and Head Refs
+        run: |
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            BASE_REF="${{ github.event.inputs.base_ref }}"
+            HEAD_REF="${{ github.event.inputs.head_ref }}"
+          else
+            BASE_REF="${{ github.event.pull_request.base.sha }}"
+            HEAD_REF="${{ github.event.pull_request.head.sha }}"
+          fi
+          echo "BASE_REF=$BASE_REF" >> $GITHUB_ENV
+          echo "HEAD_REF=$HEAD_REF" >> $GITHUB_ENV
+
       - name: Fetch Base Branch
         run: |
           # Fetch all history for the base branch and PR head
-          git fetch origin ${{ github.base_ref }} --depth=1
-          git fetch origin ${{ github.head_ref }} --depth=1
+          git fetch origin ${BASE_REF} --depth=1
+          git fetch origin ${HEAD_REF} --depth=1
 
       - name: Detect Added Submodules
         run: |
-          ADDED_SUBMODULES=$(git diff --submodule main..HEAD | grep '^Submodule' | awk '{ print $2 }')
+          ADDED_SUBMODULES=$(git diff --submodule ${BASE_REF}..${HEAD_REF} | grep '^Submodule' | awk '{ print $2 }')
           echo "Added submodules: $ADDED_SUBMODULES"
           echo "ADDED_SUBMODULES=$ADDED_SUBMODULES" >> $GITHUB_ENV
 
