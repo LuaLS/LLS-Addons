@@ -3,10 +3,13 @@ name: Fetch Addon Metadata
 on:
   pull_request_review:
     types: [submitted]
+  workflow_dispatch:
 
 jobs:
   metadata:
-    if: ${{ github.event.review.state == 'approved' }}
+    if: |
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'pull_request_review' && github.event.review.state == 'approved')
     runs-on: ubuntu-latest
     permissions:
       contents: write
