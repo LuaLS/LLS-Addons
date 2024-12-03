@@ -113,6 +113,7 @@ jobs:
       - name: Commit Metadata
         uses: stefanzweifel/git-auto-commit-action@v4.16.0
         with:
+          branch: ${HEAD_REF}
           commit_message: "chore: Update Addon Metadata"
           file_pattern: addons/*/info.json
           commit_author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
