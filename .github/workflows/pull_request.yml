@@ -15,11 +15,22 @@ jobs:
         with:
           submodules: false
 
-      - name: Fetch Base Branch
+      - name: Set Base and Head Refs
         run: |
-          # Fetch all history for the base branch and PR head
-          git fetch origin ${{ github.base_ref }} --depth=1
-          git fetch origin ${{ github.head_ref }} --depth=1
+          BASE_REF="${{ github.event.pull_request.base.sha }}"
+          HEAD_REF="${{ github.event.pull_request.head.sha }}"
+          BASE_REMOTE="${{github.event.pull_request.base.repo.clone_url}}"
+          HEAD_REMOTE="${{github.event.pull_request.head.repo.clone_url}}"
+
+          echo "BASE_REF=$BASE_REF" >> $GITHUB_ENV
+          echo "HEAD_REF=$HEAD_REF" >> $GITHUB_ENV
+          echo "BASE_REMOTE=$BASE_REMOTE" >> $GITHUB_ENV
+          echo "HEAD_REMOTE=$HEAD_REMOTE" >> $GITHUB_ENV
+
+      - name: Fetch Branches
+        run: |
+          git fetch ${BASE_REMOTE} ${BASE_REF}
+          git fetch ${HEAD_REMOTE} ${HEAD_REF}
 
       - name: Detect Added Submodules
         run: |
@@ -45,6 +56,7 @@ jobs:
           args: --check addons
 
   metadata:
+    name: Fetch metadata
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -66,9 +78,8 @@ jobs:
           echo "BASE_REMOTE=$BASE_REMOTE" >> $GITHUB_ENV
           echo "HEAD_REMOTE=$HEAD_REMOTE" >> $GITHUB_ENV
 
-      - name: Fetch Base Branch
+      - name: Fetch Branches
         run: |
-          # Fetch all history for the base branch and PR head
           git fetch ${BASE_REMOTE} ${BASE_REF}
           git fetch ${HEAD_REMOTE} ${HEAD_REF}
 
