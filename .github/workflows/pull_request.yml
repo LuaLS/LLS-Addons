@@ -83,7 +83,7 @@ jobs:
 
       - name: Detect Added Submodules
         run: |
-          ADDED_SUBMODULES=$(git diff --submodule remotes/base/${BASE_REF}..remotes/head/${HEAD_SHA} | grep '^Submodule' | awk '{ print $2 }')
+          ADDED_SUBMODULES=$(git diff --submodule remotes/base/${BASE_REF}..remotes/head/${HEAD_REF} | grep '^Submodule' | awk '{ print $2 }')
           echo "Added submodules: $ADDED_SUBMODULES"
           echo "ADDED_SUBMODULES=$ADDED_SUBMODULES" >> $GITHUB_ENV
 
