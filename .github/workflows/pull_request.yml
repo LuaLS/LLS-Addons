@@ -68,8 +68,8 @@ jobs:
 
       - name: Set Base and Head Refs
         run: |
-          BASE_REF="${{ github.event.pull_request.base.sha }}"
-          HEAD_REF="${{ github.event.pull_request.head.sha }}"
+          BASE_REF="${{ github.event.pull_request.base.ref }}"
+          HEAD_REF="${{ github.event.pull_request.head.ref }}"
           BASE_REMOTE="${{github.event.pull_request.base.repo.clone_url}}"
           HEAD_REMOTE="${{github.event.pull_request.head.repo.clone_url}}"
 
