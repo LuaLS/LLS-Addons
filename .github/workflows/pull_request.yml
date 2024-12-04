@@ -64,6 +64,8 @@ jobs:
       - uses: actions/checkout@v3
         name: Checkout LLS-Addons
         with:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.head_ref }}
           submodules: false
 
       - name: Set Base and Head Refs
