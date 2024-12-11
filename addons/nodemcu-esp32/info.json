@@ -2,6 +2,6 @@
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "NodeMCU ESP32",
   "description": "Definitions for NodeMCU, Lua based firmware for the ESP32 WiFi SoC from Espressif",
-  "size": 215633,
+  "size": 217896,
   "hasPlugin": true
 }
