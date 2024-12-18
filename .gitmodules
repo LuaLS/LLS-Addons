@@ -206,3 +206,6 @@
 	path = addons/ncine/module
 	url = https://github.com/nCine/nCine-LuaCATS
 	branch = addon
+[submodule "addons/umbrella-unstable/module"]
+	path = addons/umbrella-unstable/module
+	url = https://github.com/demiurgeQuantified/UmbrellaAddon-Unstable
