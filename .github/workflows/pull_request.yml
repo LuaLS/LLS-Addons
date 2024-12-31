@@ -35,9 +35,11 @@ jobs:
           BASE_REF=${{ github.event.pull_request.base.sha }}
           HEAD_REF=${{ github.event.pull_request.head.sha }}
 
-          ADDED_SUBMODULES=$(git diff --submodule ${BASE_REF}..${HEAD_REF} | grep '^Submodule' | awk '{ print $2 }')
+          ADDED_SUBMODULES=$(git diff --submodule --compact-summary remotes/base/${BASE_REF}..remotes/head/${HEAD_REF} | grep -oE "addons/(.*)/module($| [^(])")
           echo "Added submodules: $ADDED_SUBMODULES"
-          echo "ADDED_SUBMODULES=$ADDED_SUBMODULES" >> $GITHUB_ENV
+          echo "ADDED_SUBMODULES<<EOF" >> $GITHUB_ENV
+          echo $ADDED_SUBMODULES
+          echo 'EOF' >> $GITHUB_ENV
 
       - name: Fetch submodules
         run: |
@@ -83,9 +85,11 @@ jobs:
 
       - name: Detect Added Submodules
         run: |
-          ADDED_SUBMODULES=$(git diff --submodule remotes/base/${BASE_REF}..remotes/head/${HEAD_REF} | grep '^Submodule' | awk '{ print $2 }')
+          ADDED_SUBMODULES=$(git diff --submodule --compact-summary remotes/base/${BASE_REF}..remotes/head/${HEAD_REF} | grep -oE "addons/(.*)/module($| [^(])")
           echo "Added submodules: $ADDED_SUBMODULES"
-          echo "ADDED_SUBMODULES=$ADDED_SUBMODULES" >> $GITHUB_ENV
+          echo "ADDED_SUBMODULES<<EOF" >> $GITHUB_ENV
+          echo $ADDED_SUBMODULES
+          echo 'EOF' >> $GITHUB_ENV
 
       - name: Fetch submodules
         run: |
