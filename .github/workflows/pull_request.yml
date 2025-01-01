@@ -15,20 +15,18 @@ jobs:
 
       - name: Set Base and Head Refs
         run: |
-          BASE_REF="${{ github.event.pull_request.base.sha }}"
-          HEAD_REF="${{ github.event.pull_request.head.sha }}"
-          BASE_REMOTE="${{github.event.pull_request.base.repo.clone_url}}"
-          HEAD_REMOTE="${{github.event.pull_request.head.repo.clone_url}}"
-
-          echo "BASE_REF=$BASE_REF" >> $GITHUB_ENV
-          echo "HEAD_REF=$HEAD_REF" >> $GITHUB_ENV
-          echo "BASE_REMOTE=$BASE_REMOTE" >> $GITHUB_ENV
-          echo "HEAD_REMOTE=$HEAD_REMOTE" >> $GITHUB_ENV
+          echo "BASE_REF=${{ github.event.pull_request.base.ref }}" >> $GITHUB_ENV
+          echo "HEAD_REF=${{ github.event.pull_request.head.ref }}" >> $GITHUB_ENV
+          echo "BASE_REMOTE=${{github.event.pull_request.base.repo.clone_url}}" >> $GITHUB_ENV
+          echo "HEAD_REMOTE=${{github.event.pull_request.head.repo.clone_url}}" >> $GITHUB_ENV
 
       - name: Fetch Branches
         run: |
-          git fetch ${BASE_REMOTE} ${BASE_REF}
-          git fetch ${HEAD_REMOTE} ${HEAD_REF}
+          git remote add base $BASE_REMOTE
+          git fetch base $BASE_REF
+
+          git remote add head $HEAD_REMOTE
+          git fetch head $HEAD_REF
 
       - name: Detect Added Submodules
         run: |
