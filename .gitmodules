@@ -119,9 +119,9 @@
 [submodule "addons/halion/module"]
 	path = addons/halion/module
 	url = https://github.com/misohoza/halion.git
-[submodule "addons/minetest/module"]
-	path = addons/minetest/module
-	url = https://git.sr.ht/~fgaz/minetest-lls-definitions
+[submodule "addons/luanti/module"]
+	path = addons/luanti/module
+	url = https://git.sr.ht/~fgaz/luanti-lls-definitions
 [submodule "addons/REFramework-LLS/module"]
 	path = addons/REFramework-LLS/module
 	url = https://github.com/youwereeatenbyalid/REFramework-LLS.git
