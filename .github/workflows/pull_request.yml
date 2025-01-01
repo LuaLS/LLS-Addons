@@ -32,9 +32,6 @@ jobs:
 
       - name: Detect Added Submodules
         run: |
-          BASE_REF=${{ github.event.pull_request.base.sha }}
-          HEAD_REF=${{ github.event.pull_request.head.sha }}
-
           ADDED_SUBMODULES=$(git diff --submodule --compact-summary remotes/base/${BASE_REF}..remotes/head/${HEAD_REF} | grep -oE "addons/(.*)/module($| [^(])")
           echo "Added submodules: $ADDED_SUBMODULES"
           echo "ADDED_SUBMODULES<<EOF" >> $GITHUB_ENV
