@@ -32,9 +32,11 @@ jobs:
         run: |
           ADDED_SUBMODULES=$(git diff --submodule --compact-summary remotes/base/${BASE_REF}..remotes/head/${HEAD_REF} | grep -vE ".*\(gone\)" | grep -oE "addons/.*/module")
           echo "Added submodules: $ADDED_SUBMODULES"
-          echo "ADDED_SUBMODULES<<EOF" >> $GITHUB_ENV
-          echo $ADDED_SUBMODULES
-          echo 'EOF' >> $GITHUB_ENV
+          {
+            echo "ADDED_SUBMODULES<<EOF"
+            echo "$ADDED_SUBMODULES"
+            echo "EOF"
+          }  >> $GITHUB_ENV
 
       - name: Fetch submodules
         run: |
@@ -82,9 +84,11 @@ jobs:
         run: |
           ADDED_SUBMODULES=$(git diff --submodule --compact-summary remotes/base/${BASE_REF}..remotes/head/${HEAD_REF} | grep -vE ".*\(gone\)" | grep -oE "addons/.*/module")
           echo "Added submodules: $ADDED_SUBMODULES"
-          echo "ADDED_SUBMODULES<<EOF" >> $GITHUB_ENV
-          echo $ADDED_SUBMODULES
-          echo 'EOF' >> $GITHUB_ENV
+          {
+            echo "ADDED_SUBMODULES<<EOF"
+            echo "$ADDED_SUBMODULES"
+            echo "EOF"
+          }  >> $GITHUB_ENV
 
       - name: Fetch submodules
         run: |
