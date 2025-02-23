@@ -1,7 +1,7 @@
 {
-    "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
-    "name": "Picotron",
-    "description": "Definitions for the Picotron fantasy workstation",
-    "size": 82913,
-    "hasPlugin": false
+  "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
+  "name": "Picotron",
+  "description": "Definitions for the Picotron fantasy workstation",
+  "size": 57911,
+  "hasPlugin": false
 }
