@@ -212,6 +212,6 @@
 [submodule "addons/HLA-VScript/module"]
 	path = addons/HLA-VScript/module
 	url = https://github.com/FrostSource/HLA-VScript.git
-[submodule "addons/lua-enet/LuaCATS-lua-enet"]
+[submodule "addons/lua-enet/module"]
 	path = addons/lua-enet/module
 	url = https://github.com/masakk1/LuaCATS-lua-enet.git
