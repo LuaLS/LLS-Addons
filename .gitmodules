@@ -218,3 +218,6 @@
 [submodule "addons/picotron/module"]
 	path = addons/picotron/module
 	url = https://github.com/ahai64/picotron
+[submodule "addons/lua-enet/module"]
+	path = addons/lua-enet/module
+	url = https://github.com/masakk1/LuaCATS-lua-enet.git
