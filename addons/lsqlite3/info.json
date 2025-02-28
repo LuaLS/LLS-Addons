@@ -1,5 +1,7 @@
 {
-	"$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
-	"name": "lsqlite3",
-	"description": "Annotations for the LuaSQLite3 Library"
+  "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
+  "name": "lsqlite3",
+  "description": "Annotations for the LuaSQLite3 Library",
+  "size": 51283,
+  "hasPlugin": false
 }
