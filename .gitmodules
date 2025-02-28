@@ -221,3 +221,6 @@
 [submodule "addons/lua-enet/module"]
 	path = addons/lua-enet/module
 	url = https://github.com/masakk1/LuaCATS-lua-enet.git
+[submodule "addons/lsqlite3/module"]
+	path = addons/lsqlite3/module
+	url = https://github.com/KaitlynEthylia/LuaSQLite3-annotations
