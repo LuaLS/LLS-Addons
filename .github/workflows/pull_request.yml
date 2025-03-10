@@ -4,54 +4,6 @@ on:
   pull_request_target:
 
 jobs:
-  style:
-    name: Run StyLua
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-        name: Checkout LLS-Addons
-        with:
-          submodules: false
-
-      - name: Set Base and Head Refs
-        run: |
-          echo "BASE_REF=${{ github.event.pull_request.base.ref }}" >> $GITHUB_ENV
-          echo "HEAD_REF=${{ github.event.pull_request.head.ref }}" >> $GITHUB_ENV
-          echo "BASE_REMOTE=${{github.event.pull_request.base.repo.clone_url}}" >> $GITHUB_ENV
-          echo "HEAD_REMOTE=${{github.event.pull_request.head.repo.clone_url}}" >> $GITHUB_ENV
-
-      - name: Fetch Branches
-        run: |
-          git remote add base $BASE_REMOTE
-          git fetch base $BASE_REF
-
-          git remote add head $HEAD_REMOTE
-          git fetch head $HEAD_REF
-
-      - name: Detect Added Submodules
-        run: |
-          ADDED_SUBMODULES=$(git diff --submodule --compact-summary remotes/base/${BASE_REF}..remotes/head/${HEAD_REF} | grep -vE ".*\(gone\)" | grep -oE "addons/.*/module")
-          echo "Added submodules: $ADDED_SUBMODULES"
-          {
-            echo "ADDED_SUBMODULES<<EOF"
-            echo "$ADDED_SUBMODULES"
-            echo "EOF"
-          }  >> $GITHUB_ENV
-
-      - name: Fetch submodules
-        run: |
-          for submodule in $ADDED_SUBMODULES; do
-              echo "Getting submodule: $submodule"
-              git submodule update --init --recursive $submodule
-            done
-
-      - uses: JohnnyMorganz/stylua-action@v2.0.0
-        name: Run StyLua
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          version: latest
-          args: --check addons
-
   metadata:
     name: Fetch metadata
     runs-on: ubuntu-latest

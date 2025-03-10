@@ -212,3 +212,15 @@
 [submodule "addons/HLA-VScript/module"]
 	path = addons/HLA-VScript/module
 	url = https://github.com/FrostSource/HLA-VScript.git
+[submodule "addons/pico8/module"]
+	path = addons/pico8/module
+	url = https://github.com/ahai64/pico8
+[submodule "addons/picotron/module"]
+	path = addons/picotron/module
+	url = https://github.com/ahai64/picotron
+[submodule "addons/lua-enet/module"]
+	path = addons/lua-enet/module
+	url = https://github.com/masakk1/LuaCATS-lua-enet.git
+[submodule "addons/lsqlite3/module"]
+	path = addons/lsqlite3/module
+	url = https://github.com/KaitlynEthylia/LuaSQLite3-annotations
