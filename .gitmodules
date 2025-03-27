@@ -224,3 +224,7 @@
 [submodule "addons/lsqlite3/module"]
 	path = addons/lsqlite3/module
 	url = https://github.com/KaitlynEthylia/LuaSQLite3-annotations
+[submodule "addons/X4/module"]
+	path = addons/X4/module
+	url = https://github.com/chemodun/X4-LuaLSAddon.git
+	branch = publish

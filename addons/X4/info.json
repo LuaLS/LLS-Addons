@@ -1,0 +1,7 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
+  "name": "X4: Foundations Lua Scripting",
+  "description": "Definitions for the X4: Foundations Lua functions and types Definitions.",
+  "size": 720079,
+  "hasPlugin": false
+}
