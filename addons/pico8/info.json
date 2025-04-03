@@ -2,6 +2,6 @@
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "PICO-8",
   "description": "Definitions for the PICO-8 fantasy console",
-  "size": 30814,
+  "size": 35120,
   "hasPlugin": false
 }
