@@ -2,6 +2,6 @@
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "lua-fenster",
   "description": "Definitions for the lua-fenster library.",
-  "size": 2909,
+  "size": 4008,
   "hasPlugin": false
 }

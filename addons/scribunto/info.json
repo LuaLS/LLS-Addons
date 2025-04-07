@@ -2,6 +2,6 @@
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "MediaWiki Scribunto",
   "description": "Definitions for MediaWiki Scribunto.",
-  "size": 110981,
+  "size": 112963,
   "hasPlugin": false
 }
