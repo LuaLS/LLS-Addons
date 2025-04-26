@@ -1,0 +1,8 @@
+{
+    "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
+    "name": "RakSAMP Lite",
+    "description": "Lua API definition for RakSamp Lite (https://www.blast.hk/threads/108052/)",
+    "size": 0,
+    "hasPlugin": false
+  }
+  
