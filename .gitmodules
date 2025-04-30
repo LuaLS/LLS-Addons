@@ -96,6 +96,9 @@
 [submodule "addons/moonloader/module"]
 	path = addons/moonloader/module
 	url = https://github.com/GovnocodedByChapo/moonloader-definitions.git
+[submodule "addons/raksamplite/module"]
+	path = addons/raksamplite/module
+	url = https://github.com/DepsCian/raksamp-lite-definitions.git
 [submodule "addons/tex-lualibs/module"]
 	path = addons/tex-lualibs/module
 	url = https://github.com/LuaCATS/tex-lualibs.git
