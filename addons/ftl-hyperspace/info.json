@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
-  "name": "ftl-hyperspace",
+  "name": "FTL: Hyperspace",
   "description": "Definitions for FTL: Hyperspace lua api.",
   "size": 349169,
   "hasPlugin": false
