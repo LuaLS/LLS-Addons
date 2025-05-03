@@ -231,3 +231,6 @@
 	path = addons/X4/module
 	url = https://github.com/chemodun/X4-LuaLSAddon.git
 	branch = publish
+[submodule "addons/ftl-hyperspace/module"]
+	path = addons/ftl-hyperspace/module
+	url = https://github.com/ranhai613/ftl-hs-lua-lls-addon.git
