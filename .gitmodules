@@ -234,3 +234,4 @@
 [submodule "addons/ftl-hyperspace/module"]
 	path = addons/ftl-hyperspace/module
 	url = https://github.com/ranhai613/ftl-hs-lua-lls-addon.git
+	branch = publish
