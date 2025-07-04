@@ -1,6 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "LuaPlayer by Yulia Team (PSP)",
-  "description": "Definitions for Definitions for LuaPlayer by YuliaTeam (PSP)."
+  "description": "Definitions for Definitions for LuaPlayer by YuliaTeam (PSP).",
+  "size": 36009,
+  "hasPlugin": false
 }
-  
