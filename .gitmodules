@@ -238,3 +238,6 @@
 [submodule "addons/luaposix/module"]
 	path = addons/luaposix/module
 	url = https://github.com/kayibea/lls-posix
+[submodule "addons/LuaPlayerYT/module"]
+	path = addons/LuaPlayerYT/module
+	url = https://github.com/antim0118/lpyt-lls-addon
