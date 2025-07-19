@@ -241,3 +241,6 @@
 [submodule "addons/LuaPlayerYT/module"]
 	path = addons/LuaPlayerYT/module
 	url = https://github.com/antim0118/lpyt-lls-addon
+[submodule "addons/castlexyz/module"]
+	path = addons/castlexyz/module
+	url = https://github.com/trobukan/castlexyz.git
