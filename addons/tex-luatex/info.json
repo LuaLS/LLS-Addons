@@ -2,6 +2,6 @@
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "LuaTeX",
   "description": "Definitions for the TeX engine LuaTeX",
-  "size": 1228564,
+  "size": 1369034,
   "hasPlugin": false
 }
