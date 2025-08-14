@@ -2,6 +2,6 @@
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "TTSLua",
   "description": "Definitions for Tabletop Simulator's Lua API",
-  "size": 405570,
+  "size": 409227,
   "hasPlugin": false
 }
