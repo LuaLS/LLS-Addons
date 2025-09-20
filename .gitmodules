@@ -248,3 +248,6 @@
 	path = addons/darkrp/module
 	url = https://github.com/EmekC/darkrp-luals.git
   
+[submodule "addons/celeste-bosses-helper/module"]
+	path = addons/celeste-bosses-helper/module
+	url = https://github.com/TheDavSmasher/bosses-helper-addon
