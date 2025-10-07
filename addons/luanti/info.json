@@ -1,7 +1,0 @@
-{
-  "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
-  "name": "Luanti",
-  "description": "Definitions for the Luanti (formerly Minetest) Lua API",
-  "size": 510069,
-  "hasPlugin": false
-}
