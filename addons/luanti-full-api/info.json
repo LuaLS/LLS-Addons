@@ -1,8 +1,7 @@
 {
-  "$schema":
-    "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
-  "name":
-    "Luanti Full API",
-  "description":
-    "All autocomletions and documentation for the Luanti Engine (formerly Minetest) Lua API"
+  "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
+  "name": "Luanti Full API",
+  "description": "All autocomletions and documentation for the Luanti Engine (formerly Minetest) Lua API",
+  "size": 16599012,
+  "hasPlugin": false
 }
