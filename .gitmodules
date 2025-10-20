@@ -1,3 +1,7 @@
+[submodule "addons/luanti-full-api/module"]
+	path = addons/luanti-full-api/module
+	url = https://github.com/Voxrame/luanti-ide-helper.git
+
 [submodule "addons/busted/module"]
 	path = addons/busted/module
 	url = https://github.com/LuaCATS/busted.git
