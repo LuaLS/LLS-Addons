@@ -2,6 +2,6 @@
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "Umbrella (Unstable)",
   "description": "Definitions for the Unstable version of Project Zomboid's API",
-  "size": 5801504,
+  "size": 7017588,
   "hasPlugin": false
 }

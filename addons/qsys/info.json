@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
-  "name": "FTL: Hyperspace",
-  "description": "Definitions for FTL: Hyperspace lua api.",
-  "size": 354017,
+  "name": "Q-SYS Extensions",
+  "description": "Definitions for the Q-SYS Lua Scripting Environment",
+  "size": 212062,
   "hasPlugin": false
 }
