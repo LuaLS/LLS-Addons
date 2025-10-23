@@ -2,6 +2,6 @@
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "Celeste - Dav's Bosses Helper: Lua Addon",
   "description": "Definitions for the Bosses Helper Celeste mod Lua development API. All types are namespaced for their C# equivalent and values that are given as globals are defined.",
-  "size": 97442,
+  "size": 109546,
   "hasPlugin": false
 }
