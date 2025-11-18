@@ -3,5 +3,5 @@
   "name": "POSIX",
   "description": "Provides definitions for posix Lua API",
   "hasPlugin": false,
-  "size": 43490
+  "size": 61952
 }
