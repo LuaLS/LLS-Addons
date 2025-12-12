@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "Ravenscript IDEA with RavenM",
-  "description": "Ravenscript IDEA with RavenM, NEED DEPEND",
-  "size": 3649,
+  "description": "Sub Ravenscript IDEA addon with RavenM.",
+  "size": 3933,
   "hasPlugin": false
 }

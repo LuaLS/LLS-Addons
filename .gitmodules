@@ -1,3 +1,7 @@
+[submodule "addons/luanti-full-api/module"]
+	path = addons/luanti-full-api/module
+	url = https://github.com/Voxrame/luanti-ide-helper.git
+
 [submodule "addons/busted/module"]
 	path = addons/busted/module
 	url = https://github.com/LuaCATS/busted.git
@@ -96,6 +100,9 @@
 [submodule "addons/moonloader/module"]
 	path = addons/moonloader/module
 	url = https://github.com/GovnocodedByChapo/moonloader-definitions.git
+[submodule "addons/raksamplite/module"]
+	path = addons/raksamplite/module
+	url = https://github.com/DepsCian/raksamp-lite-definitions.git
 [submodule "addons/tex-lualibs/module"]
 	path = addons/tex-lualibs/module
 	url = https://github.com/LuaCATS/tex-lualibs.git
@@ -119,9 +126,9 @@
 [submodule "addons/halion/module"]
 	path = addons/halion/module
 	url = https://github.com/misohoza/halion.git
-[submodule "addons/minetest/module"]
-	path = addons/minetest/module
-	url = https://git.sr.ht/~fgaz/minetest-lls-definitions
+[submodule "addons/luanti/module"]
+	path = addons/luanti/module
+	url = https://git.sr.ht/~fgaz/luanti-lls-definitions
 [submodule "addons/REFramework-LLS/module"]
 	path = addons/REFramework-LLS/module
 	url = https://github.com/youwereeatenbyalid/REFramework-LLS.git
@@ -183,3 +190,71 @@
 [submodule "addons/starfallex/module"]
 	path = addons/starfallex/module
 	url = https://github.com/Periapsises/Starfall-LLS
+[submodule "addons/smbx2-lunalua/module"]
+	path = addons/smbx2-lunalua/module
+	url = https://github.com/Wild-W/smbx2-lunalua-luacats
+	branch = publish
+[submodule "addons/toml-edit/module"]
+	path = addons/toml-edit/module
+	url = https://github.com/nvim-neorocks/toml-edit-lua-ls-addon.git
+[submodule "addons/trilogyloader/module"]
+	path = addons/trilogyloader/module
+	url = https://github.com/fokichevskiy/TrilogySnippets.git
+[submodule "addons/devilspie2/module"]
+	path = addons/devilspie2/module
+	url = https://github.com/sparr/LuaLS-Addon-devilspie2.git
+[submodule "addons/dontstarve/module"]
+	path = addons/dontstarve/module
+	url = https://github.com/LuaCATS/dontstarve
+[submodule "addons/scribunto/module"]
+	path = addons/scribunto/module
+	url = https://github.com/Dianliang233/scribunto-addon
+[submodule "addons/ncine/module"]
+	path = addons/ncine/module
+	url = https://github.com/nCine/nCine-LuaCATS
+	branch = addon
+[submodule "addons/umbrella-unstable/module"]
+	path = addons/umbrella-unstable/module
+	url = https://github.com/demiurgeQuantified/UmbrellaAddon-Unstable
+[submodule "addons/HLA-VScript/module"]
+	path = addons/HLA-VScript/module
+	url = https://github.com/FrostSource/HLA-VScript.git
+[submodule "addons/pico8/module"]
+	path = addons/pico8/module
+	url = https://github.com/ahai64/pico8
+[submodule "addons/picotron/module"]
+	path = addons/picotron/module
+	url = https://github.com/ahai64/picotron
+[submodule "addons/lua-enet/module"]
+	path = addons/lua-enet/module
+	url = https://github.com/masakk1/LuaCATS-lua-enet.git
+[submodule "addons/lsqlite3/module"]
+	path = addons/lsqlite3/module
+	url = https://github.com/KaitlynEthylia/LuaSQLite3-annotations
+[submodule "addons/X4/module"]
+	path = addons/X4/module
+	url = https://github.com/chemodun/X4-LuaLSAddon.git
+	branch = publish
+[submodule "addons/ftl-hyperspace/module"]
+	path = addons/ftl-hyperspace/module
+	url = https://github.com/ranhai613/ftl-hs-lua-lls-addon.git
+	branch = publish
+[submodule "addons/luaposix/module"]
+	path = addons/luaposix/module
+	url = https://github.com/kayibea/lls-posix
+[submodule "addons/LuaPlayerYT/module"]
+	path = addons/LuaPlayerYT/module
+	url = https://github.com/antim0118/lpyt-lls-addon
+[submodule "addons/castlexyz/module"]
+	path = addons/castlexyz/module
+	url = https://github.com/trobukan/castlexyz.git
+[submodule "addons/darkrp/module"]
+	path = addons/darkrp/module
+	url = https://github.com/EmekC/darkrp-luals.git
+  
+[submodule "addons/celeste-bosses-helper/module"]
+	path = addons/celeste-bosses-helper/module
+	url = https://github.com/TheDavSmasher/bosses-helper-addon
+[submodule "addons/qsys/module"]
+	path = addons/qsys/module
+	url = https://github.com/alvaroyurrita/Q-SYS-Addon-for-LuaLS

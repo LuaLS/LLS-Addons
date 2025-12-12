@@ -1,0 +1,7 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
+  "name": "Castlexyz",
+  "description": "Definitions for the Castlexyz Lua API",
+  "size": 17761,
+  "hasPlugin": false
+}

@@ -3,7 +3,6 @@
 
 ![Addons count](https://img.shields.io/github/directory-file-count/LuaLS/LLS-Addons/addons?label=Addons&type=dir&color=097aba)
 ![Contributors](https://img.shields.io/github/contributors/LuaLS/LLS-Addons?label=Contributors)
-![Enforces StyLua](https://img.shields.io/badge/Enforces-StyLua-b2749f)
 
 Welcome to the repository of [addons][addon-wiki] for the [Lua Language Server][lls-github] by [sumneko](https://github.com/sumneko)!
 

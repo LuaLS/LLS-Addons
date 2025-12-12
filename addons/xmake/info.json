@@ -2,6 +2,6 @@
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "Xmake",
   "description": "Definitions for Xmake, a cross-platform build utility based on Lua",
-  "size": 96832,
+  "size": 148597,
   "hasPlugin": false
 }

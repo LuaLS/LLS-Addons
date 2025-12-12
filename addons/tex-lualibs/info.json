@@ -2,6 +2,6 @@
   "$schema": "https://raw.githubusercontent.com/carsakiller/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "lualibs (LuaTeX related)",
   "description": "Definitions for the Lua(Meta)TeX related library “lualibs”.",
-  "size": 236638,
+  "size": 349420,
   "hasPlugin": false
 }
