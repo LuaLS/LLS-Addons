@@ -241,7 +241,7 @@
 	branch = publish
 [submodule "addons/luaposix/module"]
 	path = addons/luaposix/module
-	url = https://github.com/kayibea/lls-posix
+	url = https://github.com/kayibea/luaposix-annotations
 [submodule "addons/LuaPlayerYT/module"]
 	path = addons/LuaPlayerYT/module
 	url = https://github.com/antim0118/lpyt-lls-addon
@@ -251,7 +251,7 @@
 [submodule "addons/darkrp/module"]
 	path = addons/darkrp/module
 	url = https://github.com/EmekC/darkrp-luals.git
-  
+
 [submodule "addons/celeste-bosses-helper/module"]
 	path = addons/celeste-bosses-helper/module
 	url = https://github.com/TheDavSmasher/bosses-helper-addon
