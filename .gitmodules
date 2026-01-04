@@ -258,3 +258,6 @@
 [submodule "addons/qsys/module"]
 	path = addons/qsys/module
 	url = https://github.com/alvaroyurrita/Q-SYS-Addon-for-LuaLS
+[submodule "addons/osm2pgsql/module"]
+	path = addons/osm2pgsql/module
+	url = https://github.com/FreemapSlovakia/osm2pgsql-lua-definitions
