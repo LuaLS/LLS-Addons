@@ -2,6 +2,6 @@
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "osm2pgsql",
   "description": "Definitions for osm2pgsql flex config",
-  "size": 23342,
+  "size": 23353,
   "hasPlugin": false
 }
