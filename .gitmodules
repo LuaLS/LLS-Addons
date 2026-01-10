@@ -261,7 +261,7 @@
 [submodule "addons/osm2pgsql/module"]
 	path = addons/osm2pgsql/module
 	url = https://github.com/FreemapSlovakia/osm2pgsql-lua-definitions
-
 [submodule "addons/sucata/module"]
 	path = addons/sucata/module
 	url = https://github.com/gumpdev/sucata-lua-addon
+	branch = main
