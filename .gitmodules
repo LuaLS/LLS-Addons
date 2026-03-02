@@ -265,3 +265,6 @@
 	path = addons/sucata/module
 	url = https://github.com/gumpdev/sucata-lua-addon
 	branch = main
+[submodule "addons/ficsit-network/module"]
+	path = addons/ficsit-network/module
+	url = https://github.com/fensoft/LuaLS-FicsIt-Networks.git
