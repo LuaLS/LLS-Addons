@@ -1,0 +1,7 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
+  "name": "RapidJSON",
+  "description": "A json module for LuaJIT 2.0/2.1 and Lua 5.1/5.2/5.3, based on the very fast RapidJSON C++ library.",
+  "size": 4996,
+  "hasPlugin": false
+}

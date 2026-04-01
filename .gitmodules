@@ -268,3 +268,6 @@
 [submodule "addons/ficsit-network/module"]
 	path = addons/ficsit-network/module
 	url = https://github.com/fensoft/LuaLS-FicsIt-Networks.git
+[submodule "addons/rapidjson/module"]
+	path = addons/rapidjson/module
+	url = https://github.com/saspivey98/rapidjson-definitions.git
