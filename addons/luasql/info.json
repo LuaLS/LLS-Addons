@@ -1,5 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "LuaSQL",
-  "description": "LuaSQL is a simple interface from Lua to a DBMS."
+  "description": "LuaSQL is a simple interface from Lua to a DBMS.",
+  "size": 15708,
+  "hasPlugin": false
 }
