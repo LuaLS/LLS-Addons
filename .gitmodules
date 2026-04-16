@@ -271,3 +271,6 @@
 [submodule "addons/rapidjson/module"]
 	path = addons/rapidjson/module
 	url = https://github.com/saspivey98/rapidjson-definitions.git
+[submodule "addons/luasql/module"]
+	path = addons/luasql/module
+	url = https://github.com/saspivey98/luasql-definitions
