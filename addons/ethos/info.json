@@ -1,0 +1,5 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
+  "name": "Ethos Lua (FrSky)",
+  "description": "Definitions for the Ethos Lua API, used in FrSky transmitters."
+}

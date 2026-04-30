@@ -274,3 +274,7 @@
 [submodule "addons/luasql/module"]
 	path = addons/luasql/module
 	url = https://github.com/saspivey98/luasql-definitions
+[submodule "addons/ethos/module"]
+	path = addons/ethos/module
+	url = https://github.com/flyingeek/ethos-lua-definitions.git
+	branch = luals-addon
