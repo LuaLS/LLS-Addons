@@ -2,6 +2,4 @@
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "hyprlua",
   "description": "LuaCATS type annotations and lua_ls addon for Hyprland 0.55+. Goal is to provide autocomplete, hover docs, and type-checking for the full hl.* global API.",
-  "size": 249975,
-  "hasPlugin": true
 }
