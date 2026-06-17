@@ -2,6 +2,6 @@
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "slnunicode",
   "description": "Definitions for the slnunicode library",
-  "size": 29708,
+  "size": 31240,
   "hasPlugin": false
 }
