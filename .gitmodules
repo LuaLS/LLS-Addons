@@ -278,3 +278,6 @@
 	path = addons/ethos/module
 	url = https://github.com/flyingeek/ethos-lua-definitions.git
 	branch = luals-addon
+[submodule "addons/lua-bint/module"]
+	path = addons/lua-bint/module
+	url = https://github.com/Yue-bin/lua-bint-type.git
