@@ -281,3 +281,7 @@
 [submodule "addons/lua-bint/module"]
 	path = addons/lua-bint/module
 	url = https://github.com/Yue-bin/lua-bint-type.git
+[submodule "addons/forts/module"]
+	path = addons/forts/module
+	url = https://github.com/TretinV3/LuaFortsAPI.git
+	branch = addon
