@@ -2,6 +2,6 @@
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_info.schema.json",
   "name": "md5",
   "description": "Definitions for the md5 library",
-  "size": 7058,
+  "size": 8488,
   "hasPlugin": false
 }
