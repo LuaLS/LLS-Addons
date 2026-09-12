@@ -288,3 +288,7 @@
 [submodule "addons/luastg-flux/module"]
 	path = addons/luastg-flux/module
 	url = https://github.com/RulHolos/LuaSTG-Flux-LuaLS/
+[submodule "addons/hc/module"]
+	path = addons/hc/module
+	url = https://github.com/natroute/hc-definitions.git
+	branch = publish
