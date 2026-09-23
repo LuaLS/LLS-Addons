@@ -292,3 +292,7 @@
 	path = addons/hc/module
 	url = https://github.com/natroute/hc-definitions.git
 	branch = publish
+[submodule "addons/drive-by-sable/module"]
+	path = addons/drive-by-sable/module
+	url = https://github.com/GuilleX7/Drive-By-Sable-CC-API.git
+	branch = main
