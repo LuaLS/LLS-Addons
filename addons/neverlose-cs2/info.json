@@ -1,4 +1,6 @@
 {
   "name": "Neverlose CS2",
-  "description": "Definitions for the Neverlose CS2 Lua API"
+  "description": "Definitions for the Neverlose CS2 Lua API",
+  "size": 2454420,
+  "hasPlugin": false
 }
