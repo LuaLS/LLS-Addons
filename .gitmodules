@@ -296,3 +296,6 @@
 	path = addons/drive-by-sable/module
 	url = https://github.com/GuilleX7/Drive-By-Sable-CC-API.git
 	branch = main
+[submodule "addons/neverlose-cs2/module"]
+	path = addons/neverlose-cs2/module
+	url = https://gitlab.com/neverlose/LuaLS-CS2.git
